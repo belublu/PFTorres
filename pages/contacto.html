@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Funkocity!</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="../index.html"><img class="logoFunko"
+            src="../assets/imagenes/logoFunko2.png" 
+            alt="Logo Funko Pop letras celestes" id="logoFunko2"></a>
+        </div>
+
+        <div class="logosRedes">
+            <img class="logosRedes__Instagram"
+                src="../assets/imagenes/logoInstagram.png" 
+                alt="Logo Instagram" 
+                id="logoInstagram">
+            <img class="logosRedes__Facebook"
+                src="../assets/imagenes/logoFacebook.png" 
+                alt="Logo Facebook" 
+                id="logoFacebook">
+            <img class="logosRedes__Twitter"
+                src="../assets/imagenes/logoTwitter.png" 
+                alt="Logo Logo Twitter" 
+                id="logoTwitter">
+        </div>
+        
+        <div class="fuenteBoton">
+            <input type="button" value="Login" id="botonLogin">
+            <input type="button" value="Registrarse" id="botonRegistro">
+        </div>
+          
+        <nav class="menu">
+            <ul class="reseteoListas">
+                <a href="../index.html"><li>INICIO</li></a>
+                <a href="../pages/historia.html"><li>HISTORIA</li></a>
+                <a href="../pages/comunidad.html"><li>COMUNIDAD</li></a>
+                <a href="../pages/colecciones.html"><li>COLECCIONES</li></a>                
+                <a href="../pages/contacto.html"><li>CONTACTO</li></a>
+            </ul>
+            <div id="buscador">
+                <input type="text" id="Busqueda">
+                <input type="submit" value="Buscar"/>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <section id="parrafoUno">
+            <article class="parrafo">
+                <h2 class="parrafo__Titulo">CONTACTO</h2>
+                <p class="parrafo__Texto">Dejanos tu consulta! La responderemos a la brevedad.
+                </p>
+            </article>
+        </section>
+
+        <section class="formulario">
+            <form action="" method="post" enctype="text/plain">
+    
+                <fieldset class="datos">
+                    <legend>Datos personales</legend>
+                    <div>
+                        <label for="Nombre">Nombre</label>
+                        <input type="text" id="Nombre" placeholder="Utiliza mayúsculas y minúsculas">
+                    </div>
+                    <div >
+                        <label  for="Apellido">Apellido</label>
+                        <input type="text" id="Apellido" placeholder="Utiliza mayúsculas y minúsculas">    
+                    </div>
+                    <div>
+                        <label for="Rango de edad">Género</label>
+                                <select style="width: 250px; height: 50px" name="seleccion" id="Desplegable">
+                            <option value="Opción 0"></option>
+                            <option value="Opción 1">Femenino</option>
+                            <option value="Opción 2">Masculino</option>
+                            <option value="Opción 3">Otro</option>
+                            </select>
+                    </div>
+                    <div>
+                        <label for="Rango de edad">Rango de edad</label>
+                                <select style="width: 250px; height: 50px" name="seleccion" id="Desplegable">
+                            <option value="Opción 0"></option>
+                            <option value="Opción 1">Entre 10 y 19 años</option>
+                            <option value="Opción 2">Entre 20 y 40 años</option>
+                            <option value="Opción 3">Entre 41 y 60 años</option>
+                            <option value="Opción 3">Más de 61 años</option>
+                        </select>
+                    </div>
+                </fieldset>
+            
+                <fieldset class="datos">
+                    <legend>Línea de Funko favorita</legend>
+                    <p class="textoDatos">Pensalo bien! Sólo podés seleccionar uno.</p>
+                    <label> <input type="radio" name="lineaFavorita" value="Wacky Wobbler">Wacky Wobbler</label>
+            
+                    <label for=""><input type="radio" name="lineaFavorita" value="Pop">Pop!</label>
+            
+                    <label for=""><input type="radio" name="lineaFavorita" value="Vinyl Soda">Vinyl Soda</label>
+            
+                    <label for=""><input type="radio" name="lineaFavorita" value="Vinyl Gold">Vinyl Gold</label>
+            
+                    <label for=""><input type="radio" name="lineaFavorita" value="Funko Games">Games</label>
+        
+                    <label for=""><input type="radio" name="lineaFavorita" value="Mystery Minis">Mystery Minis</label>
+        
+                    <label for=""><input type="radio" name="lineaFavorita" value="Plush">Plush</label>
+        
+                    <label for=""><input type="radio" name="lineaFavorita" value="Popsies">Popsies</label>
+        
+                    <label for=""><input type="radio" name="lineaFavorita" value="Dorbz">Dorbz</label>
+                    
+                </fieldset>
+            
+                <fieldset class="datos">
+                    <legend>Licencias favoritas</legend>
+                    <p class="textoDatos">En esta oportunidad podés seleccionar más de un personaje</p>
+                <div>
+                    <label for="licenciasfavoritas"> <input type="checkbox" name="" id="Marvel">Marvel</label>
+                    <label for="licenciasfavoritas"> <input type="checkbox" name="" id="Star Wars">Star Wars</label>
+                    <label for="licenciasfavoritas"> <input type="checkbox" name="" id="DC">DC</label>
+                    <label for="licenciasfavoritas"> <input type="checkbox" name="" id="Disney">Disney</label>
+                    <label for="licenciasfavoritas"> <input type="checkbox" name="" id="Harry Potter">Harry Potter</label>
+                    <label for="licenciasfavoritas"> <input type="checkbox" name="" id="Animé">Animé</label>
+                    <label for="licenciasfavoritas"> <input type="checkbox" name="" id="Shows de TV">Shows de TV</label>
+                    <label for="licenciasfavoritas"> <input type="checkbox" name="" id="Shows de TV animados">Shows de TV animados</label>
+                    <label for="licenciasfavoritas"> <input type="checkbox" name="" id="Deporte">Deporte</label>
+                    <label for="licenciasfavoritas"> <input type="checkbox" name="" id="Música">Música</label>
+                </div>
+                </fieldset>
+            
+                <fieldset class="datos">
+                    <legend>Tu consulta</legend>
+                    <div>
+                        <textarea name="" id="" cols="100" rows="10" placeholder="Escribe aquí tu consulta"></textarea>
+                    </div>
+                </fieldset>
+                <div class="datos">
+                    <p>Deseo recibir novedades</p>
+                    <label for=""><input type="radio" name="recibirNovedades" id="Si">Si</label>
+                    <label for=""><input type="radio" name="recibirNovedades" id="No">No</label>
+                </div>
+                <input type="submit" value="Enviar">        
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="fondoFooter">
+        <p class="textoNegritaFooter">Funkocity! Argentina</p>
+    </footer> 
+
+   
+    
+</body>
