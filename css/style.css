@@ -4,7 +4,7 @@
     src: url(../assets/fonts/Armata/Armata-Regular.ttf);
 }
 
-*{
+/* ¿¿*{
     margin: 0;
     padding: 0;
 }
@@ -59,7 +59,7 @@ nav{
     opacity: .8;
 }
 
-.logosRedes{
+#logosRedes{
     float: left;
     margin-left: 20px;
     position: relative;
@@ -108,7 +108,6 @@ nav{
         text-decoration: none;
         list-style-type: none;
         color: white;
-        /* font-size: 1.1rem; */
         font-weight: bold;
         font-style: normal;
         font-family: "armata";        
@@ -238,7 +237,7 @@ ul li{
     position: relative;
     bottom: 170px;
     right: 250px;
-}
+} */
 
 
 /* HISTORIA */
@@ -464,7 +463,7 @@ ul li{
 
 
 
-/* CONTACTO */
+CONTACTO
 
 .formulario{
     margin-left: 40px;
@@ -498,3 +497,310 @@ label{
     margin-bottom: 20px;
     font-style: italic;
 }
+
+/* A partir de esta línea se trabaja con Grid+FlexBox
+
+INDEX */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "footer";
+}
+
+header{
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 0.3fr 2fr 0.3fr ;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-areas: 
+    "logosRedes imgFunko fuenteBoton"
+    "logosRedes imgFunko fuenteBoton"
+    "logosRedes imgFunko fuenteBoton";
+
+}
+
+#logosRedes{
+    grid-area: logosRedes;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "ig fb tw";
+    grid-row-gap: 5px;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+.logosRedes__Instagram{
+    height: 30px;
+    width: 30px;
+    grid-area: ig;
+    align-self: stretch;
+}
+
+.logosRedes__Facebook{
+    height: 30px;
+    width: 40px;
+    grid-area: fb;
+}
+
+.logosRedes__Twitter{
+    height: 35px;
+    width: 35px;
+    grid-area: tw;
+    padding-left: 6px;    
+}
+
+#imgFunko{
+    grid-area: imgFunko;
+    justify-self: center;
+    align-self: center;
+}
+
+#logoFunko2{
+    width: 200px;
+    height: 100;
+    opacity: .8;
+}
+
+#fuenteBoton{
+    grid-area: fuenteBoton;
+    justify-self: center;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "botonLogin"
+    "botonRegistro";
+    grid-row-gap: 10px;
+    
+}
+
+#botonLogin{
+    grid-area: botonLogin;
+    
+}
+
+#botonRegistro{
+    grid-area: botonRegistro;
+}
+
+nav{
+    height: 12vh;
+    grid-area: nav;
+    background-color: #1895cf;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+}
+
+.reseteoListas a:link,
+    a:visited,
+    a:active {
+        text-decoration: none;
+        list-style-type: none;
+        color: white;
+        font-weight: bold;
+        font-style: normal;
+        font-family: "armata";        
+    }
+
+#mainIndex{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "fotoPortada"
+        "multimedia"
+        "picSpider"; 
+}
+
+#fotoPortada{
+    grid-area: fotoPortada;
+}
+
+#fotoMuchosPops{
+    width: 100%;   
+} 
+
+#multimedia{
+    grid-area: multimedia;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "videos fotos";
+        grid-column-gap: 30px;
+    justify-content: center;    
+}
+
+#videos{
+    height: 400px;
+    background-color: #73def1;
+    border: #1c8294 solid 3px;
+    grid-area: videos;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1.5fr;
+    grid-template-areas: 
+    "videoPrincipal"
+    "iframeV"; 
+}
+
+.videoPrincipal{
+    color: black;
+    font-family: "armata";
+    font-weight: bolder;
+    grid-area: videoPrincipal;
+}
+
+.video__Titulo{
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.video__Texto{
+    font-size: 12px;
+    font-weight:500;
+    line-height: 15px;
+    margin-left: 20px;
+    margin-right: 20px;  
+}
+
+iframe{
+    border: black solid 3px;
+}
+
+#iframeV{
+    grid-area: iframeV;
+    justify-self: center;
+}
+
+
+#fotos{
+    height: 400px;
+    background-color: #fc6863;
+    border: #c23a35 solid 3px;
+    grid-area: fotos;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1.5fr;
+    grid-template-areas: 
+    "fotoPrincipal"
+    "portadaFotos"; 
+}
+
+.fotoPrincipal{
+    color: black;
+    font-family: "armata";
+    font-weight: bolder;
+    text-align: center;
+    grid-area: fotoPrincipal;
+}
+
+a:link,
+a:visited,
+a:active{
+    text-decoration: none;
+    color: black;    
+}
+
+.foto__Titulo{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+.foto__Texto{
+    font-size: 12px;
+    font-weight:500;
+    line-height: 18px;
+    text-align: center;
+}
+
+#portadaFotos{
+    grid-area: portadaFotos;
+    justify-self: center;
+}
+
+#portadaDeFotos{
+    width: 400px;
+    height: 250px;
+    border: black solid 3px;
+}
+
+
+
+#picSpider{
+    grid-area: picSpider;
+    background-image: url(../assets/imagenes/wallStars.jpg);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "spiderManIndex slogan";
+
+}
+
+#spiderManIndex{
+    grid-area: spiderManIndex;
+    justify-self: right;
+
+}
+
+#spiderManPortada{
+    width: 400px;
+    height: 400px;
+    
+}
+
+#slogan{
+    color: black;
+    font-family: "armata";
+    font-size: 30px;
+    font-weight: bold;
+    text-align: right;
+    font-style: oblique;
+    grid-area: slogan;
+    align-self: center;
+    justify-self: center;
+    
+}
+
+footer{
+    height: 10vh;
+    background-color: #1895cf;
+    grid-area: footer;
+}
+
+.textoNegritaFooter{
+    font-weight: bold;
+    color: white;
+    font-family: "armata";
+    text-align: center;        
+}
+
+
