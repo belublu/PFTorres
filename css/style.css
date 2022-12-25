@@ -252,10 +252,10 @@ ul li{
 }
 
 #parrafoUno{
-   margin-top: 30px;
+   /* margin-top: 30px;
    padding-top: 30px;
    margin-bottom: 10px;
-   padding-bottom: 10px;
+   padding-bottom: 10px; */
 }
 
 .parrafo__Titulo{
@@ -302,89 +302,6 @@ ul li{
     width:98%;
     margin-left: 20px;
 }
-
-
-
-/* COMUNIDAD */
-
-.comunidad{
-    font-family: "armata";
-    font-size: 30px;
-    font-weight: bold;
-    line-height: 55px; 
-    color: black;  
-}
-
-.comunidad__Texto{
-    font-size: 18px;
-    font-family: "armata";
-    text-align: center;
-    margin: 10px;
-}
-
-.foro{
-    background-color:#fc6863;
-    border: black solid 3px;
-    width: 300px;
-    height: 400px;
-    float: left;
-    margin: 20px 20px 20px 130px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-.foro__Titulo{
-    font-family: "armata";
-    font-size: 30px;
-    text-align: center;
-    font-weight: bolder;
-}
-
-#logoForo{
-    width: 300px;
-    height: 250px;
-    margin-top: 30px;
-}
-
-.telegram{
-    background-color:rgb(29, 204, 146);
-    border: black solid 3px;
-    width: 300px;
-    height: 400px;
-    float: left;
-    margin: 20px 20px 20px 20px;
-    padding-top: 30px;
-    padding-bottom: 30px;    
-}
-
-#logoTelegram{
-    width: 200px;
-    height: 200px;
-    position: relative;
-    left: 50px;
-    top: 55px;
-} 
-
-.discord{
-    background-color:#99f58f;
-    border: black solid 3px;
-    width: 300px;
-    height: 400px;
-    float: left;
-    margin: 20px 20px 20px 20px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-#logoDiscord{
-    width: 200px;
-    height: 200px;
-    position: relative;
-    left: 50px;
-    top: 55px;
-}
-
-
 
 /* COLECCIONES */
 
@@ -463,7 +380,7 @@ ul li{
 
 
 
-CONTACTO
+/* CONTACTO */
 
 .formulario{
     margin-left: 40px;
@@ -803,4 +720,123 @@ footer{
     text-align: center;        
 }
 
+/* COMUNIDAD */
+
+#mainComunidad{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100pxfr;
+    grid-template-areas:
+        "tituloComunidad tituloComunidad tituloComunidad"
+        "foro telegram discord";
+
+}
+
+#tituloComunidad{
+    grid-area: tituloComunidad;
+    align-self: center;
+
+}
+
+.comunidad{
+    font-family: "armata";
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 55px; 
+    color: black;  
+    grid-area: comunidad;
+    justify-self: center;
+    
+}
+
+.comunidad__Texto{
+    font-size: 18px;
+    font-family: "armata";
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    grid-area: comunidadTexto;
+    align-self: start;
+
+}
+
+.foro{
+    background-color:#fc6863;
+    border: black solid 3px;
+    width: 300px;
+    height: 450px;
+    grid-area: foro;
+    justify-self: right;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "foroTitulo"
+        "comunidadTexto"
+        "comunidad"; 
+
+}
+
+.foro__Titulo{
+    font-family: "armata";
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
+    grid-area: foroTitulo;
+    align-self: start;
+    margin: 20px;
+}
+
+#logoForo{
+    width: 300px;
+    height: 250px;
+}
+
+.telegram{
+    background-color:rgb(29, 204, 146);
+    border: black solid 3px;
+    width: 300px;
+    height: 450px;
+    grid-area: telegram;
+    justify-self: center;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "foroTitulo"
+        "comunidadTexto"
+        "comunidad"; 
+}
+
+
+#logoTelegram{
+    width: 200px;
+    height: 200px;   
+} 
+
+.discord{
+    background-color:#76f386;
+    border: black solid 3px;
+    width: 300px;
+    height: 450px;
+    grid-area: discord;
+    justify-self: left;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "foroTitulo"
+        "comunidadTexto"
+        "comunidad"; 
+}
+
+#logoDiscord{
+    width: 200px;
+    height: 200px;   
+    
+}
 
