@@ -251,12 +251,6 @@ ul li{
     line-height: 26px; 
 }
 
-#parrafoUno{
-   /* margin-top: 30px;
-   padding-top: 30px;
-   margin-bottom: 10px;
-   padding-bottom: 10px; */
-}
 
 .parrafo__Titulo{
     line-height: 50px;
@@ -691,7 +685,13 @@ a:active{
 #spiderManPortada{
     width: 400px;
     height: 400px;
-    
+    animation-name: moverSpider;
+    animation-duration: 2s;
+    transition: all 2s;
+}
+
+#spiderManPortada:hover{
+    transform: translate(-200px);
 }
 
 #slogan{
@@ -704,20 +704,37 @@ a:active{
     grid-area: slogan;
     align-self: center;
     justify-self: center;
-    
+    translate: -100px ;
+    transition-duration: 1s;
+}
+
+#slogan:hover{
+    transform:scale(1.3);
 }
 
 footer{
     height: 10vh;
     background-color: #1895cf;
     grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr;
+    grid-template-areas:
+    "textoFooter";
+ 
 }
 
 .textoNegritaFooter{
     font-weight: bold;
     color: white;
     font-family: "armata";
-    text-align: center;        
+    margin-top: 20px;
+}
+
+#textoFooter{
+    grid-area: textoFooter;
+    justify-self: center;
+    align-self: end;
 }
 
 /* COMUNIDAD */
@@ -763,7 +780,7 @@ footer{
 
 .foro{
     background-color:#fc6863;
-    border: black solid 3px;
+    border: #f44741 solid 4px;
     width: 300px;
     height: 450px;
     grid-area: foro;
@@ -776,8 +793,17 @@ footer{
         "foroTitulo"
         "comunidadTexto"
         "comunidad"; 
-
+    animation-name: animForo;
+    animation-duration: 1s;    
 }
+
+@keyframes animForo {
+    from{
+        transform: translate(0) scale(0);
+    }to{
+        transform: translate(100) scale(1.2);
+    }
+ }
 
 .foro__Titulo{
     font-family: "armata";
@@ -796,7 +822,7 @@ footer{
 
 .telegram{
     background-color:rgb(29, 204, 146);
-    border: black solid 3px;
+    border: rgb(10, 160, 110) solid 4px;
     width: 300px;
     height: 450px;
     grid-area: telegram;
@@ -809,8 +835,17 @@ footer{
         "foroTitulo"
         "comunidadTexto"
         "comunidad"; 
+    animation-name: animTeleg;
+    animation-duration: 1s;
 }
 
+@keyframes animTeleg {
+    from{
+        transform: translate(0) scale(0);
+    }to{
+        transform: translate(100) scale(1.2);
+    }
+ }
 
 #logoTelegram{
     width: 200px;
@@ -818,8 +853,8 @@ footer{
 } 
 
 .discord{
-    background-color:#76f386;
-    border: black solid 3px;
+    background-color:#dcdc72;
+    border: #c9c949 solid 4px;
     width: 300px;
     height: 450px;
     grid-area: discord;
@@ -832,11 +867,24 @@ footer{
         "foroTitulo"
         "comunidadTexto"
         "comunidad"; 
+    animation-name: animDisc;
+    animation-duration: 1s;
 }
+
+@keyframes animDisc {
+    from{
+        transform: translate(0) scale(0) ;
+    }to{
+        transform: translate(100) scale(1) ;
+    }
+ }
+
 
 #logoDiscord{
     width: 200px;
     height: 200px;   
     
 }
+
+
 
