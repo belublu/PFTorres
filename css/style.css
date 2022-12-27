@@ -991,6 +991,11 @@ footer{
 }
 
 @media screen and (max-width: 320px){
+    #logoFunko2{
+        width: 120px;
+        height: 43px;
+        translate: 20px;
+    }
 
     #mainIndex{
         grid-template-rows: 0.6fr 2fr 0.1fr;
@@ -1034,14 +1039,14 @@ footer{
     }
 
     #spiderManPortada{
-        width: 220px;
-        height: 220px;
+        width: 150px;
+        height: 150px;
     }
     
     #slogan{
-        font-size: 15px;
+        font-size: 10px;
         justify-self: left;
-        translate: -40px ;
+        translate: -30px ;
     }
 
     footer{
