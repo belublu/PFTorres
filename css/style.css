@@ -189,7 +189,6 @@ INDEX */
 
 body{
     width: 100vw;
-    /* height: 150vh; */
     overflow-x: hidden;
     display: grid;
     grid-template-columns: 1fr;
@@ -210,7 +209,6 @@ header{
     "logosRedes imgFunko fuenteBoton"
     "logosRedes imgFunko fuenteBoton"
     "logosRedes imgFunko fuenteBoton";
-
 }
 
 #logosRedes{
@@ -517,12 +515,11 @@ footer{
 
 
 /* COMUNIDAD */
-
 #mainComunidad{
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100px 100pxfr;
+    grid-template-rows: 30% 70%;
     grid-template-areas:
         "tituloComunidad tituloComunidad tituloComunidad"
         "foro telegram discord";
@@ -540,7 +537,6 @@ footer{
     line-height: 55px; 
     color: black;  
     grid-area: comunidad;
-    justify-self: center;
 }
 
 .comunidad__Texto{
@@ -550,7 +546,7 @@ footer{
     margin-left: 5px;
     margin-right: 5px;
     grid-area: comunidadTexto;
-    align-self: start;
+    /* align-self: start; */
 }
 
 .foro{
@@ -568,8 +564,9 @@ footer{
         "foroTitulo"
         "comunidadTexto"
         "comunidad"; 
-    animation-name: animForo;
-    animation-duration: 1s;    
+    animation-name: animTeleg;
+    animation-duration: 1s;
+    justify-items: center;  
 }
 
 @keyframes animForo {
@@ -586,8 +583,8 @@ footer{
     text-align: center;
     font-weight: bolder;
     grid-area: foroTitulo;
-    align-self: start;
-    margin: 20px;
+    align-self: center;
+    
 }
 
 #logoForo{
@@ -612,6 +609,7 @@ footer{
         "comunidad"; 
     animation-name: animTeleg;
     animation-duration: 1s;
+    justify-items: center;
 }
 
 @keyframes animTeleg {
@@ -644,6 +642,7 @@ footer{
         "comunidad"; 
     animation-name: animDisc;
     animation-duration: 1s;
+    justify-items: center;
 }
 
 @keyframes animDisc {
@@ -661,17 +660,11 @@ footer{
 
 
 /* Media Queries */
-@media screen and (max-width: 1400px){
-    
-}
-    
-@media screen and (max-width: 1200px){
-
-}
 
 @media screen and (max-width: 1024px){
+    /* INDEX */
     #mainIndex{
-        grid-template-rows: 0.8fr repeat(2, 1fr);
+        grid-template-rows: 1r repeat(2, 1fr);
     }
 
     #multimedia{
@@ -684,7 +677,6 @@ footer{
         line-height: 30px;
         margin-left: 5px;
         margin-right: 5px;
-        
     }
 
     .video__Texto{
@@ -701,7 +693,6 @@ footer{
         align-self: center;
     }
 
-    
     .foto__Texto{
         margin-top: 30px;  
         margin-left: 20px;
@@ -720,6 +711,7 @@ footer{
 }
 
 @media screen and (max-width: 768px){
+    /* INDEX */
     header{
         grid-template-columns: 0.3fr 2fr 0.5fr ;
     }
@@ -799,10 +791,52 @@ footer{
     footer{
         height: 14vh;
     }
- 
+
+
+    /* COMUNIDAD */
+    .foro{
+        width: 200px;
+        height: 400px;
+    }
+
+    .foro__Titulo{
+        font-size: 25px;
+    }
+
+    .comunidad__Texto{
+        font-size: 12px;
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+    
+    #logoForo{
+        width: 200px;
+        height: 150px;
+    }
+
+    .telegram{
+        width: 200px;
+        height: 400px;
+    }
+
+    #logoTelegram{
+        width: 150px;
+        height: 150px; 
+    } 
+
+    .discord{
+        width: 200px;
+        height: 400px;
+    }
+
+    #logoDiscord{
+        width: 150px;
+        height: 150px;    
+    }
 }
 
 @media screen and (max-width: 600px){
+    /* INDEX */
     #logoFunko2{
         width: 150px;
         height: 50px;
@@ -824,7 +858,6 @@ footer{
     
     #mainIndex{
         grid-template-rows: 0.5fr 1fr 0.5fr;
-        
     }
 
     #multimedia{
@@ -881,10 +914,65 @@ footer{
     .textoNegritaFooter{
         font-size: 14px;
     }
+
+
+    /* COMUNIDAD */
+    #mainComunidad{
+        grid-template-rows: 30% 60%;
+    }
+
+    .parrafo__Titulo{
+        font-size: 22px;
+    }
+
+    .parrafo__Texto{
+        font-size: 15px;
+    }
+
+    .foro{
+        width: 150px;
+        height: 350px;
+    }
+
+    .foro__Titulo{
+        font-size: 20px;
+    }
+
+    .comunidad__Texto{
+        font-size: 10px;
+    }
     
+    #logoForo{
+        width: 150px;
+        height: 120px;
+    }
+
+    .telegram{
+        width: 150px;
+        height: 350px;
+        justify-items: center;
+        
+    }
+
+    #logoTelegram{
+        width: 120px;
+        height: 110px; 
+    } 
+
+    .discord{
+        width: 150px;
+        height: 350px;
+    }
+
+    #logoDiscord{
+        width: 120px;
+        height: 110px;     
+    }
 }
 
+
 @media screen and (max-width: 480px){
+    /* INDEX */
     body{
         grid-template-rows: 10% 18% 68% 1%;
         grid-template-areas: 
@@ -910,6 +998,14 @@ footer{
         translate: 45px;
     }
 
+    #botonLogin{
+        margin-right: 10px;
+    }
+    
+    #botonRegistro{
+        margin-right: 10px;    
+    }
+
     nav{
         height: 35vh;
         grid-template-columns: 1fr;
@@ -922,13 +1018,13 @@ footer{
         list-style: none;
         display: flex;
         flex-direction: column;
-        padding: 10px;        
+        padding: 8px;        
     }
 
     .reseteoListas a:link,
     a:visited,
     a:active {
-        font-size: 11px;
+        font-size: 8px;
         text-align: center;        
     }
 
@@ -982,12 +1078,87 @@ footer{
     footer{
         height: 12vh;
     }
-    
-    
-    
 
-    
 
+    /* COMUNIDAD */
+    #mainComunidad{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "tituloComunidad"
+            "foro"
+            "telegram"
+            "discord";
+            grid-row-gap: 20px;
+    }
+
+    #tituloComunidad{
+        margin-top: 40px;
+    }
+
+    .foro{
+        width: 450px;
+        height: 90px;
+        justify-self: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+            "comunidad foroTitulo";
+        align-content: center;
+
+    }
+
+    .comunidad{
+        justify-self: right;
+        margin-top: 10px;
+    }
+
+    .foro__Titulo{
+        font-size: 25px;
+        justify-self: left;
+        align-self: center;
+        padding-left: 15px;
+    }
+
+    .comunidad__Texto{
+        display: none;
+    }
+
+    #logoForo{
+        width: 120px;
+        height: 90px;
+        margin-top: 25px;        
+    }
+
+    .telegram{
+        width: 450px;
+        height: 90px;
+        justify-self: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+            "comunidad foroTitulo";
+    }
+
+    #logoTelegram{
+        width: 80px;
+        height: 70px; 
+    } 
+
+    .discord{
+        width: 450px;
+        height: 90px;
+        justify-self: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+            "comunidad foroTitulo";
+    }
+
+    #logoDiscord{
+        width: 80px;
+        height: 70px;    
+    } 
 }
 
 @media screen and (max-width: 320px){
@@ -1052,7 +1223,4 @@ footer{
     footer{
         height: 12vh;
     }
-  
 }
-
-
