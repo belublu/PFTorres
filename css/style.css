@@ -270,10 +270,23 @@ header{
 
 #botonLogin{
     grid-area: botonLogin;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: #39a7da solid 3px;
+    font-family: "armata";
+    font-weight: bold;
 }
 
 #botonRegistro{
     grid-area: botonRegistro;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: #39a7da solid 3px;
+    font-family: "armata";
+    font-weight: bold;
+    
 }
 
 nav{
@@ -299,9 +312,28 @@ ul li{
     grid-area: listaMenu;
 }
 
+#botonBuscar{
+    height: 25px;
+    width: 50px;
+    color: white;
+    font-size: 15px;
+    font-family: "armata";
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+}
+
+#busqueda{
+    height: 25px;
+    width: 130px;
+    border-radius: 15px;
+    border: white;
+  
+}
+
 #buscador{
     grid-area: buscador;
-    justify-self: center;    
+    justify-self: center;   
 }
 
 .reseteoListas a:link,
