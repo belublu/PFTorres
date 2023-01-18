@@ -1,0 +1,1193 @@
+@media (max-width: 1024px){
+    header{
+        grid-template-columns: 0.3fr 2fr 0.5fr;
+    }
+
+    #mainIndex{
+        grid-template-rows: 1r repeat(2, 1fr);
+
+        #multimedia{
+            grid-template-columns: 40% 40%;
+            grid-column-gap: 30px;
+
+            #videos{
+                .videoPrincipal{
+                    .video__Titulo{
+                        font-size: 16px;
+                        margin-top: 20px;
+                        line-height: 24px;
+                        margin-left: 5px;
+                        margin-right: 5px;
+                    }
+
+                    .video__Texto{
+                        margin-top: 20px;  
+                        text-align: center;
+                        
+                    }
+                }
+
+                #iframeV{
+                align-self: center;
+
+                    iframe{
+                        width: 359px;
+                        height: 200px;
+                    }
+                }
+            }
+        
+
+            #fotos{
+                .fotoPrincipal{
+                    margin-top: 15px;
+                    
+                    .foto__Titulo{
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+
+                    .foto__Texto{
+                        margin-top: 30px;  
+                        margin-left: 20px;
+                        margin-right: 20px;
+                        text-align: center; 
+                    }
+                }
+
+                #portadaFotos{
+                    align-self: center;
+
+                    #portadaDeFotos{
+                        width: 320px;
+                        height: 200px;
+                    }
+                }
+            }
+        }    
+    }
+
+    #mainHistoria{
+        #parrafoUno{
+            .parrafo{
+                .parrafo__Titulo{
+                    margin-top: 20px;
+                }
+
+                .parrafo__Texto{
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        #parrafoDos{
+            .fotoParrafoDos{
+                align-self:center;
+            }
+        }
+
+        #parrafoTres{
+            .fotoParrafoTres{
+                align-self: center;
+            }
+        }
+    }
+
+    #mainComunidad{
+        .foro{
+            width: 250px;
+            height: 300px;
+
+            .foro__Titulo{
+                font-size: 25px;
+                margin-top: 10px;
+            } 
+    
+            .comunidad__Texto{
+                font-size: 14px; 
+                margin-top: 10px;
+            }
+    
+            .comunidad{  
+                #logoForo{
+                    width: 225px;
+                    height: 175px;
+                    margin-top: 30px;
+              
+                }
+            } 
+        }
+        
+        .telegram{
+            width: 250px;
+            height: 300px;
+        
+            .foro__Titulo{
+                font-size: 25px;
+            } 
+    
+            .comunidad__Texto{
+                font-size: 14px; 
+            }
+    
+            .comunidad{   
+                #logoTelegram{
+                    width: 130px;
+                    height: 130px;  
+                    margin-bottom: 20px;
+                }
+            } 
+        }
+    
+        .discord{
+            width: 250px;
+            height: 300px;
+
+            .foro__Titulo{
+                font-size: 25px;
+            } 
+    
+            .comunidad__Texto{
+                font-size: 14px; 
+            }
+    
+            .comunidad{
+                #logoDiscord{
+                    width: 130px;
+                    height: 130px; 
+                    margin-bottom: 20px;
+                }
+            } 
+        }
+    
+    }
+
+    #mainColecciones{
+        height: 300vh;
+        #parrafoUno{
+            .parrafo{
+                .parrafo__Titulo{
+                    margin-top: 20px;
+                }
+
+                .parrafo__Texto{
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+
+    #mainContacto{
+        
+
+        .formulario{
+
+            form{
+              .datosDos{  
+                .lineas{
+                    
+                    label{
+                        margin-right: 0px;
+                        margin-left: 12px;
+                        font-size: 13px;
+                                           
+                        
+                        input{
+                            margin-right: 4px;
+                        }
+                    }
+                } 
+            }
+
+            .datosTres{    
+                .licencias{
+                    label{
+                        margin-right: 0px;
+                        margin-left: 4px;
+                        font-size: 12px;                       
+                    }  
+                }
+            }  
+            }
+            
+        }
+    }
+
+    footer{
+        
+        #textoFooter{
+            
+
+            .textoNegritaFooter{
+                font-size: 18px;
+                
+                
+                
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px){
+    header{
+        grid-template-columns: 0.3fr 2fr 0.5fr;
+
+        .fuenteBoton{
+            #botonLogin{
+                width: 75px;
+                height: 25px;
+                font-size: 10px;
+            }
+
+            #botonRegistro{
+                width: 75px;
+                height:25px;
+                font-size: 10px;
+            }
+        }
+    }
+
+    nav{
+        height: 11vh;
+
+        a{
+            &:link, &:visited, &:active{
+                font-size: 13px; 
+            }
+        }
+    }
+
+    #mainIndex{
+        grid-template-rows: 0.6fr 1fr 0.1fr;
+
+        #multimedia{
+            grid-template-columns: 46% 46%;
+            grid-column-gap: 20px;
+
+            #videos{
+                .videoPrincipal{
+                    .video__Titulo{
+                        margin-left: 22px;
+                        margin-right: 22px;
+                    }
+                }
+
+                #iframeV{
+                    iframe{
+                        width: 240px;
+                        height: 150px;
+                    }
+                }
+            }
+
+            #fotos{
+                .fotoPrincipal{
+                    .foto__Titulo{
+                        .foto__Texto{
+                            align-content: start;
+                        }
+                    }
+                }
+
+                #portadaFotos{
+                    #portadaDeFotos{
+                        width: 240px;
+                        height: 150px;
+                    }
+                }
+                
+            }
+        }
+
+        #picSpider{
+            #spiderManIndex{
+                #spiderManPortada{
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+
+            #slogan{
+                justify-self: right;
+                translate: -80px ;
+                &:hover{
+                    transform:scale(1.2);
+                }
+
+                .slogan__Texto{
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+
+    #mainHistoria{
+        #parrafoUno{
+            .parrafo{
+                font-size: 12px;
+                line-height: 20px;
+            }
+        }
+
+        #parrafoDos{
+            .fotoParrafoDos{
+                #fotoTiendaFunko{
+                    width: 310px;
+                    height: 190px;
+                }
+            }
+
+            .parrafo{
+                font-size: 12px;
+                line-height: 20px;
+            }
+        }
+
+        #parrafoTres{
+            .parrafo{
+                font-size: 12px;
+                line-height: 20px;
+            }
+
+            .fotoParrafoTres{
+                #fotoTiendaFunkoDos{
+                    width: 310px;
+                    height: 180px;
+                }
+            }
+        }
+
+        #parrafoCuatro{    
+            .fotoParrafoCuatro{
+                margin-left: 20PX;
+
+                #fotoHileraPops{
+                    width: 94%;
+                }
+            }
+        }
+    }
+
+    #mainComunidad{
+        #tituloComunidad{
+            font-size: 12px;
+            line-height: 20px;
+
+            .parrafo{
+                font-size: 12px;
+                line-height: 20px;
+
+                .parrafo__Texto{
+                    font-size: 12px;
+                    line-height: 20px;
+                }
+            }
+        }
+
+        .foro{
+            width: 200px;
+            height: 350px;
+            margin-bottom: 10px;
+
+            .foro__Titulo{
+                font-size: 23px;
+            }
+
+            .comunidad__Texto{
+                font-size: 12px;
+                margin-left: 7px;
+                margin-right: 7px;
+            }
+
+            .comunidad{
+                #logoForo{
+                    width: 180px;
+                    height: 130px;
+                }
+            }
+        }
+
+        .telegram{
+            width: 200px;
+            height: 350px;
+            margin-bottom: 10px;
+
+            .foro__Titulo{
+                font-size: 23px;
+            }
+
+            .comunidad__Texto{
+                font-size: 12px;
+                margin-left: 7px;
+                margin-right: 7px;
+            }
+
+            .comunidad{
+                #logoTelegram{
+                    width: 120px;
+                    height: 120px;
+                    margin-bottom: 25px;
+                }
+            }
+        }
+
+        .discord{
+            width: 200px;
+            height: 350px;
+            margin-bottom: 10px;
+
+            .foro__Titulo{
+                font-size: 23px;
+            }
+
+            .comunidad__Texto{
+                font-size: 12px;
+                margin-left: 7px;
+                margin-right: 7px;
+            }
+
+            .comunidad{
+                #logoDiscord{
+                    width: 120px;
+                    height: 120px;
+                    margin-bottom: 25px;
+                }
+            }
+
+
+        }
+
+    }
+
+    #mainColecciones{
+        height: 250vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.3fr 1fr 1fr 1fr 0.5fr;
+        grid-template-areas: 
+        "parrafoUno"
+        "marvel"
+        "dc"
+        "sw"
+        "shop";
+        grid-row-gap: 0px;
+       
+
+        #parrafoUno{
+            .parrafo{
+                font-size: 12px;
+                line-height: 20px;
+                margin-bottom: 10px;
+            }
+        }
+
+        .marvel{
+            width:80%;
+            height: 250px;
+            border: black solid 3px;
+
+            a{
+                font-size: 25px;
+            }
+
+            #wallCapi{
+                width: 270px;
+                height: 150px;
+                border: black solid 2px;
+            }
+        }
+
+        .dc{
+            width:80%;
+            height: 250px;
+            border: black solid 3px;
+
+            a{
+                font-size: 25px;
+            }
+
+            #wallFlash{
+                width: 270px;
+                height: 150px;
+                border: black solid 2px;
+            }
+        }
+
+        .sw{
+            width:80%;
+            height: 250px;
+            border: black solid 3px;
+
+            a{
+                font-size: 25px;
+            }
+
+            #wallSw{
+                width: 270px;
+                height: 150px;
+                border: black solid 2px;
+            }
+        }
+
+        .shop{
+            font-size: 20px;
+        }
+
+    }
+
+    #mainContacto{
+        
+
+        .formulario{
+
+            form{
+              .datosDos{  
+                .lineas{
+                    
+                    label{
+                        margin-right: 0px;
+                        margin-left: 10px;
+                        font-size: 11px;
+                                           
+                        
+                        input{
+                            margin-right: 4px;
+                        }
+                    }
+                } 
+            }
+
+            .datosTres{    
+                .licencias{
+                    label{
+                        font-size: 10px;                       
+                    }  
+                }
+            }  
+            }
+            
+        }
+    }
+
+    footer{
+        #textoFooter{
+            .textoNegritaFooter{
+                font-size: 12px;
+                
+                
+            }
+        }
+    };
+}
+
+
+@media (max-width: 480px) {
+    body{
+        height: 480vh;
+    }
+
+    header{
+        height: 22vh;
+        grid-template-columns: 2fr 0.1fr ;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "imgFunko fuenteBoton"
+        "imgFunko fuenteBoton";
+
+        #logosRedes{
+            display: none;
+        }
+
+        .imgFunko{
+           #logoFunko2{
+                width: 120px;
+                height: 45px;
+                translate: 45px;
+            } 
+        }
+
+        .fuenteBoton{
+            margin-right: 10px;
+
+            #botonLogin{
+                font-size: 9px;
+                margin-right: 10px;
+        }
+
+            #botonRegistro{
+                font-size: 9px;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    nav{
+        height: 40vh;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "listaMenu";     
+        justify-items: center;
+
+        a{
+            &:link, &:visited, &:active{
+                font-size: 10px;
+                text-align: center;
+            }
+        }
+
+        li{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            padding: 8px; 
+        }
+
+        #buscador{
+            display: none;
+        }
+    }
+
+    #mainIndex{
+        height: 175vh;
+
+        #multimedia{
+            grid-column-gap: 10px;
+
+            #videos{
+                .videoPrincipal{
+                    .video__Titulo{
+                        font-size: 13px;
+                        line-height: 17px;
+                    }
+
+                    .video__Texto{
+                        font-size: 10px;
+                    }
+                
+                }
+
+                #iframeV{
+                    iframe{
+                        width: 170px;
+                    }
+                }
+            }
+
+            #fotos{
+                .fotoPrincipal{
+                    .foto__Titulo{
+                        font-size: 13px;
+                        line-height: 5px;
+                        margin-left: 8px;
+                        margin-right: 13px;
+                    }
+
+                    .foto__Texto{
+                        font-size: 10px;
+                    }
+                }
+
+                #portadaFotos{
+                    margin-top: 5px;
+
+                    #portadaDeFotos{
+                        width: 170px;
+                        height: 120px;
+                    }
+                }
+            }
+        }
+
+        #picSpider{
+            #spiderManIndex{
+                margin-top: 15px;
+
+                #spiderManPortada{
+                    width: 220px;
+                    height: 220px;
+
+                    &:hover{
+                        transform: translate(-75px);
+                    }
+                }
+            }
+
+            #slogan{
+                justify-self: left;
+                translate: -40px;
+
+                .slogan__Texto{
+                    font-size: 15px;
+
+                    &:hover{
+                        transform:scale(1);
+                    }
+                }
+            }
+        }
+    }
+
+    #mainHistoria{
+        grid-row-gap: 15px;
+
+        #parrafoUno{
+            margin-bottom: 0px;
+            margin-left: 1px;
+            margin-right: 0px;
+
+            .parrafo{
+                .parrafo__Titulo{
+                    text-align: center;
+                }
+                .parrafo__Texto{
+                    margin-left: 0px;
+                    margin-right: 0px;
+                }
+            }
+
+            
+        }
+    
+        #parrafoDos{
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+            "fotoSectParrafoDos fotoParaMobil"
+            "sectParrafoDos sectParrafoDos";
+            justify-items: center;
+            grid-row-gap: 15px;
+            grid-column-gap: 15px;
+    
+            .fotoParrafoDos{
+                grid-area: fotoSectParrafoDos;
+                #fotoTiendaFunko{
+                    width: 230px;
+                    height: 160px;
+                    margin-left: 10px;
+                }
+            }
+    
+            .fotoParaMobil{
+                grid-area: fotoParaMobil;
+                display: block;
+                justify-items: center;
+            
+                img{
+                    width: 230px;
+                    height: 160px;
+                    margin-right: 10px;
+                }
+            }
+    
+            .parrafo{
+                font-size: 12px;
+                line-height: 20px;
+                
+            }
+        }
+    
+    
+        #parrafoTres{
+            display: block;
+            .parrafo{
+                margin-left: 40px;
+                margin-right: 40px;
+                
+                .parrafo__Texto{
+                    font-size: 12px;
+                    line-height: 20px;
+                    justify-self: center;
+                }
+            }
+            
+            .fotoParrafoTres{              
+                #fotoTiendaFunkoDos{
+                    display: none;
+                  
+                     
+                }
+            }
+        }
+    
+        #parrafoCuatro{
+            display: none;
+    
+        }
+    }
+
+    #mainComunidad{
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+        "tituloComunidad"
+        "foro" 
+        "telegram"
+        "discord";
+
+        #tituloComunidad{
+            #parrafoUno{
+                .parrafo{
+                    .parrafo__Titulo{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        
+        .foro{
+            border: #f44741 solid 3px;
+            width: 300px;
+            height: 100px;
+            justify-self: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: 
+                "comunidad foroTitulo"; 
+            align-content: center;
+            
+            .foro__Titulo{
+                font-size: 18px;
+                justify-self: left;
+            } 
+    
+            .comunidad__Texto{
+                display: none;  
+            }
+    
+            .comunidad{
+                font-size: 18px;
+                align-items: center;
+                align-self: start;
+    
+    
+                #logoForo{
+                    width: 125px;
+                    height: 95px;                    
+                }
+            } 
+        }
+        
+        .telegram{
+            border: rgb(10, 160, 110) solid 3px;
+            width: 300px;
+            height: 100px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: 
+                "comunidad foroTitulo"; 
+            align-content: center;
+    
+            .foro__Titulo{
+                font-size: 18px;
+                justify-self: left;
+            } 
+    
+            .comunidad__Texto{
+                display: none;  
+            }
+    
+            .comunidad{
+                font-size: 18px;
+            
+                #logoTelegram{
+                    width: 70px;
+                    height: 70px;  
+                    margin-top: 40px;
+                }
+            } 
+        }
+    
+        .discord{
+            border: #c9c949 solid 3px;
+            width: 300px;
+            height: 100px;
+            justify-self: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: 
+                "comunidad foroTitulo"; 
+            align-content: center;
+    
+            .foro__Titulo{
+                font-size: 18px;
+                justify-self: left;
+            } 
+    
+            .comunidad__Texto{
+                display: none;  
+            }
+        
+            .comunidad{
+                font-size: 18px;
+    
+                #logoDiscord{
+                    width: 70px;
+                    height: 70px;  
+                    margin-top: 40px;
+                }
+            } 
+        }
+    }
+
+    #mainColecciones{
+        height: 120vh;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.1fr 0.5fr 1fr;
+        grid-template-areas: 
+        "parrafoUno parrafoUno"
+        "marvel dc"
+        "shop shop";
+        grid-row-gap: 0px;
+
+        #parrafoUno{    
+            .parrafo{
+                .parrafo__Titulo{
+                    margin-top: 5px;
+                    line-height: 50px;
+                    text-align: center;
+                }
+
+                .parrafo__Texto{
+                    display: none;
+                }
+            }
+        }
+
+        .marvel{
+            width: 200px;
+            height: 350px;
+            border: black solid 3px; 
+            
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.5fr 1fr;
+            grid-template-areas: 
+            "categoriaMarvel"
+            "capi";
+            justify-items: center;
+            align-items: center;
+    
+            a {
+                font-size: 22px;
+                align-self: end;
+            }
+    
+            #wallCapi{
+                width: 180px;
+                height: 100px;
+            }
+        }
+
+        .dc{
+            width: 200px;
+            height: 350px;
+            border: black solid 3px; 
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.5fr 1fr;
+            grid-template-areas: 
+            "categoriaDc"
+            "flash";
+           
+            a {
+                font-size: 22px;
+                align-self: end;
+            }
+    
+            #wallFlash{
+                width: 180px;
+                height: 100px;      
+            }
+        }
+    
+        .sw{
+            display: none;
+        }
+
+        .shop{
+            font-size: 18px;
+        }
+
+    }
+
+    footer{
+        height: 10vh;
+
+            .textoNegritaFooter{
+                font-size: 10px;
+            }
+    };
+}
+
+
+@media (max-width: 320px){
+    
+    header{
+        grid-template-columns: 2fr 1fr ;
+
+        .imgFunko{
+            margin-left: 0px;
+            justify-self: right;
+           
+           
+            #logoFunko2{
+                width: 88px;
+                height: 33px;
+                translate: none;       
+                margin-right: 30px;      
+            } 
+        }
+
+        .fuenteBoton{
+            justify-self: right;
+
+            #botonLogin{
+                width: 60px;
+                height: 18px;
+                border-radius: 7px;
+                border: $color-background solid 2px;
+                font-size: 8px;
+            }
+
+            #botonRegistro{
+                width: 60px;
+                height: 18px;
+                border-radius: 7px;
+                border: $color-background solid 2px;
+                font-size: 8px;
+
+            }
+        }
+    }
+
+    #mainIndex{
+        height: 155vh;
+
+        #fotoPortada{
+            margin-top: 7px;
+            margin-bottom: 7px;
+        }
+
+        #multimedia{
+            #videos{
+                .videoPrincipal{
+                   .video__Titulo{
+                        font-size: 11px;
+                        margin-left: 5px;
+                        margin-right: 2px;
+                        line-height: 15px;
+                    } 
+                }
+
+                #iframeV{
+                    iframe{
+                        width: 130px;
+                        height: 100px;
+                    }
+                }
+            }
+
+            #fotos{
+                .fotoPrincipal{
+                    .foto__Titulo{
+                        font-size: 11px;
+                        margin-left: 5px;
+                        margin-right: 10px;
+                        line-height: 5px;
+                    }
+                }
+
+                #portadaFotos{
+                    #portadaDeFotos{
+                        width: 130px;
+                        height: 100px;
+                    }
+                }
+
+            }
+        }
+
+        #picSpider{
+            #spiderManIndex{
+                #spiderManPortada{
+                    width: 180px;
+                    height: 180px;
+
+                    &:hover{
+                        transform: translate(-30px);
+                    }
+                }
+            }
+
+            #slogan{
+                justify-self: left;
+                translate: -20px;
+
+                .slogan__Texto{
+                    font-size: 10px;
+                    text-align: center;
+
+                    &:hover{
+                        transform:scale(1.1);
+                    }
+
+                }
+            }
+        }
+
+    }
+
+    #mainHistoria{
+        #parrafoDos{    
+            .fotoParrafoDos{
+                #fotoTiendaFunko{
+                    width: 210px;
+                    height: 140px;
+                }
+            }
+    
+            .fotoParaMobil{
+                img{
+                    width: 210px;
+                    height: 140px;
+                }
+            }
+        }
+    }
+
+    #mainColecciones{
+        height: 100vh;       
+        
+        .marvel{
+            width: 140px;
+            height: 300px;
+            border: black solid 2px;
+            margin-left: 10px;
+            
+            #wallCapi{
+                width: 100px;
+                height: 60px;
+            }
+        }
+
+        .dc{
+            width: 140px;
+            height: 300px;
+            border: black solid 2px;
+            margin-right: 10px;
+            
+
+            #wallFlash{
+                width: 100px;
+                height: 60px;
+            }
+        }
+    }
+}
+
+

@@ -72,6 +72,596 @@ header {
       font-style: normal;
       font-family: "armata"; }
 
+@media (max-width: 1024px) {
+  header {
+    grid-template-columns: 0.3fr 2fr 0.5fr; }
+  #mainIndex {
+    grid-template-rows: 1r repeat(2, 1fr); }
+    #mainIndex #multimedia {
+      grid-template-columns: 40% 40%;
+      grid-column-gap: 30px; }
+      #mainIndex #multimedia #videos .videoPrincipal .video__Titulo {
+        font-size: 16px;
+        margin-top: 20px;
+        line-height: 24px;
+        margin-left: 5px;
+        margin-right: 5px; }
+      #mainIndex #multimedia #videos .videoPrincipal .video__Texto {
+        margin-top: 20px;
+        text-align: center; }
+      #mainIndex #multimedia #videos #iframeV {
+        align-self: center; }
+        #mainIndex #multimedia #videos #iframeV iframe {
+          width: 359px;
+          height: 200px; }
+      #mainIndex #multimedia #fotos .fotoPrincipal {
+        margin-top: 15px; }
+        #mainIndex #multimedia #fotos .fotoPrincipal .foto__Titulo {
+          font-size: 16px;
+          line-height: 24px; }
+        #mainIndex #multimedia #fotos .fotoPrincipal .foto__Texto {
+          margin-top: 30px;
+          margin-left: 20px;
+          margin-right: 20px;
+          text-align: center; }
+      #mainIndex #multimedia #fotos #portadaFotos {
+        align-self: center; }
+        #mainIndex #multimedia #fotos #portadaFotos #portadaDeFotos {
+          width: 320px;
+          height: 200px; }
+  #mainHistoria #parrafoUno .parrafo .parrafo__Titulo {
+    margin-top: 20px; }
+  #mainHistoria #parrafoUno .parrafo .parrafo__Texto {
+    margin-top: 20px; }
+  #mainHistoria #parrafoDos .fotoParrafoDos {
+    align-self: center; }
+  #mainHistoria #parrafoTres .fotoParrafoTres {
+    align-self: center; }
+  #mainComunidad .foro {
+    width: 250px;
+    height: 300px; }
+    #mainComunidad .foro .foro__Titulo {
+      font-size: 25px;
+      margin-top: 10px; }
+    #mainComunidad .foro .comunidad__Texto {
+      font-size: 14px;
+      margin-top: 10px; }
+    #mainComunidad .foro .comunidad #logoForo {
+      width: 225px;
+      height: 175px;
+      margin-top: 30px; }
+  #mainComunidad .telegram {
+    width: 250px;
+    height: 300px; }
+    #mainComunidad .telegram .foro__Titulo {
+      font-size: 25px; }
+    #mainComunidad .telegram .comunidad__Texto {
+      font-size: 14px; }
+    #mainComunidad .telegram .comunidad #logoTelegram {
+      width: 130px;
+      height: 130px;
+      margin-bottom: 20px; }
+  #mainComunidad .discord {
+    width: 250px;
+    height: 300px; }
+    #mainComunidad .discord .foro__Titulo {
+      font-size: 25px; }
+    #mainComunidad .discord .comunidad__Texto {
+      font-size: 14px; }
+    #mainComunidad .discord .comunidad #logoDiscord {
+      width: 130px;
+      height: 130px;
+      margin-bottom: 20px; }
+  #mainColecciones {
+    height: 300vh; }
+    #mainColecciones #parrafoUno .parrafo .parrafo__Titulo {
+      margin-top: 20px; }
+    #mainColecciones #parrafoUno .parrafo .parrafo__Texto {
+      margin-top: 20px; }
+  #mainContacto .formulario form .datosDos .lineas label {
+    margin-right: 0px;
+    margin-left: 12px;
+    font-size: 13px; }
+    #mainContacto .formulario form .datosDos .lineas label input {
+      margin-right: 4px; }
+  #mainContacto .formulario form .datosTres .licencias label {
+    margin-right: 0px;
+    margin-left: 4px;
+    font-size: 12px; }
+  footer #textoFooter .textoNegritaFooter {
+    font-size: 18px; } }
+
+@media (max-width: 768px) {
+  header {
+    grid-template-columns: 0.3fr 2fr 0.5fr; }
+    header .fuenteBoton #botonLogin {
+      width: 75px;
+      height: 25px;
+      font-size: 10px; }
+    header .fuenteBoton #botonRegistro {
+      width: 75px;
+      height: 25px;
+      font-size: 10px; }
+  nav {
+    height: 11vh; }
+    nav a:link, nav a:visited, nav a:active {
+      font-size: 13px; }
+  #mainIndex {
+    grid-template-rows: 0.6fr 1fr 0.1fr; }
+    #mainIndex #multimedia {
+      grid-template-columns: 46% 46%;
+      grid-column-gap: 20px; }
+      #mainIndex #multimedia #videos .videoPrincipal .video__Titulo {
+        margin-left: 22px;
+        margin-right: 22px; }
+      #mainIndex #multimedia #videos #iframeV iframe {
+        width: 240px;
+        height: 150px; }
+      #mainIndex #multimedia #fotos .fotoPrincipal .foto__Titulo .foto__Texto {
+        align-content: start; }
+      #mainIndex #multimedia #fotos #portadaFotos #portadaDeFotos {
+        width: 240px;
+        height: 150px; }
+    #mainIndex #picSpider #spiderManIndex #spiderManPortada {
+      width: 300px;
+      height: 300px; }
+    #mainIndex #picSpider #slogan {
+      justify-self: right;
+      translate: -80px; }
+      #mainIndex #picSpider #slogan:hover {
+        transform: scale(1.2); }
+      #mainIndex #picSpider #slogan .slogan__Texto {
+        font-size: 22px; }
+  #mainHistoria #parrafoUno .parrafo {
+    font-size: 12px;
+    line-height: 20px; }
+  #mainHistoria #parrafoDos .fotoParrafoDos #fotoTiendaFunko {
+    width: 310px;
+    height: 190px; }
+  #mainHistoria #parrafoDos .parrafo {
+    font-size: 12px;
+    line-height: 20px; }
+  #mainHistoria #parrafoTres .parrafo {
+    font-size: 12px;
+    line-height: 20px; }
+  #mainHistoria #parrafoTres .fotoParrafoTres #fotoTiendaFunkoDos {
+    width: 310px;
+    height: 180px; }
+  #mainHistoria #parrafoCuatro .fotoParrafoCuatro {
+    margin-left: 20PX; }
+    #mainHistoria #parrafoCuatro .fotoParrafoCuatro #fotoHileraPops {
+      width: 94%; }
+  #mainComunidad #tituloComunidad {
+    font-size: 12px;
+    line-height: 20px; }
+    #mainComunidad #tituloComunidad .parrafo {
+      font-size: 12px;
+      line-height: 20px; }
+      #mainComunidad #tituloComunidad .parrafo .parrafo__Texto {
+        font-size: 12px;
+        line-height: 20px; }
+  #mainComunidad .foro {
+    width: 200px;
+    height: 350px;
+    margin-bottom: 10px; }
+    #mainComunidad .foro .foro__Titulo {
+      font-size: 23px; }
+    #mainComunidad .foro .comunidad__Texto {
+      font-size: 12px;
+      margin-left: 7px;
+      margin-right: 7px; }
+    #mainComunidad .foro .comunidad #logoForo {
+      width: 180px;
+      height: 130px; }
+  #mainComunidad .telegram {
+    width: 200px;
+    height: 350px;
+    margin-bottom: 10px; }
+    #mainComunidad .telegram .foro__Titulo {
+      font-size: 23px; }
+    #mainComunidad .telegram .comunidad__Texto {
+      font-size: 12px;
+      margin-left: 7px;
+      margin-right: 7px; }
+    #mainComunidad .telegram .comunidad #logoTelegram {
+      width: 120px;
+      height: 120px;
+      margin-bottom: 25px; }
+  #mainComunidad .discord {
+    width: 200px;
+    height: 350px;
+    margin-bottom: 10px; }
+    #mainComunidad .discord .foro__Titulo {
+      font-size: 23px; }
+    #mainComunidad .discord .comunidad__Texto {
+      font-size: 12px;
+      margin-left: 7px;
+      margin-right: 7px; }
+    #mainComunidad .discord .comunidad #logoDiscord {
+      width: 120px;
+      height: 120px;
+      margin-bottom: 25px; }
+  #mainColecciones {
+    height: 250vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 1fr 1fr 1fr 0.5fr;
+    grid-template-areas: "parrafoUno" "marvel" "dc" "sw" "shop";
+    grid-row-gap: 0px; }
+    #mainColecciones #parrafoUno .parrafo {
+      font-size: 12px;
+      line-height: 20px;
+      margin-bottom: 10px; }
+    #mainColecciones .marvel {
+      width: 80%;
+      height: 250px;
+      border: black solid 3px; }
+      #mainColecciones .marvel a {
+        font-size: 25px; }
+      #mainColecciones .marvel #wallCapi {
+        width: 270px;
+        height: 150px;
+        border: black solid 2px; }
+    #mainColecciones .dc {
+      width: 80%;
+      height: 250px;
+      border: black solid 3px; }
+      #mainColecciones .dc a {
+        font-size: 25px; }
+      #mainColecciones .dc #wallFlash {
+        width: 270px;
+        height: 150px;
+        border: black solid 2px; }
+    #mainColecciones .sw {
+      width: 80%;
+      height: 250px;
+      border: black solid 3px; }
+      #mainColecciones .sw a {
+        font-size: 25px; }
+      #mainColecciones .sw #wallSw {
+        width: 270px;
+        height: 150px;
+        border: black solid 2px; }
+    #mainColecciones .shop {
+      font-size: 20px; }
+  #mainContacto .formulario form .datosDos .lineas label {
+    margin-right: 0px;
+    margin-left: 10px;
+    font-size: 11px; }
+    #mainContacto .formulario form .datosDos .lineas label input {
+      margin-right: 4px; }
+  #mainContacto .formulario form .datosTres .licencias label {
+    font-size: 10px; }
+  footer #textoFooter .textoNegritaFooter {
+    font-size: 12px; } }
+
+@media (max-width: 480px) {
+  body {
+    height: 480vh; }
+  header {
+    height: 22vh;
+    grid-template-columns: 2fr 0.1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "imgFunko fuenteBoton" "imgFunko fuenteBoton"; }
+    header #logosRedes {
+      display: none; }
+    header .imgFunko #logoFunko2 {
+      width: 120px;
+      height: 45px;
+      translate: 45px; }
+    header .fuenteBoton {
+      margin-right: 10px; }
+      header .fuenteBoton #botonLogin {
+        font-size: 9px;
+        margin-right: 10px; }
+      header .fuenteBoton #botonRegistro {
+        font-size: 9px;
+        margin-right: 10px; }
+  nav {
+    height: 40vh;
+    grid-template-columns: 1fr;
+    grid-template-areas: "listaMenu";
+    justify-items: center; }
+    nav a:link, nav a:visited, nav a:active {
+      font-size: 10px;
+      text-align: center; }
+    nav li {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      padding: 8px; }
+    nav #buscador {
+      display: none; }
+  #mainIndex {
+    height: 175vh; }
+    #mainIndex #multimedia {
+      grid-column-gap: 10px; }
+      #mainIndex #multimedia #videos .videoPrincipal .video__Titulo {
+        font-size: 13px;
+        line-height: 17px; }
+      #mainIndex #multimedia #videos .videoPrincipal .video__Texto {
+        font-size: 10px; }
+      #mainIndex #multimedia #videos #iframeV iframe {
+        width: 170px; }
+      #mainIndex #multimedia #fotos .fotoPrincipal .foto__Titulo {
+        font-size: 13px;
+        line-height: 5px;
+        margin-left: 8px;
+        margin-right: 13px; }
+      #mainIndex #multimedia #fotos .fotoPrincipal .foto__Texto {
+        font-size: 10px; }
+      #mainIndex #multimedia #fotos #portadaFotos {
+        margin-top: 5px; }
+        #mainIndex #multimedia #fotos #portadaFotos #portadaDeFotos {
+          width: 170px;
+          height: 120px; }
+    #mainIndex #picSpider #spiderManIndex {
+      margin-top: 15px; }
+      #mainIndex #picSpider #spiderManIndex #spiderManPortada {
+        width: 220px;
+        height: 220px; }
+        #mainIndex #picSpider #spiderManIndex #spiderManPortada:hover {
+          transform: translate(-75px); }
+    #mainIndex #picSpider #slogan {
+      justify-self: left;
+      translate: -40px; }
+      #mainIndex #picSpider #slogan .slogan__Texto {
+        font-size: 15px; }
+        #mainIndex #picSpider #slogan .slogan__Texto:hover {
+          transform: scale(1); }
+  #mainHistoria {
+    grid-row-gap: 15px; }
+    #mainHistoria #parrafoUno {
+      margin-bottom: 0px;
+      margin-left: 1px;
+      margin-right: 0px; }
+      #mainHistoria #parrafoUno .parrafo .parrafo__Titulo {
+        text-align: center; }
+      #mainHistoria #parrafoUno .parrafo .parrafo__Texto {
+        margin-left: 0px;
+        margin-right: 0px; }
+    #mainHistoria #parrafoDos {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "fotoSectParrafoDos fotoParaMobil" "sectParrafoDos sectParrafoDos";
+      justify-items: center;
+      grid-row-gap: 15px;
+      grid-column-gap: 15px; }
+      #mainHistoria #parrafoDos .fotoParrafoDos {
+        grid-area: fotoSectParrafoDos; }
+        #mainHistoria #parrafoDos .fotoParrafoDos #fotoTiendaFunko {
+          width: 230px;
+          height: 160px;
+          margin-left: 10px; }
+      #mainHistoria #parrafoDos .fotoParaMobil {
+        grid-area: fotoParaMobil;
+        display: block;
+        justify-items: center; }
+        #mainHistoria #parrafoDos .fotoParaMobil img {
+          width: 230px;
+          height: 160px;
+          margin-right: 10px; }
+      #mainHistoria #parrafoDos .parrafo {
+        font-size: 12px;
+        line-height: 20px; }
+    #mainHistoria #parrafoTres {
+      display: block; }
+      #mainHistoria #parrafoTres .parrafo {
+        margin-left: 40px;
+        margin-right: 40px; }
+        #mainHistoria #parrafoTres .parrafo .parrafo__Texto {
+          font-size: 12px;
+          line-height: 20px;
+          justify-self: center; }
+      #mainHistoria #parrafoTres .fotoParrafoTres #fotoTiendaFunkoDos {
+        display: none; }
+    #mainHistoria #parrafoCuatro {
+      display: none; }
+  #mainComunidad {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "tituloComunidad" "foro"  "telegram" "discord"; }
+    #mainComunidad #tituloComunidad #parrafoUno .parrafo .parrafo__Titulo {
+      text-align: center; }
+    #mainComunidad .foro {
+      border: #f44741 solid 3px;
+      width: 300px;
+      height: 100px;
+      justify-self: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "comunidad foroTitulo";
+      align-content: center; }
+      #mainComunidad .foro .foro__Titulo {
+        font-size: 18px;
+        justify-self: left; }
+      #mainComunidad .foro .comunidad__Texto {
+        display: none; }
+      #mainComunidad .foro .comunidad {
+        font-size: 18px;
+        align-items: center;
+        align-self: start; }
+        #mainComunidad .foro .comunidad #logoForo {
+          width: 125px;
+          height: 95px; }
+    #mainComunidad .telegram {
+      border: #0aa06e solid 3px;
+      width: 300px;
+      height: 100px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "comunidad foroTitulo";
+      align-content: center; }
+      #mainComunidad .telegram .foro__Titulo {
+        font-size: 18px;
+        justify-self: left; }
+      #mainComunidad .telegram .comunidad__Texto {
+        display: none; }
+      #mainComunidad .telegram .comunidad {
+        font-size: 18px; }
+        #mainComunidad .telegram .comunidad #logoTelegram {
+          width: 70px;
+          height: 70px;
+          margin-top: 40px; }
+    #mainComunidad .discord {
+      border: #c9c949 solid 3px;
+      width: 300px;
+      height: 100px;
+      justify-self: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "comunidad foroTitulo";
+      align-content: center; }
+      #mainComunidad .discord .foro__Titulo {
+        font-size: 18px;
+        justify-self: left; }
+      #mainComunidad .discord .comunidad__Texto {
+        display: none; }
+      #mainComunidad .discord .comunidad {
+        font-size: 18px; }
+        #mainComunidad .discord .comunidad #logoDiscord {
+          width: 70px;
+          height: 70px;
+          margin-top: 40px; }
+  #mainColecciones {
+    height: 120vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 0.5fr 1fr;
+    grid-template-areas: "parrafoUno parrafoUno" "marvel dc" "shop shop";
+    grid-row-gap: 0px; }
+    #mainColecciones #parrafoUno .parrafo .parrafo__Titulo {
+      margin-top: 5px;
+      line-height: 50px;
+      text-align: center; }
+    #mainColecciones #parrafoUno .parrafo .parrafo__Texto {
+      display: none; }
+    #mainColecciones .marvel {
+      width: 200px;
+      height: 350px;
+      border: black solid 3px;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.5fr 1fr;
+      grid-template-areas: "categoriaMarvel" "capi";
+      justify-items: center;
+      align-items: center; }
+      #mainColecciones .marvel a {
+        font-size: 22px;
+        align-self: end; }
+      #mainColecciones .marvel #wallCapi {
+        width: 180px;
+        height: 100px; }
+    #mainColecciones .dc {
+      width: 200px;
+      height: 350px;
+      border: black solid 3px;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.5fr 1fr;
+      grid-template-areas: "categoriaDc" "flash"; }
+      #mainColecciones .dc a {
+        font-size: 22px;
+        align-self: end; }
+      #mainColecciones .dc #wallFlash {
+        width: 180px;
+        height: 100px; }
+    #mainColecciones .sw {
+      display: none; }
+    #mainColecciones .shop {
+      font-size: 18px; }
+  footer {
+    height: 10vh; }
+    footer .textoNegritaFooter {
+      font-size: 10px; } }
+
+@media (max-width: 320px) {
+  header {
+    grid-template-columns: 2fr 1fr; }
+    header .imgFunko {
+      margin-left: 0px;
+      justify-self: right; }
+      header .imgFunko #logoFunko2 {
+        width: 88px;
+        height: 33px;
+        translate: none;
+        margin-right: 30px; }
+    header .fuenteBoton {
+      justify-self: right; }
+      header .fuenteBoton #botonLogin {
+        width: 60px;
+        height: 18px;
+        border-radius: 7px;
+        border: #1895cf solid 2px;
+        font-size: 8px; }
+      header .fuenteBoton #botonRegistro {
+        width: 60px;
+        height: 18px;
+        border-radius: 7px;
+        border: #1895cf solid 2px;
+        font-size: 8px; }
+  #mainIndex {
+    height: 155vh; }
+    #mainIndex #fotoPortada {
+      margin-top: 7px;
+      margin-bottom: 7px; }
+    #mainIndex #multimedia #videos .videoPrincipal .video__Titulo {
+      font-size: 11px;
+      margin-left: 5px;
+      margin-right: 2px;
+      line-height: 15px; }
+    #mainIndex #multimedia #videos #iframeV iframe {
+      width: 130px;
+      height: 100px; }
+    #mainIndex #multimedia #fotos .fotoPrincipal .foto__Titulo {
+      font-size: 11px;
+      margin-left: 5px;
+      margin-right: 10px;
+      line-height: 5px; }
+    #mainIndex #multimedia #fotos #portadaFotos #portadaDeFotos {
+      width: 130px;
+      height: 100px; }
+    #mainIndex #picSpider #spiderManIndex #spiderManPortada {
+      width: 180px;
+      height: 180px; }
+      #mainIndex #picSpider #spiderManIndex #spiderManPortada:hover {
+        transform: translate(-30px); }
+    #mainIndex #picSpider #slogan {
+      justify-self: left;
+      translate: -20px; }
+      #mainIndex #picSpider #slogan .slogan__Texto {
+        font-size: 10px;
+        text-align: center; }
+        #mainIndex #picSpider #slogan .slogan__Texto:hover {
+          transform: scale(1.1); }
+  #mainHistoria #parrafoDos .fotoParrafoDos #fotoTiendaFunko {
+    width: 210px;
+    height: 140px; }
+  #mainHistoria #parrafoDos .fotoParaMobil img {
+    width: 210px;
+    height: 140px; }
+  #mainColecciones {
+    height: 100vh; }
+    #mainColecciones .marvel {
+      width: 140px;
+      height: 300px;
+      border: black solid 2px;
+      margin-left: 10px; }
+      #mainColecciones .marvel #wallCapi {
+        width: 100px;
+        height: 60px; }
+    #mainColecciones .dc {
+      width: 140px;
+      height: 300px;
+      border: black solid 2px;
+      margin-right: 10px; }
+      #mainColecciones .dc #wallFlash {
+        width: 100px;
+        height: 60px; } }
+
 /* Se aplica Grids+Flexbox */
 nav {
   height: 12vh;
@@ -114,6 +704,596 @@ nav {
       font-weight: bold;
       border: none;
       background-color: transparent; }
+
+@media (max-width: 1024px) {
+  header {
+    grid-template-columns: 0.3fr 2fr 0.5fr; }
+  #mainIndex {
+    grid-template-rows: 1r repeat(2, 1fr); }
+    #mainIndex #multimedia {
+      grid-template-columns: 40% 40%;
+      grid-column-gap: 30px; }
+      #mainIndex #multimedia #videos .videoPrincipal .video__Titulo {
+        font-size: 16px;
+        margin-top: 20px;
+        line-height: 24px;
+        margin-left: 5px;
+        margin-right: 5px; }
+      #mainIndex #multimedia #videos .videoPrincipal .video__Texto {
+        margin-top: 20px;
+        text-align: center; }
+      #mainIndex #multimedia #videos #iframeV {
+        align-self: center; }
+        #mainIndex #multimedia #videos #iframeV iframe {
+          width: 359px;
+          height: 200px; }
+      #mainIndex #multimedia #fotos .fotoPrincipal {
+        margin-top: 15px; }
+        #mainIndex #multimedia #fotos .fotoPrincipal .foto__Titulo {
+          font-size: 16px;
+          line-height: 24px; }
+        #mainIndex #multimedia #fotos .fotoPrincipal .foto__Texto {
+          margin-top: 30px;
+          margin-left: 20px;
+          margin-right: 20px;
+          text-align: center; }
+      #mainIndex #multimedia #fotos #portadaFotos {
+        align-self: center; }
+        #mainIndex #multimedia #fotos #portadaFotos #portadaDeFotos {
+          width: 320px;
+          height: 200px; }
+  #mainHistoria #parrafoUno .parrafo .parrafo__Titulo {
+    margin-top: 20px; }
+  #mainHistoria #parrafoUno .parrafo .parrafo__Texto {
+    margin-top: 20px; }
+  #mainHistoria #parrafoDos .fotoParrafoDos {
+    align-self: center; }
+  #mainHistoria #parrafoTres .fotoParrafoTres {
+    align-self: center; }
+  #mainComunidad .foro {
+    width: 250px;
+    height: 300px; }
+    #mainComunidad .foro .foro__Titulo {
+      font-size: 25px;
+      margin-top: 10px; }
+    #mainComunidad .foro .comunidad__Texto {
+      font-size: 14px;
+      margin-top: 10px; }
+    #mainComunidad .foro .comunidad #logoForo {
+      width: 225px;
+      height: 175px;
+      margin-top: 30px; }
+  #mainComunidad .telegram {
+    width: 250px;
+    height: 300px; }
+    #mainComunidad .telegram .foro__Titulo {
+      font-size: 25px; }
+    #mainComunidad .telegram .comunidad__Texto {
+      font-size: 14px; }
+    #mainComunidad .telegram .comunidad #logoTelegram {
+      width: 130px;
+      height: 130px;
+      margin-bottom: 20px; }
+  #mainComunidad .discord {
+    width: 250px;
+    height: 300px; }
+    #mainComunidad .discord .foro__Titulo {
+      font-size: 25px; }
+    #mainComunidad .discord .comunidad__Texto {
+      font-size: 14px; }
+    #mainComunidad .discord .comunidad #logoDiscord {
+      width: 130px;
+      height: 130px;
+      margin-bottom: 20px; }
+  #mainColecciones {
+    height: 300vh; }
+    #mainColecciones #parrafoUno .parrafo .parrafo__Titulo {
+      margin-top: 20px; }
+    #mainColecciones #parrafoUno .parrafo .parrafo__Texto {
+      margin-top: 20px; }
+  #mainContacto .formulario form .datosDos .lineas label {
+    margin-right: 0px;
+    margin-left: 12px;
+    font-size: 13px; }
+    #mainContacto .formulario form .datosDos .lineas label input {
+      margin-right: 4px; }
+  #mainContacto .formulario form .datosTres .licencias label {
+    margin-right: 0px;
+    margin-left: 4px;
+    font-size: 12px; }
+  footer #textoFooter .textoNegritaFooter {
+    font-size: 18px; } }
+
+@media (max-width: 768px) {
+  header {
+    grid-template-columns: 0.3fr 2fr 0.5fr; }
+    header .fuenteBoton #botonLogin {
+      width: 75px;
+      height: 25px;
+      font-size: 10px; }
+    header .fuenteBoton #botonRegistro {
+      width: 75px;
+      height: 25px;
+      font-size: 10px; }
+  nav {
+    height: 11vh; }
+    nav a:link, nav a:visited, nav a:active {
+      font-size: 13px; }
+  #mainIndex {
+    grid-template-rows: 0.6fr 1fr 0.1fr; }
+    #mainIndex #multimedia {
+      grid-template-columns: 46% 46%;
+      grid-column-gap: 20px; }
+      #mainIndex #multimedia #videos .videoPrincipal .video__Titulo {
+        margin-left: 22px;
+        margin-right: 22px; }
+      #mainIndex #multimedia #videos #iframeV iframe {
+        width: 240px;
+        height: 150px; }
+      #mainIndex #multimedia #fotos .fotoPrincipal .foto__Titulo .foto__Texto {
+        align-content: start; }
+      #mainIndex #multimedia #fotos #portadaFotos #portadaDeFotos {
+        width: 240px;
+        height: 150px; }
+    #mainIndex #picSpider #spiderManIndex #spiderManPortada {
+      width: 300px;
+      height: 300px; }
+    #mainIndex #picSpider #slogan {
+      justify-self: right;
+      translate: -80px; }
+      #mainIndex #picSpider #slogan:hover {
+        transform: scale(1.2); }
+      #mainIndex #picSpider #slogan .slogan__Texto {
+        font-size: 22px; }
+  #mainHistoria #parrafoUno .parrafo {
+    font-size: 12px;
+    line-height: 20px; }
+  #mainHistoria #parrafoDos .fotoParrafoDos #fotoTiendaFunko {
+    width: 310px;
+    height: 190px; }
+  #mainHistoria #parrafoDos .parrafo {
+    font-size: 12px;
+    line-height: 20px; }
+  #mainHistoria #parrafoTres .parrafo {
+    font-size: 12px;
+    line-height: 20px; }
+  #mainHistoria #parrafoTres .fotoParrafoTres #fotoTiendaFunkoDos {
+    width: 310px;
+    height: 180px; }
+  #mainHistoria #parrafoCuatro .fotoParrafoCuatro {
+    margin-left: 20PX; }
+    #mainHistoria #parrafoCuatro .fotoParrafoCuatro #fotoHileraPops {
+      width: 94%; }
+  #mainComunidad #tituloComunidad {
+    font-size: 12px;
+    line-height: 20px; }
+    #mainComunidad #tituloComunidad .parrafo {
+      font-size: 12px;
+      line-height: 20px; }
+      #mainComunidad #tituloComunidad .parrafo .parrafo__Texto {
+        font-size: 12px;
+        line-height: 20px; }
+  #mainComunidad .foro {
+    width: 200px;
+    height: 350px;
+    margin-bottom: 10px; }
+    #mainComunidad .foro .foro__Titulo {
+      font-size: 23px; }
+    #mainComunidad .foro .comunidad__Texto {
+      font-size: 12px;
+      margin-left: 7px;
+      margin-right: 7px; }
+    #mainComunidad .foro .comunidad #logoForo {
+      width: 180px;
+      height: 130px; }
+  #mainComunidad .telegram {
+    width: 200px;
+    height: 350px;
+    margin-bottom: 10px; }
+    #mainComunidad .telegram .foro__Titulo {
+      font-size: 23px; }
+    #mainComunidad .telegram .comunidad__Texto {
+      font-size: 12px;
+      margin-left: 7px;
+      margin-right: 7px; }
+    #mainComunidad .telegram .comunidad #logoTelegram {
+      width: 120px;
+      height: 120px;
+      margin-bottom: 25px; }
+  #mainComunidad .discord {
+    width: 200px;
+    height: 350px;
+    margin-bottom: 10px; }
+    #mainComunidad .discord .foro__Titulo {
+      font-size: 23px; }
+    #mainComunidad .discord .comunidad__Texto {
+      font-size: 12px;
+      margin-left: 7px;
+      margin-right: 7px; }
+    #mainComunidad .discord .comunidad #logoDiscord {
+      width: 120px;
+      height: 120px;
+      margin-bottom: 25px; }
+  #mainColecciones {
+    height: 250vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 1fr 1fr 1fr 0.5fr;
+    grid-template-areas: "parrafoUno" "marvel" "dc" "sw" "shop";
+    grid-row-gap: 0px; }
+    #mainColecciones #parrafoUno .parrafo {
+      font-size: 12px;
+      line-height: 20px;
+      margin-bottom: 10px; }
+    #mainColecciones .marvel {
+      width: 80%;
+      height: 250px;
+      border: black solid 3px; }
+      #mainColecciones .marvel a {
+        font-size: 25px; }
+      #mainColecciones .marvel #wallCapi {
+        width: 270px;
+        height: 150px;
+        border: black solid 2px; }
+    #mainColecciones .dc {
+      width: 80%;
+      height: 250px;
+      border: black solid 3px; }
+      #mainColecciones .dc a {
+        font-size: 25px; }
+      #mainColecciones .dc #wallFlash {
+        width: 270px;
+        height: 150px;
+        border: black solid 2px; }
+    #mainColecciones .sw {
+      width: 80%;
+      height: 250px;
+      border: black solid 3px; }
+      #mainColecciones .sw a {
+        font-size: 25px; }
+      #mainColecciones .sw #wallSw {
+        width: 270px;
+        height: 150px;
+        border: black solid 2px; }
+    #mainColecciones .shop {
+      font-size: 20px; }
+  #mainContacto .formulario form .datosDos .lineas label {
+    margin-right: 0px;
+    margin-left: 10px;
+    font-size: 11px; }
+    #mainContacto .formulario form .datosDos .lineas label input {
+      margin-right: 4px; }
+  #mainContacto .formulario form .datosTres .licencias label {
+    font-size: 10px; }
+  footer #textoFooter .textoNegritaFooter {
+    font-size: 12px; } }
+
+@media (max-width: 480px) {
+  body {
+    height: 480vh; }
+  header {
+    height: 22vh;
+    grid-template-columns: 2fr 0.1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "imgFunko fuenteBoton" "imgFunko fuenteBoton"; }
+    header #logosRedes {
+      display: none; }
+    header .imgFunko #logoFunko2 {
+      width: 120px;
+      height: 45px;
+      translate: 45px; }
+    header .fuenteBoton {
+      margin-right: 10px; }
+      header .fuenteBoton #botonLogin {
+        font-size: 9px;
+        margin-right: 10px; }
+      header .fuenteBoton #botonRegistro {
+        font-size: 9px;
+        margin-right: 10px; }
+  nav {
+    height: 40vh;
+    grid-template-columns: 1fr;
+    grid-template-areas: "listaMenu";
+    justify-items: center; }
+    nav a:link, nav a:visited, nav a:active {
+      font-size: 10px;
+      text-align: center; }
+    nav li {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      padding: 8px; }
+    nav #buscador {
+      display: none; }
+  #mainIndex {
+    height: 175vh; }
+    #mainIndex #multimedia {
+      grid-column-gap: 10px; }
+      #mainIndex #multimedia #videos .videoPrincipal .video__Titulo {
+        font-size: 13px;
+        line-height: 17px; }
+      #mainIndex #multimedia #videos .videoPrincipal .video__Texto {
+        font-size: 10px; }
+      #mainIndex #multimedia #videos #iframeV iframe {
+        width: 170px; }
+      #mainIndex #multimedia #fotos .fotoPrincipal .foto__Titulo {
+        font-size: 13px;
+        line-height: 5px;
+        margin-left: 8px;
+        margin-right: 13px; }
+      #mainIndex #multimedia #fotos .fotoPrincipal .foto__Texto {
+        font-size: 10px; }
+      #mainIndex #multimedia #fotos #portadaFotos {
+        margin-top: 5px; }
+        #mainIndex #multimedia #fotos #portadaFotos #portadaDeFotos {
+          width: 170px;
+          height: 120px; }
+    #mainIndex #picSpider #spiderManIndex {
+      margin-top: 15px; }
+      #mainIndex #picSpider #spiderManIndex #spiderManPortada {
+        width: 220px;
+        height: 220px; }
+        #mainIndex #picSpider #spiderManIndex #spiderManPortada:hover {
+          transform: translate(-75px); }
+    #mainIndex #picSpider #slogan {
+      justify-self: left;
+      translate: -40px; }
+      #mainIndex #picSpider #slogan .slogan__Texto {
+        font-size: 15px; }
+        #mainIndex #picSpider #slogan .slogan__Texto:hover {
+          transform: scale(1); }
+  #mainHistoria {
+    grid-row-gap: 15px; }
+    #mainHistoria #parrafoUno {
+      margin-bottom: 0px;
+      margin-left: 1px;
+      margin-right: 0px; }
+      #mainHistoria #parrafoUno .parrafo .parrafo__Titulo {
+        text-align: center; }
+      #mainHistoria #parrafoUno .parrafo .parrafo__Texto {
+        margin-left: 0px;
+        margin-right: 0px; }
+    #mainHistoria #parrafoDos {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "fotoSectParrafoDos fotoParaMobil" "sectParrafoDos sectParrafoDos";
+      justify-items: center;
+      grid-row-gap: 15px;
+      grid-column-gap: 15px; }
+      #mainHistoria #parrafoDos .fotoParrafoDos {
+        grid-area: fotoSectParrafoDos; }
+        #mainHistoria #parrafoDos .fotoParrafoDos #fotoTiendaFunko {
+          width: 230px;
+          height: 160px;
+          margin-left: 10px; }
+      #mainHistoria #parrafoDos .fotoParaMobil {
+        grid-area: fotoParaMobil;
+        display: block;
+        justify-items: center; }
+        #mainHistoria #parrafoDos .fotoParaMobil img {
+          width: 230px;
+          height: 160px;
+          margin-right: 10px; }
+      #mainHistoria #parrafoDos .parrafo {
+        font-size: 12px;
+        line-height: 20px; }
+    #mainHistoria #parrafoTres {
+      display: block; }
+      #mainHistoria #parrafoTres .parrafo {
+        margin-left: 40px;
+        margin-right: 40px; }
+        #mainHistoria #parrafoTres .parrafo .parrafo__Texto {
+          font-size: 12px;
+          line-height: 20px;
+          justify-self: center; }
+      #mainHistoria #parrafoTres .fotoParrafoTres #fotoTiendaFunkoDos {
+        display: none; }
+    #mainHistoria #parrafoCuatro {
+      display: none; }
+  #mainComunidad {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "tituloComunidad" "foro"  "telegram" "discord"; }
+    #mainComunidad #tituloComunidad #parrafoUno .parrafo .parrafo__Titulo {
+      text-align: center; }
+    #mainComunidad .foro {
+      border: #f44741 solid 3px;
+      width: 300px;
+      height: 100px;
+      justify-self: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "comunidad foroTitulo";
+      align-content: center; }
+      #mainComunidad .foro .foro__Titulo {
+        font-size: 18px;
+        justify-self: left; }
+      #mainComunidad .foro .comunidad__Texto {
+        display: none; }
+      #mainComunidad .foro .comunidad {
+        font-size: 18px;
+        align-items: center;
+        align-self: start; }
+        #mainComunidad .foro .comunidad #logoForo {
+          width: 125px;
+          height: 95px; }
+    #mainComunidad .telegram {
+      border: #0aa06e solid 3px;
+      width: 300px;
+      height: 100px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "comunidad foroTitulo";
+      align-content: center; }
+      #mainComunidad .telegram .foro__Titulo {
+        font-size: 18px;
+        justify-self: left; }
+      #mainComunidad .telegram .comunidad__Texto {
+        display: none; }
+      #mainComunidad .telegram .comunidad {
+        font-size: 18px; }
+        #mainComunidad .telegram .comunidad #logoTelegram {
+          width: 70px;
+          height: 70px;
+          margin-top: 40px; }
+    #mainComunidad .discord {
+      border: #c9c949 solid 3px;
+      width: 300px;
+      height: 100px;
+      justify-self: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "comunidad foroTitulo";
+      align-content: center; }
+      #mainComunidad .discord .foro__Titulo {
+        font-size: 18px;
+        justify-self: left; }
+      #mainComunidad .discord .comunidad__Texto {
+        display: none; }
+      #mainComunidad .discord .comunidad {
+        font-size: 18px; }
+        #mainComunidad .discord .comunidad #logoDiscord {
+          width: 70px;
+          height: 70px;
+          margin-top: 40px; }
+  #mainColecciones {
+    height: 120vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 0.5fr 1fr;
+    grid-template-areas: "parrafoUno parrafoUno" "marvel dc" "shop shop";
+    grid-row-gap: 0px; }
+    #mainColecciones #parrafoUno .parrafo .parrafo__Titulo {
+      margin-top: 5px;
+      line-height: 50px;
+      text-align: center; }
+    #mainColecciones #parrafoUno .parrafo .parrafo__Texto {
+      display: none; }
+    #mainColecciones .marvel {
+      width: 200px;
+      height: 350px;
+      border: black solid 3px;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.5fr 1fr;
+      grid-template-areas: "categoriaMarvel" "capi";
+      justify-items: center;
+      align-items: center; }
+      #mainColecciones .marvel a {
+        font-size: 22px;
+        align-self: end; }
+      #mainColecciones .marvel #wallCapi {
+        width: 180px;
+        height: 100px; }
+    #mainColecciones .dc {
+      width: 200px;
+      height: 350px;
+      border: black solid 3px;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.5fr 1fr;
+      grid-template-areas: "categoriaDc" "flash"; }
+      #mainColecciones .dc a {
+        font-size: 22px;
+        align-self: end; }
+      #mainColecciones .dc #wallFlash {
+        width: 180px;
+        height: 100px; }
+    #mainColecciones .sw {
+      display: none; }
+    #mainColecciones .shop {
+      font-size: 18px; }
+  footer {
+    height: 10vh; }
+    footer .textoNegritaFooter {
+      font-size: 10px; } }
+
+@media (max-width: 320px) {
+  header {
+    grid-template-columns: 2fr 1fr; }
+    header .imgFunko {
+      margin-left: 0px;
+      justify-self: right; }
+      header .imgFunko #logoFunko2 {
+        width: 88px;
+        height: 33px;
+        translate: none;
+        margin-right: 30px; }
+    header .fuenteBoton {
+      justify-self: right; }
+      header .fuenteBoton #botonLogin {
+        width: 60px;
+        height: 18px;
+        border-radius: 7px;
+        border: #1895cf solid 2px;
+        font-size: 8px; }
+      header .fuenteBoton #botonRegistro {
+        width: 60px;
+        height: 18px;
+        border-radius: 7px;
+        border: #1895cf solid 2px;
+        font-size: 8px; }
+  #mainIndex {
+    height: 155vh; }
+    #mainIndex #fotoPortada {
+      margin-top: 7px;
+      margin-bottom: 7px; }
+    #mainIndex #multimedia #videos .videoPrincipal .video__Titulo {
+      font-size: 11px;
+      margin-left: 5px;
+      margin-right: 2px;
+      line-height: 15px; }
+    #mainIndex #multimedia #videos #iframeV iframe {
+      width: 130px;
+      height: 100px; }
+    #mainIndex #multimedia #fotos .fotoPrincipal .foto__Titulo {
+      font-size: 11px;
+      margin-left: 5px;
+      margin-right: 10px;
+      line-height: 5px; }
+    #mainIndex #multimedia #fotos #portadaFotos #portadaDeFotos {
+      width: 130px;
+      height: 100px; }
+    #mainIndex #picSpider #spiderManIndex #spiderManPortada {
+      width: 180px;
+      height: 180px; }
+      #mainIndex #picSpider #spiderManIndex #spiderManPortada:hover {
+        transform: translate(-30px); }
+    #mainIndex #picSpider #slogan {
+      justify-self: left;
+      translate: -20px; }
+      #mainIndex #picSpider #slogan .slogan__Texto {
+        font-size: 10px;
+        text-align: center; }
+        #mainIndex #picSpider #slogan .slogan__Texto:hover {
+          transform: scale(1.1); }
+  #mainHistoria #parrafoDos .fotoParrafoDos #fotoTiendaFunko {
+    width: 210px;
+    height: 140px; }
+  #mainHistoria #parrafoDos .fotoParaMobil img {
+    width: 210px;
+    height: 140px; }
+  #mainColecciones {
+    height: 100vh; }
+    #mainColecciones .marvel {
+      width: 140px;
+      height: 300px;
+      border: black solid 2px;
+      margin-left: 10px; }
+      #mainColecciones .marvel #wallCapi {
+        width: 100px;
+        height: 60px; }
+    #mainColecciones .dc {
+      width: 140px;
+      height: 300px;
+      border: black solid 2px;
+      margin-right: 10px; }
+      #mainColecciones .dc #wallFlash {
+        width: 100px;
+        height: 60px; } }
 
 /* Se aplica Grids+Flexbox */
 /* INDEX*/
@@ -710,6 +1890,596 @@ nav {
           font-style: normal;
           font-family: "armata"; }
 
+@media (max-width: 1024px) {
+  header {
+    grid-template-columns: 0.3fr 2fr 0.5fr; }
+  #mainIndex {
+    grid-template-rows: 1r repeat(2, 1fr); }
+    #mainIndex #multimedia {
+      grid-template-columns: 40% 40%;
+      grid-column-gap: 30px; }
+      #mainIndex #multimedia #videos .videoPrincipal .video__Titulo {
+        font-size: 16px;
+        margin-top: 20px;
+        line-height: 24px;
+        margin-left: 5px;
+        margin-right: 5px; }
+      #mainIndex #multimedia #videos .videoPrincipal .video__Texto {
+        margin-top: 20px;
+        text-align: center; }
+      #mainIndex #multimedia #videos #iframeV {
+        align-self: center; }
+        #mainIndex #multimedia #videos #iframeV iframe {
+          width: 359px;
+          height: 200px; }
+      #mainIndex #multimedia #fotos .fotoPrincipal {
+        margin-top: 15px; }
+        #mainIndex #multimedia #fotos .fotoPrincipal .foto__Titulo {
+          font-size: 16px;
+          line-height: 24px; }
+        #mainIndex #multimedia #fotos .fotoPrincipal .foto__Texto {
+          margin-top: 30px;
+          margin-left: 20px;
+          margin-right: 20px;
+          text-align: center; }
+      #mainIndex #multimedia #fotos #portadaFotos {
+        align-self: center; }
+        #mainIndex #multimedia #fotos #portadaFotos #portadaDeFotos {
+          width: 320px;
+          height: 200px; }
+  #mainHistoria #parrafoUno .parrafo .parrafo__Titulo {
+    margin-top: 20px; }
+  #mainHistoria #parrafoUno .parrafo .parrafo__Texto {
+    margin-top: 20px; }
+  #mainHistoria #parrafoDos .fotoParrafoDos {
+    align-self: center; }
+  #mainHistoria #parrafoTres .fotoParrafoTres {
+    align-self: center; }
+  #mainComunidad .foro {
+    width: 250px;
+    height: 300px; }
+    #mainComunidad .foro .foro__Titulo {
+      font-size: 25px;
+      margin-top: 10px; }
+    #mainComunidad .foro .comunidad__Texto {
+      font-size: 14px;
+      margin-top: 10px; }
+    #mainComunidad .foro .comunidad #logoForo {
+      width: 225px;
+      height: 175px;
+      margin-top: 30px; }
+  #mainComunidad .telegram {
+    width: 250px;
+    height: 300px; }
+    #mainComunidad .telegram .foro__Titulo {
+      font-size: 25px; }
+    #mainComunidad .telegram .comunidad__Texto {
+      font-size: 14px; }
+    #mainComunidad .telegram .comunidad #logoTelegram {
+      width: 130px;
+      height: 130px;
+      margin-bottom: 20px; }
+  #mainComunidad .discord {
+    width: 250px;
+    height: 300px; }
+    #mainComunidad .discord .foro__Titulo {
+      font-size: 25px; }
+    #mainComunidad .discord .comunidad__Texto {
+      font-size: 14px; }
+    #mainComunidad .discord .comunidad #logoDiscord {
+      width: 130px;
+      height: 130px;
+      margin-bottom: 20px; }
+  #mainColecciones {
+    height: 300vh; }
+    #mainColecciones #parrafoUno .parrafo .parrafo__Titulo {
+      margin-top: 20px; }
+    #mainColecciones #parrafoUno .parrafo .parrafo__Texto {
+      margin-top: 20px; }
+  #mainContacto .formulario form .datosDos .lineas label {
+    margin-right: 0px;
+    margin-left: 12px;
+    font-size: 13px; }
+    #mainContacto .formulario form .datosDos .lineas label input {
+      margin-right: 4px; }
+  #mainContacto .formulario form .datosTres .licencias label {
+    margin-right: 0px;
+    margin-left: 4px;
+    font-size: 12px; }
+  footer #textoFooter .textoNegritaFooter {
+    font-size: 18px; } }
+
+@media (max-width: 768px) {
+  header {
+    grid-template-columns: 0.3fr 2fr 0.5fr; }
+    header .fuenteBoton #botonLogin {
+      width: 75px;
+      height: 25px;
+      font-size: 10px; }
+    header .fuenteBoton #botonRegistro {
+      width: 75px;
+      height: 25px;
+      font-size: 10px; }
+  nav {
+    height: 11vh; }
+    nav a:link, nav a:visited, nav a:active {
+      font-size: 13px; }
+  #mainIndex {
+    grid-template-rows: 0.6fr 1fr 0.1fr; }
+    #mainIndex #multimedia {
+      grid-template-columns: 46% 46%;
+      grid-column-gap: 20px; }
+      #mainIndex #multimedia #videos .videoPrincipal .video__Titulo {
+        margin-left: 22px;
+        margin-right: 22px; }
+      #mainIndex #multimedia #videos #iframeV iframe {
+        width: 240px;
+        height: 150px; }
+      #mainIndex #multimedia #fotos .fotoPrincipal .foto__Titulo .foto__Texto {
+        align-content: start; }
+      #mainIndex #multimedia #fotos #portadaFotos #portadaDeFotos {
+        width: 240px;
+        height: 150px; }
+    #mainIndex #picSpider #spiderManIndex #spiderManPortada {
+      width: 300px;
+      height: 300px; }
+    #mainIndex #picSpider #slogan {
+      justify-self: right;
+      translate: -80px; }
+      #mainIndex #picSpider #slogan:hover {
+        transform: scale(1.2); }
+      #mainIndex #picSpider #slogan .slogan__Texto {
+        font-size: 22px; }
+  #mainHistoria #parrafoUno .parrafo {
+    font-size: 12px;
+    line-height: 20px; }
+  #mainHistoria #parrafoDos .fotoParrafoDos #fotoTiendaFunko {
+    width: 310px;
+    height: 190px; }
+  #mainHistoria #parrafoDos .parrafo {
+    font-size: 12px;
+    line-height: 20px; }
+  #mainHistoria #parrafoTres .parrafo {
+    font-size: 12px;
+    line-height: 20px; }
+  #mainHistoria #parrafoTres .fotoParrafoTres #fotoTiendaFunkoDos {
+    width: 310px;
+    height: 180px; }
+  #mainHistoria #parrafoCuatro .fotoParrafoCuatro {
+    margin-left: 20PX; }
+    #mainHistoria #parrafoCuatro .fotoParrafoCuatro #fotoHileraPops {
+      width: 94%; }
+  #mainComunidad #tituloComunidad {
+    font-size: 12px;
+    line-height: 20px; }
+    #mainComunidad #tituloComunidad .parrafo {
+      font-size: 12px;
+      line-height: 20px; }
+      #mainComunidad #tituloComunidad .parrafo .parrafo__Texto {
+        font-size: 12px;
+        line-height: 20px; }
+  #mainComunidad .foro {
+    width: 200px;
+    height: 350px;
+    margin-bottom: 10px; }
+    #mainComunidad .foro .foro__Titulo {
+      font-size: 23px; }
+    #mainComunidad .foro .comunidad__Texto {
+      font-size: 12px;
+      margin-left: 7px;
+      margin-right: 7px; }
+    #mainComunidad .foro .comunidad #logoForo {
+      width: 180px;
+      height: 130px; }
+  #mainComunidad .telegram {
+    width: 200px;
+    height: 350px;
+    margin-bottom: 10px; }
+    #mainComunidad .telegram .foro__Titulo {
+      font-size: 23px; }
+    #mainComunidad .telegram .comunidad__Texto {
+      font-size: 12px;
+      margin-left: 7px;
+      margin-right: 7px; }
+    #mainComunidad .telegram .comunidad #logoTelegram {
+      width: 120px;
+      height: 120px;
+      margin-bottom: 25px; }
+  #mainComunidad .discord {
+    width: 200px;
+    height: 350px;
+    margin-bottom: 10px; }
+    #mainComunidad .discord .foro__Titulo {
+      font-size: 23px; }
+    #mainComunidad .discord .comunidad__Texto {
+      font-size: 12px;
+      margin-left: 7px;
+      margin-right: 7px; }
+    #mainComunidad .discord .comunidad #logoDiscord {
+      width: 120px;
+      height: 120px;
+      margin-bottom: 25px; }
+  #mainColecciones {
+    height: 250vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 1fr 1fr 1fr 0.5fr;
+    grid-template-areas: "parrafoUno" "marvel" "dc" "sw" "shop";
+    grid-row-gap: 0px; }
+    #mainColecciones #parrafoUno .parrafo {
+      font-size: 12px;
+      line-height: 20px;
+      margin-bottom: 10px; }
+    #mainColecciones .marvel {
+      width: 80%;
+      height: 250px;
+      border: black solid 3px; }
+      #mainColecciones .marvel a {
+        font-size: 25px; }
+      #mainColecciones .marvel #wallCapi {
+        width: 270px;
+        height: 150px;
+        border: black solid 2px; }
+    #mainColecciones .dc {
+      width: 80%;
+      height: 250px;
+      border: black solid 3px; }
+      #mainColecciones .dc a {
+        font-size: 25px; }
+      #mainColecciones .dc #wallFlash {
+        width: 270px;
+        height: 150px;
+        border: black solid 2px; }
+    #mainColecciones .sw {
+      width: 80%;
+      height: 250px;
+      border: black solid 3px; }
+      #mainColecciones .sw a {
+        font-size: 25px; }
+      #mainColecciones .sw #wallSw {
+        width: 270px;
+        height: 150px;
+        border: black solid 2px; }
+    #mainColecciones .shop {
+      font-size: 20px; }
+  #mainContacto .formulario form .datosDos .lineas label {
+    margin-right: 0px;
+    margin-left: 10px;
+    font-size: 11px; }
+    #mainContacto .formulario form .datosDos .lineas label input {
+      margin-right: 4px; }
+  #mainContacto .formulario form .datosTres .licencias label {
+    font-size: 10px; }
+  footer #textoFooter .textoNegritaFooter {
+    font-size: 12px; } }
+
+@media (max-width: 480px) {
+  body {
+    height: 480vh; }
+  header {
+    height: 22vh;
+    grid-template-columns: 2fr 0.1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "imgFunko fuenteBoton" "imgFunko fuenteBoton"; }
+    header #logosRedes {
+      display: none; }
+    header .imgFunko #logoFunko2 {
+      width: 120px;
+      height: 45px;
+      translate: 45px; }
+    header .fuenteBoton {
+      margin-right: 10px; }
+      header .fuenteBoton #botonLogin {
+        font-size: 9px;
+        margin-right: 10px; }
+      header .fuenteBoton #botonRegistro {
+        font-size: 9px;
+        margin-right: 10px; }
+  nav {
+    height: 40vh;
+    grid-template-columns: 1fr;
+    grid-template-areas: "listaMenu";
+    justify-items: center; }
+    nav a:link, nav a:visited, nav a:active {
+      font-size: 10px;
+      text-align: center; }
+    nav li {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      padding: 8px; }
+    nav #buscador {
+      display: none; }
+  #mainIndex {
+    height: 175vh; }
+    #mainIndex #multimedia {
+      grid-column-gap: 10px; }
+      #mainIndex #multimedia #videos .videoPrincipal .video__Titulo {
+        font-size: 13px;
+        line-height: 17px; }
+      #mainIndex #multimedia #videos .videoPrincipal .video__Texto {
+        font-size: 10px; }
+      #mainIndex #multimedia #videos #iframeV iframe {
+        width: 170px; }
+      #mainIndex #multimedia #fotos .fotoPrincipal .foto__Titulo {
+        font-size: 13px;
+        line-height: 5px;
+        margin-left: 8px;
+        margin-right: 13px; }
+      #mainIndex #multimedia #fotos .fotoPrincipal .foto__Texto {
+        font-size: 10px; }
+      #mainIndex #multimedia #fotos #portadaFotos {
+        margin-top: 5px; }
+        #mainIndex #multimedia #fotos #portadaFotos #portadaDeFotos {
+          width: 170px;
+          height: 120px; }
+    #mainIndex #picSpider #spiderManIndex {
+      margin-top: 15px; }
+      #mainIndex #picSpider #spiderManIndex #spiderManPortada {
+        width: 220px;
+        height: 220px; }
+        #mainIndex #picSpider #spiderManIndex #spiderManPortada:hover {
+          transform: translate(-75px); }
+    #mainIndex #picSpider #slogan {
+      justify-self: left;
+      translate: -40px; }
+      #mainIndex #picSpider #slogan .slogan__Texto {
+        font-size: 15px; }
+        #mainIndex #picSpider #slogan .slogan__Texto:hover {
+          transform: scale(1); }
+  #mainHistoria {
+    grid-row-gap: 15px; }
+    #mainHistoria #parrafoUno {
+      margin-bottom: 0px;
+      margin-left: 1px;
+      margin-right: 0px; }
+      #mainHistoria #parrafoUno .parrafo .parrafo__Titulo {
+        text-align: center; }
+      #mainHistoria #parrafoUno .parrafo .parrafo__Texto {
+        margin-left: 0px;
+        margin-right: 0px; }
+    #mainHistoria #parrafoDos {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "fotoSectParrafoDos fotoParaMobil" "sectParrafoDos sectParrafoDos";
+      justify-items: center;
+      grid-row-gap: 15px;
+      grid-column-gap: 15px; }
+      #mainHistoria #parrafoDos .fotoParrafoDos {
+        grid-area: fotoSectParrafoDos; }
+        #mainHistoria #parrafoDos .fotoParrafoDos #fotoTiendaFunko {
+          width: 230px;
+          height: 160px;
+          margin-left: 10px; }
+      #mainHistoria #parrafoDos .fotoParaMobil {
+        grid-area: fotoParaMobil;
+        display: block;
+        justify-items: center; }
+        #mainHistoria #parrafoDos .fotoParaMobil img {
+          width: 230px;
+          height: 160px;
+          margin-right: 10px; }
+      #mainHistoria #parrafoDos .parrafo {
+        font-size: 12px;
+        line-height: 20px; }
+    #mainHistoria #parrafoTres {
+      display: block; }
+      #mainHistoria #parrafoTres .parrafo {
+        margin-left: 40px;
+        margin-right: 40px; }
+        #mainHistoria #parrafoTres .parrafo .parrafo__Texto {
+          font-size: 12px;
+          line-height: 20px;
+          justify-self: center; }
+      #mainHistoria #parrafoTres .fotoParrafoTres #fotoTiendaFunkoDos {
+        display: none; }
+    #mainHistoria #parrafoCuatro {
+      display: none; }
+  #mainComunidad {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "tituloComunidad" "foro"  "telegram" "discord"; }
+    #mainComunidad #tituloComunidad #parrafoUno .parrafo .parrafo__Titulo {
+      text-align: center; }
+    #mainComunidad .foro {
+      border: #f44741 solid 3px;
+      width: 300px;
+      height: 100px;
+      justify-self: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "comunidad foroTitulo";
+      align-content: center; }
+      #mainComunidad .foro .foro__Titulo {
+        font-size: 18px;
+        justify-self: left; }
+      #mainComunidad .foro .comunidad__Texto {
+        display: none; }
+      #mainComunidad .foro .comunidad {
+        font-size: 18px;
+        align-items: center;
+        align-self: start; }
+        #mainComunidad .foro .comunidad #logoForo {
+          width: 125px;
+          height: 95px; }
+    #mainComunidad .telegram {
+      border: #0aa06e solid 3px;
+      width: 300px;
+      height: 100px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "comunidad foroTitulo";
+      align-content: center; }
+      #mainComunidad .telegram .foro__Titulo {
+        font-size: 18px;
+        justify-self: left; }
+      #mainComunidad .telegram .comunidad__Texto {
+        display: none; }
+      #mainComunidad .telegram .comunidad {
+        font-size: 18px; }
+        #mainComunidad .telegram .comunidad #logoTelegram {
+          width: 70px;
+          height: 70px;
+          margin-top: 40px; }
+    #mainComunidad .discord {
+      border: #c9c949 solid 3px;
+      width: 300px;
+      height: 100px;
+      justify-self: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "comunidad foroTitulo";
+      align-content: center; }
+      #mainComunidad .discord .foro__Titulo {
+        font-size: 18px;
+        justify-self: left; }
+      #mainComunidad .discord .comunidad__Texto {
+        display: none; }
+      #mainComunidad .discord .comunidad {
+        font-size: 18px; }
+        #mainComunidad .discord .comunidad #logoDiscord {
+          width: 70px;
+          height: 70px;
+          margin-top: 40px; }
+  #mainColecciones {
+    height: 120vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 0.5fr 1fr;
+    grid-template-areas: "parrafoUno parrafoUno" "marvel dc" "shop shop";
+    grid-row-gap: 0px; }
+    #mainColecciones #parrafoUno .parrafo .parrafo__Titulo {
+      margin-top: 5px;
+      line-height: 50px;
+      text-align: center; }
+    #mainColecciones #parrafoUno .parrafo .parrafo__Texto {
+      display: none; }
+    #mainColecciones .marvel {
+      width: 200px;
+      height: 350px;
+      border: black solid 3px;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.5fr 1fr;
+      grid-template-areas: "categoriaMarvel" "capi";
+      justify-items: center;
+      align-items: center; }
+      #mainColecciones .marvel a {
+        font-size: 22px;
+        align-self: end; }
+      #mainColecciones .marvel #wallCapi {
+        width: 180px;
+        height: 100px; }
+    #mainColecciones .dc {
+      width: 200px;
+      height: 350px;
+      border: black solid 3px;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.5fr 1fr;
+      grid-template-areas: "categoriaDc" "flash"; }
+      #mainColecciones .dc a {
+        font-size: 22px;
+        align-self: end; }
+      #mainColecciones .dc #wallFlash {
+        width: 180px;
+        height: 100px; }
+    #mainColecciones .sw {
+      display: none; }
+    #mainColecciones .shop {
+      font-size: 18px; }
+  footer {
+    height: 10vh; }
+    footer .textoNegritaFooter {
+      font-size: 10px; } }
+
+@media (max-width: 320px) {
+  header {
+    grid-template-columns: 2fr 1fr; }
+    header .imgFunko {
+      margin-left: 0px;
+      justify-self: right; }
+      header .imgFunko #logoFunko2 {
+        width: 88px;
+        height: 33px;
+        translate: none;
+        margin-right: 30px; }
+    header .fuenteBoton {
+      justify-self: right; }
+      header .fuenteBoton #botonLogin {
+        width: 60px;
+        height: 18px;
+        border-radius: 7px;
+        border: #1895cf solid 2px;
+        font-size: 8px; }
+      header .fuenteBoton #botonRegistro {
+        width: 60px;
+        height: 18px;
+        border-radius: 7px;
+        border: #1895cf solid 2px;
+        font-size: 8px; }
+  #mainIndex {
+    height: 155vh; }
+    #mainIndex #fotoPortada {
+      margin-top: 7px;
+      margin-bottom: 7px; }
+    #mainIndex #multimedia #videos .videoPrincipal .video__Titulo {
+      font-size: 11px;
+      margin-left: 5px;
+      margin-right: 2px;
+      line-height: 15px; }
+    #mainIndex #multimedia #videos #iframeV iframe {
+      width: 130px;
+      height: 100px; }
+    #mainIndex #multimedia #fotos .fotoPrincipal .foto__Titulo {
+      font-size: 11px;
+      margin-left: 5px;
+      margin-right: 10px;
+      line-height: 5px; }
+    #mainIndex #multimedia #fotos #portadaFotos #portadaDeFotos {
+      width: 130px;
+      height: 100px; }
+    #mainIndex #picSpider #spiderManIndex #spiderManPortada {
+      width: 180px;
+      height: 180px; }
+      #mainIndex #picSpider #spiderManIndex #spiderManPortada:hover {
+        transform: translate(-30px); }
+    #mainIndex #picSpider #slogan {
+      justify-self: left;
+      translate: -20px; }
+      #mainIndex #picSpider #slogan .slogan__Texto {
+        font-size: 10px;
+        text-align: center; }
+        #mainIndex #picSpider #slogan .slogan__Texto:hover {
+          transform: scale(1.1); }
+  #mainHistoria #parrafoDos .fotoParrafoDos #fotoTiendaFunko {
+    width: 210px;
+    height: 140px; }
+  #mainHistoria #parrafoDos .fotoParaMobil img {
+    width: 210px;
+    height: 140px; }
+  #mainColecciones {
+    height: 100vh; }
+    #mainColecciones .marvel {
+      width: 140px;
+      height: 300px;
+      border: black solid 2px;
+      margin-left: 10px; }
+      #mainColecciones .marvel #wallCapi {
+        width: 100px;
+        height: 60px; }
+    #mainColecciones .dc {
+      width: 140px;
+      height: 300px;
+      border: black solid 2px;
+      margin-right: 10px; }
+      #mainColecciones .dc #wallFlash {
+        width: 100px;
+        height: 60px; } }
+
 /* Se aplica Grids+Flexbox */
 footer {
   height: 10vh;
@@ -723,6 +2493,596 @@ footer {
       font-family: "armata";
       text-align: center;
       align-self: end; }
+
+@media (max-width: 1024px) {
+  header {
+    grid-template-columns: 0.3fr 2fr 0.5fr; }
+  #mainIndex {
+    grid-template-rows: 1r repeat(2, 1fr); }
+    #mainIndex #multimedia {
+      grid-template-columns: 40% 40%;
+      grid-column-gap: 30px; }
+      #mainIndex #multimedia #videos .videoPrincipal .video__Titulo {
+        font-size: 16px;
+        margin-top: 20px;
+        line-height: 24px;
+        margin-left: 5px;
+        margin-right: 5px; }
+      #mainIndex #multimedia #videos .videoPrincipal .video__Texto {
+        margin-top: 20px;
+        text-align: center; }
+      #mainIndex #multimedia #videos #iframeV {
+        align-self: center; }
+        #mainIndex #multimedia #videos #iframeV iframe {
+          width: 359px;
+          height: 200px; }
+      #mainIndex #multimedia #fotos .fotoPrincipal {
+        margin-top: 15px; }
+        #mainIndex #multimedia #fotos .fotoPrincipal .foto__Titulo {
+          font-size: 16px;
+          line-height: 24px; }
+        #mainIndex #multimedia #fotos .fotoPrincipal .foto__Texto {
+          margin-top: 30px;
+          margin-left: 20px;
+          margin-right: 20px;
+          text-align: center; }
+      #mainIndex #multimedia #fotos #portadaFotos {
+        align-self: center; }
+        #mainIndex #multimedia #fotos #portadaFotos #portadaDeFotos {
+          width: 320px;
+          height: 200px; }
+  #mainHistoria #parrafoUno .parrafo .parrafo__Titulo {
+    margin-top: 20px; }
+  #mainHistoria #parrafoUno .parrafo .parrafo__Texto {
+    margin-top: 20px; }
+  #mainHistoria #parrafoDos .fotoParrafoDos {
+    align-self: center; }
+  #mainHistoria #parrafoTres .fotoParrafoTres {
+    align-self: center; }
+  #mainComunidad .foro {
+    width: 250px;
+    height: 300px; }
+    #mainComunidad .foro .foro__Titulo {
+      font-size: 25px;
+      margin-top: 10px; }
+    #mainComunidad .foro .comunidad__Texto {
+      font-size: 14px;
+      margin-top: 10px; }
+    #mainComunidad .foro .comunidad #logoForo {
+      width: 225px;
+      height: 175px;
+      margin-top: 30px; }
+  #mainComunidad .telegram {
+    width: 250px;
+    height: 300px; }
+    #mainComunidad .telegram .foro__Titulo {
+      font-size: 25px; }
+    #mainComunidad .telegram .comunidad__Texto {
+      font-size: 14px; }
+    #mainComunidad .telegram .comunidad #logoTelegram {
+      width: 130px;
+      height: 130px;
+      margin-bottom: 20px; }
+  #mainComunidad .discord {
+    width: 250px;
+    height: 300px; }
+    #mainComunidad .discord .foro__Titulo {
+      font-size: 25px; }
+    #mainComunidad .discord .comunidad__Texto {
+      font-size: 14px; }
+    #mainComunidad .discord .comunidad #logoDiscord {
+      width: 130px;
+      height: 130px;
+      margin-bottom: 20px; }
+  #mainColecciones {
+    height: 300vh; }
+    #mainColecciones #parrafoUno .parrafo .parrafo__Titulo {
+      margin-top: 20px; }
+    #mainColecciones #parrafoUno .parrafo .parrafo__Texto {
+      margin-top: 20px; }
+  #mainContacto .formulario form .datosDos .lineas label {
+    margin-right: 0px;
+    margin-left: 12px;
+    font-size: 13px; }
+    #mainContacto .formulario form .datosDos .lineas label input {
+      margin-right: 4px; }
+  #mainContacto .formulario form .datosTres .licencias label {
+    margin-right: 0px;
+    margin-left: 4px;
+    font-size: 12px; }
+  footer #textoFooter .textoNegritaFooter {
+    font-size: 18px; } }
+
+@media (max-width: 768px) {
+  header {
+    grid-template-columns: 0.3fr 2fr 0.5fr; }
+    header .fuenteBoton #botonLogin {
+      width: 75px;
+      height: 25px;
+      font-size: 10px; }
+    header .fuenteBoton #botonRegistro {
+      width: 75px;
+      height: 25px;
+      font-size: 10px; }
+  nav {
+    height: 11vh; }
+    nav a:link, nav a:visited, nav a:active {
+      font-size: 13px; }
+  #mainIndex {
+    grid-template-rows: 0.6fr 1fr 0.1fr; }
+    #mainIndex #multimedia {
+      grid-template-columns: 46% 46%;
+      grid-column-gap: 20px; }
+      #mainIndex #multimedia #videos .videoPrincipal .video__Titulo {
+        margin-left: 22px;
+        margin-right: 22px; }
+      #mainIndex #multimedia #videos #iframeV iframe {
+        width: 240px;
+        height: 150px; }
+      #mainIndex #multimedia #fotos .fotoPrincipal .foto__Titulo .foto__Texto {
+        align-content: start; }
+      #mainIndex #multimedia #fotos #portadaFotos #portadaDeFotos {
+        width: 240px;
+        height: 150px; }
+    #mainIndex #picSpider #spiderManIndex #spiderManPortada {
+      width: 300px;
+      height: 300px; }
+    #mainIndex #picSpider #slogan {
+      justify-self: right;
+      translate: -80px; }
+      #mainIndex #picSpider #slogan:hover {
+        transform: scale(1.2); }
+      #mainIndex #picSpider #slogan .slogan__Texto {
+        font-size: 22px; }
+  #mainHistoria #parrafoUno .parrafo {
+    font-size: 12px;
+    line-height: 20px; }
+  #mainHistoria #parrafoDos .fotoParrafoDos #fotoTiendaFunko {
+    width: 310px;
+    height: 190px; }
+  #mainHistoria #parrafoDos .parrafo {
+    font-size: 12px;
+    line-height: 20px; }
+  #mainHistoria #parrafoTres .parrafo {
+    font-size: 12px;
+    line-height: 20px; }
+  #mainHistoria #parrafoTres .fotoParrafoTres #fotoTiendaFunkoDos {
+    width: 310px;
+    height: 180px; }
+  #mainHistoria #parrafoCuatro .fotoParrafoCuatro {
+    margin-left: 20PX; }
+    #mainHistoria #parrafoCuatro .fotoParrafoCuatro #fotoHileraPops {
+      width: 94%; }
+  #mainComunidad #tituloComunidad {
+    font-size: 12px;
+    line-height: 20px; }
+    #mainComunidad #tituloComunidad .parrafo {
+      font-size: 12px;
+      line-height: 20px; }
+      #mainComunidad #tituloComunidad .parrafo .parrafo__Texto {
+        font-size: 12px;
+        line-height: 20px; }
+  #mainComunidad .foro {
+    width: 200px;
+    height: 350px;
+    margin-bottom: 10px; }
+    #mainComunidad .foro .foro__Titulo {
+      font-size: 23px; }
+    #mainComunidad .foro .comunidad__Texto {
+      font-size: 12px;
+      margin-left: 7px;
+      margin-right: 7px; }
+    #mainComunidad .foro .comunidad #logoForo {
+      width: 180px;
+      height: 130px; }
+  #mainComunidad .telegram {
+    width: 200px;
+    height: 350px;
+    margin-bottom: 10px; }
+    #mainComunidad .telegram .foro__Titulo {
+      font-size: 23px; }
+    #mainComunidad .telegram .comunidad__Texto {
+      font-size: 12px;
+      margin-left: 7px;
+      margin-right: 7px; }
+    #mainComunidad .telegram .comunidad #logoTelegram {
+      width: 120px;
+      height: 120px;
+      margin-bottom: 25px; }
+  #mainComunidad .discord {
+    width: 200px;
+    height: 350px;
+    margin-bottom: 10px; }
+    #mainComunidad .discord .foro__Titulo {
+      font-size: 23px; }
+    #mainComunidad .discord .comunidad__Texto {
+      font-size: 12px;
+      margin-left: 7px;
+      margin-right: 7px; }
+    #mainComunidad .discord .comunidad #logoDiscord {
+      width: 120px;
+      height: 120px;
+      margin-bottom: 25px; }
+  #mainColecciones {
+    height: 250vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 1fr 1fr 1fr 0.5fr;
+    grid-template-areas: "parrafoUno" "marvel" "dc" "sw" "shop";
+    grid-row-gap: 0px; }
+    #mainColecciones #parrafoUno .parrafo {
+      font-size: 12px;
+      line-height: 20px;
+      margin-bottom: 10px; }
+    #mainColecciones .marvel {
+      width: 80%;
+      height: 250px;
+      border: black solid 3px; }
+      #mainColecciones .marvel a {
+        font-size: 25px; }
+      #mainColecciones .marvel #wallCapi {
+        width: 270px;
+        height: 150px;
+        border: black solid 2px; }
+    #mainColecciones .dc {
+      width: 80%;
+      height: 250px;
+      border: black solid 3px; }
+      #mainColecciones .dc a {
+        font-size: 25px; }
+      #mainColecciones .dc #wallFlash {
+        width: 270px;
+        height: 150px;
+        border: black solid 2px; }
+    #mainColecciones .sw {
+      width: 80%;
+      height: 250px;
+      border: black solid 3px; }
+      #mainColecciones .sw a {
+        font-size: 25px; }
+      #mainColecciones .sw #wallSw {
+        width: 270px;
+        height: 150px;
+        border: black solid 2px; }
+    #mainColecciones .shop {
+      font-size: 20px; }
+  #mainContacto .formulario form .datosDos .lineas label {
+    margin-right: 0px;
+    margin-left: 10px;
+    font-size: 11px; }
+    #mainContacto .formulario form .datosDos .lineas label input {
+      margin-right: 4px; }
+  #mainContacto .formulario form .datosTres .licencias label {
+    font-size: 10px; }
+  footer #textoFooter .textoNegritaFooter {
+    font-size: 12px; } }
+
+@media (max-width: 480px) {
+  body {
+    height: 480vh; }
+  header {
+    height: 22vh;
+    grid-template-columns: 2fr 0.1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "imgFunko fuenteBoton" "imgFunko fuenteBoton"; }
+    header #logosRedes {
+      display: none; }
+    header .imgFunko #logoFunko2 {
+      width: 120px;
+      height: 45px;
+      translate: 45px; }
+    header .fuenteBoton {
+      margin-right: 10px; }
+      header .fuenteBoton #botonLogin {
+        font-size: 9px;
+        margin-right: 10px; }
+      header .fuenteBoton #botonRegistro {
+        font-size: 9px;
+        margin-right: 10px; }
+  nav {
+    height: 40vh;
+    grid-template-columns: 1fr;
+    grid-template-areas: "listaMenu";
+    justify-items: center; }
+    nav a:link, nav a:visited, nav a:active {
+      font-size: 10px;
+      text-align: center; }
+    nav li {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      padding: 8px; }
+    nav #buscador {
+      display: none; }
+  #mainIndex {
+    height: 175vh; }
+    #mainIndex #multimedia {
+      grid-column-gap: 10px; }
+      #mainIndex #multimedia #videos .videoPrincipal .video__Titulo {
+        font-size: 13px;
+        line-height: 17px; }
+      #mainIndex #multimedia #videos .videoPrincipal .video__Texto {
+        font-size: 10px; }
+      #mainIndex #multimedia #videos #iframeV iframe {
+        width: 170px; }
+      #mainIndex #multimedia #fotos .fotoPrincipal .foto__Titulo {
+        font-size: 13px;
+        line-height: 5px;
+        margin-left: 8px;
+        margin-right: 13px; }
+      #mainIndex #multimedia #fotos .fotoPrincipal .foto__Texto {
+        font-size: 10px; }
+      #mainIndex #multimedia #fotos #portadaFotos {
+        margin-top: 5px; }
+        #mainIndex #multimedia #fotos #portadaFotos #portadaDeFotos {
+          width: 170px;
+          height: 120px; }
+    #mainIndex #picSpider #spiderManIndex {
+      margin-top: 15px; }
+      #mainIndex #picSpider #spiderManIndex #spiderManPortada {
+        width: 220px;
+        height: 220px; }
+        #mainIndex #picSpider #spiderManIndex #spiderManPortada:hover {
+          transform: translate(-75px); }
+    #mainIndex #picSpider #slogan {
+      justify-self: left;
+      translate: -40px; }
+      #mainIndex #picSpider #slogan .slogan__Texto {
+        font-size: 15px; }
+        #mainIndex #picSpider #slogan .slogan__Texto:hover {
+          transform: scale(1); }
+  #mainHistoria {
+    grid-row-gap: 15px; }
+    #mainHistoria #parrafoUno {
+      margin-bottom: 0px;
+      margin-left: 1px;
+      margin-right: 0px; }
+      #mainHistoria #parrafoUno .parrafo .parrafo__Titulo {
+        text-align: center; }
+      #mainHistoria #parrafoUno .parrafo .parrafo__Texto {
+        margin-left: 0px;
+        margin-right: 0px; }
+    #mainHistoria #parrafoDos {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "fotoSectParrafoDos fotoParaMobil" "sectParrafoDos sectParrafoDos";
+      justify-items: center;
+      grid-row-gap: 15px;
+      grid-column-gap: 15px; }
+      #mainHistoria #parrafoDos .fotoParrafoDos {
+        grid-area: fotoSectParrafoDos; }
+        #mainHistoria #parrafoDos .fotoParrafoDos #fotoTiendaFunko {
+          width: 230px;
+          height: 160px;
+          margin-left: 10px; }
+      #mainHistoria #parrafoDos .fotoParaMobil {
+        grid-area: fotoParaMobil;
+        display: block;
+        justify-items: center; }
+        #mainHistoria #parrafoDos .fotoParaMobil img {
+          width: 230px;
+          height: 160px;
+          margin-right: 10px; }
+      #mainHistoria #parrafoDos .parrafo {
+        font-size: 12px;
+        line-height: 20px; }
+    #mainHistoria #parrafoTres {
+      display: block; }
+      #mainHistoria #parrafoTres .parrafo {
+        margin-left: 40px;
+        margin-right: 40px; }
+        #mainHistoria #parrafoTres .parrafo .parrafo__Texto {
+          font-size: 12px;
+          line-height: 20px;
+          justify-self: center; }
+      #mainHistoria #parrafoTres .fotoParrafoTres #fotoTiendaFunkoDos {
+        display: none; }
+    #mainHistoria #parrafoCuatro {
+      display: none; }
+  #mainComunidad {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "tituloComunidad" "foro"  "telegram" "discord"; }
+    #mainComunidad #tituloComunidad #parrafoUno .parrafo .parrafo__Titulo {
+      text-align: center; }
+    #mainComunidad .foro {
+      border: #f44741 solid 3px;
+      width: 300px;
+      height: 100px;
+      justify-self: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "comunidad foroTitulo";
+      align-content: center; }
+      #mainComunidad .foro .foro__Titulo {
+        font-size: 18px;
+        justify-self: left; }
+      #mainComunidad .foro .comunidad__Texto {
+        display: none; }
+      #mainComunidad .foro .comunidad {
+        font-size: 18px;
+        align-items: center;
+        align-self: start; }
+        #mainComunidad .foro .comunidad #logoForo {
+          width: 125px;
+          height: 95px; }
+    #mainComunidad .telegram {
+      border: #0aa06e solid 3px;
+      width: 300px;
+      height: 100px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "comunidad foroTitulo";
+      align-content: center; }
+      #mainComunidad .telegram .foro__Titulo {
+        font-size: 18px;
+        justify-self: left; }
+      #mainComunidad .telegram .comunidad__Texto {
+        display: none; }
+      #mainComunidad .telegram .comunidad {
+        font-size: 18px; }
+        #mainComunidad .telegram .comunidad #logoTelegram {
+          width: 70px;
+          height: 70px;
+          margin-top: 40px; }
+    #mainComunidad .discord {
+      border: #c9c949 solid 3px;
+      width: 300px;
+      height: 100px;
+      justify-self: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "comunidad foroTitulo";
+      align-content: center; }
+      #mainComunidad .discord .foro__Titulo {
+        font-size: 18px;
+        justify-self: left; }
+      #mainComunidad .discord .comunidad__Texto {
+        display: none; }
+      #mainComunidad .discord .comunidad {
+        font-size: 18px; }
+        #mainComunidad .discord .comunidad #logoDiscord {
+          width: 70px;
+          height: 70px;
+          margin-top: 40px; }
+  #mainColecciones {
+    height: 120vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 0.5fr 1fr;
+    grid-template-areas: "parrafoUno parrafoUno" "marvel dc" "shop shop";
+    grid-row-gap: 0px; }
+    #mainColecciones #parrafoUno .parrafo .parrafo__Titulo {
+      margin-top: 5px;
+      line-height: 50px;
+      text-align: center; }
+    #mainColecciones #parrafoUno .parrafo .parrafo__Texto {
+      display: none; }
+    #mainColecciones .marvel {
+      width: 200px;
+      height: 350px;
+      border: black solid 3px;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.5fr 1fr;
+      grid-template-areas: "categoriaMarvel" "capi";
+      justify-items: center;
+      align-items: center; }
+      #mainColecciones .marvel a {
+        font-size: 22px;
+        align-self: end; }
+      #mainColecciones .marvel #wallCapi {
+        width: 180px;
+        height: 100px; }
+    #mainColecciones .dc {
+      width: 200px;
+      height: 350px;
+      border: black solid 3px;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.5fr 1fr;
+      grid-template-areas: "categoriaDc" "flash"; }
+      #mainColecciones .dc a {
+        font-size: 22px;
+        align-self: end; }
+      #mainColecciones .dc #wallFlash {
+        width: 180px;
+        height: 100px; }
+    #mainColecciones .sw {
+      display: none; }
+    #mainColecciones .shop {
+      font-size: 18px; }
+  footer {
+    height: 10vh; }
+    footer .textoNegritaFooter {
+      font-size: 10px; } }
+
+@media (max-width: 320px) {
+  header {
+    grid-template-columns: 2fr 1fr; }
+    header .imgFunko {
+      margin-left: 0px;
+      justify-self: right; }
+      header .imgFunko #logoFunko2 {
+        width: 88px;
+        height: 33px;
+        translate: none;
+        margin-right: 30px; }
+    header .fuenteBoton {
+      justify-self: right; }
+      header .fuenteBoton #botonLogin {
+        width: 60px;
+        height: 18px;
+        border-radius: 7px;
+        border: #1895cf solid 2px;
+        font-size: 8px; }
+      header .fuenteBoton #botonRegistro {
+        width: 60px;
+        height: 18px;
+        border-radius: 7px;
+        border: #1895cf solid 2px;
+        font-size: 8px; }
+  #mainIndex {
+    height: 155vh; }
+    #mainIndex #fotoPortada {
+      margin-top: 7px;
+      margin-bottom: 7px; }
+    #mainIndex #multimedia #videos .videoPrincipal .video__Titulo {
+      font-size: 11px;
+      margin-left: 5px;
+      margin-right: 2px;
+      line-height: 15px; }
+    #mainIndex #multimedia #videos #iframeV iframe {
+      width: 130px;
+      height: 100px; }
+    #mainIndex #multimedia #fotos .fotoPrincipal .foto__Titulo {
+      font-size: 11px;
+      margin-left: 5px;
+      margin-right: 10px;
+      line-height: 5px; }
+    #mainIndex #multimedia #fotos #portadaFotos #portadaDeFotos {
+      width: 130px;
+      height: 100px; }
+    #mainIndex #picSpider #spiderManIndex #spiderManPortada {
+      width: 180px;
+      height: 180px; }
+      #mainIndex #picSpider #spiderManIndex #spiderManPortada:hover {
+        transform: translate(-30px); }
+    #mainIndex #picSpider #slogan {
+      justify-self: left;
+      translate: -20px; }
+      #mainIndex #picSpider #slogan .slogan__Texto {
+        font-size: 10px;
+        text-align: center; }
+        #mainIndex #picSpider #slogan .slogan__Texto:hover {
+          transform: scale(1.1); }
+  #mainHistoria #parrafoDos .fotoParrafoDos #fotoTiendaFunko {
+    width: 210px;
+    height: 140px; }
+  #mainHistoria #parrafoDos .fotoParaMobil img {
+    width: 210px;
+    height: 140px; }
+  #mainColecciones {
+    height: 100vh; }
+    #mainColecciones .marvel {
+      width: 140px;
+      height: 300px;
+      border: black solid 2px;
+      margin-left: 10px; }
+      #mainColecciones .marvel #wallCapi {
+        width: 100px;
+        height: 60px; }
+    #mainColecciones .dc {
+      width: 140px;
+      height: 300px;
+      border: black solid 2px;
+      margin-right: 10px; }
+      #mainColecciones .dc #wallFlash {
+        width: 100px;
+        height: 60px; } }
 
 @font-face {
   font-family: "armata";
