@@ -1,0 +1,66 @@
+/* Se aplica Grids+Flexbox */
+
+nav{
+    height: 12vh;
+    grid-area: nav;
+    background-color:$color-background;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "listaMenu buscador";
+    justify-content: center;
+    align-items: center; 
+    justify-items: right;
+
+    a{
+        &:link, &:visited, &:active{
+            text-decoration: none;
+            list-style-type: none;
+            color: white;
+            font-weight: bold;
+            font-style: normal;
+            font-family: $font-general; 
+        }
+    }
+
+    li{    
+        display: inline-block;
+        color: white;
+        padding: 10px;
+        margin: 5px;
+        grid-area: listaMenu;
+    }
+
+    #buscador{
+    grid-area: buscador;
+    justify-self: center; 
+    
+        #busqueda{
+                height: 25px;
+                width: 130px;
+                border-radius: 15px;
+                border: white;
+        }
+
+        #botonBuscar{
+            height: 25px;
+            width: 50px;
+            color: white;
+            font-size: 15px;
+            font-family: $font-general;
+            font-weight: bold;
+            border: none;
+            background-color: transparent;
+        }
+              
+    }
+    
+}
+
+
+
+
+@import "./queries";
+
+

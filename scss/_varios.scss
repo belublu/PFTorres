@@ -1,0 +1,45 @@
+$color-background: #1895cf;
+
+$font-general: "armata";
+
+$color-font-general: black;
+
+$font-paragraph-title: 22px;
+
+$size-paragraph-text: 15px;
+
+@mixin titulo-comunidad{
+    font-family: $font-general;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
+    grid-area: foroTitulo;
+    align-self: center;
+}
+
+@mixin texto-comunidad{
+    font-size: 18px;
+    font-family: $font-general;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    grid-area: comunidadTexto;
+}
+
+@mixin paragraph{
+    font-family: $font-general;
+    font-size: 16px;
+    margin-left: 40px;
+    margin-right: 40px;
+    line-height: 26px; 
+}
+
+@mixin linksColecciones{
+    &:link, &:visited, &:active{
+        text-decoration: none;
+        color: $color-font-general;
+        font-weight: bold;
+        font-style: normal;
+        font-family: $font-general;
+   }
+}

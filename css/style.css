@@ -1,588 +1,329 @@
-@font-face {
-    font-family: "armata";
-    src: url(../assets/fonts/Armata/Armata-Regular.ttf);
-}
-
-/* Desktop first */
-
-/* HISTORIA */
-
-.parrafo{
-    font-family: "armata";
-    font-size: 16px;
-    text-align: left;
-    margin-left: 40px;
-    margin-right: 40px;
-    line-height: 26px; 
-}
-
-
-.parrafo__Titulo{
-    line-height: 50px;
-}
-
-#fotoTiendaFunko{
-    width: 350px;
-    height: 230px;
-}
-
-#fotoHistoriaUno{
-    width: 29%;
-    height: 39vh;
-    float: left;
-    margin-top: 23px;
-}
-
-#parrafoDos{
-    width: 70%;
-    float: right;
-}
-
-#parrafoTres{
-    width: 68%;
-    float: left;
-    position: relative;
-    top: 25px;
-}
-
-#fotoTiendaFunkoDos{
-    width: 350px;
-    height: 230px;
-}
-
-#fotoHistoriaDos{
-    width: 30%;
-    float: right;
-    padding-right: 40px;
-    padding-top: 10px;
-}
-
-#fotoHileraPops{
-    width:98%;
-    margin-left: 20px;
-}
-
-/* COLECCIONES */
-
-.marvel{
-    width: 95%;
-    height: 325px;
-    border: black solid 4px; 
-    background-color:#f47fb4;
-    margin-left: 20px;
-    margin-bottom: 15px; 
-}
-
-#wallCapi{
-    width: 410px;
-    height: 240px;
-    float: right;
-    margin-right: 180px; 
-    margin-top: 40px;
-    border: black solid 2px; 
-}
-
-.dc{
-    width: 95%;
-    height: 325px;
-    border: black solid 4px; 
-    background-color:#f0f47a;
-    margin-left: 20px;
-    margin-bottom: 15px; 
-}
-
-#wallFlash{
-    width: 410px;
-    height: 240px;
-    float: right;
-    margin-right: 180px; 
-    margin-top: 40px;
-    border: black solid 2px; 
-}
-
-.sw{
-    width: 95%;
-    height: 325px;
-    border: black solid 4px; 
-    background-color:#76f386; 
-    margin-left: 20px;
-    margin-bottom: 15px;  
-}
-
-#wallSw{
-    width: 410px;
-    height: 240px;
-    float: right;
-    margin-right: 180px; 
-    margin-top: 40px;
-    border: black solid 2px; 
-}
-
-.categoria{
-    font-family: "armata";
-    font-size: 35px;
-    font-weight: bolder;
-    position: relative;
-    top: 150px;
-    left: 250px; 
-}
-
-.shop{
-    color: #f33289;
-    font-family: "armata";
-    font-size: 25px;
-    font-weight: bold;
-    float: right;
-    margin-right: 60px;
-    margin-top: 15px;
-}
-
-
-
-/* CONTACTO */
-
-.formulario{
-    margin-left: 40px;
-    margin-right: 35px;
-}
-
-.datos{
-    font-family: "armata";
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 30px;
-}
-
-label{
-    font-size: 13px;
-    font-weight: lighter;
-    line-height:60px;
-    margin-left: 20px;
-}
-
-.textoDatos{
-    font-size: 13px;
-    font-weight: lighter;
-    line-height: 60px;
-    margin-left: 20px;
-}
-
-:placeholder-shown{
-    margin-left: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-style: italic;
-}
-
-
-
-
-
-
-/* A partir de esta línea se trabaja con Grid+FlexBox
-
-INDEX */
-*{
-    margin: 0;
-    padding: 0;
-}
-
-body{
-    width: 100vw;
-    overflow-x: hidden;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 10% 5% 84% 1%;
-    grid-template-areas: 
-    "header"
-    "nav"
-    "main"
-    "footer";
-}
-
-header{
-    grid-area: header;
-    display: grid;
-    grid-template-columns: 0.3fr 2fr 0.3fr ;
-    grid-template-rows: 1fr 1fr 1fr ;
-    grid-template-areas: 
-    "logosRedes imgFunko fuenteBoton"
-    "logosRedes imgFunko fuenteBoton"
-    "logosRedes imgFunko fuenteBoton";
-}
-
-#logosRedes{
+/* Se aplica Grids+Flexbox */
+header {
+  height: 25vh;
+  grid-area: headeri;
+  display: grid;
+  grid-template-columns: 0.3fr 2fr 0.3fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "logosRedes imgFunko fuenteBoton" "logosRedes imgFunko fuenteBoton" "logosRedes imgFunko fuenteBoton"; }
+  header #logosRedes {
     grid-area: logosRedes;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    grid-template-areas: 
-    "ig fb tw";
+    grid-template-areas: "ig fb tw";
     grid-row-gap: 5px;
     padding-top: 10px;
-    padding-left: 5px;
-}
-
-.logosRedes__Instagram{
-    height: 30px;
-    width: 30px;
-    grid-area: ig;
-    align-self: stretch;
-}
-
-.logosRedes__Facebook{
-    height: 30px;
-    width: 40px;
-    grid-area: fb;
-}
-
-.logosRedes__Twitter{
-    height: 35px;
-    width: 35px;
-    grid-area: tw;
-    padding-left: 6px;    
-}
-
-#imgFunko{
+    padding-left: 5px; }
+    header #logosRedes #logoInstagram {
+      height: 30px;
+      width: 30px;
+      grid-area: ig;
+      align-self: start; }
+    header #logosRedes #logoFacebook {
+      height: 30px;
+      width: 40px;
+      grid-area: fb;
+      align-self: start; }
+    header #logosRedes #logoTwitter {
+      height: 35px;
+      width: 35px;
+      grid-area: tw;
+      padding-left: 6px;
+      align-self: start; }
+  header .imgFunko {
     grid-area: imgFunko;
     justify-self: center;
-    align-self: center;
-}
-
-#logoFunko2{
-    width: 190px;
-    height: 70px;
-    opacity: .8;
-}
-
-#fuenteBoton{
+    align-self: center; }
+    header .imgFunko #logoFunko2 {
+      width: 190px;
+      height: 70px;
+      opacity: .8; }
+  header .fuenteBoton {
     grid-area: fuenteBoton;
     justify-self: center;
     align-self: center;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "botonLogin"
-    "botonRegistro";
-    grid-row-gap: 10px;
-}
+    grid-template-areas: "botonLogin" "botonRegistro";
+    grid-row-gap: 10px; }
+    header .fuenteBoton #botonLogin {
+      grid-area: botonLogin;
+      width: 100px;
+      height: 30px;
+      border-radius: 10px;
+      border: #1895cf solid 3px;
+      font-family: "armata";
+      font-weight: bold; }
+    header .fuenteBoton #botonRegistro {
+      grid-area: botonRegistro;
+      width: 100px;
+      height: 30px;
+      border-radius: 10px;
+      border: #1895cf solid 3px;
+      font-family: "armata";
+      font-weight: bold; }
+    header .fuenteBoton a:link, header .fuenteBoton a:visited, header .fuenteBoton a:active {
+      text-decoration: none;
+      list-style-type: none;
+      color: black;
+      font-weight: bold;
+      font-style: normal;
+      font-family: "armata"; }
 
-#botonLogin{
-    grid-area: botonLogin;
-    width: 100px;
-    height: 30px;
-    border-radius: 10px;
-    border: #39a7da solid 3px;
-    font-family: "armata";
+/* Se aplica Grids+Flexbox */
+nav {
+  height: 12vh;
+  grid-area: nav;
+  background-color: #1895cf;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "listaMenu buscador";
+  justify-content: center;
+  align-items: center;
+  justify-items: right; }
+  nav a:link, nav a:visited, nav a:active {
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
     font-weight: bold;
-}
-
-#botonRegistro{
-    grid-area: botonRegistro;
-    width: 100px;
-    height: 30px;
-    border-radius: 10px;
-    border: #39a7da solid 3px;
-    font-family: "armata";
-    font-weight: bold;
-    
-}
-
-nav{
-    height: 12vh;
-    grid-area: nav;
-    background-color: #1895cf;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-    "listaMenu buscador";
-    justify-content: center;
-    align-items: center; 
-    justify-items: right;
-}
-
-ul li{
-    list-style: none;
+    font-style: normal;
+    font-family: "armata"; }
+  nav li {
     display: inline-block;
     color: white;
     padding: 10px;
     margin: 5px;
-    grid-area: listaMenu;
-}
-
-#botonBuscar{
-    height: 25px;
-    width: 50px;
-    color: white;
-    font-size: 15px;
-    font-family: "armata";
-    font-weight: bold;
-    border: none;
-    background-color: transparent;
-}
-
-#busqueda{
-    height: 25px;
-    width: 130px;
-    border-radius: 15px;
-    border: white;
-  
-}
-
-#buscador{
+    grid-area: listaMenu; }
+  nav #buscador {
     grid-area: buscador;
-    justify-self: center;   
-}
+    justify-self: center; }
+    nav #buscador #busqueda {
+      height: 25px;
+      width: 130px;
+      border-radius: 15px;
+      border: white; }
+    nav #buscador #botonBuscar {
+      height: 25px;
+      width: 50px;
+      color: white;
+      font-size: 15px;
+      font-family: "armata";
+      font-weight: bold;
+      border: none;
+      background-color: transparent; }
 
-.reseteoListas a:link,
-    a:visited,
-    a:active {
-        text-decoration: none;
-        list-style-type: none;
-        color: white;
-        font-weight: bold;
-        font-style: normal;
-        font-family: "armata";        
-    }
-
-#mainIndex{
-    grid-area: main;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas:
-        "fotoPortada"
-        "multimedia"
-        "picSpider"; 
-}
-
-#fotoPortada{
+/* Se aplica Grids+Flexbox */
+/* INDEX*/
+#mainIndex {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "fotoPortada" "multimedia" "picSpider"; }
+  #mainIndex #fotoPortada {
     grid-area: fotoPortada;
-    align-self: center;
-}
-
-#fotoMuchosPops{
-    width: 100%;   
-} 
-
-#multimedia{
+    align-self: center; }
+    #mainIndex #fotoPortada #fotoMuchosPops {
+      width: 100%; }
+  #mainIndex #multimedia {
     grid-area: multimedia;
     display: grid;
     grid-template-columns: 45% 45%;
     grid-template-rows: 1fr;
-    grid-template-areas:
-        "videos fotos";
-        grid-column-gap: 30px;
-    justify-content: center;  
-}
-
-#videos{
-    height: 400px;
-    background-color: #73def1;
-    border: #1c8294 solid 3px;
-    grid-area: videos;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 1.5fr;
-    grid-template-areas: 
-    "videoPrincipal"
-    "iframeV"; 
-}
-
-.videoPrincipal{
-    color: black;
-    font-family: "armata";
-    font-weight: bolder;
-    grid-area: videoPrincipal;
-}
-
-.video__Titulo{
-    font-size: 18px;
-    text-align: center;
-    line-height: 40px;
-}
-
-.video__Texto{
-    font-size: 12px;
-    font-weight:500;
-    line-height: 15px;
-    margin-left: 20px;
-    margin-right: 20px;  
-}
-
-iframe{
-    border: black solid 3px;
-    width: 399px;
-    height: 249px; 
-}
-
-#iframeV{
-    grid-area: iframeV;
-    justify-self: center;
-}
-
-#fotos{
-    height: 400px;
-    background-color: #fc6863;
-    border: #c23a35 solid 3px;
-    grid-area: fotos;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 1.5fr;
-    grid-template-areas: 
-    "fotoPrincipal"
-    "portadaFotos"; 
-}
-
-.fotoPrincipal{
-    color: black;
-    font-family: "armata";
-    font-weight: bolder;
-    text-align: center;
-    grid-area: fotoPrincipal;
-}
-
-a:link,
-a:visited,
-a:active{
-    text-decoration: none;
-    color: black;    
-}
-
-.foto__Titulo{
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 40px;
-}
-
-.foto__Texto{
-    font-size: 12px;
-    font-weight:500;
-    line-height: 18px;
-    text-align: center;
-    
-}
-
-#portadaFotos{
-    grid-area: portadaFotos;
-    justify-self: center;
-}
-
-#portadaDeFotos{
-    width: 400px;
-    height: 250px;
-    border: black solid 3px;
-}
-
-#picSpider{
+    grid-template-areas: "videos fotos";
+    grid-column-gap: 30px;
+    justify-content: center; }
+    #mainIndex #multimedia #videos {
+      height: 400px;
+      background-color: #73def1;
+      border: #1c8294 solid 3px;
+      grid-area: videos;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.5fr 1.5fr;
+      grid-template-areas: "videoPrincipal" "iframeV"; }
+      #mainIndex #multimedia #videos .videoPrincipal {
+        color: black;
+        font-family: "armata";
+        font-weight: bolder;
+        grid-area: videoPrincipal; }
+        #mainIndex #multimedia #videos .videoPrincipal .video__Titulo {
+          font-size: 18px;
+          text-align: center;
+          line-height: 40px; }
+        #mainIndex #multimedia #videos .videoPrincipal .video__Texto {
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 15px;
+          margin-left: 20px;
+          margin-right: 20px; }
+      #mainIndex #multimedia #videos #iframeV {
+        grid-area: iframeV;
+        justify-self: center; }
+        #mainIndex #multimedia #videos #iframeV iframe {
+          border: black solid 3px;
+          width: 399px;
+          height: 249px; }
+    #mainIndex #multimedia #fotos {
+      height: 400px;
+      background-color: #fc6863;
+      border: #c23a35 solid 3px;
+      grid-area: fotos;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.5fr 1.5fr;
+      grid-template-areas: "fotoPrincipal" "portadaFotos"; }
+      #mainIndex #multimedia #fotos .fotoPrincipal {
+        color: black;
+        font-family: "armata";
+        font-weight: bolder;
+        text-align: center;
+        grid-area: fotoPrincipal; }
+        #mainIndex #multimedia #fotos .fotoPrincipal a:link, #mainIndex #multimedia #fotos .fotoPrincipal a:visited, #mainIndex #multimedia #fotos .fotoPrincipal a:active {
+          text-decoration: none;
+          color: black; }
+        #mainIndex #multimedia #fotos .fotoPrincipal .foto__Titulo {
+          font-size: 18px;
+          text-align: center;
+          line-height: 40px; }
+        #mainIndex #multimedia #fotos .fotoPrincipal .foto__Texto {
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 15px;
+          text-align: center;
+          margin-bottom: 15px; }
+      #mainIndex #multimedia #fotos #portadaFotos {
+        grid-area: portadaFotos;
+        justify-self: center; }
+        #mainIndex #multimedia #fotos #portadaFotos #portadaDeFotos {
+          width: 400px;
+          height: 250px;
+          border: black solid 3px; }
+  #mainIndex #picSpider {
     grid-area: picSpider;
-    background-image: url(../assets/imagenes/wallStars.jpg);
+    background-image: url(../assets/imagenes/wallStars.webp);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas:
-        "spiderManIndex slogan";
-}
+    grid-template-areas: "spiderManIndex slogan"; }
+    #mainIndex #picSpider #spiderManIndex {
+      grid-area: spiderManIndex;
+      justify-self: right; }
+      #mainIndex #picSpider #spiderManIndex #spiderManPortada {
+        width: 400px;
+        height: 400px;
+        animation-name: moverSpider;
+        animation-duration: 2s;
+        transition: all 2s; }
+        #mainIndex #picSpider #spiderManIndex #spiderManPortada:hover {
+          transform: translate(-200px); }
+    #mainIndex #picSpider #slogan {
+      color: black;
+      font-family: "armata";
+      font-size: 30px;
+      font-weight: bold;
+      text-align: right;
+      font-style: oblique;
+      grid-area: slogan;
+      align-self: center;
+      justify-self: center;
+      translate: -100px;
+      transition-duration: 1s; }
+      #mainIndex #picSpider #slogan:hover {
+        transform: scale(1.3); }
 
-#spiderManIndex{
-    grid-area: spiderManIndex;
-    justify-self: right;
-}
-
-#spiderManPortada{
-    width: 400px;
-    height: 400px;
-    animation-name: moverSpider;
-    animation-duration: 2s;
-    transition: all 2s;
-}
-
-#spiderManPortada:hover{
-    transform: translate(-200px);
-}
-
-#slogan{
-    color: black;
-    font-family: "armata";
-    font-size: 30px;
-    font-weight: bold;
-    text-align: right;
-    font-style: oblique;
-    grid-area: slogan;
-    align-self: center;
-    justify-self: center;
-    translate: -100px ;
-    transition-duration: 1s;
-}
-
-#slogan:hover{
-    transform:scale(1.3);
-}
-
-footer{
-    height: 10vh;
-    background-color: #1895cf;
-    grid-area: footer;
+/* HISTORIA */
+#mainHistoria {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5r 0.5fr 1fr 1fr;
+  grid-template-areas: "parrafoUno" "parrafoDos" "parrafoTres" "parrafoCuatro";
+  grid-row-gap: 50px; }
+  #mainHistoria #parrafoUno {
+    grid-area: parrafoUno; }
+    #mainHistoria #parrafoUno .parrafo {
+      font-family: "armata";
+      font-size: 16px;
+      margin-left: 40px;
+      margin-right: 40px;
+      line-height: 26px;
+      line-height: 26px; }
+      #mainHistoria #parrafoUno .parrafo .parrafo__Titulo {
+        margin-top: 5px;
+        line-height: 50px; }
+  #mainHistoria #parrafoDos {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr;
-    grid-template-areas:
-    "textoFooter";
-}
-
-.textoNegritaFooter{
-    font-weight: bold;
-    color: white;
-    font-family: "armata";
-    margin-top: 20px;
-}
-
-#textoFooter{
-    grid-area: textoFooter;
-    justify-self: center;
-    align-self: end;
-}
-
+    grid-template-columns: 0.5fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "fotoSectParrafoDos sectParrafoDos";
+    grid-area: parrafoDos; }
+    #mainHistoria #parrafoDos .fotoParrafoDos #fotoTiendaFunko {
+      width: 500px;
+      height: 370px;
+      margin-left: 40px;
+      grid-area: fotoSectParrafoDos; }
+    #mainHistoria #parrafoDos .fotoParaMobil {
+      display: none; }
+    #mainHistoria #parrafoDos .parrafo {
+      font-family: "armata";
+      font-size: 16px;
+      margin-left: 40px;
+      margin-right: 40px;
+      line-height: 26px;
+      grid-area: sectParrafoDos;
+      align-self: center; }
+  #mainHistoria #parrafoTres {
+    display: grid;
+    grid-template-columns: 2fr 0.5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "sectParrafoTres fotoSectParrafoTres";
+    grid-area: parrafoTres; }
+    #mainHistoria #parrafoTres .parrafo {
+      font-family: "armata";
+      font-size: 16px;
+      margin-left: 40px;
+      margin-right: 40px;
+      line-height: 26px;
+      grid-area: sectParrafoTres;
+      align-self: center; }
+    #mainHistoria #parrafoTres .fotoParrafoTres #fotoTiendaFunkoDos {
+      width: 500px;
+      height: 370px;
+      margin-right: 50px;
+      grid-area: fotoSectParrafoTres; }
+  #mainHistoria #parrafoCuatro {
+    grid-area: parrafoCuatro; }
+    #mainHistoria #parrafoCuatro .fotoParrafoCuatro #fotoHileraPops {
+      width: 98%;
+      margin-left: 5px; }
 
 /* COMUNIDAD */
-#mainComunidad{
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 30% 70%;
-    grid-template-areas:
-        "tituloComunidad tituloComunidad tituloComunidad"
-        "foro telegram discord";
-}
-
-#tituloComunidad{
+#mainComunidad {
+  grid-area: main;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 20% 80%;
+  grid-template-areas: "tituloComunidad tituloComunidad tituloComunidad" "foro telegram discord"; }
+  #mainComunidad #tituloComunidad {
     grid-area: tituloComunidad;
-    align-self: center;
-}
-
-.comunidad{
-    font-family: "armata";
-    font-size: 30px;
-    font-weight: bold;
-    line-height: 55px; 
-    color: black;  
-    grid-area: comunidad;
-}
-
-.comunidad__Texto{
-    font-size: 18px;
-    font-family: "armata";
-    text-align: center;
-    margin-left: 5px;
-    margin-right: 5px;
-    grid-area: comunidadTexto;
-    /* align-self: start; */
-}
-
-.foro{
-    background-color:#fc6863;
+    align-self: start;
+    margin-top: 5px; }
+    #mainComunidad #tituloComunidad .parrafo {
+      font-family: "armata";
+      font-size: 16px;
+      margin-left: 40px;
+      margin-right: 40px;
+      line-height: 26px; }
+      #mainComunidad #tituloComunidad .parrafo .parrafo__Titulo {
+        line-height: 50px; }
+      #mainComunidad #tituloComunidad .parrafo .parrafo__Texto {
+        font-size: 15px; }
+  #mainComunidad .foro {
+    background-color: #fc6863;
     border: #f44741 solid 4px;
     width: 300px;
     height: 450px;
@@ -592,41 +333,43 @@ footer{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-        "foroTitulo"
-        "comunidadTexto"
-        "comunidad"; 
-    animation-name: animTeleg;
+    grid-template-areas: "foroTitulo" "comunidadTexto" "comunidad";
+    animation-name: animForo;
     animation-duration: 1s;
-    justify-items: center;  
-}
+    justify-items: center; }
 
 @keyframes animForo {
-    from{
-        transform: translate(0) scale(0);
-    }to{
-        transform: translate(100) scale(1.2);
-    }
- }
-
-.foro__Titulo{
-    font-family: "armata";
-    font-size: 30px;
-    text-align: center;
-    font-weight: bolder;
-    grid-area: foroTitulo;
-    align-self: center;
-    
-}
-
-#logoForo{
-    width: 300px;
-    height: 250px;
-}
-
-.telegram{
-    background-color:rgb(29, 204, 146);
-    border: rgb(10, 160, 110) solid 4px;
+  from {
+    transform: translate(0) scale(0); }
+  to {
+    transform: translate(100) scale(1.2); } }
+    #mainComunidad .foro .foro__Titulo {
+      font-family: "armata";
+      font-size: 30px;
+      text-align: center;
+      font-weight: bolder;
+      grid-area: foroTitulo;
+      align-self: center; }
+    #mainComunidad .foro .comunidad__Texto {
+      font-size: 18px;
+      font-family: "armata";
+      text-align: center;
+      margin-left: 5px;
+      margin-right: 5px;
+      grid-area: comunidadTexto; }
+    #mainComunidad .foro .comunidad {
+      font-family: "armata";
+      font-size: 30px;
+      font-weight: bold;
+      line-height: 55px;
+      color: black;
+      grid-area: comunidad; }
+      #mainComunidad .foro .comunidad #logoForo {
+        width: 300px;
+        height: 250px; }
+  #mainComunidad .telegram {
+    background-color: #1dcc92;
+    border: #0aa06e solid 4px;
     width: 300px;
     height: 450px;
     grid-area: telegram;
@@ -635,30 +378,44 @@ footer{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-        "foroTitulo"
-        "comunidadTexto"
-        "comunidad"; 
+    grid-template-areas: "foroTitulo" "comunidadTexto" "comunidad";
     animation-name: animTeleg;
     animation-duration: 1s;
-    justify-items: center;
-}
+    justify-items: center; }
 
 @keyframes animTeleg {
-    from{
-        transform: translate(0) scale(0);
-    }to{
-        transform: translate(100) scale(1.2);
-    }
- }
-
-#logoTelegram{
-    width: 200px;
-    height: 200px;   
-} 
-
-.discord{
-    background-color:#dcdc72;
+  from {
+    transform: translate(0) scale(0); }
+  to {
+    transform: translate(100) scale(1.2); } }
+    #mainComunidad .telegram .foro__Titulo {
+      font-family: "armata";
+      font-size: 30px;
+      text-align: center;
+      font-weight: bolder;
+      grid-area: foroTitulo;
+      align-self: center;
+      grid-area: foroTitulo; }
+    #mainComunidad .telegram .comunidad__Texto {
+      grid-area: comunidadTexto;
+      font-size: 18px;
+      font-family: "armata";
+      text-align: center;
+      margin-left: 5px;
+      margin-right: 5px;
+      grid-area: comunidadTexto; }
+    #mainComunidad .telegram .comunidad {
+      font-family: "armata";
+      font-size: 30px;
+      font-weight: bold;
+      line-height: 55px;
+      color: black;
+      grid-area: comunidad; }
+      #mainComunidad .telegram .comunidad #logoTelegram {
+        width: 200px;
+        height: 200px; }
+  #mainComunidad .discord {
+    background-color: #dcdc72;
     border: #c9c949 solid 4px;
     width: 300px;
     height: 450px;
@@ -668,591 +425,318 @@ footer{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-        "foroTitulo"
-        "comunidadTexto"
-        "comunidad"; 
+    grid-template-areas: "foroTitulo" "comunidadTexto" "comunidad";
     animation-name: animDisc;
     animation-duration: 1s;
-    justify-items: center;
-}
+    justify-items: center; }
 
 @keyframes animDisc {
-    from{
-        transform: translate(0) scale(0) ;
-    }to{
-        transform: translate(100) scale(1) ;
-    }
- }
+  from {
+    transform: translate(0) scale(0); }
+  to {
+    transform: translate(100) scale(1); } }
+    #mainComunidad .discord .foro__Titulo {
+      grid-area: fotoTitulo;
+      font-family: "armata";
+      font-size: 30px;
+      text-align: center;
+      font-weight: bolder;
+      grid-area: foroTitulo;
+      align-self: center; }
+    #mainComunidad .discord .comunidad__Texto {
+      font-size: 18px;
+      font-family: "armata";
+      text-align: center;
+      margin-left: 5px;
+      margin-right: 5px;
+      grid-area: comunidadTexto; }
+    #mainComunidad .discord .comunidad {
+      font-family: "armata";
+      font-size: 30px;
+      font-weight: bold;
+      line-height: 55px;
+      color: black;
+      grid-area: comunidad; }
+      #mainComunidad .discord .comunidad #logoDiscord {
+        width: 200px;
+        height: 200px; }
 
-#logoDiscord{
-    width: 200px;
-    height: 200px;   
-}
+/* COLECCIONES */
+#mainColecciones {
+  height: 250vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.3fr 1fr 1fr 1fr 0.5fr;
+  grid-template-areas: "parrafoUno" "marvel" "dc" "sw" "shop";
+  grid-row-gap: 30px; }
+  #mainColecciones #parrafoUno {
+    grid-area: parrafoUno; }
+    #mainColecciones #parrafoUno .parrafo {
+      font-family: "armata";
+      font-size: 16px;
+      margin-left: 40px;
+      margin-right: 40px;
+      line-height: 26px;
+      line-height: 26px; }
+      #mainColecciones #parrafoUno .parrafo .parrafo__Titulo {
+        margin-top: 5px;
+        line-height: 50px; }
+  #mainColecciones .marvel {
+    grid-area: marvel;
+    width: 90%;
+    height: 325px;
+    border: black solid 4px;
+    background-color: #f47fb4;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "categoriaMarvel capi";
+    justify-items: center;
+    align-items: center; }
+    #mainColecciones .marvel a {
+      grid-area: categoriaMarvel;
+      font-size: 35px; }
+      #mainColecciones .marvel a:link, #mainColecciones .marvel a:visited, #mainColecciones .marvel a:active {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-style: normal;
+        font-family: "armata"; }
+    #mainColecciones .marvel #wallCapi {
+      width: 410px;
+      height: 240px;
+      border: black solid 2px;
+      grid-area: capi; }
+  #mainColecciones .dc {
+    grid-area: dc;
+    width: 90%;
+    height: 325px;
+    border: black solid 4px;
+    background-color: #f0f47a;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "categoriaDc flash";
+    justify-items: center;
+    align-items: center; }
+    #mainColecciones .dc a {
+      grid-area: categoriaDc;
+      font-size: 35px; }
+      #mainColecciones .dc a:link, #mainColecciones .dc a:visited, #mainColecciones .dc a:active {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-style: normal;
+        font-family: "armata"; }
+    #mainColecciones .dc #wallFlash {
+      width: 410px;
+      height: 240px;
+      border: black solid 2px;
+      grid-area: flash; }
+  #mainColecciones .sw {
+    grid-area: sw;
+    width: 90%;
+    height: 325px;
+    border: black solid 4px;
+    background-color: #76f386;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "categoriaSw star";
+    justify-items: center;
+    align-items: center; }
+    #mainColecciones .sw a {
+      grid-area: categoriaSw;
+      font-size: 35px; }
+      #mainColecciones .sw a:link, #mainColecciones .sw a:visited, #mainColecciones .sw a:active {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-style: normal;
+        font-family: "armata"; }
+    #mainColecciones .sw #wallSw {
+      width: 410px;
+      height: 240px;
+      border: black solid 2px;
+      grid-area: star; }
+  #mainColecciones .shop {
+    grid-area: shop;
+    font-family: "armata";
+    font-size: 25px;
+    font-weight: bold;
+    justify-self: right;
+    align-self: center;
+    margin-right: 30px; }
+    #mainColecciones .shop a {
+      text-decoration: none;
+      color: black; }
 
+/* CONTACTO */
+#mainContacto .parrafo {
+  font-family: "armata";
+  font-size: 16px;
+  margin-left: 40px;
+  margin-right: 40px;
+  line-height: 26px;
+  line-height: 26px; }
+  #mainContacto .parrafo .parrafo__Titulo {
+    margin-top: 5px;
+    line-height: 50px; }
+  #mainContacto .parrafo .parrafo__Texto {
+    font-size: 15px; }
 
-/* Media Queries */
-
-@media screen and (max-width: 1024px){
-    /* INDEX */
-    #mainIndex{
-        grid-template-rows: 1r repeat(2, 1fr);
-    }
-
-    #multimedia{
-        grid-template-columns: 40% 40%;
-        grid-column-gap: 55px;
-    }
-
-    .video__Titulo{
-        margin-top: 20px;
-        line-height: 30px;
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-
-    .video__Texto{
-        margin-top: 20px;  
-        text-align: center;
-    }
-
-    iframe{
-        width: 359px;
-        height: 200px;
-    }
-
-    #iframeV{
-        align-self: center;
-    }
-
-    .foto__Texto{
-        margin-top: 30px;  
-        margin-left: 20px;
+#mainContacto .formulario {
+  margin-right: 30px;
+  margin-left: 30px; }
+  #mainContacto .formulario form .datos {
+    margin-top: 30px; }
+    #mainContacto .formulario form .datos legend {
+      font-family: "armata";
+      font-size: 14px;
+      font-weight: bolder; }
+      #mainContacto .formulario form .datos legend p {
         margin-right: 20px;
-        text-align: center;
-    }
-    
-    #portadaDeFotos{
-        width: 359px;
-        height: 200px;
-    }
-
-    #portadaFotos{
-        align-self: center;
-    }
-}
-
-@media screen and (max-width: 768px){
-    /* INDEX */
-    header{
-        grid-template-columns: 0.3fr 2fr 0.5fr ;
-    }
-
-    nav{
-        height: 11vh;
-    }
-
-    ul li{
-        padding: 8px;
-    }
-    
-    .reseteoListas a:link,
-        a:visited,
-        a:active { 
-            font-size: 13px;      
-    }
-    
-    #buscador{
-        grid-area: buscador;
-        justify-self: center; 
-        align-self: center;   
-    }
-    
-    #mainIndex{
-        grid-template-rows: 0.6fr 1fr 0.1fr;
-    }
-
-    #multimedia{
-        grid-template-columns: 46% 46%;
-        grid-column-gap: 20px;
-    }
-
-    .video__Titulo{
-        line-height: 25px;
-    }
-
-    .video__Texto{
-        margin-top: 20px;  
-    }
-
-    iframe{
-        width: 300px;
-        height: 150px;
-    }
-
-    .fotoPrincipal{
-        margin-top: 20px;
-    }
-
-    .foto__Titulo{
-        line-height: 25px;
-    }
-    
-    .foto__Texto{
-        margin-top: 20px;  
-    }
-    
-    #portadaDeFotos{
-        width: 250px;
-        height: 150px;
-    }
-
-    #portadaFotos{
-        margin-top: 20px;
-    }
-    
-    #spiderManPortada{
-        width: 300px;
-        height: 300px;
-    }
-    
-    #slogan{
-        font-size: 22px;
-    }
-    
-    footer{
-        height: 14vh;
-    }
-
-
-    /* COMUNIDAD */
-    .foro{
-        width: 200px;
-        height: 400px;
-    }
-
-    .foro__Titulo{
-        font-size: 25px;
-    }
-
-    .comunidad__Texto{
-        font-size: 12px;
-        margin-left: 7px;
-        margin-right: 7px;
-    }
-    
-    #logoForo{
-        width: 200px;
-        height: 150px;
-    }
-
-    .telegram{
-        width: 200px;
-        height: 400px;
-    }
-
-    #logoTelegram{
-        width: 150px;
-        height: 150px; 
-    } 
-
-    .discord{
-        width: 200px;
-        height: 400px;
-    }
-
-    #logoDiscord{
-        width: 150px;
-        height: 150px;    
-    }
-}
-
-@media screen and (max-width: 600px){
-    /* INDEX */
-    #logoFunko2{
-        width: 150px;
-        height: 50px;
-    }
-
-    nav{
-        height: 9vh;
-    }
-
-    ul li{
-        padding: 7px;
-    }
-    
-    .reseteoListas a:link,
-        a:visited,
-        a:active { 
-            font-size: 10px;      
-    }
-    
-    #mainIndex{
-        grid-template-rows: 0.5fr 1fr 0.5fr;
-    }
-
-    #multimedia{
-        grid-template-columns: 45% 45%;
-        grid-column-gap: 12px;
-    }
-
-    .video__Titulo{
-        font-size: 15px;
-        line-height: 20px;
-    }
-
-    .video__Texto{
-        font-size: 11px;    
-    }
-
-    iframe{
-        width: 200px;
-    }
-
-    .foto__Titulo{
-        font-size: 15px;
-        line-height: 20px;
-    }
-
-    .foto__Texto{
-        font-size: 11px;
-    }
-    
-    #portadaDeFotos{
-        width: 210px;
-        height: 140px;
-    }
-
-    #portadaFotos{
-        margin-top: 5px;
-    }
-    
-    #spiderManPortada{
-        width: 250px;
-        height: 250px;
-    }
-    
-    #slogan{
-        font-size: 17px;
-        justify-self: right;
-        translate: -50px;
-    }
-
-    footer{
-        height: 13vh;
-    }
-    
-    .textoNegritaFooter{
+        margin-left: 5px; }
+    #mainContacto .formulario form .datos .nombre, #mainContacto .formulario form .datos .apellido, #mainContacto .formulario form .datos .genero, #mainContacto .formulario form .datos .edad {
+      font-family: "armata";
+      font-size: 11px;
+      font-weight: bold;
+      margin-top: 20px;
+      margin-bottom: 8px;
+      margin-left: 10px; }
+  #mainContacto .formulario form .datosDos {
+    margin-top: 20px; }
+    #mainContacto .formulario form .datosDos legend {
+      font-family: "armata";
+      font-size: 14px;
+      font-weight: bolder; }
+    #mainContacto .formulario form .datosDos .textoDatos {
+      margin-right: 10px;
+      margin-left: 5px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      font-family: "armata";
+      font-size: 14px;
+      font-weight: 500; }
+      #mainContacto .formulario form .datosDos .textoDatos p {
+        margin-right: 30px;
+        margin-left: 5px; }
+    #mainContacto .formulario form .datosDos .lineas {
+      margin-bottom: 10px; }
+      #mainContacto .formulario form .datosDos .lineas label {
+        margin-right: 20px;
+        margin-left: 20px;
+        font-family: "armata";
         font-size: 14px;
-    }
-
-
-    /* COMUNIDAD */
-    #mainComunidad{
-        grid-template-rows: 30% 60%;
-    }
-
-    .parrafo__Titulo{
-        font-size: 22px;
-    }
-
-    .parrafo__Texto{
-        font-size: 15px;
-    }
-
-    .foro{
-        width: 150px;
-        height: 350px;
-    }
-
-    .foro__Titulo{
-        font-size: 20px;
-    }
-
-    .comunidad__Texto{
-        font-size: 10px;
-    }
-    
-    #logoForo{
-        width: 150px;
-        height: 120px;
-    }
-
-    .telegram{
-        width: 150px;
-        height: 350px;
-        justify-items: center;
-        
-    }
-
-    #logoTelegram{
-        width: 120px;
-        height: 110px; 
-    } 
-
-    .discord{
-        width: 150px;
-        height: 350px;
-    }
-
-    #logoDiscord{
-        width: 120px;
-        height: 110px;     
-    }
-}
-
-
-@media screen and (max-width: 480px){
-    /* INDEX */
-    body{
-        grid-template-rows: 10% 18% 68% 1%;
-        grid-template-areas: 
-        "header"
-        "nav"
-        "main"
-        "footer";
-    }
-
-    header{
-        grid-template-columns: 2fr 0.1fr ;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: 
-        "imgFunko fuenteBoton"
-        "imgFunko fuenteBoton";
-    }
-
-    #logosRedes, #buscador{
-        display: none;
-    }
-
-    #logoFunko2{
-        translate: 45px;
-    }
-
-    #botonLogin{
-        margin-right: 10px;
-    }
-    
-    #botonRegistro{
-        margin-right: 10px;    
-    }
-
-    nav{
-        height: 35vh;
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "listaMenu";     
-        justify-items: center;
-    }
-    
-    ul li{
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        padding: 8px;        
-    }
-
-    .reseteoListas a:link,
-    a:visited,
-    a:active {
-        font-size: 8px;
-        text-align: center;        
-    }
-
-    .video__Titulo{
+        font-weight: bolder; }
+        #mainContacto .formulario form .datosDos .lineas label input {
+          margin-right: 5px; }
+  #mainContacto .formulario form .datosTres {
+    margin-top: 20px; }
+    #mainContacto .formulario form .datosTres legend {
+      font-family: "armata";
+      font-size: 14px;
+      font-weight: bolder; }
+    #mainContacto .formulario form .datosTres .textoDatos {
+      margin-right: 10px;
+      margin-left: 10px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      font-family: "armata";
+      font-size: 14px;
+      font-weight: 500; }
+    #mainContacto .formulario form .datosTres .licencias {
+      margin-bottom: 10px; }
+      #mainContacto .formulario form .datosTres .licencias label {
+        margin-right: 15x;
+        margin-left: 15px;
+        font-family: "armata";
+        font-size: 14px;
+        font-weight: bolder; }
+        #mainContacto .formulario form .datosTres .licencias label input {
+          margin-right: 5px; }
+  #mainContacto .formulario form .datosCuatro {
+    margin-top: 20px; }
+    #mainContacto .formulario form .datosCuatro legend {
+      font-family: "armata";
+      font-size: 14px;
+      font-weight: bolder;
+      margin-bottom: 20px; }
+    #mainContacto .formulario form .datosCuatro .consulta {
+      margin-left: 10px;
+      margin-bottom: 20px; }
+      #mainContacto .formulario form .datosCuatro .consulta textarea {
+        font-family: "armata";
         font-size: 13px;
-        line-height: 18px;
-    }
-
-    .video__Texto{
-        font-size: 10px;    
-    }
-
-    iframe{
-        width: 170px;
-    }
-
-    .foto__Titulo{
-        font-size: 13px;
-        line-height: 18px;
-    }
-
-    .foto__Texto{
-        font-size: 10px;  
-    }
-    
-    #portadaDeFotos{
-        width: 190px;
-        height: 140px;
-        margin-top: 5px;
-    }
-
-    #portadaFotos{
-        margin-top: 5px;
-    }
-    
-    #spiderManIndex{
-        margin-top: 15px;
-    }
-
-    #spiderManPortada{
-        width: 220px;
-        height: 220px;
-    }
-    
-    #slogan{
-        font-size: 15px;
-        justify-self: left;
-        translate: -40px ;
-    }
-
-    footer{
-        height: 12vh;
-    }
-
-
-    /* COMUNIDAD */
-    #mainComunidad{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas:
-            "tituloComunidad"
-            "foro"
-            "telegram"
-            "discord";
-            grid-row-gap: 20px;
-    }
-
-    #tituloComunidad{
-        margin-top: 40px;
-    }
-
-    .foro{
-        width: 450px;
-        height: 90px;
-        justify-self: center;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-            "comunidad foroTitulo";
-        align-content: center;
-
-    }
-
-    .comunidad{
-        justify-self: right;
-        margin-top: 10px;
-    }
-
-    .foro__Titulo{
-        font-size: 25px;
-        justify-self: left;
-        align-self: center;
-        padding-left: 15px;
-    }
-
-    .comunidad__Texto{
-        display: none;
-    }
-
-    #logoForo{
-        width: 120px;
-        height: 90px;
-        margin-top: 25px;        
-    }
-
-    .telegram{
-        width: 450px;
-        height: 90px;
-        justify-self: center;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-            "comunidad foroTitulo";
-    }
-
-    #logoTelegram{
-        width: 80px;
-        height: 70px; 
-    } 
-
-    .discord{
-        width: 450px;
-        height: 90px;
-        justify-self: center;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-            "comunidad foroTitulo";
-    }
-
-    #logoDiscord{
-        width: 80px;
-        height: 70px;    
-    } 
-}
-
-@media screen and (max-width: 320px){
-    #logoFunko2{
-        width: 120px;
-        height: 43px;
-        translate: 20px;
-    }
-
-    #mainIndex{
-        grid-template-rows: 0.6fr 2fr 0.1fr;
-    }
-
-    .video__Titulo{
-        font-size: 9px;
-        line-height: 15px;
-    }
-
-    .video__Texto{
-        font-size: 8px; 
-        line-height: 12px;   
-    }
-
-    iframe{
-        width: 100px;
-    }
-
-    .foto__Titulo{
-        font-size: 9px;
-        line-height: 15px;
-    }
-
-    .foto__Texto{
-        font-size: 8px;  
-        line-height: 12px;
-    }
-    
-    #portadaDeFotos{
-        width: 110px;
-        height: 80px;
-    }
-
-    #portadaFotos{
-        margin-top: 5px;
-    }
-    
-    #spiderManIndex{
-        margin-top: 15px;
-    }
-
-    #spiderManPortada{
+        font-style: italic; }
+  #mainContacto .formulario form .datosCinco {
+    margin-top: 20px; }
+    #mainContacto .formulario form .datosCinco p {
+      font-family: "armata";
+      font-size: 14px;
+      font-weight: bolder;
+      margin-right: 20px;
+      margin-left: 5px;
+      margin-bottom: 10px;
+      grid-area: parrafo; }
+    #mainContacto .formulario form .datosCinco .opciones {
+      margin-bottom: 10px; }
+      #mainContacto .formulario form .datosCinco .opciones label {
+        margin-right: 20px;
+        margin-left: 20px;
+        font-family: "armata";
+        font-size: 14px;
+        font-weight: bolder; }
+        #mainContacto .formulario form .datosCinco .opciones label input {
+          margin-right: 10px; }
+    #mainContacto .formulario form .datosCinco .enviar {
+      margin-bottom: 40px;
+      justify-items: center; }
+      #mainContacto .formulario form .datosCinco .enviar #botonEnviar {
         width: 150px;
-        height: 150px;
-    }
-    
-    #slogan{
-        font-size: 10px;
-        justify-self: left;
-        translate: -30px ;
-    }
+        height: 30px;
+        border-radius: 10px;
+        border: #1895cf solid 3px;
+        font-size: 15px;
+        font-weight: bold;
+        font-family: "armata"; }
+        #mainContacto .formulario form .datosCinco .enviar #botonEnviar a:link, #mainContacto .formulario form .datosCinco .enviar #botonEnviar a:visited, #mainContacto .formulario form .datosCinco .enviar #botonEnviar a:active {
+          text-decoration: none;
+          color: black;
+          font-weight: bold;
+          font-style: normal;
+          font-family: "armata"; }
 
-    footer{
-        height: 12vh;
-    }
-}
+/* Se aplica Grids+Flexbox */
+footer {
+  height: 10vh;
+  background-color: #1895cf;
+  grid-area: footer; }
+  footer #textoFooter {
+    margin-top: 20px; }
+    footer #textoFooter .textoNegritaFooter {
+      font-weight: bold;
+      color: white;
+      font-family: "armata";
+      text-align: center;
+      align-self: end; }
+
+@font-face {
+  font-family: "armata";
+  src: url(../assets/fonts/Armata/Armata-Regular.ttf); }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "headeri" "nav" "main" "footer"; }

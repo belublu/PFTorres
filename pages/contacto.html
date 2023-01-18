@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio dedicado a Funko, de fanáticos para fanáticos">
+    <meta name="keywords"  content="FUNKO, POP, HISTORIA, COLECCION, FAN, COMUNIDAD FUNKO, CONTACTO">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Funkocity!</title>
+    <title>Funkocity! - Contacto</title>
 </head>
 
 <body>
@@ -14,29 +16,35 @@
 
         <div id="logosRedes">
 
-            <img class="logosRedes__Instagram"
-                src="../assets/imagenes/logoInstagram.png" 
-                alt="Logo Instagram" 
-                id="logoInstagram">
+            <div>
+               <img class="logosRedes__Instagram"
+                    src="../assets/imagenes/logoInstagram.webp" 
+                    alt="Logo Instagram" 
+                    id="logoInstagram"> 
+            </div>
 
-            <img class="logosRedes__Facebook"
-                src="../assets/imagenes/logoFacebook.png" 
-                alt="Logo Facebook" 
-                id="logoFacebook">
+            <div>
+                <img class="logosRedes__Facebook"
+                    src="../assets/imagenes/logoFacebook.webp" 
+                    alt="Logo Facebook" 
+                    id="logoFacebook">
+            </div>
 
-            <img class="logosRedes__Twitter"
-                src="../assets/imagenes/logoTwitter.png" 
-                alt="Logo Logo Twitter" 
-                id="logoTwitter">
+            <div>
+                <img class="logosRedes__Twitter"
+                    src="../assets/imagenes/logoTwitter.webp" 
+                    alt="Logo Logo Twitter" 
+                    id="logoTwitter"> 
+            </div>
         </div>
 
-        <div id="imgFunko">
+        <div class="imgFunko">
             <a href="../index.html"><img class="logoFunko"
-            src="../assets/imagenes/logoFunko2.png" 
+            src="../assets/imagenes/logoFunko2.webp" 
             alt="Logo Funko Pop letras celestes" id="logoFunko2"></a>
         </div>
 
-        <div id="fuenteBoton">
+        <div class="fuenteBoton">
             <button id="botonLogin"><a href="">Login</a></button>
             <button id="botonRegistro"><a href="">Registrarse</a></button>
         </div>
@@ -58,28 +66,32 @@
     </nav>
 
     <main id="mainContacto">
-        <section id="parrafoUno">
-            <article class="parrafo">
-                <h2 class="parrafo__Titulo">CONTACTO</h2>
-                <p class="parrafo__Texto">Dejanos tu consulta! La responderemos a la brevedad.
-                </p>
-            </article>
-        </section>
+        <article class="parrafo">
+            <h2 class="parrafo__Titulo">CONTACTO</h2>
+            <p class="parrafo__Texto">Dejanos tu consulta! La responderemos a la brevedad.
+            </p>
+        </article>
 
         <section class="formulario">
             <form action="" method="post" enctype="text/plain">
-    
+
                 <fieldset class="datos">
-                    <legend>Datos personales</legend>
-                    <div>
+                    <legend>
+                        <p>Datos personales</p>
+                    </legend>
+
+                    <div class="nombre">
                         <label for="Nombre">Nombre</label>
                         <input type="text" id="Nombre" placeholder="Utiliza mayúsculas y minúsculas">
                     </div>
-                    <div >
+                    
+
+                    <div class="apellido">
                         <label  for="Apellido">Apellido</label>
                         <input type="text" id="Apellido" placeholder="Utiliza mayúsculas y minúsculas">    
                     </div>
-                    <div>
+
+                    <div class="genero">
                         <label for="Rango de edad">Género</label>
                                 <select style="width: 250px; height: 50px" name="seleccion" id="Desplegable">
                             <option value="Opción 0"></option>
@@ -88,70 +100,98 @@
                             <option value="Opción 3">Otro</option>
                             </select>
                     </div>
-                    <div>
+
+                    <div class="edad">
                         <label for="Rango de edad">Rango de edad</label>
                                 <select style="width: 250px; height: 50px" name="seleccion" id="Desplegable">
                             <option value="Opción 0"></option>
                             <option value="Opción 1">Entre 10 y 19 años</option>
                             <option value="Opción 2">Entre 20 y 40 años</option>
                             <option value="Opción 3">Entre 41 y 60 años</option>
-                            <option value="Opción 3">Más de 61 años</option>
+                            <option value="Opción 4">Más de 61 años</option>
                         </select>
                     </div>
                 </fieldset>
             
-                <fieldset class="datos">
-                    <legend>Línea de Funko favorita</legend>
-                    <p class="textoDatos">Pensalo bien! Sólo podés seleccionar uno.</p>
-                    <label> <input type="radio" name="lineaFavorita" value="Wacky Wobbler">Wacky Wobbler</label>
-            
-                    <label for=""><input type="radio" name="lineaFavorita" value="Pop">Pop!</label>
-            
-                    <label for=""><input type="radio" name="lineaFavorita" value="Vinyl Soda">Vinyl Soda</label>
-            
-                    <label for=""><input type="radio" name="lineaFavorita" value="Vinyl Gold">Vinyl Gold</label>
-            
-                    <label for=""><input type="radio" name="lineaFavorita" value="Funko Games">Games</label>
-        
-                    <label for=""><input type="radio" name="lineaFavorita" value="Mystery Minis">Mystery Minis</label>
-        
-                    <label for=""><input type="radio" name="lineaFavorita" value="Plush">Plush</label>
-        
-                    <label for=""><input type="radio" name="lineaFavorita" value="Popsies">Popsies</label>
-        
-                    <label for=""><input type="radio" name="lineaFavorita" value="Dorbz">Dorbz</label>
+                <fieldset class="datosDos">
+                    <legend>
+                        <p>Línea de Funko favorita</p>
+                    </legend>
+
+                    <div class="textoDatos">
+                        <p>Pensalo bien! Sólo podés seleccionar uno.</p>
+                    </div>
+
+                    <div class="lineas">
+                        <label> <input type="radio" name="lineaFavorita" value="Wacky Wobbler">Wacky Wobbler</label>
+                
+                        <label for=""><input type="radio" name="lineaFavorita" value="Pop">Pop!</label>
                     
+                        <label for=""><input type="radio" name="lineaFavorita" value="Vinyl Soda">Vinyl Soda</label>
+                    
+                        <label for=""><input type="radio" name="lineaFavorita" value="Vinyl Gold">Vinyl Gold</label>
+                    
+                        <label for=""><input type="radio" name="lineaFavorita" value="Funko Games">Games</label>
+                
+                        <label for=""><input type="radio" name="lineaFavorita" value="Mystery Minis">Mystery Minis</label>
+                
+                        <label for=""><input type="radio" name="lineaFavorita" value="Plush">Plush</label>
+                
+                        <label for=""><input type="radio" name="lineaFavorita" value="Popsies">Popsies</label>
+                
+                        <label for=""><input type="radio" name="lineaFavorita" value="Dorbz">Dorbz</label> 
+                        </div>   
                 </fieldset>
             
-                <fieldset class="datos">
-                    <legend>Licencias favoritas</legend>
-                    <p class="textoDatos">En esta oportunidad podés seleccionar más de un personaje</p>
-                <div>
-                    <label for="licenciasfavoritas"> <input type="checkbox" name="" id="Marvel">Marvel</label>
-                    <label for="licenciasfavoritas"> <input type="checkbox" name="" id="Star Wars">Star Wars</label>
-                    <label for="licenciasfavoritas"> <input type="checkbox" name="" id="DC">DC</label>
-                    <label for="licenciasfavoritas"> <input type="checkbox" name="" id="Disney">Disney</label>
-                    <label for="licenciasfavoritas"> <input type="checkbox" name="" id="Harry Potter">Harry Potter</label>
-                    <label for="licenciasfavoritas"> <input type="checkbox" name="" id="Animé">Animé</label>
-                    <label for="licenciasfavoritas"> <input type="checkbox" name="" id="Shows de TV">Shows de TV</label>
-                    <label for="licenciasfavoritas"> <input type="checkbox" name="" id="Shows de TV animados">Shows de TV animados</label>
-                    <label for="licenciasfavoritas"> <input type="checkbox" name="" id="Deporte">Deporte</label>
-                    <label for="licenciasfavoritas"> <input type="checkbox" name="" id="Música">Música</label>
-                </div>
-                </fieldset>
-            
-                <fieldset class="datos">
-                    <legend>Tu consulta</legend>
-                    <div>
-                        <textarea name="" id="" cols="100" rows="10" placeholder="Escribe aquí tu consulta"></textarea>
+                <fieldset class="datosTres">
+                    <legend>
+                        <p>Licencias favoritas</p>
+                    </legend>
+
+                    <div class="textoDatos">
+                        <p>En esta oportunidad podés seleccionar más de un personaje</p>
+                        
+                    </div>
+
+                    <div class="licencias">
+                        <label for="licenciasfavoritas"> <input type="checkbox" name="" id="Marvel">Marvel</label>
+                        <label for="licenciasfavoritas"> <input type="checkbox" name="" id="Star Wars">Star Wars</label>
+                        <label for="licenciasfavoritas"> <input type="checkbox" name="" id="DC">DC</label>
+                        <label for="licenciasfavoritas"> <input type="checkbox" name="" id="Disney">Disney</label>
+                        <label for="licenciasfavoritas"> <input type="checkbox" name="" id="Harry Potter">Harry Potter</label>
+                        <label for="licenciasfavoritas"> <input type="checkbox" name="" id="Animé">Animé</label>
+                        <label for="licenciasfavoritas"> <input type="checkbox" name="" id="Shows de TV">Shows de TV</label>
+                        <label for="licenciasfavoritas"> <input type="checkbox" name="" id="Shows de TV animados">Shows de TV animados</label>
+                        <label for="licenciasfavoritas"> <input type="checkbox" name="" id="Deporte">Deporte</label>
+                        <label for="licenciasfavoritas"> <input type="checkbox" name="" id="Música">Música</label>
                     </div>
                 </fieldset>
-                <div class="datos">
-                    <p>Deseo recibir novedades</p>
-                    <label for=""><input type="radio" name="recibirNovedades" id="Si">Si</label>
-                    <label for=""><input type="radio" name="recibirNovedades" id="No">No</label>
+            
+                <fieldset class="datosCuatro">
+                    <legend>
+                        <p>Tu consulta</p>
+                    </legend>
+
+                    <div class="consulta">
+                        <textarea name="" id="boxTexto" cols="100" rows="10" placeholder="Escribe aquí tu consulta"></textarea>
+                    </div>
+                </fieldset>
+
+                <div class="datosCinco">
+                    <p>Deseo recibir novedades</p> 
+
+                    <div class="opciones">
+                        <label for=""><input type="radio" name="recibirNovedades" id="si">Si</label>
+                        <label for=""><input type="radio" name="recibirNovedades" id="no">No</label>
+
+                    </div>
+                    
+                    <div class="enviar">
+                        <button id="botonEnviar"><a href="">Enviar</a></button> 
+                    </div>
+                    
                 </div>
-                <input type="submit" value="Enviar">        
+                            
             </form>
         </section>
 
@@ -161,5 +201,6 @@
         <div id="textoFooter">
             <p class="textoNegritaFooter">Funkocity! Argentina</p>
         </div>
-    </footer>   
+    </footer>
+    
 </body>
