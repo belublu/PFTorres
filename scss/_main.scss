@@ -32,7 +32,8 @@
         #videos{
             height: 400px;
             background-color: #73def1;
-            border-radius: 10px;
+            border: #31c8e3 solid 4px;
+            border-radius: 15px;
             grid-area: videos;
             display: grid;
             grid-template-columns: 1fr;
@@ -83,7 +84,8 @@
         #fotos{
             height: 400px;
             background-color: #fc6863;
-            border-radius: 10px;
+            border: #ea453f solid 4px;
+            border-radius: 15px;
             grid-area: fotos;
             display: grid;
             grid-template-columns: 1fr;
@@ -297,6 +299,7 @@
         .foro{
             background-color:#fc6863;
             border: #f44741 solid 4px;
+            border-radius: 15px;
             width: 300px;
             height: 450px;
             grid-area: foro;
@@ -349,6 +352,7 @@
     .telegram{
         background-color:rgb(29, 204, 146);
         border: rgb(10, 160, 110) solid 4px;
+        border-radius: 15px;
         width: 300px;
         height: 450px;
         grid-area: telegram;
@@ -402,6 +406,7 @@
     .discord{
         background-color:#dcdc72;
         border: #c9c949 solid 4px;
+        border-radius: 15px;
         width: 300px;
         height: 450px;
         grid-area: discord;
@@ -457,10 +462,10 @@
 /* COLECCIONES */
 
 #mainColecciones{
-    height: 250vh;
+    height: 150vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.3fr 1fr 1fr 1fr 0.5fr;
+    grid-template-rows: 0.3fr repeat(5, 0.1fr);
     grid-template-areas: 
     "parrafoUno"
     "marvel"
@@ -487,9 +492,10 @@
     .marvel{
         grid-area: marvel;
         width:90%;
-        height: 325px;
-        border: black solid 4px; 
+        height: 200px;
         background-color:#f47fb4;
+        border-radius: 15px;
+        border: #f04f97 solid 4px;
         justify-self: center;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -506,9 +512,9 @@
         }
 
         #wallCapi{
-            width: 410px;
-            height: 240px;
-            border: black solid 2px;
+            width: 260px;
+            height: 140px;
+            border-radius: 10px;
             grid-area: capi; 
         }
     }
@@ -516,9 +522,10 @@
     .dc{
         grid-area: dc;
         width:90%;
-        height: 325px;
-        border: black solid 4px; 
+        height: 200px;
+        border-radius: 15px;
         background-color:#f0f47a;
+        border: #eef356 solid 4px;
         justify-self: center;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -535,9 +542,9 @@
         }
 
         #wallFlash{
-            width: 410px;
-            height: 240px;        
-            border: black solid 2px; 
+            width: 260px;
+            height: 140px;       
+            border-radius: 10px;
             grid-area: flash;
         }
     }
@@ -545,9 +552,10 @@
     .sw{
         grid-area: sw;
         width:90%;
-        height: 325px;
-        border: black solid 4px; 
+        height: 200px;
+        border-radius: 15px;
         background-color:#76f386;
+        border: #44f15b solid 4px;
         justify-self: center;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -564,9 +572,9 @@
         }
 
         #wallSw{
-            width: 410px;
-            height: 240px;
-            border: black solid 2px; 
+            width: 260px;
+            height: 140px;
+            border-radius: 10px;
             grid-area: star;            
         }
     }
@@ -766,6 +774,7 @@
                 .enviar{
                     margin-bottom: 40px;
                     justify-items: center;
+                    
     
                     #botonEnviar{
                         width: 150px;
@@ -776,10 +785,20 @@
                         font-weight: bold;
                         font-family: $font-general;
                         
-                        a{
+                        &:hover{
+                            background-color: $color-background;
+                            color: white;
+                                a{
+                                    color: white;
+                                }
+                        }
+                    }
+                    
+                    a{
+                        &:link, &:visited, &:active{
                             @include linksColecciones;
                         }
-                    } 
+                    }
                 } 
             }
         }
