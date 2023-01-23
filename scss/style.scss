@@ -10,6 +10,15 @@
     src: url(../assets/fonts/Armata/Armata-Regular.ttf);
 }
 
+@font-face {
+    font-family: "milks";
+    src: url(../assets/fonts/Milks/tt-milks-casual-pie-inline.ttf);
+}
+@font-face {
+    font-family: "engle";
+    src: url(../assets/fonts/Englebert/Englebert.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -17,16 +26,14 @@
 
 body{
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     overflow-x: hidden;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr 1fr 1fr;
     grid-template-areas: 
     "headeri"
     "nav"
     "main"
     "footer";
 }
-
-

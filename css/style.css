@@ -1,6 +1,6 @@
 /* Se aplica Grids+Flexbox */
 header {
-  height: 25vh;
+  height: 30vh;
   grid-area: headeri;
   display: grid;
   grid-template-columns: 0.3fr 2fr 0.3fr;
@@ -12,9 +12,9 @@ header {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     grid-template-areas: "ig fb tw";
-    grid-row-gap: 5px;
+    grid-column-gap: 0.5px;
     padding-top: 10px;
-    padding-left: 5px; }
+    padding-left: 10px; }
     header #logosRedes #logoInstagram {
       height: 30px;
       width: 30px;
@@ -22,27 +22,34 @@ header {
       align-self: start; }
     header #logosRedes #logoFacebook {
       height: 30px;
-      width: 40px;
+      width: 30px;
       grid-area: fb;
       align-self: start; }
     header #logosRedes #logoTwitter {
-      height: 35px;
-      width: 35px;
+      height: 30px;
+      width: 30px;
       grid-area: tw;
-      padding-left: 6px;
       align-self: start; }
   header .imgFunko {
     grid-area: imgFunko;
     justify-self: center;
     align-self: center; }
-    header .imgFunko #logoFunko2 {
-      width: 190px;
-      height: 70px;
-      opacity: .8; }
+    header .imgFunko a:link, header .imgFunko a:visited, header .imgFunko a:active {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      font-style: normal;
+      font-family: "armata"; }
+    header .imgFunko a h1 {
+      font-family: "milks";
+      color: #1895cf;
+      font-size: 5em;
+      font-weight: lighter; }
   header .fuenteBoton {
     grid-area: fuenteBoton;
     justify-self: center;
-    align-self: center;
+    align-self: start;
+    margin-top: 10px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
@@ -56,6 +63,11 @@ header {
       border: #1895cf solid 3px;
       font-family: "armata";
       font-weight: bold; }
+      header .fuenteBoton #botonLogin:hover {
+        background-color: #1895cf;
+        color: white; }
+        header .fuenteBoton #botonLogin:hover a {
+          color: white; }
     header .fuenteBoton #botonRegistro {
       grid-area: botonRegistro;
       width: 100px;
@@ -64,9 +76,13 @@ header {
       border: #1895cf solid 3px;
       font-family: "armata";
       font-weight: bold; }
-    header .fuenteBoton a:link, header .fuenteBoton a:visited, header .fuenteBoton a:active {
+      header .fuenteBoton #botonRegistro:hover {
+        background-color: #1895cf;
+        color: white; }
+        header .fuenteBoton #botonRegistro:hover a {
+          color: white; }
+    header .fuenteBoton a:link:link, header .fuenteBoton a:link:visited, header .fuenteBoton a:link:active, header .fuenteBoton a:visited:link, header .fuenteBoton a:visited:visited, header .fuenteBoton a:visited:active, header .fuenteBoton a:active:link, header .fuenteBoton a:active:visited, header .fuenteBoton a:active:active {
       text-decoration: none;
-      list-style-type: none;
       color: black;
       font-weight: bold;
       font-style: normal;
@@ -74,7 +90,8 @@ header {
 
 @media (max-width: 1024px) {
   header {
-    grid-template-columns: 0.3fr 2fr 0.5fr; }
+    grid-template-columns: 0.3fr 2fr 0.5fr;
+    background-color: pink; }
   #mainIndex {
     grid-template-rows: 1r repeat(2, 1fr); }
     #mainIndex #multimedia {
@@ -171,7 +188,7 @@ header {
   footer #textoFooter .textoNegritaFooter {
     font-size: 18px; } }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   header {
     grid-template-columns: 0.3fr 2fr 0.5fr; }
     header .fuenteBoton #botonLogin {
@@ -336,6 +353,8 @@ header {
     font-size: 12px; } }
 
 @media (max-width: 480px) {
+  header {
+    background-color: white; }
   body {
     height: 480vh; }
   header {
@@ -580,7 +599,8 @@ header {
 
 @media (max-width: 320px) {
   header {
-    grid-template-columns: 2fr 1fr; }
+    grid-template-columns: 2fr 1fr;
+    background-color: green; }
     header .imgFunko {
       margin-left: 0px;
       justify-self: right; }
@@ -662,7 +682,25 @@ header {
         width: 100px;
         height: 60px; } }
 
-/* Se aplica Grids+Flexbox */
+/* @media screen and (orientation: landscape){
+    header{
+        height: 45vh;
+        
+    }
+}
+ */
+/* @media screen and (orientation: landscape) and (max-width: 480px){
+    header{
+        height: 35vh;
+        background-color: orange;
+    }
+} */
+/* @media screen and (orientation: landscape) and (max-width: 320px){
+    header{
+        height: 100vh;
+        background-color: purple;
+    }
+} */
 nav {
   height: 12vh;
   grid-area: nav;
@@ -707,7 +745,8 @@ nav {
 
 @media (max-width: 1024px) {
   header {
-    grid-template-columns: 0.3fr 2fr 0.5fr; }
+    grid-template-columns: 0.3fr 2fr 0.5fr;
+    background-color: pink; }
   #mainIndex {
     grid-template-rows: 1r repeat(2, 1fr); }
     #mainIndex #multimedia {
@@ -804,7 +843,7 @@ nav {
   footer #textoFooter .textoNegritaFooter {
     font-size: 18px; } }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   header {
     grid-template-columns: 0.3fr 2fr 0.5fr; }
     header .fuenteBoton #botonLogin {
@@ -969,6 +1008,8 @@ nav {
     font-size: 12px; } }
 
 @media (max-width: 480px) {
+  header {
+    background-color: white; }
   body {
     height: 480vh; }
   header {
@@ -1213,7 +1254,8 @@ nav {
 
 @media (max-width: 320px) {
   header {
-    grid-template-columns: 2fr 1fr; }
+    grid-template-columns: 2fr 1fr;
+    background-color: green; }
     header .imgFunko {
       margin-left: 0px;
       justify-self: right; }
@@ -1295,13 +1337,31 @@ nav {
         width: 100px;
         height: 60px; } }
 
-/* Se aplica Grids+Flexbox */
+/* @media screen and (orientation: landscape){
+    header{
+        height: 45vh;
+        
+    }
+}
+ */
+/* @media screen and (orientation: landscape) and (max-width: 480px){
+    header{
+        height: 35vh;
+        background-color: orange;
+    }
+} */
+/* @media screen and (orientation: landscape) and (max-width: 320px){
+    header{
+        height: 100vh;
+        background-color: purple;
+    }
+} */
 /* INDEX*/
 #mainIndex {
   grid-area: main;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 0.5fr repeat(2, 1fr);
   grid-template-areas: "fotoPortada" "multimedia" "picSpider"; }
   #mainIndex #fotoPortada {
     grid-area: fotoPortada;
@@ -1319,12 +1379,16 @@ nav {
     #mainIndex #multimedia #videos {
       height: 400px;
       background-color: #73def1;
-      border: #1c8294 solid 3px;
+      border-radius: 10px;
       grid-area: videos;
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 0.5fr 1.5fr;
-      grid-template-areas: "videoPrincipal" "iframeV"; }
+      grid-template-areas: "videoPrincipal" "iframeV";
+      align-items: center; }
+      #mainIndex #multimedia #videos:hover {
+        background-color: #48bbcf;
+        border-radius: 10px; }
       #mainIndex #multimedia #videos .videoPrincipal {
         color: black;
         font-family: "armata";
@@ -1335,27 +1399,32 @@ nav {
           text-align: center;
           line-height: 40px; }
         #mainIndex #multimedia #videos .videoPrincipal .video__Texto {
-          font-size: 12px;
+          font-size: 16px;
           font-weight: 500;
-          line-height: 15px;
+          line-height: 20px;
+          font-family: "engle";
           margin-left: 20px;
           margin-right: 20px; }
       #mainIndex #multimedia #videos #iframeV {
         grid-area: iframeV;
         justify-self: center; }
         #mainIndex #multimedia #videos #iframeV iframe {
-          border: black solid 3px;
           width: 399px;
-          height: 249px; }
+          height: 249px;
+          border-radius: 10px; }
     #mainIndex #multimedia #fotos {
       height: 400px;
       background-color: #fc6863;
-      border: #c23a35 solid 3px;
+      border-radius: 10px;
       grid-area: fotos;
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 0.5fr 1.5fr;
-      grid-template-areas: "fotoPrincipal" "portadaFotos"; }
+      grid-template-areas: "fotoPrincipal" "portadaFotos";
+      align-items: center; }
+      #mainIndex #multimedia #fotos:hover {
+        background-color: #f74640;
+        border-radius: 10px; }
       #mainIndex #multimedia #fotos .fotoPrincipal {
         color: black;
         font-family: "armata";
@@ -1370,18 +1439,18 @@ nav {
           text-align: center;
           line-height: 40px; }
         #mainIndex #multimedia #fotos .fotoPrincipal .foto__Texto {
-          font-size: 12px;
+          font-size: 16px;
           font-weight: 500;
-          line-height: 15px;
+          line-height: 20px;
           text-align: center;
-          margin-bottom: 15px; }
+          font-family: "engle"; }
       #mainIndex #multimedia #fotos #portadaFotos {
         grid-area: portadaFotos;
         justify-self: center; }
         #mainIndex #multimedia #fotos #portadaFotos #portadaDeFotos {
-          width: 400px;
+          width: 375px;
           height: 250px;
-          border: black solid 3px; }
+          border-radius: 10px; }
   #mainIndex #picSpider {
     grid-area: picSpider;
     background-image: url(../assets/imagenes/wallStars.webp);
@@ -1389,31 +1458,20 @@ nav {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "spiderManIndex slogan"; }
-    #mainIndex #picSpider #spiderManIndex {
+    #mainIndex #picSpider .pic {
       grid-area: spiderManIndex;
       justify-self: right; }
-      #mainIndex #picSpider #spiderManIndex #spiderManPortada {
+      #mainIndex #picSpider .pic #spiderManPortada {
         width: 400px;
-        height: 400px;
-        animation-name: moverSpider;
-        animation-duration: 2s;
-        transition: all 2s; }
-        #mainIndex #picSpider #spiderManIndex #spiderManPortada:hover {
-          transform: translate(-200px); }
+        height: 400px; }
     #mainIndex #picSpider #slogan {
       color: black;
-      font-family: "armata";
-      font-size: 30px;
-      font-weight: bold;
+      font-family: "milks";
+      font-size: 35px;
       text-align: right;
-      font-style: oblique;
       grid-area: slogan;
-      align-self: center;
-      justify-self: center;
       translate: -100px;
-      transition-duration: 1s; }
-      #mainIndex #picSpider #slogan:hover {
-        transform: scale(1.3); }
+      align-self: center; }
 
 /* HISTORIA */
 #mainHistoria {
@@ -1433,7 +1491,8 @@ nav {
       line-height: 26px; }
       #mainHistoria #parrafoUno .parrafo .parrafo__Titulo {
         margin-top: 5px;
-        line-height: 50px; }
+        line-height: 50px;
+        text-align: center; }
   #mainHistoria #parrafoDos {
     display: grid;
     grid-template-columns: 0.5fr 2fr;
@@ -1499,7 +1558,8 @@ nav {
       margin-right: 40px;
       line-height: 26px; }
       #mainComunidad #tituloComunidad .parrafo .parrafo__Titulo {
-        line-height: 50px; }
+        line-height: 50px;
+        text-align: center; }
       #mainComunidad #tituloComunidad .parrafo .parrafo__Texto {
         font-size: 15px; }
   #mainComunidad .foro {
@@ -1514,11 +1574,11 @@ nav {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "foroTitulo" "comunidadTexto" "comunidad";
-    animation-name: animForo;
+    animation-name: animTeleg;
     animation-duration: 1s;
     justify-items: center; }
 
-@keyframes animForo {
+@keyframes animTeleg {
   from {
     transform: translate(0) scale(0); }
   to {
@@ -1528,15 +1588,15 @@ nav {
       font-size: 30px;
       text-align: center;
       font-weight: bolder;
-      grid-area: foroTitulo;
-      align-self: center; }
+      align-self: center;
+      grid-area: foroTitulo; }
     #mainComunidad .foro .comunidad__Texto {
+      grid-area: comunidadTexto;
       font-size: 18px;
       font-family: "armata";
       text-align: center;
       margin-left: 5px;
-      margin-right: 5px;
-      grid-area: comunidadTexto; }
+      margin-right: 5px; }
     #mainComunidad .foro .comunidad {
       font-family: "armata";
       font-size: 30px;
@@ -1545,8 +1605,8 @@ nav {
       color: black;
       grid-area: comunidad; }
       #mainComunidad .foro .comunidad #logoForo {
-        width: 300px;
-        height: 250px; }
+        width: 200px;
+        height: 200px; }
   #mainComunidad .telegram {
     background-color: #1dcc92;
     border: #0aa06e solid 4px;
@@ -1573,7 +1633,6 @@ nav {
       font-size: 30px;
       text-align: center;
       font-weight: bolder;
-      grid-area: foroTitulo;
       align-self: center;
       grid-area: foroTitulo; }
     #mainComunidad .telegram .comunidad__Texto {
@@ -1582,8 +1641,7 @@ nav {
       font-family: "armata";
       text-align: center;
       margin-left: 5px;
-      margin-right: 5px;
-      grid-area: comunidadTexto; }
+      margin-right: 5px; }
     #mainComunidad .telegram .comunidad {
       font-family: "armata";
       font-size: 30px;
@@ -1606,30 +1664,29 @@ nav {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "foroTitulo" "comunidadTexto" "comunidad";
-    animation-name: animDisc;
+    animation-name: animTeleg;
     animation-duration: 1s;
     justify-items: center; }
 
-@keyframes animDisc {
+@keyframes animTeleg {
   from {
     transform: translate(0) scale(0); }
   to {
-    transform: translate(100) scale(1); } }
+    transform: translate(100) scale(1.2); } }
     #mainComunidad .discord .foro__Titulo {
-      grid-area: fotoTitulo;
       font-family: "armata";
       font-size: 30px;
       text-align: center;
       font-weight: bolder;
-      grid-area: foroTitulo;
-      align-self: center; }
+      align-self: center;
+      grid-area: foroTitulo; }
     #mainComunidad .discord .comunidad__Texto {
+      grid-area: comunidadTexto;
       font-size: 18px;
       font-family: "armata";
       text-align: center;
       margin-left: 5px;
-      margin-right: 5px;
-      grid-area: comunidadTexto; }
+      margin-right: 5px; }
     #mainComunidad .discord .comunidad {
       font-family: "armata";
       font-size: 30px;
@@ -1660,7 +1717,8 @@ nav {
       line-height: 26px; }
       #mainColecciones #parrafoUno .parrafo .parrafo__Titulo {
         margin-top: 5px;
-        line-height: 50px; }
+        line-height: 50px;
+        text-align: center; }
   #mainColecciones .marvel {
     grid-area: marvel;
     width: 90%;
@@ -1764,7 +1822,8 @@ nav {
   line-height: 26px; }
   #mainContacto .parrafo .parrafo__Titulo {
     margin-top: 5px;
-    line-height: 50px; }
+    line-height: 50px;
+    text-align: center; }
   #mainContacto .parrafo .parrafo__Texto {
     font-size: 15px; }
 
@@ -1782,7 +1841,7 @@ nav {
         margin-left: 5px; }
     #mainContacto .formulario form .datos .nombre, #mainContacto .formulario form .datos .apellido, #mainContacto .formulario form .datos .genero, #mainContacto .formulario form .datos .edad {
       font-family: "armata";
-      font-size: 11px;
+      font-size: 12px;
       font-weight: bold;
       margin-top: 20px;
       margin-bottom: 8px;
@@ -1892,7 +1951,8 @@ nav {
 
 @media (max-width: 1024px) {
   header {
-    grid-template-columns: 0.3fr 2fr 0.5fr; }
+    grid-template-columns: 0.3fr 2fr 0.5fr;
+    background-color: pink; }
   #mainIndex {
     grid-template-rows: 1r repeat(2, 1fr); }
     #mainIndex #multimedia {
@@ -1989,7 +2049,7 @@ nav {
   footer #textoFooter .textoNegritaFooter {
     font-size: 18px; } }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   header {
     grid-template-columns: 0.3fr 2fr 0.5fr; }
     header .fuenteBoton #botonLogin {
@@ -2154,6 +2214,8 @@ nav {
     font-size: 12px; } }
 
 @media (max-width: 480px) {
+  header {
+    background-color: white; }
   body {
     height: 480vh; }
   header {
@@ -2398,7 +2460,8 @@ nav {
 
 @media (max-width: 320px) {
   header {
-    grid-template-columns: 2fr 1fr; }
+    grid-template-columns: 2fr 1fr;
+    background-color: green; }
     header .imgFunko {
       margin-left: 0px;
       justify-self: right; }
@@ -2480,7 +2543,25 @@ nav {
         width: 100px;
         height: 60px; } }
 
-/* Se aplica Grids+Flexbox */
+/* @media screen and (orientation: landscape){
+    header{
+        height: 45vh;
+        
+    }
+}
+ */
+/* @media screen and (orientation: landscape) and (max-width: 480px){
+    header{
+        height: 35vh;
+        background-color: orange;
+    }
+} */
+/* @media screen and (orientation: landscape) and (max-width: 320px){
+    header{
+        height: 100vh;
+        background-color: purple;
+    }
+} */
 footer {
   height: 10vh;
   background-color: #1895cf;
@@ -2496,7 +2577,8 @@ footer {
 
 @media (max-width: 1024px) {
   header {
-    grid-template-columns: 0.3fr 2fr 0.5fr; }
+    grid-template-columns: 0.3fr 2fr 0.5fr;
+    background-color: pink; }
   #mainIndex {
     grid-template-rows: 1r repeat(2, 1fr); }
     #mainIndex #multimedia {
@@ -2593,7 +2675,7 @@ footer {
   footer #textoFooter .textoNegritaFooter {
     font-size: 18px; } }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   header {
     grid-template-columns: 0.3fr 2fr 0.5fr; }
     header .fuenteBoton #botonLogin {
@@ -2758,6 +2840,8 @@ footer {
     font-size: 12px; } }
 
 @media (max-width: 480px) {
+  header {
+    background-color: white; }
   body {
     height: 480vh; }
   header {
@@ -3002,7 +3086,8 @@ footer {
 
 @media (max-width: 320px) {
   header {
-    grid-template-columns: 2fr 1fr; }
+    grid-template-columns: 2fr 1fr;
+    background-color: green; }
     header .imgFunko {
       margin-left: 0px;
       justify-self: right; }
@@ -3084,9 +3169,36 @@ footer {
         width: 100px;
         height: 60px; } }
 
+/* @media screen and (orientation: landscape){
+    header{
+        height: 45vh;
+        
+    }
+}
+ */
+/* @media screen and (orientation: landscape) and (max-width: 480px){
+    header{
+        height: 35vh;
+        background-color: orange;
+    }
+} */
+/* @media screen and (orientation: landscape) and (max-width: 320px){
+    header{
+        height: 100vh;
+        background-color: purple;
+    }
+} */
 @font-face {
   font-family: "armata";
   src: url(../assets/fonts/Armata/Armata-Regular.ttf); }
+
+@font-face {
+  font-family: "milks";
+  src: url(../assets/fonts/Milks/tt-milks-casual-pie-inline.ttf); }
+
+@font-face {
+  font-family: "engle";
+  src: url(../assets/fonts/Englebert/Englebert.ttf); }
 
 * {
   margin: 0;
@@ -3094,9 +3206,9 @@ footer {
 
 body {
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   overflow-x: hidden;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 1fr 1fr 1fr;
   grid-template-areas: "headeri" "nav" "main" "footer"; }

@@ -1,7 +1,7 @@
 /* Se aplica Grids+Flexbox */
 
 header{
-    height: 25vh;
+    height: 30vh;
     grid-area: headeri;
     display: grid;
     grid-template-columns: 0.3fr 2fr 0.3fr ;
@@ -18,50 +18,54 @@ header{
         grid-template-rows: 1fr;
         grid-template-areas: 
         "ig fb tw";
-        grid-row-gap: 5px;
+        grid-column-gap: 0.5px;
         padding-top: 10px;
-        padding-left: 5px;
-            
-            #logoInstagram{
-                height: 30px;
-                width: 30px;
-                grid-area: ig;
-                align-self: start;
-            }
+        padding-left: 10px;
+        
+        #logoInstagram{
+            height: 30px;
+            width: 30px;
+            grid-area: ig;
+            align-self: start;
+        }
 
-            #logoFacebook{
-                height: 30px;
-                width: 40px;
-                grid-area: fb;
-                align-self: start;
-            }    
+         #logoFacebook{
+            height: 30px;
+            width: 30px;
+            grid-area: fb;
+            align-self: start;
+        }    
 
-            #logoTwitter{ 
-                height: 35px;
-                width: 35px;
-                grid-area: tw;
-                padding-left: 6px;
-                align-self: start; 
-            }
-
+        #logoTwitter{ 
+            height: 30px;
+            width: 30px;
+            grid-area: tw;
+            align-self: start; 
+        }
     }
     
     .imgFunko{
-    grid-area: imgFunko;
-    justify-self: center;
-    align-self: center;
+        grid-area: imgFunko;
+        justify-self: center;
+        align-self: center;
 
-        #logoFunko2{
-            width: 190px;
-            height: 70px;
-            opacity: .8;
+        a{
+            @include linksColecciones;
+
+            h1{
+                font-family: "milks";
+                color: $color-background;
+                font-size: 5em;
+                font-weight: lighter;
+            }
         }
     }
 
     .fuenteBoton{
     grid-area: fuenteBoton;
     justify-self: center;
-    align-self: center;
+    align-self: start;
+    margin-top: 10px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
@@ -70,14 +74,21 @@ header{
     "botonRegistro";
     grid-row-gap: 10px;
 
-        #botonLogin{
-            grid-area: botonLogin;
-            width: 100px;
-            height:30px;
-            border-radius: 10px;
-            border: $color-background solid 3px;
-            font-family: $font-general;
-            font-weight: bold;
+    #botonLogin{
+        grid-area: botonLogin;
+        width: 100px;
+        height:30px;
+        border-radius: 10px;
+        border: $color-background solid 3px;
+        font-family: $font-general;
+        font-weight: bold;
+            &:hover{
+                background-color: $color-background;
+                color: white;
+                    a{
+                        color: white;
+                    }
+            }
         }
 
         #botonRegistro{
@@ -88,16 +99,19 @@ header{
             border: $color-background solid 3px;
             font-family: $font-general;
             font-weight: bold;
+
+            &:hover{
+                background-color: $color-background;
+                color: white;
+                    a{
+                        color: white;
+                    }
+            }
         }
 
         a{
             &:link, &:visited, &:active{
-                text-decoration: none;
-                list-style-type: none;
-                color: $color-font-general;
-                font-weight: bold;
-                font-style: normal;
-                font-family: $font-general; 
+                @include linksColecciones;
             }
         }
     }

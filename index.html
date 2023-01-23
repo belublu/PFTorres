@@ -6,50 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Sitio dedicado a Funko, de fanáticos para fanáticos">
     <meta name="keywords"  content="FUNKO, POP, COLECCIONISTA, COLECCION, FAN, COMUNIDAD FUNKO">
-
+    <!-- Biblioteca de animación Animate Style -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Biblioteca de animación AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <title>Funkocity!</title>
 </head>
 
 <body>
-
     <header>
-
         <div id="logosRedes">
-
             <div>
-               <img class="logosRedes__Instagram"
-                    src="./assets/imagenes/logoInstagram.webp" 
+                <a class= "logosRedes__Instagram" 
+                    href="http://instagram.com">
+                    
+                    <img
+                    src="./assets/imagenes/instagramLogoFinal.webp" 
                     alt="Logo Instagram" 
                     id="logoInstagram"> 
+                </a>
             </div>
 
             <div>
-                <img class="logosRedes__Facebook"
-                    src="./assets/imagenes/logoFacebook.webp" 
-                    alt="Logo Facebook" 
-                    id="logoFacebook">
+                <a class="logosRedes__Facebook"
+                    href="http://facebook.com">
+
+                    <img 
+                        src="./assets/imagenes/facebookLogoFinal.webp" 
+                        alt="Logo Facebook" 
+                        id="logoFacebook">
+                </a>
             </div>
 
             <div>
-                <img class="logosRedes__Twitter"
-                    src="./assets/imagenes/logoTwitter.webp" 
+                <a class="logosRedes__Twitter" 
+                href="http://twitter.com">
+
+                <img 
+                    src="./assets/imagenes/twitterLogoFinal.webp" 
                     alt="Logo Logo Twitter" 
                     id="logoTwitter"> 
+                </a>
             </div>
         </div>
 
         <div class="imgFunko">
-            <a href="./index.html"><img class="logoFunko"
+            <!-- <a href="./index.html"><img class="logoFunko"
             src="./assets/imagenes/logoFunko2.webp" 
-            alt="Logo Funko Pop letras celestes" id="logoFunko2"></a>
+            alt="Logo Funko Pop letras celestes" id="logoFunko2"></a> -->
+            <a href="./index.html">
+                <h1>FUNKOLANDIA</h1>
+            </a>
         </div>
 
         <div class="fuenteBoton">
             <button id="botonLogin"><a href="">Login</a></button>
             <button id="botonRegistro"><a href="">Registrarse</a></button>
         </div>
-
     </header>
 
     <nav>
@@ -67,14 +83,12 @@
     </nav>
 
     <main id="mainIndex">
-        
         <div id="fotoPortada">
             <img 
-            src="./assets/imagenes/funkoPopConLogo.jpg" 
+            src="./assets/imagenes/images.webp" 
             alt="Funko Pop con Logo"
             id="fotoMuchosPops">
         </div>
-        
 
         <div id="multimedia">
 
@@ -103,29 +117,32 @@
 
                 <div id="portadaFotos">
                     <img 
-                        src="./assets/imagenes/funkoPopFotos.jpg" 
+                        src="./assets/imagenes/funkoPopFotos.webp" 
                         alt="Foto Pops Stranger Things" 
                         id="portadaDeFotos">
                 </div>
             </div>
         </div>
         
-
         <section id="picSpider">
-            <div id="spiderManIndex">
+            <div class="pic" 
+            data-aos="fade-right"
+            data-aos-delay="100">
+                
                 <img 
                 src="./assets/imagenes/spiderManPop.webp" 
                 alt="Foto Pop de SpiderMan"
                 id="spiderManPortada">
             </div>
 
-            <article id="slogan">
-                <p class="slogan__Texto">"Todos son <br> fanáticos de algo"
-                </p>
+            <article id="slogan" 
+            data-aos="fade-left" 
+            data-aos-delay="100">
+                
+                <p>"Todos son fanáticos de algo"
+                    </p>
             </article>
         </section>
-
-
     </main>
 
     <footer>
@@ -133,4 +150,11 @@
             <p class="textoNegritaFooter">Funkocity! Argentina</p>
         </div>
     </footer>
+
+    <!-- Activación AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>

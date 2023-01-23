@@ -1,12 +1,10 @@
-/* Se aplica Grids+Flexbox */
-
 /* INDEX*/
 
 #mainIndex{ 
     grid-area: main;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 0.5fr repeat(2, 1fr);
     grid-template-areas:
         "fotoPortada"
         "multimedia"
@@ -28,13 +26,13 @@
         grid-template-rows: 1fr;
         grid-template-areas:
             "videos fotos";
-            grid-column-gap: 30px;
+        grid-column-gap: 30px;
         justify-content: center;
 
         #videos{
             height: 400px;
             background-color: #73def1;
-            border: #1c8294 solid 3px;
+            border-radius: 10px;
             grid-area: videos;
             display: grid;
             grid-template-columns: 1fr;
@@ -42,6 +40,11 @@
             grid-template-areas: 
             "videoPrincipal"
             "iframeV"; 
+            align-items: center;
+            &:hover{
+                background-color: #48bbcf;
+                border-radius: 10px;
+            }
 
             .videoPrincipal{
                 color: $color-font-general;
@@ -49,19 +52,20 @@
                 font-weight: bolder;
                 grid-area: videoPrincipal;
 
-                    .video__Titulo{
-                        font-size: 18px;
-                        text-align: center;
-                        line-height: 40px;
-                    }
+                .video__Titulo{
+                    font-size: 18px;
+                    text-align: center;
+                    line-height: 40px;
+                }
 
-                    .video__Texto{
-                        font-size: 12px;
-                        font-weight:500;
-                        line-height: 15px;
-                        margin-left: 20px;
-                        margin-right: 20px;  
-                    }
+                .video__Texto{
+                    font-size: 16px;
+                    font-weight:500;
+                    line-height: 20px;
+                    font-family: "engle";
+                    margin-left: 20px;
+                    margin-right: 20px;  
+                }
             }
 
             #iframeV{
@@ -69,9 +73,9 @@
             justify-self: center;
 
                 iframe{
-                    border: black solid 3px;
                     width: 399px;
                     height: 249px;
+                    border-radius: 10px;
                 }
             }
         }
@@ -79,7 +83,7 @@
         #fotos{
             height: 400px;
             background-color: #fc6863;
-            border: #c23a35 solid 3px;
+            border-radius: 10px;
             grid-area: fotos;
             display: grid;
             grid-template-columns: 1fr;
@@ -87,6 +91,11 @@
             grid-template-areas: 
             "fotoPrincipal"
             "portadaFotos"; 
+            align-items: center;
+            &:hover{
+                background-color: #f74640;
+                border-radius: 10px;
+            }
 
             .fotoPrincipal{
                 color: $color-font-general;
@@ -94,28 +103,27 @@
                 font-weight: bolder;
                 text-align: center;
                 grid-area: fotoPrincipal;
-
-
-                    a{
-                        &:link, &:visited, &:active{
-                            text-decoration: none;
-                            color: $color-font-general;    
-                        }
+                
+                a{
+                    &:link, &:visited, &:active{
+                        text-decoration: none;
+                        color: $color-font-general;    
                     }
+                }
 
-                    .foto__Titulo{
-                        font-size: 18px;
-                        text-align: center;
-                        line-height: 40px; 
-                    }
+                .foto__Titulo{
+                    font-size: 18px;
+                    text-align: center;
+                    line-height: 40px; 
+                }
                     
-                    .foto__Texto{
-                        font-size: 12px;
-                        font-weight:500;
-                        line-height: 15px;
-                        text-align: center;
-                        margin-bottom: 15px;
-                    }
+                .foto__Texto{
+                    font-size: 16px;
+                    font-weight:500;
+                    line-height: 20px;
+                    text-align: center;
+                    font-family: "engle";
+                }
             }
 
             #portadaFotos{
@@ -123,9 +131,9 @@
                 justify-self: center;
 
                 #portadaDeFotos{
-                    width: 400px;
+                    width: 375px;
                     height: 250px;
-                    border: black solid 3px;
+                    border-radius: 10px;
                 }
             }
         }
@@ -140,38 +148,25 @@
         grid-template-areas:
         "spiderManIndex slogan";
         
-            #spiderManIndex{
-                grid-area: spiderManIndex;
-                justify-self: right;
-
-                    #spiderManPortada{
-                        width: 400px;
-                        height: 400px;
-                        animation-name: moverSpider;
-                        animation-duration: 2s;
-                        transition: all 2s;
-                        &:hover{
-                            transform: translate(-200px);
-                        }
-                    }
+        .pic{
+            grid-area: spiderManIndex;
+            justify-self: right;
+                    
+            #spiderManPortada{
+                width: 400px;
+                height: 400px;
             }
+        }
 
-            #slogan{
-                color: $color-font-general;
-                font-family: $font-general;
-                font-size: 30px;
-                font-weight: bold;
-                text-align: right;
-                font-style: oblique;
-                grid-area: slogan;
-                align-self: center;
-                justify-self: center;
-                translate: -100px ;
-                transition-duration: 1s;
-                &:hover{
-                    transform:scale(1.3);
-                }
-            }
+        #slogan{
+            color: $color-font-general;
+            font-family: "milks";
+            font-size: 35px;
+            text-align: right;
+            grid-area: slogan;
+            translate: -100px;
+            align-self: center;  
+        }
     }
 }
 
@@ -198,6 +193,7 @@
             .parrafo__Titulo{
                 margin-top: 5px;
                 line-height: 50px;
+                text-align: center;
             }
         }
     }
@@ -221,7 +217,6 @@
 
         .fotoParaMobil{
             display: none;
-
         }
 
         .parrafo{
@@ -257,7 +252,7 @@
 
     #parrafoCuatro{
         grid-area: parrafoCuatro;
-
+        
         .fotoParrafoCuatro{
             #fotoHileraPops{
                 width: 98%;
@@ -290,7 +285,7 @@
             
             .parrafo__Titulo{
                 line-height: 50px;
-                
+                text-align: center;
             }
 
             .parrafo__Texto{
@@ -299,55 +294,57 @@
         }
     }
 
-    .foro{
-        background-color:#fc6863;
-        border: #f44741 solid 4px;
-        width: 300px;
-        height: 450px;
-        grid-area: foro;
-        justify-self: right;
-        align-self: center;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: 
-            "foroTitulo"
-            "comunidadTexto"
-            "comunidad"; 
-        animation-name: animForo;
-        animation-duration: 1s;
-        justify-items: center; 
-            @keyframes animForo {
-                from{
-                    transform: translate(0) scale(0);
-                }to{
-                    transform: translate(100) scale(1.2);
+        .foro{
+            background-color:#fc6863;
+            border: #f44741 solid 4px;
+            width: 300px;
+            height: 450px;
+            grid-area: foro;
+            justify-self: right;
+            align-self: center;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas: 
+                "foroTitulo"
+                "comunidadTexto"
+                "comunidad"; 
+            animation-name: animTeleg;
+            animation-duration: 1s;
+            justify-items: center;
+    
+                @keyframes animTeleg {
+                    from{
+                        transform: translate(0) scale(0);
+                    }to{
+                        transform: translate(100) scale(1.2);
+                    }
                 }
+    
+            .foro__Titulo{
+                @include titulo-comunidad;
+                grid-area: foroTitulo;
             }
-             
-        .foro__Titulo{
-            @include titulo-comunidad;
-        } 
-
-        .comunidad__Texto{
-            @include texto-comunidad;  
+        
+            .comunidad__Texto{
+                grid-area: comunidadTexto;
+                @include texto-comunidad;
+            }
+        
+            .comunidad{
+                font-family: $font-general;
+                font-size: 30px;
+                font-weight: bold;
+                line-height: 55px; 
+                color: $color-font-general;  
+                grid-area: comunidad;
+    
+                #logoForo{
+                    width: 200px;
+                    height: 200px;  
+                }
+            } 
         }
-
-        .comunidad{
-            font-family: $font-general;
-            font-size: 30px;
-            font-weight: bold;
-            line-height: 55px; 
-            color: $color-font-general;  
-            grid-area: comunidad;
-
-
-            #logoForo{
-                width: 300px;
-                height: 250px;
-            }
-        } 
-    }
     
     .telegram{
         background-color:rgb(29, 204, 146);
@@ -367,6 +364,7 @@
         animation-name: animTeleg;
         animation-duration: 1s;
         justify-items: center;
+
             @keyframes animTeleg {
                 from{
                     transform: translate(0) scale(0);
@@ -393,7 +391,6 @@
             line-height: 55px; 
             color: $color-font-general;  
             grid-area: comunidad;
-            
 
             #logoTelegram{
                 width: 200px;
@@ -417,25 +414,26 @@
             "foroTitulo"
             "comunidadTexto"
             "comunidad"; 
-        animation-name: animDisc;
+        animation-name: animTeleg;
         animation-duration: 1s;
         justify-items: center;
 
-            @keyframes animDisc {
+            @keyframes animTeleg {
                 from{
-                    transform: translate(0) scale(0) ;
+                    transform: translate(0) scale(0);
                 }to{
-                    transform: translate(100) scale(1) ;
+                    transform: translate(100) scale(1.2);
                 }
             }
 
         .foro__Titulo{
-            grid-area: fotoTitulo;
             @include titulo-comunidad;
+            grid-area: foroTitulo;
         }
-
+    
         .comunidad__Texto{
-            @include texto-comunidad; 
+            grid-area: comunidadTexto;
+            @include texto-comunidad;
         }
     
 
@@ -449,7 +447,7 @@
 
             #logoDiscord{
                 width: 200px;
-                height: 200px;
+                height: 200px;  
             }
         } 
     }
@@ -481,6 +479,7 @@
             .parrafo__Titulo{
                 margin-top: 5px;
                 line-height: 50px;
+                text-align: center;
             }
         }
     }
@@ -599,6 +598,7 @@
         .parrafo__Titulo{
             margin-top: 5px;
             line-height: 50px;
+            text-align: center;
         }
         
         .parrafo__Texto{
@@ -627,14 +627,13 @@
                 
                 .nombre, .apellido, .genero, .edad{
                     font-family: $font-general;
-                    font-size: 11px;
+                    font-size: 12px;
                     font-weight: bold;
                     margin-top: 20px;
                     margin-bottom: 8px;
                     margin-left: 10px;
                 }
             }
-                
     
             .datosDos{
                 margin-top: 20px;
@@ -663,7 +662,6 @@
                 .lineas{
                     margin-bottom: 10px;
                 
-    
                     label{
                         margin-right: 20px;
                         margin-left: 20px;
@@ -728,7 +726,6 @@
                     margin-left: 10px;
                     margin-bottom: 20px;
                     
-    
                     textarea{
                         font-family: $font-general;
                         font-size: 13px;
@@ -752,7 +749,6 @@
     
                 .opciones{
                     margin-bottom: 10px;
-                 
                 
                     label{
                         margin-right: 20px;
@@ -770,8 +766,6 @@
                 .enviar{
                     margin-bottom: 40px;
                     justify-items: center;
-
-                 
     
                     #botonEnviar{
                         width: 150px;
@@ -781,7 +775,6 @@
                         font-size: 15px;
                         font-weight: bold;
                         font-family: $font-general;
-                        
                         
                         a{
                             @include linksColecciones;

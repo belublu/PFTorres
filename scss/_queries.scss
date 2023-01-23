@@ -1,6 +1,7 @@
 @media (max-width: 1024px){
     header{
         grid-template-columns: 0.3fr 2fr 0.5fr;
+        background-color: pink;
     }
 
     #mainIndex{
@@ -229,9 +230,10 @@
 }
 
 
-@media (max-width: 768px){
+@media screen and (max-width: 768px) /* and (orientation: landscape) */{
     header{
         grid-template-columns: 0.3fr 2fr 0.5fr;
+      
 
         .fuenteBoton{
             #botonLogin{
@@ -583,8 +585,12 @@
 
 
 @media (max-width: 480px) {
+    header{
+        background-color: white;
+    }
     body{
         height: 480vh;
+        
     }
 
     header{
@@ -1029,6 +1035,7 @@
     
     header{
         grid-template-columns: 2fr 1fr ;
+        background-color: green;
 
         .imgFunko{
             margin-left: 0px;
@@ -1190,4 +1197,23 @@
     }
 }
 
+/* @media screen and (orientation: landscape){
+    header{
+        height: 45vh;
+        
+    }
+}
+ */
+/* @media screen and (orientation: landscape) and (max-width: 480px){
+    header{
+        height: 35vh;
+        background-color: orange;
+    }
+} */
 
+/* @media screen and (orientation: landscape) and (max-width: 320px){
+    header{
+        height: 100vh;
+        background-color: purple;
+    }
+} */

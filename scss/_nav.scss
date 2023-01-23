@@ -1,5 +1,3 @@
-/* Se aplica Grids+Flexbox */
-
 nav{
     height: 12vh;
     grid-area: nav;
@@ -53,12 +51,8 @@ nav{
             border: none;
             background-color: transparent;
         }
-              
     }
-    
 }
-
-
 
 
 @import "./queries";

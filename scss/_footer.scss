@@ -1,26 +1,19 @@
-/* Se aplica Grids+Flexbox */
-
 footer{
     height: 10vh;
     background-color: $color-background;
     grid-area: footer;
     
-
     #textoFooter{
         margin-top: 20px;
       
         .textoNegritaFooter{
-                font-weight: bold;
-                color: white;
-                font-family: $font-general;
-                text-align: center;
-                align-self: end;
-
-            
-            }
+            font-weight: bold;
+            color: white;
+            font-family: $font-general;
+            text-align: center;
+            align-self: end;
         }
-    
-        
+    }
 }
 
 @import "./queries";
