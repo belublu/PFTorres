@@ -1,30 +1,80 @@
-/* @media (max-width: 1024px){
+/* @media screen and (max-width: 2560px){
     header{
-        grid-template-columns: 0.3fr 2fr 0.5fr;
-        background-color: pink;
+        #logosRedes{
+            padding-top: 20px;
+            padding-left: 20px;
+            
+            #logoInstagram{
+                height: 60px;
+                width: 60px;
+            }
+    
+             #logoFacebook{
+                height: 60px;
+                width: 60px;
+            }    
+    
+            #logoTwitter{ 
+                height: 60px;
+                width: 60px;
+            }
+        }
+        
+        .imgFunko{
+            a{   
+                h1{
+                    font-size: 10em;
+                }
+            }
+        }
+    
+        .fuenteBoton{
+        margin-top: 20px;
+        grid-row-gap: 10px;
+    
+        #botonLogin{
+            width: 210px;
+            height:60px;
+            border-radius: 15px;
+            border: $color-background solid 4px;
+            font-size: 30px;
+            }
+    
+            #botonRegistro{
+                width: 210px;
+                height:60px;
+                border-radius: 15px;
+                border: $color-background solid 4px;
+                font-size: 30px;
+            }
+        }
+    }
+}
+ */
+
+
+
+@media (max-width: 1024px){
+    header{
+        grid-template-columns: 0.4fr 2fr 0.5fr;
     }
 
     #mainIndex{
         grid-template-rows: 1r repeat(2, 1fr);
+        height: 160vh;
 
         #multimedia{
-            grid-template-columns: 40% 40%;
-            grid-column-gap: 30px;
-
             #videos{
                 .videoPrincipal{
                     .video__Titulo{
                         font-size: 16px;
                         margin-top: 20px;
                         line-height: 24px;
-                        margin-left: 5px;
-                        margin-right: 5px;
                     }
 
                     .video__Texto{
                         margin-top: 20px;  
                         text-align: center;
-                        
                     }
                 }
 
@@ -37,7 +87,6 @@
                     }
                 }
             }
-        
 
             #fotos{
                 .fotoPrincipal{
@@ -46,6 +95,8 @@
                     .foto__Titulo{
                         font-size: 16px;
                         line-height: 24px;
+                        margin-left: 2px;
+                        margin-top: 4px;
                     }
 
                     .foto__Texto{
@@ -56,16 +107,32 @@
                     }
                 }
 
-                #portadaFotos{
+                .portadaFotos{
                     align-self: center;
 
                     #portadaDeFotos{
-                        width: 320px;
-                        height: 200px;
+                        width: 230px;
+                        height: 150px;
                     }
                 }
             }
-        }    
+        }  
+        
+        #picSpider{
+            .pic{
+                #spiderManPortada{
+                    width: 320px;
+                    height: 320px;
+                }
+            }
+        }
+
+        #slogan{
+            text-align: center;
+            p{
+                text-align: center;
+            }
+        }
     }
 
     #mainHistoria{
@@ -95,76 +162,24 @@
     }
 
     #mainComunidad{
-        .foro{
-            width: 250px;
-            height: 300px;
-
-            .foro__Titulo{
-                font-size: 25px;
-                margin-top: 10px;
-            } 
-    
-            .comunidad__Texto{
-                font-size: 14px; 
-                margin-top: 10px;
-            }
-    
-            .comunidad{  
-                #logoForo{
-                    width: 225px;
-                    height: 175px;
-                    margin-top: 30px;
-              
-                }
-            } 
-        }
+        height: 100vh; 
+        grid-row-gap: 35px;
         
-        .telegram{
-            width: 250px;
-            height: 300px;
-        
-            .foro__Titulo{
-                font-size: 25px;
-            } 
-    
-            .comunidad__Texto{
-                font-size: 14px; 
-            }
-    
-            .comunidad{   
-                #logoTelegram{
-                    width: 130px;
-                    height: 130px;  
-                    margin-bottom: 20px;
+        #parrafoUno{
+            .parrafo{
+                .parrafo__Titulo{
+                    margin-top: 20px;
                 }
-            } 
-        }
-    
-        .discord{
-            width: 250px;
-            height: 300px;
 
-            .foro__Titulo{
-                font-size: 25px;
-            } 
-    
-            .comunidad__Texto{
-                font-size: 14px; 
-            }
-    
-            .comunidad{
-                #logoDiscord{
-                    width: 130px;
-                    height: 130px; 
-                    margin-bottom: 20px;
+                .parrafo__Texto{
+                    margin-top: 20px;
                 }
-            } 
+            }
         }
-    
     }
 
     #mainColecciones{
-        height: 300vh;
+        height: 155vh;
         #parrafoUno{
             .parrafo{
                 .parrafo__Titulo{
@@ -179,8 +194,6 @@
     }
 
     #mainContacto{
-        
-
         .formulario{
 
             form{
@@ -215,26 +228,46 @@
     }
 
     footer{
-        
         #textoFooter{
-            
-
             .textoNegritaFooter{
-                font-size: 18px;
-                
-                
-                
+                font-size: 18px; 
             }
         }
     }
 }
- */
 
-/* @media screen and (max-width: 768px){
+
+@media screen and (max-width: 768px){
     header{
-        grid-template-columns: 0.3fr 2fr 0.5fr;
-      
+        grid-template-columns: 0.4fr 2fr 0.5fr;
 
+        #logosRedes{
+            grid-column-gap: 1.5px;
+
+            #logoInstagram{
+                height: 25px;
+                width: 25px;
+            }
+
+            #logoFacebook{
+                height: 25px;
+                width: 25px;
+            }
+
+            #logoTwitter{
+                height: 25px;
+                width: 25px;
+            }
+        }
+
+        .imgFunko{
+            a{
+                h1{
+                    font-size: 3em;
+                }
+            }
+        }
+      
         .fuenteBoton{
             #botonLogin{
                 width: 75px;
@@ -284,13 +317,10 @@
             }
 
             #fotos{
-                .fotoPrincipal{
-                    .foto__Titulo{
-                        .foto__Texto{
-                            align-content: start;
-                        }
-                    }
-                }
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 0.7fr 1.5fr;
+                
 
                 #portadaFotos{
                     #portadaDeFotos{
@@ -372,6 +402,8 @@
     }
 
     #mainComunidad{
+        height: 90vh;
+
         #tituloComunidad{
             font-size: 12px;
             line-height: 20px;
@@ -388,6 +420,7 @@
         }
 
         .foro{
+            grid-template-rows: repeat(2, 0.5fr) 1fr;
             width: 200px;
             height: 350px;
             margin-bottom: 10px;
@@ -404,13 +437,14 @@
 
             .comunidad{
                 #logoForo{
-                    width: 180px;
-                    height: 130px;
+                    width: 120px;
+                    height: 120px;
                 }
             }
         }
 
         .telegram{
+            grid-template-rows: repeat(2, 0.5fr) 1fr;
             width: 200px;
             height: 350px;
             margin-bottom: 10px;
@@ -429,12 +463,12 @@
                 #logoTelegram{
                     width: 120px;
                     height: 120px;
-                    margin-bottom: 25px;
                 }
             }
         }
 
         .discord{
+            grid-template-rows: repeat(2, 0.5fr) 1fr;
             width: 200px;
             height: 350px;
             margin-bottom: 10px;
@@ -453,26 +487,14 @@
                 #logoDiscord{
                     width: 120px;
                     height: 120px;
-                    margin-bottom: 25px;
                 }
             }
-
-
         }
-
     }
 
     #mainColecciones{
-        height: 250vh;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.3fr 1fr 1fr 1fr 0.5fr;
-        grid-template-areas: 
-        "parrafoUno"
-        "marvel"
-        "dc"
-        "sw"
-        "shop";
+        height: 140vh;
+        grid-template-rows: 0.25fr repeat(3, 0.5fr) 0.2fr;
         grid-row-gap: 0px;
        
 
@@ -480,55 +502,53 @@
             .parrafo{
                 font-size: 12px;
                 line-height: 20px;
-                margin-bottom: 10px;
+                margin-bottom: 0px;
             }
         }
 
         .marvel{
             width:80%;
-            height: 250px;
-            border: black solid 3px;
+            height: 175px;
+            align-self: end;
+            
 
             a{
                 font-size: 25px;
             }
 
             #wallCapi{
-                width: 270px;
-                height: 150px;
-                border: black solid 2px;
+                width: 190px;
+                height: 110px;
             }
         }
 
         .dc{
             width:80%;
-            height: 250px;
-            border: black solid 3px;
+            height: 175px;
+            align-self: end;
 
             a{
                 font-size: 25px;
             }
 
             #wallFlash{
-                width: 270px;
-                height: 150px;
-                border: black solid 2px;
+                width: 190px;
+                height: 110px;
             }
         }
 
         .sw{
             width:80%;
-            height: 250px;
-            border: black solid 3px;
+            height: 175px;
+            align-self: end;
 
             a{
                 font-size: 25px;
             }
 
             #wallSw{
-                width: 270px;
-                height: 150px;
-                border: black solid 2px;
+                width: 190px;
+                height: 110px;
             }
         }
 
@@ -581,7 +601,7 @@
             }
         }
     };
-} */
+}
 
 
 /* @media (max-width: 480px) {

@@ -37,11 +37,11 @@
             grid-area: videos;
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 0.5fr 1.5fr;
-            grid-template-areas: 
+            grid-template-rows: 0.5fr 1fr;
+            grid-template-areas:
             "videoPrincipal"
             "iframeV"; 
-            align-items: center;
+            
             &:hover{
                 background-color: #48bbcf;
                 border-radius: 10px;
@@ -52,11 +52,14 @@
                 font-family: $font-general;
                 font-weight: bolder;
                 grid-area: videoPrincipal;
+                align-self: center;
+               
 
                 .video__Titulo{
                     font-size: 18px;
                     text-align: center;
-                    line-height: 40px;
+                    line-height: 45px;
+                    align-self: center;
                 }
 
                 .video__Texto{
@@ -64,8 +67,7 @@
                     font-weight:500;
                     line-height: 20px;
                     font-family: "engle";
-                    margin-left: 20px;
-                    margin-right: 20px;  
+                    text-align: center;
                 }
             }
 
@@ -89,11 +91,13 @@
             grid-area: fotos;
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 0.5fr 1.5fr;
+            grid-template-rows: 0.5fr 1fr;
             grid-template-areas: 
             "fotoPrincipal"
             "portadaFotos"; 
-            align-items: center;
+            
+            
+            
             &:hover{
                 background-color: #f74640;
                 border-radius: 10px;
@@ -103,34 +107,31 @@
                 color: $color-font-general;
                 font-family: $font-general;
                 font-weight: bolder;
-                text-align: center;
                 grid-area: fotoPrincipal;
+                align-self: center;
                 
-                a{
-                    &:link, &:visited, &:active{
-                        text-decoration: none;
-                        color: $color-font-general;    
-                    }
-                }
 
                 .foto__Titulo{
                     font-size: 18px;
+                    line-height: 45px;
                     text-align: center;
-                    line-height: 40px; 
+                    align-self: end;
                 }
-                    
+
                 .foto__Texto{
                     font-size: 16px;
                     font-weight:500;
                     line-height: 20px;
-                    text-align: center;
                     font-family: "engle";
+                    text-align: center;
+                    align-self: end;
                 }
             }
 
-            #portadaFotos{
+            .portadaFotos{
                 grid-area: portadaFotos;
                 justify-self: center;
+                
 
                 #portadaDeFotos{
                     width: 375px;
@@ -139,6 +140,8 @@
                 }
             }
         }
+
+        
     }
 
     #picSpider{
@@ -280,7 +283,7 @@
     #tituloComunidad{
         grid-area: tituloComunidad;
         align-self: start;
-        margin-top: 5px;
+        
         
         .parrafo{
             @include paragraph;
@@ -288,6 +291,7 @@
             .parrafo__Titulo{
                 line-height: 50px;
                 text-align: center;
+                margin-top: 5px;
             }
 
             .parrafo__Texto{
@@ -296,65 +300,56 @@
         }
     }
 
-        .foro{
-            background-color:#fc6863;
-            border: #f44741 solid 4px;
-            border-radius: 15px;
-            width: 300px;
-            height: 450px;
-            grid-area: foro;
-            justify-self: right;
-            align-self: center;
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
-            grid-template-areas: 
-                "foroTitulo"
-                "comunidadTexto"
-                "comunidad"; 
-            animation-name: animTeleg;
-            animation-duration: 1s;
-            justify-items: center;
+    .foro{
+        grid-area: foro;
+        justify-self: right;
+        align-self: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+            "foroTitulo"
+            "comunidadTexto"
+            "comunidad"; 
+        animation-name: animTeleg;
+        animation-duration: 1s;
+        justify-items: center;
+        align-self: start;
     
-                @keyframes animTeleg {
-                    from{
-                        transform: translate(0) scale(0);
-                    }to{
-                        transform: translate(100) scale(1.2);
-                    }
-                }
-    
-            .foro__Titulo{
-                @include titulo-comunidad;
-                grid-area: foroTitulo;
+        @keyframes animTeleg {
+            from{
+                transform: translate(0) scale(0);
+            }to{
+                transform: translate(100) scale(1.2);
             }
-        
-            .comunidad__Texto{
-                grid-area: comunidadTexto;
-                @include texto-comunidad;
-            }
-        
-            .comunidad{
-                font-family: $font-general;
-                font-size: 30px;
-                font-weight: bold;
-                line-height: 55px; 
-                color: $color-font-general;  
-                grid-area: comunidad;
-    
-                #logoForo{
-                    width: 200px;
-                    height: 200px;  
-                }
-            } 
         }
     
+        .foro__Titulo{
+            @include titulo-comunidad;
+            grid-area: foroTitulo;
+        }
+        
+        .comunidad__Texto{
+            grid-area: comunidadTexto;
+            @include texto-comunidad;
+        }
+        
+        .comunidad{
+            font-family: $font-general;
+            font-size: 30px;
+            font-weight: bold;
+            line-height: 55px; 
+            color: $color-font-general;  
+            grid-area: comunidad;
+    
+            #logoForo{
+                width: 200px;
+                height: 200px;  
+            }
+        } 
+    }
+    
     .telegram{
-        background-color:rgb(29, 204, 146);
-        border: rgb(10, 160, 110) solid 4px;
-        border-radius: 15px;
-        width: 300px;
-        height: 450px;
         grid-area: telegram;
         justify-self: center;
         align-self: center;
@@ -368,6 +363,7 @@
         animation-name: animTeleg;
         animation-duration: 1s;
         justify-items: center;
+        align-self: start;
 
             @keyframes animTeleg {
                 from{
@@ -404,11 +400,6 @@
     }
 
     .discord{
-        background-color:#dcdc72;
-        border: #c9c949 solid 4px;
-        border-radius: 15px;
-        width: 300px;
-        height: 450px;
         grid-area: discord;
         justify-self: left;
         align-self: center;
@@ -422,6 +413,7 @@
         animation-name: animTeleg;
         animation-duration: 1s;
         justify-items: center;
+        align-self: start;
 
             @keyframes animTeleg {
                 from{
@@ -456,7 +448,35 @@
             }
         } 
     }
-}   
+
+    $comunidades:(
+        foro: #fc6863,
+        telegram: rgb(29, 204, 146),
+        discord: #dcdc72
+    );
+    
+    @each $comunidad, $color in $comunidades{
+        .comunidad-#{$comunidad} {
+            background-color: $color;
+            width: 300px;
+            height: 450px;
+        }
+    }
+
+    $borderComunidades:(
+        foro: #f44741,
+        telegram: rgb(10, 160, 110),
+        discord: #c9c949
+    );
+
+    @each $bordCom, $color in $borderComunidades{
+        .comunidad-#{$bordCom} {
+            border: $color solid 4px;
+            border-radius: 15px;
+        }
+    }
+}  
+
 
 
 /* COLECCIONES */
@@ -491,11 +511,6 @@
 
     .marvel{
         grid-area: marvel;
-        width:90%;
-        height: 200px;
-        background-color:#f47fb4;
-        border-radius: 15px;
-        border: #f04f97 solid 4px;
         justify-self: center;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -521,11 +536,6 @@
 
     .dc{
         grid-area: dc;
-        width:90%;
-        height: 200px;
-        border-radius: 15px;
-        background-color:#f0f47a;
-        border: #eef356 solid 4px;
         justify-self: center;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -551,11 +561,6 @@
 
     .sw{
         grid-area: sw;
-        width:90%;
-        height: 200px;
-        border-radius: 15px;
-        background-color:#76f386;
-        border: #44f15b solid 4px;
         justify-self: center;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -593,6 +598,34 @@
             color: $color-font-general;
         }
     }
+
+    $franquicias:(
+        marvel: #f47fb4,
+        dc: #f0f47a,
+        sw: #76f386
+    );
+
+    @each $franquicia, $color in $franquicias{
+        .franquicia-#{$franquicia} {
+            background-color: $color;
+            width:90%;
+            height: 200px;
+        }
+    }
+
+    $borderFranquicias:(
+        marvel: #f04f97,
+        dc: #eef356,
+        sw: #44f15b
+    );
+
+    @each $franquicia, $color in $borderFranquicias{
+        .franquicia-#{$franquicia} {
+            border: $color solid 4px;
+            border-radius: 15px;
+        }
+    }
+
 }
 
 
