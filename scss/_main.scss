@@ -37,7 +37,7 @@
             grid-area: videos;
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 0.5fr 1fr;
+            grid-template-rows: 0.4fr 1fr;
             grid-template-areas:
             "videoPrincipal"
             "iframeV"; 
@@ -91,7 +91,7 @@
             grid-area: fotos;
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 0.5fr 1fr;
+            grid-template-rows: 0.4fr 1fr;
             grid-template-areas: 
             "fotoPrincipal"
             "portadaFotos"; 
@@ -107,15 +107,17 @@
                 color: $color-font-general;
                 font-family: $font-general;
                 font-weight: bolder;
-                grid-area: fotoPrincipal;
-                align-self: center;
+                grid-area: fotoPrincipal;     
+                align-self: center;       
+                
                 
 
                 .foto__Titulo{
                     font-size: 18px;
                     line-height: 45px;
                     text-align: center;
-                    align-self: end;
+                    
+                    
                 }
 
                 .foto__Texto{
@@ -124,7 +126,7 @@
                     line-height: 20px;
                     font-family: "engle";
                     text-align: center;
-                    align-self: end;
+                   
                 }
             }
 
@@ -478,7 +480,6 @@
 }  
 
 
-
 /* COLECCIONES */
 
 #mainColecciones{
@@ -632,9 +633,17 @@
 /* CONTACTO */
 
 #mainContacto{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 1fr;
+    grid-template-areas: 
+    "titulo"
+    "formulario";
+
     .parrafo{
         @include paragraph;
         line-height: 26px;
+        grid-area: titulo;
         
         .parrafo__Titulo{
             margin-top: 5px;
@@ -648,6 +657,7 @@
     }        
 
     .formulario{
+        grid-area: formulario;
         margin-right: 30px;
         margin-left: 30px;
 
