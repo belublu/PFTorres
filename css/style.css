@@ -1854,7 +1854,7 @@ nav {
       width: 150px;
       height: 300px; }
   #mainContacto {
-    height: 210vh;
+    height: 205vh;
     grid-template-rows: 0.1fr 2fr; }
     #mainContacto .parrafo {
       margin-left: 0px;
@@ -1872,12 +1872,12 @@ nav {
       margin-left: 20px;
       margin-right: 20px; }
       #mainContacto .formulario form .datos {
-        width: 90%;
+        width: 100%;
         margin-top: 20px; }
         #mainContacto .formulario form .datos .nombre input, #mainContacto .formulario form .datos .apellido input, #mainContacto .formulario form .datos .genero input, #mainContacto .formulario form .datos .edad input {
           width: 280px; }
       #mainContacto .formulario form .datosDos {
-        width: 90%; }
+        width: 100%; }
         #mainContacto .formulario form .datosDos .textoDatos {
           font-size: 13px; }
         #mainContacto .formulario form .datosDos .lineas {
@@ -1892,7 +1892,7 @@ nav {
               margin-left: 5px;
               margin-bottom: 5px; }
       #mainContacto .formulario form .datosTres {
-        width: 90%; }
+        width: 100%; }
         #mainContacto .formulario form .datosTres .textoDatos {
           font-size: 13px; }
         #mainContacto .formulario form .datosTres .licencias {
@@ -1907,7 +1907,7 @@ nav {
               margin-left: 5px;
               margin-bottom: 5px; }
       #mainContacto .formulario form .datosCuatro {
-        width: 90%; }
+        width: 100%; }
       #mainContacto .formulario form .datosCinco {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -1917,9 +1917,14 @@ nav {
           grid-area: novedades; }
         #mainContacto .formulario form .datosCinco .opciones {
           grid-area: opciones; }
+          #mainContacto .formulario form .datosCinco .opciones label {
+            margin-right: 10px;
+            margin-left: 10px; }
+            #mainContacto .formulario form .datosCinco .opciones label input {
+              margin-right: 5px; }
         #mainContacto .formulario form .datosCinco .enviar {
           grid-area: btnEnviar;
-          justify-self: center; } }
+          justify-self: right; } }
 
 footer {
   height: 10vh;
