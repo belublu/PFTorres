@@ -1700,16 +1700,16 @@ nav {
       grid-area: fotoSectParrafoDos;
       justify-self: right; }
       #mainHistoria #parrafoDos .fotoParrafoDos #fotoTiendaFunko {
-        width: 190px;
-        height: 120px;
+        width: 160px;
+        height: 90px;
         margin-left: 0px; }
     #mainHistoria #parrafoDos .fotoParaMobil {
       grid-area: fotoParaMobil;
       display: block;
       justify-self: left; }
       #mainHistoria #parrafoDos .fotoParaMobil img {
-        width: 190px;
-        height: 120px;
+        width: 160px;
+        height: 90px;
         margin-right: 0px; }
     #mainHistoria #parrafoDos .parrafo {
       font-size: 12px;
