@@ -1729,7 +1729,7 @@ nav {
   #mainHistoria #parrafoCuatro {
     display: none; }
   #mainComunidad {
-    height: 65vh;
+    height: 75vh;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 0.1fr);
     grid-template-areas: "tituloComunidad" "foro"  "telegram" "discord";
@@ -1805,7 +1805,7 @@ nav {
           height: 70px;
           margin-top: 20px; }
   #mainColecciones {
-    height: 65vh;
+    height: 75vh;
     grid-template-columns: 0.5fr 0.5fr;
     grid-template-rows: 0.5fr 2fr 0.5fr;
     grid-template-areas: "parrafoUno parrafoUno" "marvel dc" "shop shop";
@@ -1854,6 +1854,7 @@ nav {
       width: 150px;
       height: 300px; }
   #mainContacto {
+    height: 140vh;
     grid-template-rows: 0.1fr 2fr; }
     #mainContacto .parrafo {
       margin-left: 0px;
@@ -1871,10 +1872,10 @@ nav {
       margin-left: 20px;
       margin-right: 20px; }
       #mainContacto .formulario form .datos {
-        width: 100%;
+        width: 70%;
         margin-top: 20px; }
       #mainContacto .formulario form .datosDos {
-        width: 100%; }
+        width: 70%; }
         #mainContacto .formulario form .datosDos .textoDatos {
           font-size: 13px; }
         #mainContacto .formulario form .datosDos .lineas {
@@ -1889,7 +1890,7 @@ nav {
               margin-left: 5px;
               margin-bottom: 5px; }
       #mainContacto .formulario form .datosTres {
-        width: 100%; }
+        width: 70%; }
         #mainContacto .formulario form .datosTres .textoDatos {
           font-size: 13px; }
         #mainContacto .formulario form .datosTres .licencias {
@@ -1904,7 +1905,7 @@ nav {
               margin-left: 5px;
               margin-bottom: 5px; }
       #mainContacto .formulario form .datosCuatro {
-        width: 100%; }
+        width: 70%; }
       #mainContacto .formulario form .datosCinco {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -1916,7 +1917,7 @@ nav {
           grid-area: opciones; }
         #mainContacto .formulario form .datosCinco .enviar {
           grid-area: btnEnviar;
-          justify-self: right; } }
+          justify-self: center; } }
 
 footer {
   height: 10vh;

@@ -2265,7 +2265,7 @@
     }
 
     #mainComunidad{
-        height: 65vh;
+        height: 75vh;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, 0.1fr);
         grid-template-areas:
@@ -2390,7 +2390,7 @@
     }
 
     #mainColecciones{
-        height: 65vh;
+        height: 75vh;
         grid-template-columns: 0.5fr 0.5fr;
         grid-template-rows: 0.5fr 2fr 0.5fr;
         grid-template-areas: 
@@ -2477,7 +2477,7 @@
     }
 
     #mainContacto{
-        
+        height: 140vh;
         grid-template-rows: 0.1fr 2fr;
         
         .parrafo{
@@ -2504,12 +2504,12 @@
 
             form{ 
                 .datos{
-                    width: 100%;
+                    width: 70%;
                     margin-top: 20px;
                 }
 
                 .datosDos{  
-                    width: 100%;
+                    width: 70%;
 
                     .textoDatos{
                         font-size: 13px;
@@ -2534,7 +2534,7 @@
                 }
 
                 .datosTres{    
-                    width: 100%;
+                    width: 70%;
 
                     .textoDatos{
                         font-size: 13px;
@@ -2559,7 +2559,7 @@
                 }  
 
                 .datosCuatro{
-                    width: 100%;                    
+                    width: 70%;                    
                 }
 
                 .datosCinco{
@@ -2580,7 +2580,7 @@
 
                     .enviar{
                         grid-area: btnEnviar;
-                        justify-self: right;
+                        justify-self: center;
                     }
                 }
             }
