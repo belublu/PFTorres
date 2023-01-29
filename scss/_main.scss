@@ -2099,7 +2099,7 @@
         grid-template-rows: 0.5fr 1fr 0.5fr;
 
         #multimedia{
-            grid-column-gap: 10px;
+            grid-column-gap: 5px;
 
             #videos{
                 height: 30vh;
@@ -2397,7 +2397,7 @@
         "parrafoUno parrafoUno"
         "marvel dc"
         "shop shop";
-        grid-column-gap: 10px;
+        grid-column-gap: 6px;
 
         #parrafoUno{    
             .parrafo{
@@ -2477,7 +2477,7 @@
     }
 
     #mainContacto{
-       height: 205vh; 
+       height: 210vh; 
         grid-template-rows: 0.1fr 2fr;
         
         .parrafo{

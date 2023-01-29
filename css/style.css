@@ -199,7 +199,7 @@ header {
       header .imgFunko a h1 {
         font-size: 2.2em; }
     header .fuenteBoton {
-      margin-right: 0px;
+      margin-right: 6px;
       grid-row-gap: 3px; }
       header .fuenteBoton #botonLogin, header .fuenteBoton #botonRegistro {
         font-size: 9px;
@@ -1635,7 +1635,7 @@ nav {
   #mainIndex {
     grid-template-rows: 0.5fr 1fr 0.5fr; }
     #mainIndex #multimedia {
-      grid-column-gap: 10px; }
+      grid-column-gap: 5px; }
       #mainIndex #multimedia #videos {
         height: 30vh;
         grid-template-rows: 0.5fr 1fr; }
@@ -1809,7 +1809,7 @@ nav {
     grid-template-columns: 0.5fr 0.5fr;
     grid-template-rows: 0.5fr 2fr 0.5fr;
     grid-template-areas: "parrafoUno parrafoUno" "marvel dc" "shop shop";
-    grid-column-gap: 10px; }
+    grid-column-gap: 6px; }
     #mainColecciones #parrafoUno .parrafo .parrafo__Titulo {
       font-size: 18px;
       margin-top: 5px;
@@ -1854,7 +1854,7 @@ nav {
       width: 150px;
       height: 300px; }
   #mainContacto {
-    height: 205vh;
+    height: 210vh;
     grid-template-rows: 0.1fr 2fr; }
     #mainContacto .parrafo {
       margin-left: 0px;
