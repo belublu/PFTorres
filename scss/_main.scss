@@ -2096,10 +2096,11 @@
 
 @media screen and (max-width: 480px){
     #mainIndex{
+        grid-template-columns: 44% 44%;
         grid-template-rows: 0.5fr 1fr 1fr;
     
         #multimedia{
-            grid-column-gap: 5px;
+            grid-column-gap: 10px;
 
             #videos{
                 height: 200px;
@@ -2479,7 +2480,7 @@
     }
 
     #mainContacto{
-       height: 210vh; 
+       height: 200vh; 
         grid-template-rows: 0.1fr 2fr;
         
         .parrafo{

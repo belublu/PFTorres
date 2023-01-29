@@ -1633,9 +1633,10 @@ nav {
 
 @media screen and (max-width: 480px) {
   #mainIndex {
+    grid-template-columns: 44% 44%;
     grid-template-rows: 0.5fr 1fr 1fr; }
     #mainIndex #multimedia {
-      grid-column-gap: 5px; }
+      grid-column-gap: 10px; }
       #mainIndex #multimedia #videos {
         height: 200px;
         width: 140px;
@@ -1856,7 +1857,7 @@ nav {
       width: 140px;
       height: 300px; }
   #mainContacto {
-    height: 210vh;
+    height: 200vh;
     grid-template-rows: 0.1fr 2fr; }
     #mainContacto .parrafo {
       margin-left: 0px;
