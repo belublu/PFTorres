@@ -20,7 +20,48 @@ footer{
     }
 }
 
-@import "./queries";
+/* Media Queries */
+
+@media screen and (min-width: 1280px){
+    footer{
+        height: 8vh;
+
+        .textoFooter{
+            font-size: 25px; 
+        }
+    }
+}
+
+@media screen and (max-width: 1279px){
+    footer{
+       height: 7vh;
+       
+       .textoFooter{
+           font-size: 18px;  
+       }
+   }
+}
+
+@media screen and (max-width: 768px){
+   footer{
+       height: 6vh;
+
+       .textoFooter{
+           font-size: 14px;
+       }
+   }
+}
+
+@media screen and (max-width: 480px){
+   footer{
+       height: 6vh;
+
+       .textoFooter{
+           font-size: 14px;
+       }
+   }
+}
+
 
 
 

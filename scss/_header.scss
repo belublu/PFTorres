@@ -1,5 +1,4 @@
 /* Se aplica Grids+Flexbox */
-
 header{
     height: 30vh;
     grid-area: headeri;
@@ -119,6 +118,171 @@ header{
     }
 }
 
-@import "./queries";
+/* Media Queries */
 
+@media screen and (min-width: 1280px){
+    header{
+        height: 17vh;
+        grid-template-columns: 0.3fr 2fr 0.5fr;
+
+        #logosRedes{
+            #logoInstagram{
+                height: 40px;
+                width: 40px;
+            }
+
+            #logoFacebook{
+                height: 40px;
+                width: 40px;
+            }
+
+            #logoTwitter{
+                height: 40px;
+                width: 40px;
+            }
+        }
+        
+        .imgFunko{
+            a{
+                h1{
+                    font-size: 6em;
+                }
+            }
+        }
+
+        .fuenteBoton{
+            justify-self: right;
+
+            #botonLogin{
+                width: 140px;
+                height: 40px;
+                font-size: 16px;
+            }
+
+            #botonRegistro{
+                width: 140px;
+                height: 40px;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1279px){
+    header{
+        height: 16vh;
+        grid-template-columns: 0.4fr 2fr 0.5fr;
+
+        #logosRedes{
+            grid-column-gap: 0.5px;
+
+            #logoInstagram{
+                height: 35px;
+                width: 35px;
+            }
+
+            #logoFacebook{
+                height: 35px;
+                width: 35px;
+            }
+
+            #logoTwitter{
+                height: 35px;
+                width: 35px;
+            }
+        }
+
+        .imgFunko{
+            a{
+                h1{
+                    font-size: 4em;
+                }
+            }
+        }
+      
+        .fuenteBoton{
+            justify-self: right;
+            
+            #botonLogin, #botonRegistro{
+                width: 85px;
+                height: 25px;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    header{
+        height: 12vh;
+        grid-template-columns: 2fr 0.1fr ;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "imgFunko fuenteBoton"
+        "imgFunko fuenteBoton";
+
+        #logosRedes{
+            display: none;
+        }
+
+        .imgFunko{
+            a{
+                h1{
+                    font-size: 3em;  
+                }
+            }
+        }
+
+        .fuenteBoton{
+            margin-right: 0px;
+            grid-row-gap: 3px;
+
+            #botonLogin, #botonRegistro{
+                font-size: 9px;
+                width: 70px;
+                height:20px;
+                border-radius: 8px;
+                border: $color-background solid 2px;
+                margin-right: 0px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+    header{
+        height: 11vh;
+        grid-template-columns: 2fr 0.1fr ;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "imgFunko fuenteBoton"
+        "imgFunko fuenteBoton";
+
+        #logosRedes{
+            display: none;
+        }
+
+        .imgFunko{
+            a{
+                h1{
+                    font-size: 3em;  
+                }
+            }
+        }
+
+        .fuenteBoton{
+            margin-right: 0px;
+            grid-row-gap: 3px;
+
+            #botonLogin, #botonRegistro{
+                font-size: 7px;
+                width: 70px;
+                height:20px;
+                border-radius: 8px;
+                border: $color-background solid 2px;
+                margin-right: 0px;
+            }
+        }
+    }
+}
 

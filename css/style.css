@@ -15,9 +15,8 @@
   padding: 0; }
 
 body {
-  width: 100vw;
-  height: 70vh;
-  overflow-x: hidden;
+  width: 100%;
+  height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -115,6 +114,7 @@ header {
       font-style: normal;
       font-family: "armata"; }
 
+/* Media Queries */
 @media screen and (min-width: 1280px) {
   header {
     height: 17vh;
@@ -139,240 +139,23 @@ header {
       header .fuenteBoton #botonRegistro {
         width: 140px;
         height: 40px;
-        font-size: 16px; }
-  nav {
-    height: 9vh;
-    grid-template-columns: 2.5fr 1fr; }
-    nav li {
-      font-size: 26px;
-      justify-self: center; }
-    nav #buscador #busqueda {
-      height: 30px;
-      width: 160px; }
-    nav #buscador #botonBuscar {
-      font-size: 22px; }
-  #mainIndex #multimedia #videos {
-    height: 600px;
-    grid-template-rows: 1fr 1fr; }
-    #mainIndex #multimedia #videos .videoPrincipal .video__Titulo {
-      font-size: 30px;
-      line-height: 35px;
-      margin-bottom: 20px; }
-    #mainIndex #multimedia #videos .videoPrincipal .video__Texto {
-      font-size: 24px;
-      line-height: 30px; }
-    #mainIndex #multimedia #videos #iframeV {
-      align-self: start; }
-      #mainIndex #multimedia #videos #iframeV iframe {
-        width: 379px;
-        height: 250px; }
-  #mainIndex #multimedia #fotos {
-    height: 600px;
-    grid-template-rows: 1fr 1fr; }
-    #mainIndex #multimedia #fotos .fotoPrincipal .foto__Titulo {
-      font-size: 30px;
-      line-height: 35px;
-      margin-bottom: 20px; }
-    #mainIndex #multimedia #fotos .fotoPrincipal .foto__Texto {
-      font-size: 24px;
-      line-height: 30px; }
-    #mainIndex #multimedia #fotos .portadaFotos {
-      align-self: start; }
-      #mainIndex #multimedia #fotos .portadaFotos #portadaDeFotos {
-        width: 350px;
-        height: 250px; }
-  #mainIndex #picSpider .pic #spiderManPortada {
-    width: 575px;
-    height: 575px; }
-  #mainIndex #picSpider #slogan {
-    text-align: center;
-    font-size: 50px;
-    text-align: center;
-    justify-self: right;
-    translate: -40px; }
-    #mainIndex #picSpider #slogan:hover {
-      transform: scale(1.2); }
-  #mainHistoria #parrafoUno .parrafo {
-    font-size: 20px;
-    line-height: 25px; }
-    #mainHistoria #parrafoUno .parrafo .parrafo__Titulo {
-      margin-top: 20px; }
-    #mainHistoria #parrafoUno .parrafo .parrafo__Texto {
-      font-size: 18px;
-      margin-top: 20px;
-      line-height: 35px;
-      text-align: justify; }
-  #mainHistoria #parrafoDos .fotoParrafoDos {
-    align-self: center; }
-    #mainHistoria #parrafoDos .fotoParrafoDos #fotoTiendaFunko {
-      width: 600px;
-      height: 380px; }
-  #mainHistoria #parrafoDos .parrafo {
-    font-size: 18px;
-    margin-top: 20px;
-    line-height: 35px;
-    text-align: justify; }
-  #mainHistoria #parrafoTres .parrafo {
-    font-size: 18px;
-    margin-top: 20px;
-    line-height: 35px;
-    text-align: justify; }
-  #mainHistoria #parrafoTres .fotoParrafoTres {
-    align-self: center; }
-    #mainHistoria #parrafoTres .fotoParrafoTres #fotoTiendaFunkoDos {
-      width: 600px;
-      height: 380px; }
-  #mainComunidad {
-    height: 70vh;
-    grid-template-rows: 20% 80%;
-    grid-row-gap: 35px; }
-    #mainComunidad #tituloComunidad .parrafo .parrafo__Titulo {
-      font-size: 30px;
-      margin-top: 20px; }
-    #mainComunidad #tituloComunidad .parrafo .parrafo__Texto {
-      font-size: 21px;
-      line-height: 35px;
-      margin-top: 20px; }
-    #mainComunidad .foro {
-      grid-template-rows: 0.5fr 0.5fr 1fr; }
-      #mainComunidad .foro .foro__Titulo {
-        font-size: 30px; }
-      #mainComunidad .foro .comunidad__Texto {
-        font-size: 20px;
-        align-self: center; }
-      #mainComunidad .foro .comunidad {
-        align-self: center; }
-        #mainComunidad .foro .comunidad #logoForo {
-          width: 180px;
-          height: 180px; }
-    #mainComunidad .telegram {
-      grid-template-rows: 0.5fr 0.5fr 1fr; }
-      #mainComunidad .telegram .foro__Titulo {
-        font-size: 30px; }
-      #mainComunidad .telegram .comunidad__Texto {
-        font-size: 20px;
-        align-self: center; }
-      #mainComunidad .telegram .comunidad {
-        align-self: center; }
-        #mainComunidad .telegram .comunidad #logoTelegram {
-          width: 180px;
-          height: 180px; }
-    #mainComunidad .discord {
-      grid-template-rows: 0.5fr 0.5fr 1fr; }
-      #mainComunidad .discord .foro__Titulo {
-        font-size: 30px; }
-      #mainComunidad .discord .comunidad__Texto {
-        font-size: 20px;
-        align-self: center;
-        margin-left: 20px;
-        margin-right: 20px; }
-      #mainComunidad .discord .comunidad {
-        align-self: center; }
-        #mainComunidad .discord .comunidad #logoDiscord {
-          width: 180px;
-          height: 180px; }
-    #mainComunidad .comunidad-foro {
-      background-color: #fc6863;
-      width: 350px;
-      height: 550px; }
-    #mainComunidad .comunidad-telegram {
-      background-color: #1dcc92;
-      width: 350px;
-      height: 550px; }
-    #mainComunidad .comunidad-discord {
-      background-color: #dcdc72;
-      width: 350px;
-      height: 550px; }
-  #mainColecciones {
-    height: 100vh; }
-    #mainColecciones #parrafoUno .parrafo .parrafo__Titulo {
-      font-size: 30px;
-      margin-top: 20px; }
-    #mainColecciones #parrafoUno .parrafo .parrafo__Texto {
-      font-size: 21px;
-      line-height: 35px;
-      margin-top: 20px; }
-    #mainColecciones .marvel a, #mainColecciones .dc a, #mainColecciones .sw a {
-      font-size: 30px; }
-    #mainColecciones .marvel #wallCapi, #mainColecciones .marvel #wallFlash, #mainColecciones .marvel #wallSw, #mainColecciones .dc #wallCapi, #mainColecciones .dc #wallFlash, #mainColecciones .dc #wallSw, #mainColecciones .sw #wallCapi, #mainColecciones .sw #wallFlash, #mainColecciones .sw #wallSw {
-      width: 330px;
-      height: 180px; }
-    #mainColecciones .shop {
-      font-size: 35px; }
-    #mainColecciones .franquicia-marvel {
-      background-color: #f47fb4;
-      height: 250px; }
-    #mainColecciones .franquicia-dc {
-      background-color: #f0f47a;
-      height: 250px; }
-    #mainColecciones .franquicia-sw {
-      background-color: #76f386;
-      height: 250px; }
-  #mainContacto .parrafo {
-    margin-top: 0px; }
-    #mainContacto .parrafo .parrafo__Titulo {
-      font-size: 30px;
-      margin-top: 20px; }
-    #mainContacto .parrafo .parrafo__Texto {
-      font-size: 21px;
-      line-height: 35px;
-      margin-top: 20px; }
-  #mainContacto .formulario form .datos legend {
-    font-size: 22px; }
-  #mainContacto .formulario form .datos .nombre, #mainContacto .formulario form .datos .apellido, #mainContacto .formulario form .datos .genero, #mainContacto .formulario form .datos .edad {
-    font-size: 18px; }
-  #mainContacto .formulario form .datosDos legend {
-    font-size: 22px; }
-  #mainContacto .formulario form .datosDos .textoDatos {
-    font-size: 20px; }
-  #mainContacto .formulario form .datosDos .lineas label {
-    margin-right: 0px;
-    margin-left: 12px;
-    font-size: 18px; }
-  #mainContacto .formulario form .datosTres legend {
-    font-size: 22px; }
-  #mainContacto .formulario form .datosTres .textoDatos {
-    font-size: 20px; }
-  #mainContacto .formulario form .datosTres .licencias label {
-    margin-right: 0px;
-    margin-left: 4px;
-    font-size: 18px; }
-  #mainContacto .formulario form .datosCuatro legend {
-    font-size: 22px; }
-  #mainContacto .formulario form .datosCuatro .consulta textarea {
-    font-size: 18px; }
-  #mainContacto .formulario form .datosCinco p {
-    font-size: 22px; }
-  #mainContacto .formulario form .datosCinco .opciones label {
-    font-size: 18px; }
-  #mainContacto .formulario form .enviar #botonEnviar {
-    width: 150px;
-    height: 300px;
-    border-radius: 10px;
-    border: #1895cf solid 3px;
-    font-size: 50px; }
-  #mainContacto .formulario form .enviar a {
-    font-size: 20px; }
-  footer {
-    height: 8vh; }
-    footer .textoFooter {
-      font-size: 25px; } }
+        font-size: 16px; } }
 
-@media screen and (min-width: 769px) and (max-width: 1279px) {
+@media screen and (max-width: 1279px) {
   header {
-    height: 11vh;
+    height: 16vh;
     grid-template-columns: 0.4fr 2fr 0.5fr; }
     header #logosRedes {
-      grid-column-gap: 1.5px; }
+      grid-column-gap: 0.5px; }
       header #logosRedes #logoInstagram {
-        height: 25px;
-        width: 25px; }
+        height: 35px;
+        width: 35px; }
       header #logosRedes #logoFacebook {
-        height: 25px;
-        width: 25px; }
+        height: 35px;
+        width: 35px; }
       header #logosRedes #logoTwitter {
-        height: 25px;
-        width: 25px; }
+        height: 35px;
+        width: 35px; }
     header .imgFunko a h1 {
       font-size: 4em; }
     header .fuenteBoton {
@@ -380,222 +163,9 @@ header {
       header .fuenteBoton #botonLogin, header .fuenteBoton #botonRegistro {
         width: 85px;
         height: 25px;
-        font-size: 12px; }
-  nav {
-    height: 8vh;
-    grid-template-columns: 2fr 1fr; }
-    nav li {
-      font-size: 15px;
-      padding: 3px; }
-  #mainIndex {
-    grid-template-rows: 0.1fr 1fr 0.1fr; }
-    #mainIndex #multimedia {
-      grid-template-columns: 46% 46%;
-      grid-column-gap: 20px; }
-      #mainIndex #multimedia #videos {
-        height: 350px;
-        grid-template-rows: 0.7fr 1fr; }
-        #mainIndex #multimedia #videos .videoPrincipal .video__Titulo {
-          font-size: 20px;
-          line-height: 24px;
-          margin-bottom: 20px;
-          margin-left: 15px;
-          margin-right: 15px; }
-        #mainIndex #multimedia #videos .videoPrincipal .video__Texto {
-          font-size: 14px;
-          margin-left: 10px;
-          margin-right: 10px; }
-        #mainIndex #multimedia #videos #iframeV {
-          align-self: center; }
-          #mainIndex #multimedia #videos #iframeV iframe {
-            width: 240px;
-            height: 150px; }
-      #mainIndex #multimedia #fotos {
-        height: 350px;
-        grid-template-rows: 0.7fr 1fr; }
-        #mainIndex #multimedia #fotos .fotoPrincipal .foto__Titulo {
-          font-size: 20px;
-          line-height: 24px;
-          margin-bottom: 20px; }
-        #mainIndex #multimedia #fotos .fotoPrincipal .foto__Texto {
-          font-size: 14px;
-          margin-left: 5px;
-          margin-right: 5px; }
-        #mainIndex #multimedia #fotos .portadaFotos {
-          align-self: center; }
-          #mainIndex #multimedia #fotos .portadaFotos #portadaDeFotos {
-            width: 230px;
-            height: 150px; }
-    #mainIndex #picSpider .pic #spiderManPortada {
-      width: 275px;
-      height: 275px; }
-    #mainIndex #picSpider #slogan {
-      font-size: 30px;
-      text-align: center;
-      translate: -30px; }
-  #mainHistoria {
-    grid-row-gap: 10px; }
-    #mainHistoria #parrafoUno .parrafo .parrafo__Titulo {
-      font-size: 25px; }
-    #mainHistoria #parrafoUno .parrafo .parrafo__Texto {
-      font-size: 14px;
-      line-height: 20px; }
-    #mainHistoria #parrafoDos .fotoParrafoDos {
-      align-self: center; }
-      #mainHistoria #parrafoDos .fotoParrafoDos #fotoTiendaFunko {
-        width: 310px;
-        height: 190px; }
-    #mainHistoria #parrafoDos .parrafo {
-      font-size: 14px;
-      line-height: 20px; }
-    #mainHistoria #parrafoTres .parrafo {
-      font-size: 14px;
-      line-height: 20px; }
-    #mainHistoria #parrafoTres .fotoParrafoTres {
-      align-self: center; }
-      #mainHistoria #parrafoTres .fotoParrafoTres #fotoTiendaFunkoDos {
-        width: 310px;
-        height: 180px; }
-    #mainHistoria #parrafoCuatro .fotoParrafoCuatro {
-      margin-left: 20PX; }
-      #mainHistoria #parrafoCuatro .fotoParrafoCuatro #fotoHileraPops {
-        width: 94%; }
-  #mainComunidad {
-    height: 70vh;
-    grid-template-rows: 0.1fr 1fr; }
-    #mainComunidad #tituloComunidad .parrafo .parrafo__Titulo {
-      font-size: 25px;
-      margin-top: 5px; }
-    #mainComunidad #tituloComunidad .parrafo .parrafo__Texto {
-      font-size: 14px;
-      line-height: 20px;
-      margin-top: 5px; }
-    #mainComunidad .foro {
-      grid-template-rows: repeat(2, 0.5fr) 1fr;
-      width: 200px;
-      height: 350px;
-      margin-bottom: 10px;
-      align-self: center; }
-      #mainComunidad .foro .foro__Titulo {
-        font-size: 21px; }
-      #mainComunidad .foro .comunidad__Texto {
-        font-size: 12px;
-        margin-left: 7px;
-        margin-right: 7px; }
-      #mainComunidad .foro .comunidad #logoForo {
-        width: 120px;
-        height: 120px; }
-    #mainComunidad .telegram {
-      grid-template-rows: repeat(2, 0.5fr) 1fr;
-      width: 200px;
-      height: 350px;
-      margin-bottom: 10px;
-      align-self: center; }
-      #mainComunidad .telegram .foro__Titulo {
-        font-size: 21px; }
-      #mainComunidad .telegram .comunidad__Texto {
-        font-size: 12px;
-        margin-left: 7px;
-        margin-right: 7px; }
-      #mainComunidad .telegram .comunidad #logoTelegram {
-        width: 120px;
-        height: 120px; }
-    #mainComunidad .discord {
-      grid-template-rows: repeat(2, 0.5fr) 1fr;
-      width: 200px;
-      height: 350px;
-      margin-bottom: 10px;
-      align-self: center; }
-      #mainComunidad .discord .foro__Titulo {
-        font-size: 21px; }
-      #mainComunidad .discord .comunidad__Texto {
-        font-size: 12px;
-        margin-left: 7px;
-        margin-right: 7px; }
-      #mainComunidad .discord .comunidad #logoDiscord {
-        width: 120px;
-        height: 120px; }
-  #mainColecciones {
-    height: 100vh;
-    grid-template-rows: 0.1fr repeat(3, 0.2fr) 0.1fr; }
-    #mainColecciones #parrafoUno .parrafo {
-      font-size: 14px;
-      line-height: 25px;
-      margin-bottom: 0px; }
-      #mainColecciones #parrafoUno .parrafo .parrafo__Titulo {
-        font-size: 25px; }
-    #mainColecciones .marvel {
-      width: 80%;
-      height: 175px;
-      align-self: center; }
-      #mainColecciones .marvel a {
-        font-size: 22px; }
-      #mainColecciones .marvel #wallCapi {
-        width: 190px;
-        height: 110px; }
-    #mainColecciones .dc {
-      width: 80%;
-      height: 175px;
-      align-self: start; }
-      #mainColecciones .dc a {
-        font-size: 22px; }
-      #mainColecciones .dc #wallFlash {
-        width: 190px;
-        height: 110px; }
-    #mainColecciones .sw {
-      width: 80%;
-      height: 175px;
-      align-self: start; }
-      #mainColecciones .sw a {
-        font-size: 22px; }
-      #mainColecciones .sw #wallSw {
-        width: 190px;
-        height: 110px; }
-    #mainColecciones .shop {
-      font-size: 22px; }
-  #mainContacto {
-    height: 120vh;
-    grid-template-rows: 0.1fr 1fr; }
-    #mainContacto .parrafo {
-      margin-left: 0px;
-      margin-right: 0px;
-      margin-top: 0px;
-      align-self: start; }
-      #mainContacto .parrafo .parrafo__Titulo {
-        font-size: 25px;
-        margin-top: 5px; }
-      #mainContacto .parrafo .parrafo__Texto {
-        margin-top: 0px;
-        margin-left: 40px;
-        font-size: 14px; }
-    #mainContacto .formulario form .datos {
-      margin-top: 20px; }
-    #mainContacto .formulario form .datosDos {
-      width: 100%; }
-      #mainContacto .formulario form .datosDos .lineas label {
-        margin-right: 0px;
-        margin-left: 8px;
-        font-size: 12px; }
-        #mainContacto .formulario form .datosDos .lineas label input {
-          margin-right: 1px; }
-    #mainContacto .formulario form .datosTres {
-      width: 100%; }
-      #mainContacto .formulario form .datosTres .licencias label {
-        margin-right: 0px;
-        margin-left: 8px;
-        font-size: 11px; }
-        #mainContacto .formulario form .datosTres .licencias label input {
-          margin-right: 1px; }
-    #mainContacto .formulario form .datosCuatro {
-      width: 100%; }
-    #mainContacto .formulario form .datosCinco {
-      width: 100%; }
-  footer {
-    height: 7vh; }
-    footer .textoFooter {
-      font-size: 18px; } }
+        font-size: 12px; } }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   header {
     height: 12vh;
     grid-template-columns: 2fr 0.1fr;
@@ -609,315 +179,16 @@ header {
       margin-right: 0px;
       grid-row-gap: 3px; }
       header .fuenteBoton #botonLogin, header .fuenteBoton #botonRegistro {
-        font-size: 7px;
+        font-size: 9px;
         width: 70px;
         height: 20px;
         border-radius: 8px;
         border: #1895cf solid 2px;
-        margin-right: 0px; }
-  nav {
-    height: 24vh;
-    grid-template-columns: 1fr;
-    grid-template-areas: "listaMenu";
-    background-color: white;
-    justify-items: stretch; }
-    nav a:link, nav a:visited, nav a:active {
-      font-size: 10px;
-      text-align: center; }
-    nav li {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      padding: 8px;
-      background-color: #1895cf; }
-    nav #buscador {
-      display: none; }
-  #mainIndex {
-    height: 75vh; }
-    #mainIndex #multimedia {
-      grid-column-gap: 10px; }
-      #mainIndex #multimedia #videos {
-        height: 30vh;
-        grid-template-rows: 0.5fr 1fr; }
-        #mainIndex #multimedia #videos .videoPrincipal .video__Titulo {
-          font-size: 10px;
-          line-height: 12px; }
-        #mainIndex #multimedia #videos .videoPrincipal .video__Texto {
-          font-size: 8px;
-          font-weight: 500;
-          line-height: 12px;
-          margin-top: 10px; }
-        #mainIndex #multimedia #videos #iframeV {
-          align-self: center; }
-          #mainIndex #multimedia #videos #iframeV iframe {
-            width: 159px;
-            height: 109px; }
-      #mainIndex #multimedia #fotos {
-        height: 30vh;
-        grid-template-rows: 0.5fr 1fr; }
-        #mainIndex #multimedia #fotos .fotoPrincipal .foto__Titulo {
-          font-size: 10px;
-          line-height: 12px; }
-        #mainIndex #multimedia #fotos .fotoPrincipal .foto__Texto {
-          font-size: 8px;
-          font-weight: 500;
-          line-height: 12px;
-          margin-top: 10px; }
-        #mainIndex #multimedia #fotos .portadaFotos {
-          align-self: center; }
-          #mainIndex #multimedia #fotos .portadaFotos #portadaDeFotos {
-            width: 159px;
-            height: 109px; }
-    #mainIndex #picSpider .pic #spiderManPortada {
-      width: 190px;
-      height: 190px; }
-    #mainIndex #picSpider #slogan {
-      justify-self: left;
-      translate: -40px;
-      text-align: center;
-      font-size: 18px; }
-  #mainHistoria {
-    grid-row-gap: 15px; }
-    #mainHistoria #parrafoUno .parrafo .parrafo__Titulo {
-      font-size: 18px;
-      text-align: center; }
-    #mainHistoria #parrafoUno .parrafo .parrafo__Texto {
-      font-size: 12px;
-      line-height: 20px;
-      text-align: justify; }
-    #mainHistoria #parrafoDos {
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas: "fotoSectParrafoDos fotoParaMobil" "sectParrafoDos sectParrafoDos";
-      justify-items: center;
-      grid-row-gap: 5px;
-      grid-column-gap: 15px; }
-      #mainHistoria #parrafoDos .fotoParrafoDos {
-        grid-area: fotoSectParrafoDos; }
-        #mainHistoria #parrafoDos .fotoParrafoDos #fotoTiendaFunko {
-          width: 190px;
-          height: 120px;
-          margin-left: 10px; }
-      #mainHistoria #parrafoDos .fotoParaMobil {
-        grid-area: fotoParaMobil;
-        display: block;
-        justify-items: center; }
-        #mainHistoria #parrafoDos .fotoParaMobil img {
-          width: 190px;
-          height: 120px;
-          margin-right: 10px; }
-      #mainHistoria #parrafoDos .parrafo {
-        font-size: 12px;
-        line-height: 20px;
-        text-align: justify; }
-    #mainHistoria #parrafoTres {
-      display: block; }
-      #mainHistoria #parrafoTres .parrafo .parrafo__Texto {
-        font-size: 12px;
-        line-height: 20px;
-        margin-right: 0px;
-        margin-left: 0px;
-        justify-self: center;
-        text-align: justify; }
-      #mainHistoria #parrafoTres .fotoParrafoTres #fotoTiendaFunkoDos {
-        display: none; }
-    #mainHistoria #parrafoCuatro {
-      display: none; }
-  #mainComunidad {
-    height: 65vh;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 0.1fr);
-    grid-template-areas: "tituloComunidad" "foro"  "telegram" "discord";
-    grid-row-gap: 15px; }
-    #mainComunidad #tituloComunidad #parrafoUno .parrafo .parrafo__Titulo {
-      font-size: 18px;
-      text-align: center; }
-    #mainComunidad #tituloComunidad #parrafoUno .parrafo .parrafo__Texto {
-      font-size: 12px;
-      line-height: 18px; }
-    #mainComunidad .foro {
-      border: #f44741 solid 3px;
-      width: 400px;
-      height: 100px;
-      justify-self: center;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas: "comunidad foroTitulo";
-      align-items: center;
-      align-content: center; }
-      #mainComunidad .foro .foro__Titulo {
-        font-size: 18px;
-        justify-self: left; }
-      #mainComunidad .foro .comunidad__Texto {
-        display: none; }
-      #mainComunidad .foro .comunidad {
-        font-size: 18px;
-        align-content: center; }
-        #mainComunidad .foro .comunidad #logoForo {
-          width: 70px;
-          height: 70px;
-          margin-top: 20px; }
-    #mainComunidad .telegram {
-      border: #0aa06e solid 3px;
-      width: 400px;
-      height: 100px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas: "comunidad foroTitulo";
-      align-content: center; }
-      #mainComunidad .telegram .foro__Titulo {
-        font-size: 18px;
-        justify-self: left; }
-      #mainComunidad .telegram .comunidad__Texto {
-        display: none; }
-      #mainComunidad .telegram .comunidad {
-        font-size: 18px; }
-        #mainComunidad .telegram .comunidad #logoTelegram {
-          width: 70px;
-          height: 70px;
-          margin-top: 20px; }
-    #mainComunidad .discord {
-      border: #c9c949 solid 3px;
-      width: 400px;
-      height: 100px;
-      justify-self: center;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas: "comunidad foroTitulo";
-      align-content: center; }
-      #mainComunidad .discord .foro__Titulo {
-        font-size: 18px;
-        justify-self: left; }
-      #mainComunidad .discord .comunidad__Texto {
-        display: none; }
-      #mainComunidad .discord .comunidad {
-        font-size: 18px; }
-        #mainComunidad .discord .comunidad #logoDiscord {
-          width: 70px;
-          height: 70px;
-          margin-top: 20px; }
-  #mainColecciones {
-    height: 60vh;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr 0.5fr;
-    grid-template-areas: "parrafoUno parrafoUno" "marvel dc" "shop shop";
-    grid-row-gap: 2px; }
-    #mainColecciones #parrafoUno .parrafo .parrafo__Titulo {
-      font-size: 18px;
-      margin-top: 5px;
-      line-height: 50px;
-      text-align: center; }
-    #mainColecciones #parrafoUno .parrafo .parrafo__Texto {
-      display: none; }
-    #mainColecciones .marvel {
-      grid-template-columns: 1fr;
-      grid-template-rows: 0.5fr 1fr;
-      grid-template-areas: "categoriaMarvel" "capi"; }
-      #mainColecciones .marvel a {
-        font-size: 18px;
-        align-self: end; }
-      #mainColecciones .marvel #wallCapi {
-        width: 180px;
-        height: 100px; }
-    #mainColecciones .dc {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 0.5fr 1fr;
-      grid-template-areas: "categoriaDc" "flash"; }
-      #mainColecciones .dc a {
-        font-size: 18px;
-        align-self: end; }
-      #mainColecciones .dc #wallFlash {
-        width: 180px;
-        height: 100px; }
-    #mainColecciones .sw {
-      display: none; }
-    #mainColecciones .shop {
-      font-size: 16px;
-      align-self: center; }
-    #mainColecciones .franquicia-marvel {
-      border: #f04f97 solid 4px;
-      width: 200px;
-      height: 300px; }
-    #mainColecciones .franquicia-dc {
-      border: #eef356 solid 4px;
-      width: 200px;
-      height: 300px; }
-  #mainContacto {
-    height: 155vh;
-    grid-template-rows: 0.1fr 2fr; }
-    #mainContacto .parrafo {
-      margin-left: 0px;
-      margin-right: 0px;
-      margin-top: 0px;
-      align-self: start; }
-      #mainContacto .parrafo .parrafo__Titulo {
-        font-size: 20px;
-        margin-top: 5px; }
-      #mainContacto .parrafo .parrafo__Texto {
-        margin-top: 0px;
-        margin-left: 40px;
-        font-size: 13px; }
-    #mainContacto .formulario {
-      margin-left: 20px;
-      margin-right: 20px; }
-      #mainContacto .formulario form .datos {
-        width: 100%;
-        margin-top: 20px; }
-      #mainContacto .formulario form .datosDos {
-        width: 100%; }
-        #mainContacto .formulario form .datosDos .textoDatos {
-          font-size: 13px; }
-        #mainContacto .formulario form .datosDos .lineas {
-          display: flex;
-          flex-direction: column; }
-          #mainContacto .formulario form .datosDos .lineas label {
-            margin-right: 5px;
-            margin-left: 1px;
-            margin-bottom: 5px;
-            font-size: 12px; }
-            #mainContacto .formulario form .datosDos .lineas label input {
-              margin-left: 5px;
-              margin-bottom: 5px; }
-      #mainContacto .formulario form .datosTres {
-        width: 100%; }
-        #mainContacto .formulario form .datosTres .textoDatos {
-          font-size: 13px; }
-        #mainContacto .formulario form .datosTres .licencias {
-          display: flex;
-          flex-direction: column; }
-          #mainContacto .formulario form .datosTres .licencias label {
-            margin-right: 5px;
-            margin-left: 1px;
-            margin-bottom: 5px;
-            font-size: 12px; }
-            #mainContacto .formulario form .datosTres .licencias label input {
-              margin-left: 5px;
-              margin-bottom: 5px; }
-      #mainContacto .formulario form .datosCuatro {
-        width: 100%; }
-      #mainContacto .formulario form .datosCinco {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.5fr 1fr;
-        grid-template-areas: "novedades novedades" "opciones btnEnviar"; }
-        #mainContacto .formulario form .datosCinco p {
-          grid-area: novedades; }
-        #mainContacto .formulario form .datosCinco .opciones {
-          grid-area: opciones; }
-        #mainContacto .formulario form .datosCinco .enviar {
-          grid-area: btnEnviar;
-          justify-self: right; }
-  footer {
-    height: 6vh; }
-    footer .textoFooter {
-      font-size: 14px; } }
+        margin-right: 0px; } }
 
 @media screen and (max-width: 480px) {
   header {
-    height: 12vh;
+    height: 11vh;
     grid-template-columns: 2fr 0.1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "imgFunko fuenteBoton" "imgFunko fuenteBoton"; }
@@ -934,306 +205,7 @@ header {
         height: 20px;
         border-radius: 8px;
         border: #1895cf solid 2px;
-        margin-right: 0px; }
-  nav {
-    height: 24vh;
-    grid-template-columns: 1fr;
-    grid-template-areas: "listaMenu";
-    background-color: white;
-    justify-items: stretch; }
-    nav a:link, nav a:visited, nav a:active {
-      font-size: 10px;
-      text-align: center; }
-    nav li {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      padding: 8px;
-      background-color: #1895cf; }
-    nav #buscador {
-      display: none; }
-  #mainIndex {
-    height: 75vh; }
-    #mainIndex #multimedia {
-      grid-column-gap: 10px; }
-      #mainIndex #multimedia #videos {
-        height: 30vh;
-        grid-template-rows: 0.5fr 1fr; }
-        #mainIndex #multimedia #videos .videoPrincipal .video__Titulo {
-          font-size: 10px;
-          line-height: 12px; }
-        #mainIndex #multimedia #videos .videoPrincipal .video__Texto {
-          font-size: 8px;
-          font-weight: 500;
-          line-height: 12px;
-          margin-top: 10px; }
-        #mainIndex #multimedia #videos #iframeV {
-          align-self: center; }
-          #mainIndex #multimedia #videos #iframeV iframe {
-            width: 159px;
-            height: 109px; }
-      #mainIndex #multimedia #fotos {
-        height: 30vh;
-        grid-template-rows: 0.5fr 1fr; }
-        #mainIndex #multimedia #fotos .fotoPrincipal .foto__Titulo {
-          font-size: 10px;
-          line-height: 12px; }
-        #mainIndex #multimedia #fotos .fotoPrincipal .foto__Texto {
-          font-size: 8px;
-          font-weight: 500;
-          line-height: 12px;
-          margin-top: 10px; }
-        #mainIndex #multimedia #fotos .portadaFotos {
-          align-self: center; }
-          #mainIndex #multimedia #fotos .portadaFotos #portadaDeFotos {
-            width: 159px;
-            height: 109px; }
-    #mainIndex #picSpider .pic #spiderManPortada {
-      width: 190px;
-      height: 190px; }
-    #mainIndex #picSpider #slogan {
-      justify-self: left;
-      translate: -40px;
-      text-align: center;
-      font-size: 18px; }
-  #mainHistoria {
-    grid-row-gap: 15px; }
-    #mainHistoria #parrafoUno .parrafo .parrafo__Titulo {
-      font-size: 18px;
-      text-align: center; }
-    #mainHistoria #parrafoUno .parrafo .parrafo__Texto {
-      font-size: 12px;
-      line-height: 20px;
-      text-align: justify; }
-    #mainHistoria #parrafoDos {
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas: "fotoSectParrafoDos fotoParaMobil" "sectParrafoDos sectParrafoDos";
-      justify-items: center;
-      grid-row-gap: 5px;
-      grid-column-gap: 15px; }
-      #mainHistoria #parrafoDos .fotoParrafoDos {
-        grid-area: fotoSectParrafoDos; }
-        #mainHistoria #parrafoDos .fotoParrafoDos #fotoTiendaFunko {
-          width: 190px;
-          height: 120px;
-          margin-left: 10px; }
-      #mainHistoria #parrafoDos .fotoParaMobil {
-        grid-area: fotoParaMobil;
-        display: block;
-        justify-items: center; }
-        #mainHistoria #parrafoDos .fotoParaMobil img {
-          width: 190px;
-          height: 120px;
-          margin-right: 10px; }
-      #mainHistoria #parrafoDos .parrafo {
-        font-size: 12px;
-        line-height: 20px;
-        text-align: justify; }
-    #mainHistoria #parrafoTres {
-      display: block; }
-      #mainHistoria #parrafoTres .parrafo .parrafo__Texto {
-        font-size: 12px;
-        line-height: 20px;
-        margin-right: 0px;
-        margin-left: 0px;
-        justify-self: center;
-        text-align: justify; }
-      #mainHistoria #parrafoTres .fotoParrafoTres #fotoTiendaFunkoDos {
-        display: none; }
-    #mainHistoria #parrafoCuatro {
-      display: none; }
-  #mainComunidad {
-    height: 65vh;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 0.1fr);
-    grid-template-areas: "tituloComunidad" "foro"  "telegram" "discord";
-    grid-row-gap: 15px; }
-    #mainComunidad #tituloComunidad #parrafoUno .parrafo .parrafo__Titulo {
-      font-size: 18px;
-      text-align: center; }
-    #mainComunidad #tituloComunidad #parrafoUno .parrafo .parrafo__Texto {
-      font-size: 12px;
-      line-height: 18px; }
-    #mainComunidad .foro {
-      border: #f44741 solid 3px;
-      width: 400px;
-      height: 100px;
-      justify-self: center;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas: "comunidad foroTitulo";
-      align-items: center;
-      align-content: center; }
-      #mainComunidad .foro .foro__Titulo {
-        font-size: 18px;
-        justify-self: left; }
-      #mainComunidad .foro .comunidad__Texto {
-        display: none; }
-      #mainComunidad .foro .comunidad {
-        font-size: 18px;
-        align-content: center; }
-        #mainComunidad .foro .comunidad #logoForo {
-          width: 70px;
-          height: 70px;
-          margin-top: 20px; }
-    #mainComunidad .telegram {
-      border: #0aa06e solid 3px;
-      width: 400px;
-      height: 100px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas: "comunidad foroTitulo";
-      align-content: center; }
-      #mainComunidad .telegram .foro__Titulo {
-        font-size: 18px;
-        justify-self: left; }
-      #mainComunidad .telegram .comunidad__Texto {
-        display: none; }
-      #mainComunidad .telegram .comunidad {
-        font-size: 18px; }
-        #mainComunidad .telegram .comunidad #logoTelegram {
-          width: 70px;
-          height: 70px;
-          margin-top: 20px; }
-    #mainComunidad .discord {
-      border: #c9c949 solid 3px;
-      width: 400px;
-      height: 100px;
-      justify-self: center;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas: "comunidad foroTitulo";
-      align-content: center; }
-      #mainComunidad .discord .foro__Titulo {
-        font-size: 18px;
-        justify-self: left; }
-      #mainComunidad .discord .comunidad__Texto {
-        display: none; }
-      #mainComunidad .discord .comunidad {
-        font-size: 18px; }
-        #mainComunidad .discord .comunidad #logoDiscord {
-          width: 70px;
-          height: 70px;
-          margin-top: 20px; }
-  #mainColecciones {
-    height: 60vh;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr 0.5fr;
-    grid-template-areas: "parrafoUno parrafoUno" "marvel dc" "shop shop";
-    grid-row-gap: 2px; }
-    #mainColecciones #parrafoUno .parrafo .parrafo__Titulo {
-      font-size: 18px;
-      margin-top: 5px;
-      line-height: 50px;
-      text-align: center; }
-    #mainColecciones #parrafoUno .parrafo .parrafo__Texto {
-      display: none; }
-    #mainColecciones .marvel {
-      grid-template-columns: 1fr;
-      grid-template-rows: 0.5fr 1fr;
-      grid-template-areas: "categoriaMarvel" "capi"; }
-      #mainColecciones .marvel a {
-        font-size: 18px;
-        align-self: end; }
-      #mainColecciones .marvel #wallCapi {
-        width: 180px;
-        height: 100px; }
-    #mainColecciones .dc {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 0.5fr 1fr;
-      grid-template-areas: "categoriaDc" "flash"; }
-      #mainColecciones .dc a {
-        font-size: 18px;
-        align-self: end; }
-      #mainColecciones .dc #wallFlash {
-        width: 180px;
-        height: 100px; }
-    #mainColecciones .sw {
-      display: none; }
-    #mainColecciones .shop {
-      font-size: 16px;
-      align-self: center; }
-    #mainColecciones .franquicia-marvel {
-      border: #f04f97 solid 4px;
-      width: 200px;
-      height: 300px; }
-    #mainColecciones .franquicia-dc {
-      border: #eef356 solid 4px;
-      width: 200px;
-      height: 300px; }
-  #mainContacto {
-    height: 155vh;
-    grid-template-rows: 0.1fr 2fr; }
-    #mainContacto .parrafo {
-      margin-left: 0px;
-      margin-right: 0px;
-      margin-top: 0px;
-      align-self: start; }
-      #mainContacto .parrafo .parrafo__Titulo {
-        font-size: 20px;
-        margin-top: 5px; }
-      #mainContacto .parrafo .parrafo__Texto {
-        margin-top: 0px;
-        margin-left: 40px;
-        font-size: 13px; }
-    #mainContacto .formulario {
-      margin-left: 20px;
-      margin-right: 20px; }
-      #mainContacto .formulario form .datos {
-        width: 100%;
-        margin-top: 20px; }
-      #mainContacto .formulario form .datosDos {
-        width: 100%; }
-        #mainContacto .formulario form .datosDos .textoDatos {
-          font-size: 13px; }
-        #mainContacto .formulario form .datosDos .lineas {
-          display: flex;
-          flex-direction: column; }
-          #mainContacto .formulario form .datosDos .lineas label {
-            margin-right: 5px;
-            margin-left: 1px;
-            margin-bottom: 5px;
-            font-size: 12px; }
-            #mainContacto .formulario form .datosDos .lineas label input {
-              margin-left: 5px;
-              margin-bottom: 5px; }
-      #mainContacto .formulario form .datosTres {
-        width: 100%; }
-        #mainContacto .formulario form .datosTres .textoDatos {
-          font-size: 13px; }
-        #mainContacto .formulario form .datosTres .licencias {
-          display: flex;
-          flex-direction: column; }
-          #mainContacto .formulario form .datosTres .licencias label {
-            margin-right: 5px;
-            margin-left: 1px;
-            margin-bottom: 5px;
-            font-size: 12px; }
-            #mainContacto .formulario form .datosTres .licencias label input {
-              margin-left: 5px;
-              margin-bottom: 5px; }
-      #mainContacto .formulario form .datosCuatro {
-        width: 100%; }
-      #mainContacto .formulario form .datosCinco {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.5fr 1fr;
-        grid-template-areas: "novedades novedades" "opciones btnEnviar"; }
-        #mainContacto .formulario form .datosCinco p {
-          grid-area: novedades; }
-        #mainContacto .formulario form .datosCinco .opciones {
-          grid-area: opciones; }
-        #mainContacto .formulario form .datosCinco .enviar {
-          grid-area: btnEnviar;
-          justify-self: right; }
-  footer {
-    height: 6vh; }
-    footer .textoFooter {
-      font-size: 14px; } }
+        margin-right: 0px; } }
 
 nav {
   height: 12vh;
@@ -1277,31 +249,8 @@ nav {
       border: none;
       background-color: transparent; }
 
+/* Media Queries */
 @media screen and (min-width: 1280px) {
-  header {
-    height: 17vh;
-    grid-template-columns: 0.3fr 2fr 0.5fr; }
-    header #logosRedes #logoInstagram {
-      height: 40px;
-      width: 40px; }
-    header #logosRedes #logoFacebook {
-      height: 40px;
-      width: 40px; }
-    header #logosRedes #logoTwitter {
-      height: 40px;
-      width: 40px; }
-    header .imgFunko a h1 {
-      font-size: 6em; }
-    header .fuenteBoton {
-      justify-self: right; }
-      header .fuenteBoton #botonLogin {
-        width: 140px;
-        height: 40px;
-        font-size: 16px; }
-      header .fuenteBoton #botonRegistro {
-        width: 140px;
-        height: 40px;
-        font-size: 16px; }
   nav {
     height: 9vh;
     grid-template-columns: 2.5fr 1fr; }
@@ -1312,471 +261,17 @@ nav {
       height: 30px;
       width: 160px; }
     nav #buscador #botonBuscar {
-      font-size: 22px; }
-  #mainIndex #multimedia #videos {
-    height: 600px;
-    grid-template-rows: 1fr 1fr; }
-    #mainIndex #multimedia #videos .videoPrincipal .video__Titulo {
-      font-size: 30px;
-      line-height: 35px;
-      margin-bottom: 20px; }
-    #mainIndex #multimedia #videos .videoPrincipal .video__Texto {
-      font-size: 24px;
-      line-height: 30px; }
-    #mainIndex #multimedia #videos #iframeV {
-      align-self: start; }
-      #mainIndex #multimedia #videos #iframeV iframe {
-        width: 379px;
-        height: 250px; }
-  #mainIndex #multimedia #fotos {
-    height: 600px;
-    grid-template-rows: 1fr 1fr; }
-    #mainIndex #multimedia #fotos .fotoPrincipal .foto__Titulo {
-      font-size: 30px;
-      line-height: 35px;
-      margin-bottom: 20px; }
-    #mainIndex #multimedia #fotos .fotoPrincipal .foto__Texto {
-      font-size: 24px;
-      line-height: 30px; }
-    #mainIndex #multimedia #fotos .portadaFotos {
-      align-self: start; }
-      #mainIndex #multimedia #fotos .portadaFotos #portadaDeFotos {
-        width: 350px;
-        height: 250px; }
-  #mainIndex #picSpider .pic #spiderManPortada {
-    width: 575px;
-    height: 575px; }
-  #mainIndex #picSpider #slogan {
-    text-align: center;
-    font-size: 50px;
-    text-align: center;
-    justify-self: right;
-    translate: -40px; }
-    #mainIndex #picSpider #slogan:hover {
-      transform: scale(1.2); }
-  #mainHistoria #parrafoUno .parrafo {
-    font-size: 20px;
-    line-height: 25px; }
-    #mainHistoria #parrafoUno .parrafo .parrafo__Titulo {
-      margin-top: 20px; }
-    #mainHistoria #parrafoUno .parrafo .parrafo__Texto {
-      font-size: 18px;
-      margin-top: 20px;
-      line-height: 35px;
-      text-align: justify; }
-  #mainHistoria #parrafoDos .fotoParrafoDos {
-    align-self: center; }
-    #mainHistoria #parrafoDos .fotoParrafoDos #fotoTiendaFunko {
-      width: 600px;
-      height: 380px; }
-  #mainHistoria #parrafoDos .parrafo {
-    font-size: 18px;
-    margin-top: 20px;
-    line-height: 35px;
-    text-align: justify; }
-  #mainHistoria #parrafoTres .parrafo {
-    font-size: 18px;
-    margin-top: 20px;
-    line-height: 35px;
-    text-align: justify; }
-  #mainHistoria #parrafoTres .fotoParrafoTres {
-    align-self: center; }
-    #mainHistoria #parrafoTres .fotoParrafoTres #fotoTiendaFunkoDos {
-      width: 600px;
-      height: 380px; }
-  #mainComunidad {
-    height: 70vh;
-    grid-template-rows: 20% 80%;
-    grid-row-gap: 35px; }
-    #mainComunidad #tituloComunidad .parrafo .parrafo__Titulo {
-      font-size: 30px;
-      margin-top: 20px; }
-    #mainComunidad #tituloComunidad .parrafo .parrafo__Texto {
-      font-size: 21px;
-      line-height: 35px;
-      margin-top: 20px; }
-    #mainComunidad .foro {
-      grid-template-rows: 0.5fr 0.5fr 1fr; }
-      #mainComunidad .foro .foro__Titulo {
-        font-size: 30px; }
-      #mainComunidad .foro .comunidad__Texto {
-        font-size: 20px;
-        align-self: center; }
-      #mainComunidad .foro .comunidad {
-        align-self: center; }
-        #mainComunidad .foro .comunidad #logoForo {
-          width: 180px;
-          height: 180px; }
-    #mainComunidad .telegram {
-      grid-template-rows: 0.5fr 0.5fr 1fr; }
-      #mainComunidad .telegram .foro__Titulo {
-        font-size: 30px; }
-      #mainComunidad .telegram .comunidad__Texto {
-        font-size: 20px;
-        align-self: center; }
-      #mainComunidad .telegram .comunidad {
-        align-self: center; }
-        #mainComunidad .telegram .comunidad #logoTelegram {
-          width: 180px;
-          height: 180px; }
-    #mainComunidad .discord {
-      grid-template-rows: 0.5fr 0.5fr 1fr; }
-      #mainComunidad .discord .foro__Titulo {
-        font-size: 30px; }
-      #mainComunidad .discord .comunidad__Texto {
-        font-size: 20px;
-        align-self: center;
-        margin-left: 20px;
-        margin-right: 20px; }
-      #mainComunidad .discord .comunidad {
-        align-self: center; }
-        #mainComunidad .discord .comunidad #logoDiscord {
-          width: 180px;
-          height: 180px; }
-    #mainComunidad .comunidad-foro {
-      background-color: #fc6863;
-      width: 350px;
-      height: 550px; }
-    #mainComunidad .comunidad-telegram {
-      background-color: #1dcc92;
-      width: 350px;
-      height: 550px; }
-    #mainComunidad .comunidad-discord {
-      background-color: #dcdc72;
-      width: 350px;
-      height: 550px; }
-  #mainColecciones {
-    height: 100vh; }
-    #mainColecciones #parrafoUno .parrafo .parrafo__Titulo {
-      font-size: 30px;
-      margin-top: 20px; }
-    #mainColecciones #parrafoUno .parrafo .parrafo__Texto {
-      font-size: 21px;
-      line-height: 35px;
-      margin-top: 20px; }
-    #mainColecciones .marvel a, #mainColecciones .dc a, #mainColecciones .sw a {
-      font-size: 30px; }
-    #mainColecciones .marvel #wallCapi, #mainColecciones .marvel #wallFlash, #mainColecciones .marvel #wallSw, #mainColecciones .dc #wallCapi, #mainColecciones .dc #wallFlash, #mainColecciones .dc #wallSw, #mainColecciones .sw #wallCapi, #mainColecciones .sw #wallFlash, #mainColecciones .sw #wallSw {
-      width: 330px;
-      height: 180px; }
-    #mainColecciones .shop {
-      font-size: 35px; }
-    #mainColecciones .franquicia-marvel {
-      background-color: #f47fb4;
-      height: 250px; }
-    #mainColecciones .franquicia-dc {
-      background-color: #f0f47a;
-      height: 250px; }
-    #mainColecciones .franquicia-sw {
-      background-color: #76f386;
-      height: 250px; }
-  #mainContacto .parrafo {
-    margin-top: 0px; }
-    #mainContacto .parrafo .parrafo__Titulo {
-      font-size: 30px;
-      margin-top: 20px; }
-    #mainContacto .parrafo .parrafo__Texto {
-      font-size: 21px;
-      line-height: 35px;
-      margin-top: 20px; }
-  #mainContacto .formulario form .datos legend {
-    font-size: 22px; }
-  #mainContacto .formulario form .datos .nombre, #mainContacto .formulario form .datos .apellido, #mainContacto .formulario form .datos .genero, #mainContacto .formulario form .datos .edad {
-    font-size: 18px; }
-  #mainContacto .formulario form .datosDos legend {
-    font-size: 22px; }
-  #mainContacto .formulario form .datosDos .textoDatos {
-    font-size: 20px; }
-  #mainContacto .formulario form .datosDos .lineas label {
-    margin-right: 0px;
-    margin-left: 12px;
-    font-size: 18px; }
-  #mainContacto .formulario form .datosTres legend {
-    font-size: 22px; }
-  #mainContacto .formulario form .datosTres .textoDatos {
-    font-size: 20px; }
-  #mainContacto .formulario form .datosTres .licencias label {
-    margin-right: 0px;
-    margin-left: 4px;
-    font-size: 18px; }
-  #mainContacto .formulario form .datosCuatro legend {
-    font-size: 22px; }
-  #mainContacto .formulario form .datosCuatro .consulta textarea {
-    font-size: 18px; }
-  #mainContacto .formulario form .datosCinco p {
-    font-size: 22px; }
-  #mainContacto .formulario form .datosCinco .opciones label {
-    font-size: 18px; }
-  #mainContacto .formulario form .enviar #botonEnviar {
-    width: 150px;
-    height: 300px;
-    border-radius: 10px;
-    border: #1895cf solid 3px;
-    font-size: 50px; }
-  #mainContacto .formulario form .enviar a {
-    font-size: 20px; }
-  footer {
-    height: 8vh; }
-    footer .textoFooter {
-      font-size: 25px; } }
+      font-size: 22px; } }
 
-@media screen and (min-width: 769px) and (max-width: 1279px) {
-  header {
-    height: 11vh;
-    grid-template-columns: 0.4fr 2fr 0.5fr; }
-    header #logosRedes {
-      grid-column-gap: 1.5px; }
-      header #logosRedes #logoInstagram {
-        height: 25px;
-        width: 25px; }
-      header #logosRedes #logoFacebook {
-        height: 25px;
-        width: 25px; }
-      header #logosRedes #logoTwitter {
-        height: 25px;
-        width: 25px; }
-    header .imgFunko a h1 {
-      font-size: 4em; }
-    header .fuenteBoton {
-      justify-self: right; }
-      header .fuenteBoton #botonLogin, header .fuenteBoton #botonRegistro {
-        width: 85px;
-        height: 25px;
-        font-size: 12px; }
+@media screen and (max-width: 1279px) {
   nav {
     height: 8vh;
     grid-template-columns: 2fr 1fr; }
     nav li {
       font-size: 15px;
-      padding: 3px; }
-  #mainIndex {
-    grid-template-rows: 0.1fr 1fr 0.1fr; }
-    #mainIndex #multimedia {
-      grid-template-columns: 46% 46%;
-      grid-column-gap: 20px; }
-      #mainIndex #multimedia #videos {
-        height: 350px;
-        grid-template-rows: 0.7fr 1fr; }
-        #mainIndex #multimedia #videos .videoPrincipal .video__Titulo {
-          font-size: 20px;
-          line-height: 24px;
-          margin-bottom: 20px;
-          margin-left: 15px;
-          margin-right: 15px; }
-        #mainIndex #multimedia #videos .videoPrincipal .video__Texto {
-          font-size: 14px;
-          margin-left: 10px;
-          margin-right: 10px; }
-        #mainIndex #multimedia #videos #iframeV {
-          align-self: center; }
-          #mainIndex #multimedia #videos #iframeV iframe {
-            width: 240px;
-            height: 150px; }
-      #mainIndex #multimedia #fotos {
-        height: 350px;
-        grid-template-rows: 0.7fr 1fr; }
-        #mainIndex #multimedia #fotos .fotoPrincipal .foto__Titulo {
-          font-size: 20px;
-          line-height: 24px;
-          margin-bottom: 20px; }
-        #mainIndex #multimedia #fotos .fotoPrincipal .foto__Texto {
-          font-size: 14px;
-          margin-left: 5px;
-          margin-right: 5px; }
-        #mainIndex #multimedia #fotos .portadaFotos {
-          align-self: center; }
-          #mainIndex #multimedia #fotos .portadaFotos #portadaDeFotos {
-            width: 230px;
-            height: 150px; }
-    #mainIndex #picSpider .pic #spiderManPortada {
-      width: 275px;
-      height: 275px; }
-    #mainIndex #picSpider #slogan {
-      font-size: 30px;
-      text-align: center;
-      translate: -30px; }
-  #mainHistoria {
-    grid-row-gap: 10px; }
-    #mainHistoria #parrafoUno .parrafo .parrafo__Titulo {
-      font-size: 25px; }
-    #mainHistoria #parrafoUno .parrafo .parrafo__Texto {
-      font-size: 14px;
-      line-height: 20px; }
-    #mainHistoria #parrafoDos .fotoParrafoDos {
-      align-self: center; }
-      #mainHistoria #parrafoDos .fotoParrafoDos #fotoTiendaFunko {
-        width: 310px;
-        height: 190px; }
-    #mainHistoria #parrafoDos .parrafo {
-      font-size: 14px;
-      line-height: 20px; }
-    #mainHistoria #parrafoTres .parrafo {
-      font-size: 14px;
-      line-height: 20px; }
-    #mainHistoria #parrafoTres .fotoParrafoTres {
-      align-self: center; }
-      #mainHistoria #parrafoTres .fotoParrafoTres #fotoTiendaFunkoDos {
-        width: 310px;
-        height: 180px; }
-    #mainHistoria #parrafoCuatro .fotoParrafoCuatro {
-      margin-left: 20PX; }
-      #mainHistoria #parrafoCuatro .fotoParrafoCuatro #fotoHileraPops {
-        width: 94%; }
-  #mainComunidad {
-    height: 70vh;
-    grid-template-rows: 0.1fr 1fr; }
-    #mainComunidad #tituloComunidad .parrafo .parrafo__Titulo {
-      font-size: 25px;
-      margin-top: 5px; }
-    #mainComunidad #tituloComunidad .parrafo .parrafo__Texto {
-      font-size: 14px;
-      line-height: 20px;
-      margin-top: 5px; }
-    #mainComunidad .foro {
-      grid-template-rows: repeat(2, 0.5fr) 1fr;
-      width: 200px;
-      height: 350px;
-      margin-bottom: 10px;
-      align-self: center; }
-      #mainComunidad .foro .foro__Titulo {
-        font-size: 21px; }
-      #mainComunidad .foro .comunidad__Texto {
-        font-size: 12px;
-        margin-left: 7px;
-        margin-right: 7px; }
-      #mainComunidad .foro .comunidad #logoForo {
-        width: 120px;
-        height: 120px; }
-    #mainComunidad .telegram {
-      grid-template-rows: repeat(2, 0.5fr) 1fr;
-      width: 200px;
-      height: 350px;
-      margin-bottom: 10px;
-      align-self: center; }
-      #mainComunidad .telegram .foro__Titulo {
-        font-size: 21px; }
-      #mainComunidad .telegram .comunidad__Texto {
-        font-size: 12px;
-        margin-left: 7px;
-        margin-right: 7px; }
-      #mainComunidad .telegram .comunidad #logoTelegram {
-        width: 120px;
-        height: 120px; }
-    #mainComunidad .discord {
-      grid-template-rows: repeat(2, 0.5fr) 1fr;
-      width: 200px;
-      height: 350px;
-      margin-bottom: 10px;
-      align-self: center; }
-      #mainComunidad .discord .foro__Titulo {
-        font-size: 21px; }
-      #mainComunidad .discord .comunidad__Texto {
-        font-size: 12px;
-        margin-left: 7px;
-        margin-right: 7px; }
-      #mainComunidad .discord .comunidad #logoDiscord {
-        width: 120px;
-        height: 120px; }
-  #mainColecciones {
-    height: 100vh;
-    grid-template-rows: 0.1fr repeat(3, 0.2fr) 0.1fr; }
-    #mainColecciones #parrafoUno .parrafo {
-      font-size: 14px;
-      line-height: 25px;
-      margin-bottom: 0px; }
-      #mainColecciones #parrafoUno .parrafo .parrafo__Titulo {
-        font-size: 25px; }
-    #mainColecciones .marvel {
-      width: 80%;
-      height: 175px;
-      align-self: center; }
-      #mainColecciones .marvel a {
-        font-size: 22px; }
-      #mainColecciones .marvel #wallCapi {
-        width: 190px;
-        height: 110px; }
-    #mainColecciones .dc {
-      width: 80%;
-      height: 175px;
-      align-self: start; }
-      #mainColecciones .dc a {
-        font-size: 22px; }
-      #mainColecciones .dc #wallFlash {
-        width: 190px;
-        height: 110px; }
-    #mainColecciones .sw {
-      width: 80%;
-      height: 175px;
-      align-self: start; }
-      #mainColecciones .sw a {
-        font-size: 22px; }
-      #mainColecciones .sw #wallSw {
-        width: 190px;
-        height: 110px; }
-    #mainColecciones .shop {
-      font-size: 22px; }
-  #mainContacto {
-    height: 120vh;
-    grid-template-rows: 0.1fr 1fr; }
-    #mainContacto .parrafo {
-      margin-left: 0px;
-      margin-right: 0px;
-      margin-top: 0px;
-      align-self: start; }
-      #mainContacto .parrafo .parrafo__Titulo {
-        font-size: 25px;
-        margin-top: 5px; }
-      #mainContacto .parrafo .parrafo__Texto {
-        margin-top: 0px;
-        margin-left: 40px;
-        font-size: 14px; }
-    #mainContacto .formulario form .datos {
-      margin-top: 20px; }
-    #mainContacto .formulario form .datosDos {
-      width: 100%; }
-      #mainContacto .formulario form .datosDos .lineas label {
-        margin-right: 0px;
-        margin-left: 8px;
-        font-size: 12px; }
-        #mainContacto .formulario form .datosDos .lineas label input {
-          margin-right: 1px; }
-    #mainContacto .formulario form .datosTres {
-      width: 100%; }
-      #mainContacto .formulario form .datosTres .licencias label {
-        margin-right: 0px;
-        margin-left: 8px;
-        font-size: 11px; }
-        #mainContacto .formulario form .datosTres .licencias label input {
-          margin-right: 1px; }
-    #mainContacto .formulario form .datosCuatro {
-      width: 100%; }
-    #mainContacto .formulario form .datosCinco {
-      width: 100%; }
-  footer {
-    height: 7vh; }
-    footer .textoFooter {
-      font-size: 18px; } }
+      padding: 3px; } }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  header {
-    height: 12vh;
-    grid-template-columns: 2fr 0.1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "imgFunko fuenteBoton" "imgFunko fuenteBoton"; }
-    header #logosRedes {
-      display: none; }
-    header .imgFunko a h1 {
-      font-size: 3em; }
-    header .fuenteBoton {
-      margin-right: 0px;
-      grid-row-gap: 3px; }
-      header .fuenteBoton #botonLogin, header .fuenteBoton #botonRegistro {
-        font-size: 7px;
-        width: 70px;
-        height: 20px;
-        border-radius: 8px;
-        border: #1895cf solid 2px;
-        margin-right: 0px; }
+@media screen and (max-width: 768px) {
   nav {
     height: 24vh;
     grid-template-columns: 1fr;
@@ -1793,310 +288,9 @@ nav {
       padding: 8px;
       background-color: #1895cf; }
     nav #buscador {
-      display: none; }
-  #mainIndex {
-    height: 75vh; }
-    #mainIndex #multimedia {
-      grid-column-gap: 10px; }
-      #mainIndex #multimedia #videos {
-        height: 30vh;
-        grid-template-rows: 0.5fr 1fr; }
-        #mainIndex #multimedia #videos .videoPrincipal .video__Titulo {
-          font-size: 10px;
-          line-height: 12px; }
-        #mainIndex #multimedia #videos .videoPrincipal .video__Texto {
-          font-size: 8px;
-          font-weight: 500;
-          line-height: 12px;
-          margin-top: 10px; }
-        #mainIndex #multimedia #videos #iframeV {
-          align-self: center; }
-          #mainIndex #multimedia #videos #iframeV iframe {
-            width: 159px;
-            height: 109px; }
-      #mainIndex #multimedia #fotos {
-        height: 30vh;
-        grid-template-rows: 0.5fr 1fr; }
-        #mainIndex #multimedia #fotos .fotoPrincipal .foto__Titulo {
-          font-size: 10px;
-          line-height: 12px; }
-        #mainIndex #multimedia #fotos .fotoPrincipal .foto__Texto {
-          font-size: 8px;
-          font-weight: 500;
-          line-height: 12px;
-          margin-top: 10px; }
-        #mainIndex #multimedia #fotos .portadaFotos {
-          align-self: center; }
-          #mainIndex #multimedia #fotos .portadaFotos #portadaDeFotos {
-            width: 159px;
-            height: 109px; }
-    #mainIndex #picSpider .pic #spiderManPortada {
-      width: 190px;
-      height: 190px; }
-    #mainIndex #picSpider #slogan {
-      justify-self: left;
-      translate: -40px;
-      text-align: center;
-      font-size: 18px; }
-  #mainHistoria {
-    grid-row-gap: 15px; }
-    #mainHistoria #parrafoUno .parrafo .parrafo__Titulo {
-      font-size: 18px;
-      text-align: center; }
-    #mainHistoria #parrafoUno .parrafo .parrafo__Texto {
-      font-size: 12px;
-      line-height: 20px;
-      text-align: justify; }
-    #mainHistoria #parrafoDos {
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas: "fotoSectParrafoDos fotoParaMobil" "sectParrafoDos sectParrafoDos";
-      justify-items: center;
-      grid-row-gap: 5px;
-      grid-column-gap: 15px; }
-      #mainHistoria #parrafoDos .fotoParrafoDos {
-        grid-area: fotoSectParrafoDos; }
-        #mainHistoria #parrafoDos .fotoParrafoDos #fotoTiendaFunko {
-          width: 190px;
-          height: 120px;
-          margin-left: 10px; }
-      #mainHistoria #parrafoDos .fotoParaMobil {
-        grid-area: fotoParaMobil;
-        display: block;
-        justify-items: center; }
-        #mainHistoria #parrafoDos .fotoParaMobil img {
-          width: 190px;
-          height: 120px;
-          margin-right: 10px; }
-      #mainHistoria #parrafoDos .parrafo {
-        font-size: 12px;
-        line-height: 20px;
-        text-align: justify; }
-    #mainHistoria #parrafoTres {
-      display: block; }
-      #mainHistoria #parrafoTres .parrafo .parrafo__Texto {
-        font-size: 12px;
-        line-height: 20px;
-        margin-right: 0px;
-        margin-left: 0px;
-        justify-self: center;
-        text-align: justify; }
-      #mainHistoria #parrafoTres .fotoParrafoTres #fotoTiendaFunkoDos {
-        display: none; }
-    #mainHistoria #parrafoCuatro {
-      display: none; }
-  #mainComunidad {
-    height: 65vh;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 0.1fr);
-    grid-template-areas: "tituloComunidad" "foro"  "telegram" "discord";
-    grid-row-gap: 15px; }
-    #mainComunidad #tituloComunidad #parrafoUno .parrafo .parrafo__Titulo {
-      font-size: 18px;
-      text-align: center; }
-    #mainComunidad #tituloComunidad #parrafoUno .parrafo .parrafo__Texto {
-      font-size: 12px;
-      line-height: 18px; }
-    #mainComunidad .foro {
-      border: #f44741 solid 3px;
-      width: 400px;
-      height: 100px;
-      justify-self: center;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas: "comunidad foroTitulo";
-      align-items: center;
-      align-content: center; }
-      #mainComunidad .foro .foro__Titulo {
-        font-size: 18px;
-        justify-self: left; }
-      #mainComunidad .foro .comunidad__Texto {
-        display: none; }
-      #mainComunidad .foro .comunidad {
-        font-size: 18px;
-        align-content: center; }
-        #mainComunidad .foro .comunidad #logoForo {
-          width: 70px;
-          height: 70px;
-          margin-top: 20px; }
-    #mainComunidad .telegram {
-      border: #0aa06e solid 3px;
-      width: 400px;
-      height: 100px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas: "comunidad foroTitulo";
-      align-content: center; }
-      #mainComunidad .telegram .foro__Titulo {
-        font-size: 18px;
-        justify-self: left; }
-      #mainComunidad .telegram .comunidad__Texto {
-        display: none; }
-      #mainComunidad .telegram .comunidad {
-        font-size: 18px; }
-        #mainComunidad .telegram .comunidad #logoTelegram {
-          width: 70px;
-          height: 70px;
-          margin-top: 20px; }
-    #mainComunidad .discord {
-      border: #c9c949 solid 3px;
-      width: 400px;
-      height: 100px;
-      justify-self: center;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas: "comunidad foroTitulo";
-      align-content: center; }
-      #mainComunidad .discord .foro__Titulo {
-        font-size: 18px;
-        justify-self: left; }
-      #mainComunidad .discord .comunidad__Texto {
-        display: none; }
-      #mainComunidad .discord .comunidad {
-        font-size: 18px; }
-        #mainComunidad .discord .comunidad #logoDiscord {
-          width: 70px;
-          height: 70px;
-          margin-top: 20px; }
-  #mainColecciones {
-    height: 60vh;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr 0.5fr;
-    grid-template-areas: "parrafoUno parrafoUno" "marvel dc" "shop shop";
-    grid-row-gap: 2px; }
-    #mainColecciones #parrafoUno .parrafo .parrafo__Titulo {
-      font-size: 18px;
-      margin-top: 5px;
-      line-height: 50px;
-      text-align: center; }
-    #mainColecciones #parrafoUno .parrafo .parrafo__Texto {
-      display: none; }
-    #mainColecciones .marvel {
-      grid-template-columns: 1fr;
-      grid-template-rows: 0.5fr 1fr;
-      grid-template-areas: "categoriaMarvel" "capi"; }
-      #mainColecciones .marvel a {
-        font-size: 18px;
-        align-self: end; }
-      #mainColecciones .marvel #wallCapi {
-        width: 180px;
-        height: 100px; }
-    #mainColecciones .dc {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 0.5fr 1fr;
-      grid-template-areas: "categoriaDc" "flash"; }
-      #mainColecciones .dc a {
-        font-size: 18px;
-        align-self: end; }
-      #mainColecciones .dc #wallFlash {
-        width: 180px;
-        height: 100px; }
-    #mainColecciones .sw {
-      display: none; }
-    #mainColecciones .shop {
-      font-size: 16px;
-      align-self: center; }
-    #mainColecciones .franquicia-marvel {
-      border: #f04f97 solid 4px;
-      width: 200px;
-      height: 300px; }
-    #mainColecciones .franquicia-dc {
-      border: #eef356 solid 4px;
-      width: 200px;
-      height: 300px; }
-  #mainContacto {
-    height: 155vh;
-    grid-template-rows: 0.1fr 2fr; }
-    #mainContacto .parrafo {
-      margin-left: 0px;
-      margin-right: 0px;
-      margin-top: 0px;
-      align-self: start; }
-      #mainContacto .parrafo .parrafo__Titulo {
-        font-size: 20px;
-        margin-top: 5px; }
-      #mainContacto .parrafo .parrafo__Texto {
-        margin-top: 0px;
-        margin-left: 40px;
-        font-size: 13px; }
-    #mainContacto .formulario {
-      margin-left: 20px;
-      margin-right: 20px; }
-      #mainContacto .formulario form .datos {
-        width: 100%;
-        margin-top: 20px; }
-      #mainContacto .formulario form .datosDos {
-        width: 100%; }
-        #mainContacto .formulario form .datosDos .textoDatos {
-          font-size: 13px; }
-        #mainContacto .formulario form .datosDos .lineas {
-          display: flex;
-          flex-direction: column; }
-          #mainContacto .formulario form .datosDos .lineas label {
-            margin-right: 5px;
-            margin-left: 1px;
-            margin-bottom: 5px;
-            font-size: 12px; }
-            #mainContacto .formulario form .datosDos .lineas label input {
-              margin-left: 5px;
-              margin-bottom: 5px; }
-      #mainContacto .formulario form .datosTres {
-        width: 100%; }
-        #mainContacto .formulario form .datosTres .textoDatos {
-          font-size: 13px; }
-        #mainContacto .formulario form .datosTres .licencias {
-          display: flex;
-          flex-direction: column; }
-          #mainContacto .formulario form .datosTres .licencias label {
-            margin-right: 5px;
-            margin-left: 1px;
-            margin-bottom: 5px;
-            font-size: 12px; }
-            #mainContacto .formulario form .datosTres .licencias label input {
-              margin-left: 5px;
-              margin-bottom: 5px; }
-      #mainContacto .formulario form .datosCuatro {
-        width: 100%; }
-      #mainContacto .formulario form .datosCinco {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.5fr 1fr;
-        grid-template-areas: "novedades novedades" "opciones btnEnviar"; }
-        #mainContacto .formulario form .datosCinco p {
-          grid-area: novedades; }
-        #mainContacto .formulario form .datosCinco .opciones {
-          grid-area: opciones; }
-        #mainContacto .formulario form .datosCinco .enviar {
-          grid-area: btnEnviar;
-          justify-self: right; }
-  footer {
-    height: 6vh; }
-    footer .textoFooter {
-      font-size: 14px; } }
+      display: none; } }
 
 @media screen and (max-width: 480px) {
-  header {
-    height: 12vh;
-    grid-template-columns: 2fr 0.1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "imgFunko fuenteBoton" "imgFunko fuenteBoton"; }
-    header #logosRedes {
-      display: none; }
-    header .imgFunko a h1 {
-      font-size: 3em; }
-    header .fuenteBoton {
-      margin-right: 0px;
-      grid-row-gap: 3px; }
-      header .fuenteBoton #botonLogin, header .fuenteBoton #botonRegistro {
-        font-size: 7px;
-        width: 70px;
-        height: 20px;
-        border-radius: 8px;
-        border: #1895cf solid 2px;
-        margin-right: 0px; }
   nav {
     height: 24vh;
     grid-template-columns: 1fr;
@@ -2113,289 +307,7 @@ nav {
       padding: 8px;
       background-color: #1895cf; }
     nav #buscador {
-      display: none; }
-  #mainIndex {
-    height: 75vh; }
-    #mainIndex #multimedia {
-      grid-column-gap: 10px; }
-      #mainIndex #multimedia #videos {
-        height: 30vh;
-        grid-template-rows: 0.5fr 1fr; }
-        #mainIndex #multimedia #videos .videoPrincipal .video__Titulo {
-          font-size: 10px;
-          line-height: 12px; }
-        #mainIndex #multimedia #videos .videoPrincipal .video__Texto {
-          font-size: 8px;
-          font-weight: 500;
-          line-height: 12px;
-          margin-top: 10px; }
-        #mainIndex #multimedia #videos #iframeV {
-          align-self: center; }
-          #mainIndex #multimedia #videos #iframeV iframe {
-            width: 159px;
-            height: 109px; }
-      #mainIndex #multimedia #fotos {
-        height: 30vh;
-        grid-template-rows: 0.5fr 1fr; }
-        #mainIndex #multimedia #fotos .fotoPrincipal .foto__Titulo {
-          font-size: 10px;
-          line-height: 12px; }
-        #mainIndex #multimedia #fotos .fotoPrincipal .foto__Texto {
-          font-size: 8px;
-          font-weight: 500;
-          line-height: 12px;
-          margin-top: 10px; }
-        #mainIndex #multimedia #fotos .portadaFotos {
-          align-self: center; }
-          #mainIndex #multimedia #fotos .portadaFotos #portadaDeFotos {
-            width: 159px;
-            height: 109px; }
-    #mainIndex #picSpider .pic #spiderManPortada {
-      width: 190px;
-      height: 190px; }
-    #mainIndex #picSpider #slogan {
-      justify-self: left;
-      translate: -40px;
-      text-align: center;
-      font-size: 18px; }
-  #mainHistoria {
-    grid-row-gap: 15px; }
-    #mainHistoria #parrafoUno .parrafo .parrafo__Titulo {
-      font-size: 18px;
-      text-align: center; }
-    #mainHistoria #parrafoUno .parrafo .parrafo__Texto {
-      font-size: 12px;
-      line-height: 20px;
-      text-align: justify; }
-    #mainHistoria #parrafoDos {
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas: "fotoSectParrafoDos fotoParaMobil" "sectParrafoDos sectParrafoDos";
-      justify-items: center;
-      grid-row-gap: 5px;
-      grid-column-gap: 15px; }
-      #mainHistoria #parrafoDos .fotoParrafoDos {
-        grid-area: fotoSectParrafoDos; }
-        #mainHistoria #parrafoDos .fotoParrafoDos #fotoTiendaFunko {
-          width: 190px;
-          height: 120px;
-          margin-left: 10px; }
-      #mainHistoria #parrafoDos .fotoParaMobil {
-        grid-area: fotoParaMobil;
-        display: block;
-        justify-items: center; }
-        #mainHistoria #parrafoDos .fotoParaMobil img {
-          width: 190px;
-          height: 120px;
-          margin-right: 10px; }
-      #mainHistoria #parrafoDos .parrafo {
-        font-size: 12px;
-        line-height: 20px;
-        text-align: justify; }
-    #mainHistoria #parrafoTres {
-      display: block; }
-      #mainHistoria #parrafoTres .parrafo .parrafo__Texto {
-        font-size: 12px;
-        line-height: 20px;
-        margin-right: 0px;
-        margin-left: 0px;
-        justify-self: center;
-        text-align: justify; }
-      #mainHistoria #parrafoTres .fotoParrafoTres #fotoTiendaFunkoDos {
-        display: none; }
-    #mainHistoria #parrafoCuatro {
-      display: none; }
-  #mainComunidad {
-    height: 65vh;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 0.1fr);
-    grid-template-areas: "tituloComunidad" "foro"  "telegram" "discord";
-    grid-row-gap: 15px; }
-    #mainComunidad #tituloComunidad #parrafoUno .parrafo .parrafo__Titulo {
-      font-size: 18px;
-      text-align: center; }
-    #mainComunidad #tituloComunidad #parrafoUno .parrafo .parrafo__Texto {
-      font-size: 12px;
-      line-height: 18px; }
-    #mainComunidad .foro {
-      border: #f44741 solid 3px;
-      width: 400px;
-      height: 100px;
-      justify-self: center;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas: "comunidad foroTitulo";
-      align-items: center;
-      align-content: center; }
-      #mainComunidad .foro .foro__Titulo {
-        font-size: 18px;
-        justify-self: left; }
-      #mainComunidad .foro .comunidad__Texto {
-        display: none; }
-      #mainComunidad .foro .comunidad {
-        font-size: 18px;
-        align-content: center; }
-        #mainComunidad .foro .comunidad #logoForo {
-          width: 70px;
-          height: 70px;
-          margin-top: 20px; }
-    #mainComunidad .telegram {
-      border: #0aa06e solid 3px;
-      width: 400px;
-      height: 100px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas: "comunidad foroTitulo";
-      align-content: center; }
-      #mainComunidad .telegram .foro__Titulo {
-        font-size: 18px;
-        justify-self: left; }
-      #mainComunidad .telegram .comunidad__Texto {
-        display: none; }
-      #mainComunidad .telegram .comunidad {
-        font-size: 18px; }
-        #mainComunidad .telegram .comunidad #logoTelegram {
-          width: 70px;
-          height: 70px;
-          margin-top: 20px; }
-    #mainComunidad .discord {
-      border: #c9c949 solid 3px;
-      width: 400px;
-      height: 100px;
-      justify-self: center;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas: "comunidad foroTitulo";
-      align-content: center; }
-      #mainComunidad .discord .foro__Titulo {
-        font-size: 18px;
-        justify-self: left; }
-      #mainComunidad .discord .comunidad__Texto {
-        display: none; }
-      #mainComunidad .discord .comunidad {
-        font-size: 18px; }
-        #mainComunidad .discord .comunidad #logoDiscord {
-          width: 70px;
-          height: 70px;
-          margin-top: 20px; }
-  #mainColecciones {
-    height: 60vh;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr 0.5fr;
-    grid-template-areas: "parrafoUno parrafoUno" "marvel dc" "shop shop";
-    grid-row-gap: 2px; }
-    #mainColecciones #parrafoUno .parrafo .parrafo__Titulo {
-      font-size: 18px;
-      margin-top: 5px;
-      line-height: 50px;
-      text-align: center; }
-    #mainColecciones #parrafoUno .parrafo .parrafo__Texto {
-      display: none; }
-    #mainColecciones .marvel {
-      grid-template-columns: 1fr;
-      grid-template-rows: 0.5fr 1fr;
-      grid-template-areas: "categoriaMarvel" "capi"; }
-      #mainColecciones .marvel a {
-        font-size: 18px;
-        align-self: end; }
-      #mainColecciones .marvel #wallCapi {
-        width: 180px;
-        height: 100px; }
-    #mainColecciones .dc {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 0.5fr 1fr;
-      grid-template-areas: "categoriaDc" "flash"; }
-      #mainColecciones .dc a {
-        font-size: 18px;
-        align-self: end; }
-      #mainColecciones .dc #wallFlash {
-        width: 180px;
-        height: 100px; }
-    #mainColecciones .sw {
-      display: none; }
-    #mainColecciones .shop {
-      font-size: 16px;
-      align-self: center; }
-    #mainColecciones .franquicia-marvel {
-      border: #f04f97 solid 4px;
-      width: 200px;
-      height: 300px; }
-    #mainColecciones .franquicia-dc {
-      border: #eef356 solid 4px;
-      width: 200px;
-      height: 300px; }
-  #mainContacto {
-    height: 155vh;
-    grid-template-rows: 0.1fr 2fr; }
-    #mainContacto .parrafo {
-      margin-left: 0px;
-      margin-right: 0px;
-      margin-top: 0px;
-      align-self: start; }
-      #mainContacto .parrafo .parrafo__Titulo {
-        font-size: 20px;
-        margin-top: 5px; }
-      #mainContacto .parrafo .parrafo__Texto {
-        margin-top: 0px;
-        margin-left: 40px;
-        font-size: 13px; }
-    #mainContacto .formulario {
-      margin-left: 20px;
-      margin-right: 20px; }
-      #mainContacto .formulario form .datos {
-        width: 100%;
-        margin-top: 20px; }
-      #mainContacto .formulario form .datosDos {
-        width: 100%; }
-        #mainContacto .formulario form .datosDos .textoDatos {
-          font-size: 13px; }
-        #mainContacto .formulario form .datosDos .lineas {
-          display: flex;
-          flex-direction: column; }
-          #mainContacto .formulario form .datosDos .lineas label {
-            margin-right: 5px;
-            margin-left: 1px;
-            margin-bottom: 5px;
-            font-size: 12px; }
-            #mainContacto .formulario form .datosDos .lineas label input {
-              margin-left: 5px;
-              margin-bottom: 5px; }
-      #mainContacto .formulario form .datosTres {
-        width: 100%; }
-        #mainContacto .formulario form .datosTres .textoDatos {
-          font-size: 13px; }
-        #mainContacto .formulario form .datosTres .licencias {
-          display: flex;
-          flex-direction: column; }
-          #mainContacto .formulario form .datosTres .licencias label {
-            margin-right: 5px;
-            margin-left: 1px;
-            margin-bottom: 5px;
-            font-size: 12px; }
-            #mainContacto .formulario form .datosTres .licencias label input {
-              margin-left: 5px;
-              margin-bottom: 5px; }
-      #mainContacto .formulario form .datosCuatro {
-        width: 100%; }
-      #mainContacto .formulario form .datosCinco {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.5fr 1fr;
-        grid-template-areas: "novedades novedades" "opciones btnEnviar"; }
-        #mainContacto .formulario form .datosCinco p {
-          grid-area: novedades; }
-        #mainContacto .formulario form .datosCinco .opciones {
-          grid-area: opciones; }
-        #mainContacto .formulario form .datosCinco .enviar {
-          grid-area: btnEnviar;
-          justify-self: right; }
-  footer {
-    height: 6vh; }
-    footer .textoFooter {
-      font-size: 14px; } }
+      display: none; } }
 
 /* INDEX*/
 #mainIndex {
@@ -2634,11 +546,6 @@ nav {
       margin-left: 5px;
       margin-right: 5px; }
     #mainComunidad .foro .comunidad {
-      /* font-family: $font-general;
-            font-size: 30px;
-            font-weight: bold;
-            line-height: 55px; 
-            color: $color-font-general;  */
       grid-area: comunidad; }
       #mainComunidad .foro .comunidad #logoForo {
         width: 200px;
@@ -3026,42 +933,8 @@ nav {
           font-style: normal;
           font-family: "armata"; }
 
+/* Media Queries */
 @media screen and (min-width: 1280px) {
-  header {
-    height: 17vh;
-    grid-template-columns: 0.3fr 2fr 0.5fr; }
-    header #logosRedes #logoInstagram {
-      height: 40px;
-      width: 40px; }
-    header #logosRedes #logoFacebook {
-      height: 40px;
-      width: 40px; }
-    header #logosRedes #logoTwitter {
-      height: 40px;
-      width: 40px; }
-    header .imgFunko a h1 {
-      font-size: 6em; }
-    header .fuenteBoton {
-      justify-self: right; }
-      header .fuenteBoton #botonLogin {
-        width: 140px;
-        height: 40px;
-        font-size: 16px; }
-      header .fuenteBoton #botonRegistro {
-        width: 140px;
-        height: 40px;
-        font-size: 16px; }
-  nav {
-    height: 9vh;
-    grid-template-columns: 2.5fr 1fr; }
-    nav li {
-      font-size: 26px;
-      justify-self: center; }
-    nav #buscador #busqueda {
-      height: 30px;
-      width: 160px; }
-    nav #buscador #botonBuscar {
-      font-size: 22px; }
   #mainIndex #multimedia #videos {
     height: 600px;
     grid-template-rows: 1fr 1fr; }
@@ -3134,7 +1007,7 @@ nav {
       width: 600px;
       height: 380px; }
   #mainComunidad {
-    height: 70vh;
+    height: 100vh;
     grid-template-rows: 20% 80%;
     grid-row-gap: 35px; }
     #mainComunidad #tituloComunidad .parrafo .parrafo__Titulo {
@@ -3195,7 +1068,7 @@ nav {
       width: 350px;
       height: 550px; }
   #mainColecciones {
-    height: 100vh; }
+    grid-template-rows: 0.3fr repeat(4, 1fr); }
     #mainColecciones #parrafoUno .parrafo .parrafo__Titulo {
       font-size: 30px;
       margin-top: 20px; }
@@ -3263,48 +1136,16 @@ nav {
     border: #1895cf solid 3px;
     font-size: 50px; }
   #mainContacto .formulario form .enviar a {
-    font-size: 20px; }
-  footer {
-    height: 8vh; }
-    footer .textoFooter {
-      font-size: 25px; } }
+    font-size: 20px; } }
 
-@media screen and (min-width: 769px) and (max-width: 1279px) {
-  header {
-    height: 11vh;
-    grid-template-columns: 0.4fr 2fr 0.5fr; }
-    header #logosRedes {
-      grid-column-gap: 1.5px; }
-      header #logosRedes #logoInstagram {
-        height: 25px;
-        width: 25px; }
-      header #logosRedes #logoFacebook {
-        height: 25px;
-        width: 25px; }
-      header #logosRedes #logoTwitter {
-        height: 25px;
-        width: 25px; }
-    header .imgFunko a h1 {
-      font-size: 4em; }
-    header .fuenteBoton {
-      justify-self: right; }
-      header .fuenteBoton #botonLogin, header .fuenteBoton #botonRegistro {
-        width: 85px;
-        height: 25px;
-        font-size: 12px; }
-  nav {
-    height: 8vh;
-    grid-template-columns: 2fr 1fr; }
-    nav li {
-      font-size: 15px;
-      padding: 3px; }
+@media screen and (max-width: 1279px) {
   #mainIndex {
-    grid-template-rows: 0.1fr 1fr 0.1fr; }
+    grid-template-rows: 0.5fr 1fr 0.5fr; }
     #mainIndex #multimedia {
       grid-template-columns: 46% 46%;
       grid-column-gap: 20px; }
       #mainIndex #multimedia #videos {
-        height: 350px;
+        height: 600px;
         grid-template-rows: 0.7fr 1fr; }
         #mainIndex #multimedia #videos .videoPrincipal .video__Titulo {
           font-size: 20px;
@@ -3313,35 +1154,37 @@ nav {
           margin-left: 15px;
           margin-right: 15px; }
         #mainIndex #multimedia #videos .videoPrincipal .video__Texto {
-          font-size: 14px;
+          font-size: 16px;
           margin-left: 10px;
           margin-right: 10px; }
         #mainIndex #multimedia #videos #iframeV {
           align-self: center; }
           #mainIndex #multimedia #videos #iframeV iframe {
-            width: 240px;
-            height: 150px; }
+            width: 490px;
+            height: 350px; }
       #mainIndex #multimedia #fotos {
-        height: 350px;
+        height: 600px;
         grid-template-rows: 0.7fr 1fr; }
         #mainIndex #multimedia #fotos .fotoPrincipal .foto__Titulo {
           font-size: 20px;
           line-height: 24px;
           margin-bottom: 20px; }
         #mainIndex #multimedia #fotos .fotoPrincipal .foto__Texto {
-          font-size: 14px;
+          font-size: 16px;
           margin-left: 5px;
           margin-right: 5px; }
         #mainIndex #multimedia #fotos .portadaFotos {
           align-self: center; }
           #mainIndex #multimedia #fotos .portadaFotos #portadaDeFotos {
-            width: 230px;
-            height: 150px; }
-    #mainIndex #picSpider .pic #spiderManPortada {
-      width: 275px;
-      height: 275px; }
+            width: 490px;
+            height: 350px; }
+    #mainIndex #picSpider .pic {
+      align-self: center; }
+      #mainIndex #picSpider .pic #spiderManPortada {
+        width: 375px;
+        height: 375px; }
     #mainIndex #picSpider #slogan {
-      font-size: 30px;
+      font-size: 35px;
       text-align: center;
       translate: -30px; }
   #mainHistoria {
@@ -3350,12 +1193,13 @@ nav {
       font-size: 25px; }
     #mainHistoria #parrafoUno .parrafo .parrafo__Texto {
       font-size: 14px;
-      line-height: 20px; }
+      line-height: 20px;
+      margin-bottom: 30px; }
     #mainHistoria #parrafoDos .fotoParrafoDos {
       align-self: center; }
       #mainHistoria #parrafoDos .fotoParrafoDos #fotoTiendaFunko {
-        width: 310px;
-        height: 190px; }
+        width: 560px;
+        height: 390px; }
     #mainHistoria #parrafoDos .parrafo {
       font-size: 14px;
       line-height: 20px; }
@@ -3365,8 +1209,8 @@ nav {
     #mainHistoria #parrafoTres .fotoParrafoTres {
       align-self: center; }
       #mainHistoria #parrafoTres .fotoParrafoTres #fotoTiendaFunkoDos {
-        width: 310px;
-        height: 180px; }
+        width: 560px;
+        height: 390px; }
     #mainHistoria #parrafoCuatro .fotoParrafoCuatro {
       margin-left: 20PX; }
       #mainHistoria #parrafoCuatro .fotoParrafoCuatro #fotoHileraPops {
@@ -3428,7 +1272,7 @@ nav {
         height: 120px; }
   #mainColecciones {
     height: 100vh;
-    grid-template-rows: 0.1fr repeat(3, 0.2fr) 0.1fr; }
+    grid-template-rows: 0.2fr repeat(3, 0.2fr) 0.1fr; }
     #mainColecciones #parrafoUno .parrafo {
       font-size: 14px;
       line-height: 25px;
@@ -3438,7 +1282,7 @@ nav {
     #mainColecciones .marvel {
       width: 80%;
       height: 175px;
-      align-self: center; }
+      align-self: start; }
       #mainColecciones .marvel a {
         font-size: 22px; }
       #mainColecciones .marvel #wallCapi {
@@ -3463,7 +1307,8 @@ nav {
         width: 190px;
         height: 110px; }
     #mainColecciones .shop {
-      font-size: 22px; }
+      font-size: 22px;
+      align-self: start; }
   #mainContacto {
     height: 120vh;
     grid-template-rows: 0.1fr 1fr; }
@@ -3500,93 +1345,51 @@ nav {
     #mainContacto .formulario form .datosCuatro {
       width: 100%; }
     #mainContacto .formulario form .datosCinco {
-      width: 100%; }
-  footer {
-    height: 7vh; }
-    footer .textoFooter {
-      font-size: 18px; } }
+      width: 100%; } }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  header {
-    height: 12vh;
-    grid-template-columns: 2fr 0.1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "imgFunko fuenteBoton" "imgFunko fuenteBoton"; }
-    header #logosRedes {
-      display: none; }
-    header .imgFunko a h1 {
-      font-size: 3em; }
-    header .fuenteBoton {
-      margin-right: 0px;
-      grid-row-gap: 3px; }
-      header .fuenteBoton #botonLogin, header .fuenteBoton #botonRegistro {
-        font-size: 7px;
-        width: 70px;
-        height: 20px;
-        border-radius: 8px;
-        border: #1895cf solid 2px;
-        margin-right: 0px; }
-  nav {
-    height: 24vh;
-    grid-template-columns: 1fr;
-    grid-template-areas: "listaMenu";
-    background-color: white;
-    justify-items: stretch; }
-    nav a:link, nav a:visited, nav a:active {
-      font-size: 10px;
-      text-align: center; }
-    nav li {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      padding: 8px;
-      background-color: #1895cf; }
-    nav #buscador {
-      display: none; }
-  #mainIndex {
-    height: 75vh; }
-    #mainIndex #multimedia {
-      grid-column-gap: 10px; }
-      #mainIndex #multimedia #videos {
-        height: 30vh;
-        grid-template-rows: 0.5fr 1fr; }
-        #mainIndex #multimedia #videos .videoPrincipal .video__Titulo {
-          font-size: 10px;
-          line-height: 12px; }
-        #mainIndex #multimedia #videos .videoPrincipal .video__Texto {
-          font-size: 8px;
-          font-weight: 500;
-          line-height: 12px;
-          margin-top: 10px; }
-        #mainIndex #multimedia #videos #iframeV {
-          align-self: center; }
-          #mainIndex #multimedia #videos #iframeV iframe {
-            width: 159px;
-            height: 109px; }
-      #mainIndex #multimedia #fotos {
-        height: 30vh;
-        grid-template-rows: 0.5fr 1fr; }
-        #mainIndex #multimedia #fotos .fotoPrincipal .foto__Titulo {
-          font-size: 10px;
-          line-height: 12px; }
-        #mainIndex #multimedia #fotos .fotoPrincipal .foto__Texto {
-          font-size: 8px;
-          font-weight: 500;
-          line-height: 12px;
-          margin-top: 10px; }
-        #mainIndex #multimedia #fotos .portadaFotos {
-          align-self: center; }
-          #mainIndex #multimedia #fotos .portadaFotos #portadaDeFotos {
-            width: 159px;
-            height: 109px; }
-    #mainIndex #picSpider .pic #spiderManPortada {
-      width: 190px;
-      height: 190px; }
-    #mainIndex #picSpider #slogan {
-      justify-self: left;
-      translate: -40px;
-      text-align: center;
-      font-size: 18px; }
+@media screen and (max-width: 768px) {
+  #mainIndex #multimedia {
+    grid-column-gap: 10px; }
+    #mainIndex #multimedia #videos {
+      height: 30vh;
+      grid-template-rows: 0.5fr 1fr; }
+      #mainIndex #multimedia #videos .videoPrincipal .video__Titulo {
+        font-size: 14px;
+        line-height: 12px; }
+      #mainIndex #multimedia #videos .videoPrincipal .video__Texto {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 12px;
+        margin-top: 10px; }
+      #mainIndex #multimedia #videos #iframeV {
+        align-self: center; }
+        #mainIndex #multimedia #videos #iframeV iframe {
+          width: 200px;
+          height: 139px; }
+    #mainIndex #multimedia #fotos {
+      height: 30vh;
+      grid-template-rows: 0.5fr 1fr; }
+      #mainIndex #multimedia #fotos .fotoPrincipal .foto__Titulo {
+        font-size: 14px;
+        line-height: 12px; }
+      #mainIndex #multimedia #fotos .fotoPrincipal .foto__Texto {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 12px;
+        margin-top: 10px; }
+      #mainIndex #multimedia #fotos .portadaFotos {
+        align-self: center; }
+        #mainIndex #multimedia #fotos .portadaFotos #portadaDeFotos {
+          width: 200px;
+          height: 139px; }
+  #mainIndex #picSpider .pic #spiderManPortada {
+    width: 190px;
+    height: 190px; }
+  #mainIndex #picSpider #slogan {
+    justify-self: left;
+    translate: -40px;
+    text-align: center;
+    font-size: 20px; }
   #mainHistoria {
     grid-row-gap: 15px; }
     #mainHistoria #parrafoUno .parrafo .parrafo__Titulo {
@@ -3710,11 +1513,11 @@ nav {
           height: 70px;
           margin-top: 20px; }
   #mainColecciones {
-    height: 60vh;
+    height: 80vh;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr 0.5fr;
+    grid-template-rows: 0.1fr 1fr 0.1fr;
     grid-template-areas: "parrafoUno parrafoUno" "marvel dc" "shop shop";
-    grid-row-gap: 2px; }
+    grid-column-gap: 15px; }
     #mainColecciones #parrafoUno .parrafo .parrafo__Titulo {
       font-size: 18px;
       margin-top: 5px;
@@ -3725,7 +1528,9 @@ nav {
     #mainColecciones .marvel {
       grid-template-columns: 1fr;
       grid-template-rows: 0.5fr 1fr;
-      grid-template-areas: "categoriaMarvel" "capi"; }
+      grid-template-areas: "categoriaMarvel" "capi";
+      justify-self: right;
+      align-self: center; }
       #mainColecciones .marvel a {
         font-size: 18px;
         align-self: end; }
@@ -3736,7 +1541,9 @@ nav {
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 0.5fr 1fr;
-      grid-template-areas: "categoriaDc" "flash"; }
+      grid-template-areas: "categoriaDc" "flash";
+      justify-self: left;
+      align-self: center; }
       #mainColecciones .dc a {
         font-size: 18px;
         align-self: end; }
@@ -3750,11 +1557,11 @@ nav {
       align-self: center; }
     #mainColecciones .franquicia-marvel {
       border: #f04f97 solid 4px;
-      width: 200px;
+      width: 180px;
       height: 300px; }
     #mainColecciones .franquicia-dc {
       border: #eef356 solid 4px;
-      width: 200px;
+      width: 180px;
       height: 300px; }
   #mainContacto {
     height: 155vh;
@@ -3820,51 +1627,11 @@ nav {
           grid-area: opciones; }
         #mainContacto .formulario form .datosCinco .enviar {
           grid-area: btnEnviar;
-          justify-self: right; }
-  footer {
-    height: 6vh; }
-    footer .textoFooter {
-      font-size: 14px; } }
+          justify-self: right; } }
 
 @media screen and (max-width: 480px) {
-  header {
-    height: 12vh;
-    grid-template-columns: 2fr 0.1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "imgFunko fuenteBoton" "imgFunko fuenteBoton"; }
-    header #logosRedes {
-      display: none; }
-    header .imgFunko a h1 {
-      font-size: 3em; }
-    header .fuenteBoton {
-      margin-right: 0px;
-      grid-row-gap: 3px; }
-      header .fuenteBoton #botonLogin, header .fuenteBoton #botonRegistro {
-        font-size: 7px;
-        width: 70px;
-        height: 20px;
-        border-radius: 8px;
-        border: #1895cf solid 2px;
-        margin-right: 0px; }
-  nav {
-    height: 24vh;
-    grid-template-columns: 1fr;
-    grid-template-areas: "listaMenu";
-    background-color: white;
-    justify-items: stretch; }
-    nav a:link, nav a:visited, nav a:active {
-      font-size: 10px;
-      text-align: center; }
-    nav li {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      padding: 8px;
-      background-color: #1895cf; }
-    nav #buscador {
-      display: none; }
   #mainIndex {
-    height: 75vh; }
+    height: 70vh; }
     #mainIndex #multimedia {
       grid-column-gap: 10px; }
       #mainIndex #multimedia #videos {
@@ -3899,60 +1666,61 @@ nav {
           #mainIndex #multimedia #fotos .portadaFotos #portadaDeFotos {
             width: 159px;
             height: 109px; }
-    #mainIndex #picSpider .pic #spiderManPortada {
-      width: 190px;
-      height: 190px; }
-    #mainIndex #picSpider #slogan {
-      justify-self: left;
-      translate: -40px;
-      text-align: center;
-      font-size: 18px; }
-  #mainHistoria {
-    grid-row-gap: 15px; }
-    #mainHistoria #parrafoUno .parrafo .parrafo__Titulo {
-      font-size: 18px;
-      text-align: center; }
-    #mainHistoria #parrafoUno .parrafo .parrafo__Texto {
+    #mainIndex #picSpider {
+      align-self: center; }
+      #mainIndex #picSpider .pic #spiderManPortada {
+        width: 190px;
+        height: 190px; }
+      #mainIndex #picSpider #slogan {
+        justify-self: left;
+        translate: -40px;
+        text-align: center;
+        font-size: 18px; }
+  #mainHistoria #parrafoUno .parrafo .parrafo__Titulo {
+    font-size: 18px;
+    text-align: center; }
+  #mainHistoria #parrafoUno .parrafo .parrafo__Texto {
+    font-size: 12px;
+    line-height: 20px;
+    text-align: justify;
+    margin-bottom: 5px; }
+  #mainHistoria #parrafoDos {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "fotoSectParrafoDos fotoParaMobil" "sectParrafoDos sectParrafoDos";
+    justify-items: center;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px; }
+    #mainHistoria #parrafoDos .fotoParrafoDos {
+      grid-area: fotoSectParrafoDos; }
+      #mainHistoria #parrafoDos .fotoParrafoDos #fotoTiendaFunko {
+        width: 190px;
+        height: 120px;
+        margin-left: 10px; }
+    #mainHistoria #parrafoDos .fotoParaMobil {
+      grid-area: fotoParaMobil;
+      display: block;
+      justify-items: center; }
+      #mainHistoria #parrafoDos .fotoParaMobil img {
+        width: 190px;
+        height: 120px;
+        margin-right: 10px; }
+    #mainHistoria #parrafoDos .parrafo {
       font-size: 12px;
       line-height: 20px;
       text-align: justify; }
-    #mainHistoria #parrafoDos {
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas: "fotoSectParrafoDos fotoParaMobil" "sectParrafoDos sectParrafoDos";
-      justify-items: center;
-      grid-row-gap: 5px;
-      grid-column-gap: 15px; }
-      #mainHistoria #parrafoDos .fotoParrafoDos {
-        grid-area: fotoSectParrafoDos; }
-        #mainHistoria #parrafoDos .fotoParrafoDos #fotoTiendaFunko {
-          width: 190px;
-          height: 120px;
-          margin-left: 10px; }
-      #mainHistoria #parrafoDos .fotoParaMobil {
-        grid-area: fotoParaMobil;
-        display: block;
-        justify-items: center; }
-        #mainHistoria #parrafoDos .fotoParaMobil img {
-          width: 190px;
-          height: 120px;
-          margin-right: 10px; }
-      #mainHistoria #parrafoDos .parrafo {
-        font-size: 12px;
-        line-height: 20px;
-        text-align: justify; }
-    #mainHistoria #parrafoTres {
-      display: block; }
-      #mainHistoria #parrafoTres .parrafo .parrafo__Texto {
-        font-size: 12px;
-        line-height: 20px;
-        margin-right: 0px;
-        margin-left: 0px;
-        justify-self: center;
-        text-align: justify; }
-      #mainHistoria #parrafoTres .fotoParrafoTres #fotoTiendaFunkoDos {
-        display: none; }
-    #mainHistoria #parrafoCuatro {
+  #mainHistoria #parrafoTres {
+    display: block; }
+    #mainHistoria #parrafoTres .parrafo .parrafo__Texto {
+      font-size: 12px;
+      line-height: 20px;
+      margin-right: 0px;
+      margin-left: 0px;
+      justify-self: center;
+      text-align: justify; }
+    #mainHistoria #parrafoTres .fotoParrafoTres #fotoTiendaFunkoDos {
       display: none; }
+  #mainHistoria #parrafoCuatro {
+    display: none; }
   #mainComunidad {
     height: 65vh;
     grid-template-columns: 1fr;
@@ -4030,11 +1798,11 @@ nav {
           height: 70px;
           margin-top: 20px; }
   #mainColecciones {
-    height: 60vh;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr 0.5fr;
+    height: 65vh;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 0.5fr 2fr 0.5fr;
     grid-template-areas: "parrafoUno parrafoUno" "marvel dc" "shop shop";
-    grid-row-gap: 2px; }
+    grid-column-gap: 20px; }
     #mainColecciones #parrafoUno .parrafo .parrafo__Titulo {
       font-size: 18px;
       margin-top: 5px;
@@ -4045,24 +1813,26 @@ nav {
     #mainColecciones .marvel {
       grid-template-columns: 1fr;
       grid-template-rows: 0.5fr 1fr;
-      grid-template-areas: "categoriaMarvel" "capi"; }
+      grid-template-areas: "categoriaMarvel" "capi";
+      justify-self: right; }
       #mainColecciones .marvel a {
         font-size: 18px;
         align-self: end; }
       #mainColecciones .marvel #wallCapi {
-        width: 180px;
-        height: 100px; }
+        width: 120px;
+        height: 70px; }
     #mainColecciones .dc {
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 0.5fr 1fr;
-      grid-template-areas: "categoriaDc" "flash"; }
+      grid-template-areas: "categoriaDc" "flash";
+      justify-self: left; }
       #mainColecciones .dc a {
         font-size: 18px;
         align-self: end; }
       #mainColecciones .dc #wallFlash {
-        width: 180px;
-        height: 100px; }
+        width: 120px;
+        height: 70px; }
     #mainColecciones .sw {
       display: none; }
     #mainColecciones .shop {
@@ -4070,11 +1840,11 @@ nav {
       align-self: center; }
     #mainColecciones .franquicia-marvel {
       border: #f04f97 solid 4px;
-      width: 200px;
+      width: 150px;
       height: 300px; }
     #mainColecciones .franquicia-dc {
       border: #eef356 solid 4px;
-      width: 200px;
+      width: 150px;
       height: 300px; }
   #mainContacto {
     height: 155vh;
@@ -4140,11 +1910,7 @@ nav {
           grid-area: opciones; }
         #mainContacto .formulario form .datosCinco .enviar {
           grid-area: btnEnviar;
-          justify-self: right; }
-  footer {
-    height: 6vh; }
-    footer .textoFooter {
-      font-size: 14px; } }
+          justify-self: right; } }
 
 footer {
   height: 10vh;
@@ -4163,2241 +1929,26 @@ footer {
     text-align: center;
     grid-area: textFooter; }
 
+/* Media Queries */
 @media screen and (min-width: 1280px) {
-  header {
-    height: 17vh;
-    grid-template-columns: 0.3fr 2fr 0.5fr; }
-    header #logosRedes #logoInstagram {
-      height: 40px;
-      width: 40px; }
-    header #logosRedes #logoFacebook {
-      height: 40px;
-      width: 40px; }
-    header #logosRedes #logoTwitter {
-      height: 40px;
-      width: 40px; }
-    header .imgFunko a h1 {
-      font-size: 6em; }
-    header .fuenteBoton {
-      justify-self: right; }
-      header .fuenteBoton #botonLogin {
-        width: 140px;
-        height: 40px;
-        font-size: 16px; }
-      header .fuenteBoton #botonRegistro {
-        width: 140px;
-        height: 40px;
-        font-size: 16px; }
-  nav {
-    height: 9vh;
-    grid-template-columns: 2.5fr 1fr; }
-    nav li {
-      font-size: 26px;
-      justify-self: center; }
-    nav #buscador #busqueda {
-      height: 30px;
-      width: 160px; }
-    nav #buscador #botonBuscar {
-      font-size: 22px; }
-  #mainIndex #multimedia #videos {
-    height: 600px;
-    grid-template-rows: 1fr 1fr; }
-    #mainIndex #multimedia #videos .videoPrincipal .video__Titulo {
-      font-size: 30px;
-      line-height: 35px;
-      margin-bottom: 20px; }
-    #mainIndex #multimedia #videos .videoPrincipal .video__Texto {
-      font-size: 24px;
-      line-height: 30px; }
-    #mainIndex #multimedia #videos #iframeV {
-      align-self: start; }
-      #mainIndex #multimedia #videos #iframeV iframe {
-        width: 379px;
-        height: 250px; }
-  #mainIndex #multimedia #fotos {
-    height: 600px;
-    grid-template-rows: 1fr 1fr; }
-    #mainIndex #multimedia #fotos .fotoPrincipal .foto__Titulo {
-      font-size: 30px;
-      line-height: 35px;
-      margin-bottom: 20px; }
-    #mainIndex #multimedia #fotos .fotoPrincipal .foto__Texto {
-      font-size: 24px;
-      line-height: 30px; }
-    #mainIndex #multimedia #fotos .portadaFotos {
-      align-self: start; }
-      #mainIndex #multimedia #fotos .portadaFotos #portadaDeFotos {
-        width: 350px;
-        height: 250px; }
-  #mainIndex #picSpider .pic #spiderManPortada {
-    width: 575px;
-    height: 575px; }
-  #mainIndex #picSpider #slogan {
-    text-align: center;
-    font-size: 50px;
-    text-align: center;
-    justify-self: right;
-    translate: -40px; }
-    #mainIndex #picSpider #slogan:hover {
-      transform: scale(1.2); }
-  #mainHistoria #parrafoUno .parrafo {
-    font-size: 20px;
-    line-height: 25px; }
-    #mainHistoria #parrafoUno .parrafo .parrafo__Titulo {
-      margin-top: 20px; }
-    #mainHistoria #parrafoUno .parrafo .parrafo__Texto {
-      font-size: 18px;
-      margin-top: 20px;
-      line-height: 35px;
-      text-align: justify; }
-  #mainHistoria #parrafoDos .fotoParrafoDos {
-    align-self: center; }
-    #mainHistoria #parrafoDos .fotoParrafoDos #fotoTiendaFunko {
-      width: 600px;
-      height: 380px; }
-  #mainHistoria #parrafoDos .parrafo {
-    font-size: 18px;
-    margin-top: 20px;
-    line-height: 35px;
-    text-align: justify; }
-  #mainHistoria #parrafoTres .parrafo {
-    font-size: 18px;
-    margin-top: 20px;
-    line-height: 35px;
-    text-align: justify; }
-  #mainHistoria #parrafoTres .fotoParrafoTres {
-    align-self: center; }
-    #mainHistoria #parrafoTres .fotoParrafoTres #fotoTiendaFunkoDos {
-      width: 600px;
-      height: 380px; }
-  #mainComunidad {
-    height: 70vh;
-    grid-template-rows: 20% 80%;
-    grid-row-gap: 35px; }
-    #mainComunidad #tituloComunidad .parrafo .parrafo__Titulo {
-      font-size: 30px;
-      margin-top: 20px; }
-    #mainComunidad #tituloComunidad .parrafo .parrafo__Texto {
-      font-size: 21px;
-      line-height: 35px;
-      margin-top: 20px; }
-    #mainComunidad .foro {
-      grid-template-rows: 0.5fr 0.5fr 1fr; }
-      #mainComunidad .foro .foro__Titulo {
-        font-size: 30px; }
-      #mainComunidad .foro .comunidad__Texto {
-        font-size: 20px;
-        align-self: center; }
-      #mainComunidad .foro .comunidad {
-        align-self: center; }
-        #mainComunidad .foro .comunidad #logoForo {
-          width: 180px;
-          height: 180px; }
-    #mainComunidad .telegram {
-      grid-template-rows: 0.5fr 0.5fr 1fr; }
-      #mainComunidad .telegram .foro__Titulo {
-        font-size: 30px; }
-      #mainComunidad .telegram .comunidad__Texto {
-        font-size: 20px;
-        align-self: center; }
-      #mainComunidad .telegram .comunidad {
-        align-self: center; }
-        #mainComunidad .telegram .comunidad #logoTelegram {
-          width: 180px;
-          height: 180px; }
-    #mainComunidad .discord {
-      grid-template-rows: 0.5fr 0.5fr 1fr; }
-      #mainComunidad .discord .foro__Titulo {
-        font-size: 30px; }
-      #mainComunidad .discord .comunidad__Texto {
-        font-size: 20px;
-        align-self: center;
-        margin-left: 20px;
-        margin-right: 20px; }
-      #mainComunidad .discord .comunidad {
-        align-self: center; }
-        #mainComunidad .discord .comunidad #logoDiscord {
-          width: 180px;
-          height: 180px; }
-    #mainComunidad .comunidad-foro {
-      background-color: #fc6863;
-      width: 350px;
-      height: 550px; }
-    #mainComunidad .comunidad-telegram {
-      background-color: #1dcc92;
-      width: 350px;
-      height: 550px; }
-    #mainComunidad .comunidad-discord {
-      background-color: #dcdc72;
-      width: 350px;
-      height: 550px; }
-  #mainColecciones {
-    height: 100vh; }
-    #mainColecciones #parrafoUno .parrafo .parrafo__Titulo {
-      font-size: 30px;
-      margin-top: 20px; }
-    #mainColecciones #parrafoUno .parrafo .parrafo__Texto {
-      font-size: 21px;
-      line-height: 35px;
-      margin-top: 20px; }
-    #mainColecciones .marvel a, #mainColecciones .dc a, #mainColecciones .sw a {
-      font-size: 30px; }
-    #mainColecciones .marvel #wallCapi, #mainColecciones .marvel #wallFlash, #mainColecciones .marvel #wallSw, #mainColecciones .dc #wallCapi, #mainColecciones .dc #wallFlash, #mainColecciones .dc #wallSw, #mainColecciones .sw #wallCapi, #mainColecciones .sw #wallFlash, #mainColecciones .sw #wallSw {
-      width: 330px;
-      height: 180px; }
-    #mainColecciones .shop {
-      font-size: 35px; }
-    #mainColecciones .franquicia-marvel {
-      background-color: #f47fb4;
-      height: 250px; }
-    #mainColecciones .franquicia-dc {
-      background-color: #f0f47a;
-      height: 250px; }
-    #mainColecciones .franquicia-sw {
-      background-color: #76f386;
-      height: 250px; }
-  #mainContacto .parrafo {
-    margin-top: 0px; }
-    #mainContacto .parrafo .parrafo__Titulo {
-      font-size: 30px;
-      margin-top: 20px; }
-    #mainContacto .parrafo .parrafo__Texto {
-      font-size: 21px;
-      line-height: 35px;
-      margin-top: 20px; }
-  #mainContacto .formulario form .datos legend {
-    font-size: 22px; }
-  #mainContacto .formulario form .datos .nombre, #mainContacto .formulario form .datos .apellido, #mainContacto .formulario form .datos .genero, #mainContacto .formulario form .datos .edad {
-    font-size: 18px; }
-  #mainContacto .formulario form .datosDos legend {
-    font-size: 22px; }
-  #mainContacto .formulario form .datosDos .textoDatos {
-    font-size: 20px; }
-  #mainContacto .formulario form .datosDos .lineas label {
-    margin-right: 0px;
-    margin-left: 12px;
-    font-size: 18px; }
-  #mainContacto .formulario form .datosTres legend {
-    font-size: 22px; }
-  #mainContacto .formulario form .datosTres .textoDatos {
-    font-size: 20px; }
-  #mainContacto .formulario form .datosTres .licencias label {
-    margin-right: 0px;
-    margin-left: 4px;
-    font-size: 18px; }
-  #mainContacto .formulario form .datosCuatro legend {
-    font-size: 22px; }
-  #mainContacto .formulario form .datosCuatro .consulta textarea {
-    font-size: 18px; }
-  #mainContacto .formulario form .datosCinco p {
-    font-size: 22px; }
-  #mainContacto .formulario form .datosCinco .opciones label {
-    font-size: 18px; }
-  #mainContacto .formulario form .enviar #botonEnviar {
-    width: 150px;
-    height: 300px;
-    border-radius: 10px;
-    border: #1895cf solid 3px;
-    font-size: 50px; }
-  #mainContacto .formulario form .enviar a {
-    font-size: 20px; }
   footer {
     height: 8vh; }
     footer .textoFooter {
       font-size: 25px; } }
 
-@media screen and (min-width: 769px) and (max-width: 1279px) {
-  header {
-    height: 11vh;
-    grid-template-columns: 0.4fr 2fr 0.5fr; }
-    header #logosRedes {
-      grid-column-gap: 1.5px; }
-      header #logosRedes #logoInstagram {
-        height: 25px;
-        width: 25px; }
-      header #logosRedes #logoFacebook {
-        height: 25px;
-        width: 25px; }
-      header #logosRedes #logoTwitter {
-        height: 25px;
-        width: 25px; }
-    header .imgFunko a h1 {
-      font-size: 4em; }
-    header .fuenteBoton {
-      justify-self: right; }
-      header .fuenteBoton #botonLogin, header .fuenteBoton #botonRegistro {
-        width: 85px;
-        height: 25px;
-        font-size: 12px; }
-  nav {
-    height: 8vh;
-    grid-template-columns: 2fr 1fr; }
-    nav li {
-      font-size: 15px;
-      padding: 3px; }
-  #mainIndex {
-    grid-template-rows: 0.1fr 1fr 0.1fr; }
-    #mainIndex #multimedia {
-      grid-template-columns: 46% 46%;
-      grid-column-gap: 20px; }
-      #mainIndex #multimedia #videos {
-        height: 350px;
-        grid-template-rows: 0.7fr 1fr; }
-        #mainIndex #multimedia #videos .videoPrincipal .video__Titulo {
-          font-size: 20px;
-          line-height: 24px;
-          margin-bottom: 20px;
-          margin-left: 15px;
-          margin-right: 15px; }
-        #mainIndex #multimedia #videos .videoPrincipal .video__Texto {
-          font-size: 14px;
-          margin-left: 10px;
-          margin-right: 10px; }
-        #mainIndex #multimedia #videos #iframeV {
-          align-self: center; }
-          #mainIndex #multimedia #videos #iframeV iframe {
-            width: 240px;
-            height: 150px; }
-      #mainIndex #multimedia #fotos {
-        height: 350px;
-        grid-template-rows: 0.7fr 1fr; }
-        #mainIndex #multimedia #fotos .fotoPrincipal .foto__Titulo {
-          font-size: 20px;
-          line-height: 24px;
-          margin-bottom: 20px; }
-        #mainIndex #multimedia #fotos .fotoPrincipal .foto__Texto {
-          font-size: 14px;
-          margin-left: 5px;
-          margin-right: 5px; }
-        #mainIndex #multimedia #fotos .portadaFotos {
-          align-self: center; }
-          #mainIndex #multimedia #fotos .portadaFotos #portadaDeFotos {
-            width: 230px;
-            height: 150px; }
-    #mainIndex #picSpider .pic #spiderManPortada {
-      width: 275px;
-      height: 275px; }
-    #mainIndex #picSpider #slogan {
-      font-size: 30px;
-      text-align: center;
-      translate: -30px; }
-  #mainHistoria {
-    grid-row-gap: 10px; }
-    #mainHistoria #parrafoUno .parrafo .parrafo__Titulo {
-      font-size: 25px; }
-    #mainHistoria #parrafoUno .parrafo .parrafo__Texto {
-      font-size: 14px;
-      line-height: 20px; }
-    #mainHistoria #parrafoDos .fotoParrafoDos {
-      align-self: center; }
-      #mainHistoria #parrafoDos .fotoParrafoDos #fotoTiendaFunko {
-        width: 310px;
-        height: 190px; }
-    #mainHistoria #parrafoDos .parrafo {
-      font-size: 14px;
-      line-height: 20px; }
-    #mainHistoria #parrafoTres .parrafo {
-      font-size: 14px;
-      line-height: 20px; }
-    #mainHistoria #parrafoTres .fotoParrafoTres {
-      align-self: center; }
-      #mainHistoria #parrafoTres .fotoParrafoTres #fotoTiendaFunkoDos {
-        width: 310px;
-        height: 180px; }
-    #mainHistoria #parrafoCuatro .fotoParrafoCuatro {
-      margin-left: 20PX; }
-      #mainHistoria #parrafoCuatro .fotoParrafoCuatro #fotoHileraPops {
-        width: 94%; }
-  #mainComunidad {
-    height: 70vh;
-    grid-template-rows: 0.1fr 1fr; }
-    #mainComunidad #tituloComunidad .parrafo .parrafo__Titulo {
-      font-size: 25px;
-      margin-top: 5px; }
-    #mainComunidad #tituloComunidad .parrafo .parrafo__Texto {
-      font-size: 14px;
-      line-height: 20px;
-      margin-top: 5px; }
-    #mainComunidad .foro {
-      grid-template-rows: repeat(2, 0.5fr) 1fr;
-      width: 200px;
-      height: 350px;
-      margin-bottom: 10px;
-      align-self: center; }
-      #mainComunidad .foro .foro__Titulo {
-        font-size: 21px; }
-      #mainComunidad .foro .comunidad__Texto {
-        font-size: 12px;
-        margin-left: 7px;
-        margin-right: 7px; }
-      #mainComunidad .foro .comunidad #logoForo {
-        width: 120px;
-        height: 120px; }
-    #mainComunidad .telegram {
-      grid-template-rows: repeat(2, 0.5fr) 1fr;
-      width: 200px;
-      height: 350px;
-      margin-bottom: 10px;
-      align-self: center; }
-      #mainComunidad .telegram .foro__Titulo {
-        font-size: 21px; }
-      #mainComunidad .telegram .comunidad__Texto {
-        font-size: 12px;
-        margin-left: 7px;
-        margin-right: 7px; }
-      #mainComunidad .telegram .comunidad #logoTelegram {
-        width: 120px;
-        height: 120px; }
-    #mainComunidad .discord {
-      grid-template-rows: repeat(2, 0.5fr) 1fr;
-      width: 200px;
-      height: 350px;
-      margin-bottom: 10px;
-      align-self: center; }
-      #mainComunidad .discord .foro__Titulo {
-        font-size: 21px; }
-      #mainComunidad .discord .comunidad__Texto {
-        font-size: 12px;
-        margin-left: 7px;
-        margin-right: 7px; }
-      #mainComunidad .discord .comunidad #logoDiscord {
-        width: 120px;
-        height: 120px; }
-  #mainColecciones {
-    height: 100vh;
-    grid-template-rows: 0.1fr repeat(3, 0.2fr) 0.1fr; }
-    #mainColecciones #parrafoUno .parrafo {
-      font-size: 14px;
-      line-height: 25px;
-      margin-bottom: 0px; }
-      #mainColecciones #parrafoUno .parrafo .parrafo__Titulo {
-        font-size: 25px; }
-    #mainColecciones .marvel {
-      width: 80%;
-      height: 175px;
-      align-self: center; }
-      #mainColecciones .marvel a {
-        font-size: 22px; }
-      #mainColecciones .marvel #wallCapi {
-        width: 190px;
-        height: 110px; }
-    #mainColecciones .dc {
-      width: 80%;
-      height: 175px;
-      align-self: start; }
-      #mainColecciones .dc a {
-        font-size: 22px; }
-      #mainColecciones .dc #wallFlash {
-        width: 190px;
-        height: 110px; }
-    #mainColecciones .sw {
-      width: 80%;
-      height: 175px;
-      align-self: start; }
-      #mainColecciones .sw a {
-        font-size: 22px; }
-      #mainColecciones .sw #wallSw {
-        width: 190px;
-        height: 110px; }
-    #mainColecciones .shop {
-      font-size: 22px; }
-  #mainContacto {
-    height: 120vh;
-    grid-template-rows: 0.1fr 1fr; }
-    #mainContacto .parrafo {
-      margin-left: 0px;
-      margin-right: 0px;
-      margin-top: 0px;
-      align-self: start; }
-      #mainContacto .parrafo .parrafo__Titulo {
-        font-size: 25px;
-        margin-top: 5px; }
-      #mainContacto .parrafo .parrafo__Texto {
-        margin-top: 0px;
-        margin-left: 40px;
-        font-size: 14px; }
-    #mainContacto .formulario form .datos {
-      margin-top: 20px; }
-    #mainContacto .formulario form .datosDos {
-      width: 100%; }
-      #mainContacto .formulario form .datosDos .lineas label {
-        margin-right: 0px;
-        margin-left: 8px;
-        font-size: 12px; }
-        #mainContacto .formulario form .datosDos .lineas label input {
-          margin-right: 1px; }
-    #mainContacto .formulario form .datosTres {
-      width: 100%; }
-      #mainContacto .formulario form .datosTres .licencias label {
-        margin-right: 0px;
-        margin-left: 8px;
-        font-size: 11px; }
-        #mainContacto .formulario form .datosTres .licencias label input {
-          margin-right: 1px; }
-    #mainContacto .formulario form .datosCuatro {
-      width: 100%; }
-    #mainContacto .formulario form .datosCinco {
-      width: 100%; }
+@media screen and (max-width: 1279px) {
   footer {
     height: 7vh; }
     footer .textoFooter {
       font-size: 18px; } }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  header {
-    height: 12vh;
-    grid-template-columns: 2fr 0.1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "imgFunko fuenteBoton" "imgFunko fuenteBoton"; }
-    header #logosRedes {
-      display: none; }
-    header .imgFunko a h1 {
-      font-size: 3em; }
-    header .fuenteBoton {
-      margin-right: 0px;
-      grid-row-gap: 3px; }
-      header .fuenteBoton #botonLogin, header .fuenteBoton #botonRegistro {
-        font-size: 7px;
-        width: 70px;
-        height: 20px;
-        border-radius: 8px;
-        border: #1895cf solid 2px;
-        margin-right: 0px; }
-  nav {
-    height: 24vh;
-    grid-template-columns: 1fr;
-    grid-template-areas: "listaMenu";
-    background-color: white;
-    justify-items: stretch; }
-    nav a:link, nav a:visited, nav a:active {
-      font-size: 10px;
-      text-align: center; }
-    nav li {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      padding: 8px;
-      background-color: #1895cf; }
-    nav #buscador {
-      display: none; }
-  #mainIndex {
-    height: 75vh; }
-    #mainIndex #multimedia {
-      grid-column-gap: 10px; }
-      #mainIndex #multimedia #videos {
-        height: 30vh;
-        grid-template-rows: 0.5fr 1fr; }
-        #mainIndex #multimedia #videos .videoPrincipal .video__Titulo {
-          font-size: 10px;
-          line-height: 12px; }
-        #mainIndex #multimedia #videos .videoPrincipal .video__Texto {
-          font-size: 8px;
-          font-weight: 500;
-          line-height: 12px;
-          margin-top: 10px; }
-        #mainIndex #multimedia #videos #iframeV {
-          align-self: center; }
-          #mainIndex #multimedia #videos #iframeV iframe {
-            width: 159px;
-            height: 109px; }
-      #mainIndex #multimedia #fotos {
-        height: 30vh;
-        grid-template-rows: 0.5fr 1fr; }
-        #mainIndex #multimedia #fotos .fotoPrincipal .foto__Titulo {
-          font-size: 10px;
-          line-height: 12px; }
-        #mainIndex #multimedia #fotos .fotoPrincipal .foto__Texto {
-          font-size: 8px;
-          font-weight: 500;
-          line-height: 12px;
-          margin-top: 10px; }
-        #mainIndex #multimedia #fotos .portadaFotos {
-          align-self: center; }
-          #mainIndex #multimedia #fotos .portadaFotos #portadaDeFotos {
-            width: 159px;
-            height: 109px; }
-    #mainIndex #picSpider .pic #spiderManPortada {
-      width: 190px;
-      height: 190px; }
-    #mainIndex #picSpider #slogan {
-      justify-self: left;
-      translate: -40px;
-      text-align: center;
-      font-size: 18px; }
-  #mainHistoria {
-    grid-row-gap: 15px; }
-    #mainHistoria #parrafoUno .parrafo .parrafo__Titulo {
-      font-size: 18px;
-      text-align: center; }
-    #mainHistoria #parrafoUno .parrafo .parrafo__Texto {
-      font-size: 12px;
-      line-height: 20px;
-      text-align: justify; }
-    #mainHistoria #parrafoDos {
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas: "fotoSectParrafoDos fotoParaMobil" "sectParrafoDos sectParrafoDos";
-      justify-items: center;
-      grid-row-gap: 5px;
-      grid-column-gap: 15px; }
-      #mainHistoria #parrafoDos .fotoParrafoDos {
-        grid-area: fotoSectParrafoDos; }
-        #mainHistoria #parrafoDos .fotoParrafoDos #fotoTiendaFunko {
-          width: 190px;
-          height: 120px;
-          margin-left: 10px; }
-      #mainHistoria #parrafoDos .fotoParaMobil {
-        grid-area: fotoParaMobil;
-        display: block;
-        justify-items: center; }
-        #mainHistoria #parrafoDos .fotoParaMobil img {
-          width: 190px;
-          height: 120px;
-          margin-right: 10px; }
-      #mainHistoria #parrafoDos .parrafo {
-        font-size: 12px;
-        line-height: 20px;
-        text-align: justify; }
-    #mainHistoria #parrafoTres {
-      display: block; }
-      #mainHistoria #parrafoTres .parrafo .parrafo__Texto {
-        font-size: 12px;
-        line-height: 20px;
-        margin-right: 0px;
-        margin-left: 0px;
-        justify-self: center;
-        text-align: justify; }
-      #mainHistoria #parrafoTres .fotoParrafoTres #fotoTiendaFunkoDos {
-        display: none; }
-    #mainHistoria #parrafoCuatro {
-      display: none; }
-  #mainComunidad {
-    height: 65vh;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 0.1fr);
-    grid-template-areas: "tituloComunidad" "foro"  "telegram" "discord";
-    grid-row-gap: 15px; }
-    #mainComunidad #tituloComunidad #parrafoUno .parrafo .parrafo__Titulo {
-      font-size: 18px;
-      text-align: center; }
-    #mainComunidad #tituloComunidad #parrafoUno .parrafo .parrafo__Texto {
-      font-size: 12px;
-      line-height: 18px; }
-    #mainComunidad .foro {
-      border: #f44741 solid 3px;
-      width: 400px;
-      height: 100px;
-      justify-self: center;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas: "comunidad foroTitulo";
-      align-items: center;
-      align-content: center; }
-      #mainComunidad .foro .foro__Titulo {
-        font-size: 18px;
-        justify-self: left; }
-      #mainComunidad .foro .comunidad__Texto {
-        display: none; }
-      #mainComunidad .foro .comunidad {
-        font-size: 18px;
-        align-content: center; }
-        #mainComunidad .foro .comunidad #logoForo {
-          width: 70px;
-          height: 70px;
-          margin-top: 20px; }
-    #mainComunidad .telegram {
-      border: #0aa06e solid 3px;
-      width: 400px;
-      height: 100px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas: "comunidad foroTitulo";
-      align-content: center; }
-      #mainComunidad .telegram .foro__Titulo {
-        font-size: 18px;
-        justify-self: left; }
-      #mainComunidad .telegram .comunidad__Texto {
-        display: none; }
-      #mainComunidad .telegram .comunidad {
-        font-size: 18px; }
-        #mainComunidad .telegram .comunidad #logoTelegram {
-          width: 70px;
-          height: 70px;
-          margin-top: 20px; }
-    #mainComunidad .discord {
-      border: #c9c949 solid 3px;
-      width: 400px;
-      height: 100px;
-      justify-self: center;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas: "comunidad foroTitulo";
-      align-content: center; }
-      #mainComunidad .discord .foro__Titulo {
-        font-size: 18px;
-        justify-self: left; }
-      #mainComunidad .discord .comunidad__Texto {
-        display: none; }
-      #mainComunidad .discord .comunidad {
-        font-size: 18px; }
-        #mainComunidad .discord .comunidad #logoDiscord {
-          width: 70px;
-          height: 70px;
-          margin-top: 20px; }
-  #mainColecciones {
-    height: 60vh;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr 0.5fr;
-    grid-template-areas: "parrafoUno parrafoUno" "marvel dc" "shop shop";
-    grid-row-gap: 2px; }
-    #mainColecciones #parrafoUno .parrafo .parrafo__Titulo {
-      font-size: 18px;
-      margin-top: 5px;
-      line-height: 50px;
-      text-align: center; }
-    #mainColecciones #parrafoUno .parrafo .parrafo__Texto {
-      display: none; }
-    #mainColecciones .marvel {
-      grid-template-columns: 1fr;
-      grid-template-rows: 0.5fr 1fr;
-      grid-template-areas: "categoriaMarvel" "capi"; }
-      #mainColecciones .marvel a {
-        font-size: 18px;
-        align-self: end; }
-      #mainColecciones .marvel #wallCapi {
-        width: 180px;
-        height: 100px; }
-    #mainColecciones .dc {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 0.5fr 1fr;
-      grid-template-areas: "categoriaDc" "flash"; }
-      #mainColecciones .dc a {
-        font-size: 18px;
-        align-self: end; }
-      #mainColecciones .dc #wallFlash {
-        width: 180px;
-        height: 100px; }
-    #mainColecciones .sw {
-      display: none; }
-    #mainColecciones .shop {
-      font-size: 16px;
-      align-self: center; }
-    #mainColecciones .franquicia-marvel {
-      border: #f04f97 solid 4px;
-      width: 200px;
-      height: 300px; }
-    #mainColecciones .franquicia-dc {
-      border: #eef356 solid 4px;
-      width: 200px;
-      height: 300px; }
-  #mainContacto {
-    height: 155vh;
-    grid-template-rows: 0.1fr 2fr; }
-    #mainContacto .parrafo {
-      margin-left: 0px;
-      margin-right: 0px;
-      margin-top: 0px;
-      align-self: start; }
-      #mainContacto .parrafo .parrafo__Titulo {
-        font-size: 20px;
-        margin-top: 5px; }
-      #mainContacto .parrafo .parrafo__Texto {
-        margin-top: 0px;
-        margin-left: 40px;
-        font-size: 13px; }
-    #mainContacto .formulario {
-      margin-left: 20px;
-      margin-right: 20px; }
-      #mainContacto .formulario form .datos {
-        width: 100%;
-        margin-top: 20px; }
-      #mainContacto .formulario form .datosDos {
-        width: 100%; }
-        #mainContacto .formulario form .datosDos .textoDatos {
-          font-size: 13px; }
-        #mainContacto .formulario form .datosDos .lineas {
-          display: flex;
-          flex-direction: column; }
-          #mainContacto .formulario form .datosDos .lineas label {
-            margin-right: 5px;
-            margin-left: 1px;
-            margin-bottom: 5px;
-            font-size: 12px; }
-            #mainContacto .formulario form .datosDos .lineas label input {
-              margin-left: 5px;
-              margin-bottom: 5px; }
-      #mainContacto .formulario form .datosTres {
-        width: 100%; }
-        #mainContacto .formulario form .datosTres .textoDatos {
-          font-size: 13px; }
-        #mainContacto .formulario form .datosTres .licencias {
-          display: flex;
-          flex-direction: column; }
-          #mainContacto .formulario form .datosTres .licencias label {
-            margin-right: 5px;
-            margin-left: 1px;
-            margin-bottom: 5px;
-            font-size: 12px; }
-            #mainContacto .formulario form .datosTres .licencias label input {
-              margin-left: 5px;
-              margin-bottom: 5px; }
-      #mainContacto .formulario form .datosCuatro {
-        width: 100%; }
-      #mainContacto .formulario form .datosCinco {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.5fr 1fr;
-        grid-template-areas: "novedades novedades" "opciones btnEnviar"; }
-        #mainContacto .formulario form .datosCinco p {
-          grid-area: novedades; }
-        #mainContacto .formulario form .datosCinco .opciones {
-          grid-area: opciones; }
-        #mainContacto .formulario form .datosCinco .enviar {
-          grid-area: btnEnviar;
-          justify-self: right; }
+@media screen and (max-width: 768px) {
   footer {
     height: 6vh; }
     footer .textoFooter {
       font-size: 14px; } }
 
 @media screen and (max-width: 480px) {
-  header {
-    height: 12vh;
-    grid-template-columns: 2fr 0.1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "imgFunko fuenteBoton" "imgFunko fuenteBoton"; }
-    header #logosRedes {
-      display: none; }
-    header .imgFunko a h1 {
-      font-size: 3em; }
-    header .fuenteBoton {
-      margin-right: 0px;
-      grid-row-gap: 3px; }
-      header .fuenteBoton #botonLogin, header .fuenteBoton #botonRegistro {
-        font-size: 7px;
-        width: 70px;
-        height: 20px;
-        border-radius: 8px;
-        border: #1895cf solid 2px;
-        margin-right: 0px; }
-  nav {
-    height: 24vh;
-    grid-template-columns: 1fr;
-    grid-template-areas: "listaMenu";
-    background-color: white;
-    justify-items: stretch; }
-    nav a:link, nav a:visited, nav a:active {
-      font-size: 10px;
-      text-align: center; }
-    nav li {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      padding: 8px;
-      background-color: #1895cf; }
-    nav #buscador {
-      display: none; }
-  #mainIndex {
-    height: 75vh; }
-    #mainIndex #multimedia {
-      grid-column-gap: 10px; }
-      #mainIndex #multimedia #videos {
-        height: 30vh;
-        grid-template-rows: 0.5fr 1fr; }
-        #mainIndex #multimedia #videos .videoPrincipal .video__Titulo {
-          font-size: 10px;
-          line-height: 12px; }
-        #mainIndex #multimedia #videos .videoPrincipal .video__Texto {
-          font-size: 8px;
-          font-weight: 500;
-          line-height: 12px;
-          margin-top: 10px; }
-        #mainIndex #multimedia #videos #iframeV {
-          align-self: center; }
-          #mainIndex #multimedia #videos #iframeV iframe {
-            width: 159px;
-            height: 109px; }
-      #mainIndex #multimedia #fotos {
-        height: 30vh;
-        grid-template-rows: 0.5fr 1fr; }
-        #mainIndex #multimedia #fotos .fotoPrincipal .foto__Titulo {
-          font-size: 10px;
-          line-height: 12px; }
-        #mainIndex #multimedia #fotos .fotoPrincipal .foto__Texto {
-          font-size: 8px;
-          font-weight: 500;
-          line-height: 12px;
-          margin-top: 10px; }
-        #mainIndex #multimedia #fotos .portadaFotos {
-          align-self: center; }
-          #mainIndex #multimedia #fotos .portadaFotos #portadaDeFotos {
-            width: 159px;
-            height: 109px; }
-    #mainIndex #picSpider .pic #spiderManPortada {
-      width: 190px;
-      height: 190px; }
-    #mainIndex #picSpider #slogan {
-      justify-self: left;
-      translate: -40px;
-      text-align: center;
-      font-size: 18px; }
-  #mainHistoria {
-    grid-row-gap: 15px; }
-    #mainHistoria #parrafoUno .parrafo .parrafo__Titulo {
-      font-size: 18px;
-      text-align: center; }
-    #mainHistoria #parrafoUno .parrafo .parrafo__Texto {
-      font-size: 12px;
-      line-height: 20px;
-      text-align: justify; }
-    #mainHistoria #parrafoDos {
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas: "fotoSectParrafoDos fotoParaMobil" "sectParrafoDos sectParrafoDos";
-      justify-items: center;
-      grid-row-gap: 5px;
-      grid-column-gap: 15px; }
-      #mainHistoria #parrafoDos .fotoParrafoDos {
-        grid-area: fotoSectParrafoDos; }
-        #mainHistoria #parrafoDos .fotoParrafoDos #fotoTiendaFunko {
-          width: 190px;
-          height: 120px;
-          margin-left: 10px; }
-      #mainHistoria #parrafoDos .fotoParaMobil {
-        grid-area: fotoParaMobil;
-        display: block;
-        justify-items: center; }
-        #mainHistoria #parrafoDos .fotoParaMobil img {
-          width: 190px;
-          height: 120px;
-          margin-right: 10px; }
-      #mainHistoria #parrafoDos .parrafo {
-        font-size: 12px;
-        line-height: 20px;
-        text-align: justify; }
-    #mainHistoria #parrafoTres {
-      display: block; }
-      #mainHistoria #parrafoTres .parrafo .parrafo__Texto {
-        font-size: 12px;
-        line-height: 20px;
-        margin-right: 0px;
-        margin-left: 0px;
-        justify-self: center;
-        text-align: justify; }
-      #mainHistoria #parrafoTres .fotoParrafoTres #fotoTiendaFunkoDos {
-        display: none; }
-    #mainHistoria #parrafoCuatro {
-      display: none; }
-  #mainComunidad {
-    height: 65vh;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 0.1fr);
-    grid-template-areas: "tituloComunidad" "foro"  "telegram" "discord";
-    grid-row-gap: 15px; }
-    #mainComunidad #tituloComunidad #parrafoUno .parrafo .parrafo__Titulo {
-      font-size: 18px;
-      text-align: center; }
-    #mainComunidad #tituloComunidad #parrafoUno .parrafo .parrafo__Texto {
-      font-size: 12px;
-      line-height: 18px; }
-    #mainComunidad .foro {
-      border: #f44741 solid 3px;
-      width: 400px;
-      height: 100px;
-      justify-self: center;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas: "comunidad foroTitulo";
-      align-items: center;
-      align-content: center; }
-      #mainComunidad .foro .foro__Titulo {
-        font-size: 18px;
-        justify-self: left; }
-      #mainComunidad .foro .comunidad__Texto {
-        display: none; }
-      #mainComunidad .foro .comunidad {
-        font-size: 18px;
-        align-content: center; }
-        #mainComunidad .foro .comunidad #logoForo {
-          width: 70px;
-          height: 70px;
-          margin-top: 20px; }
-    #mainComunidad .telegram {
-      border: #0aa06e solid 3px;
-      width: 400px;
-      height: 100px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas: "comunidad foroTitulo";
-      align-content: center; }
-      #mainComunidad .telegram .foro__Titulo {
-        font-size: 18px;
-        justify-self: left; }
-      #mainComunidad .telegram .comunidad__Texto {
-        display: none; }
-      #mainComunidad .telegram .comunidad {
-        font-size: 18px; }
-        #mainComunidad .telegram .comunidad #logoTelegram {
-          width: 70px;
-          height: 70px;
-          margin-top: 20px; }
-    #mainComunidad .discord {
-      border: #c9c949 solid 3px;
-      width: 400px;
-      height: 100px;
-      justify-self: center;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas: "comunidad foroTitulo";
-      align-content: center; }
-      #mainComunidad .discord .foro__Titulo {
-        font-size: 18px;
-        justify-self: left; }
-      #mainComunidad .discord .comunidad__Texto {
-        display: none; }
-      #mainComunidad .discord .comunidad {
-        font-size: 18px; }
-        #mainComunidad .discord .comunidad #logoDiscord {
-          width: 70px;
-          height: 70px;
-          margin-top: 20px; }
-  #mainColecciones {
-    height: 60vh;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr 0.5fr;
-    grid-template-areas: "parrafoUno parrafoUno" "marvel dc" "shop shop";
-    grid-row-gap: 2px; }
-    #mainColecciones #parrafoUno .parrafo .parrafo__Titulo {
-      font-size: 18px;
-      margin-top: 5px;
-      line-height: 50px;
-      text-align: center; }
-    #mainColecciones #parrafoUno .parrafo .parrafo__Texto {
-      display: none; }
-    #mainColecciones .marvel {
-      grid-template-columns: 1fr;
-      grid-template-rows: 0.5fr 1fr;
-      grid-template-areas: "categoriaMarvel" "capi"; }
-      #mainColecciones .marvel a {
-        font-size: 18px;
-        align-self: end; }
-      #mainColecciones .marvel #wallCapi {
-        width: 180px;
-        height: 100px; }
-    #mainColecciones .dc {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 0.5fr 1fr;
-      grid-template-areas: "categoriaDc" "flash"; }
-      #mainColecciones .dc a {
-        font-size: 18px;
-        align-self: end; }
-      #mainColecciones .dc #wallFlash {
-        width: 180px;
-        height: 100px; }
-    #mainColecciones .sw {
-      display: none; }
-    #mainColecciones .shop {
-      font-size: 16px;
-      align-self: center; }
-    #mainColecciones .franquicia-marvel {
-      border: #f04f97 solid 4px;
-      width: 200px;
-      height: 300px; }
-    #mainColecciones .franquicia-dc {
-      border: #eef356 solid 4px;
-      width: 200px;
-      height: 300px; }
-  #mainContacto {
-    height: 155vh;
-    grid-template-rows: 0.1fr 2fr; }
-    #mainContacto .parrafo {
-      margin-left: 0px;
-      margin-right: 0px;
-      margin-top: 0px;
-      align-self: start; }
-      #mainContacto .parrafo .parrafo__Titulo {
-        font-size: 20px;
-        margin-top: 5px; }
-      #mainContacto .parrafo .parrafo__Texto {
-        margin-top: 0px;
-        margin-left: 40px;
-        font-size: 13px; }
-    #mainContacto .formulario {
-      margin-left: 20px;
-      margin-right: 20px; }
-      #mainContacto .formulario form .datos {
-        width: 100%;
-        margin-top: 20px; }
-      #mainContacto .formulario form .datosDos {
-        width: 100%; }
-        #mainContacto .formulario form .datosDos .textoDatos {
-          font-size: 13px; }
-        #mainContacto .formulario form .datosDos .lineas {
-          display: flex;
-          flex-direction: column; }
-          #mainContacto .formulario form .datosDos .lineas label {
-            margin-right: 5px;
-            margin-left: 1px;
-            margin-bottom: 5px;
-            font-size: 12px; }
-            #mainContacto .formulario form .datosDos .lineas label input {
-              margin-left: 5px;
-              margin-bottom: 5px; }
-      #mainContacto .formulario form .datosTres {
-        width: 100%; }
-        #mainContacto .formulario form .datosTres .textoDatos {
-          font-size: 13px; }
-        #mainContacto .formulario form .datosTres .licencias {
-          display: flex;
-          flex-direction: column; }
-          #mainContacto .formulario form .datosTres .licencias label {
-            margin-right: 5px;
-            margin-left: 1px;
-            margin-bottom: 5px;
-            font-size: 12px; }
-            #mainContacto .formulario form .datosTres .licencias label input {
-              margin-left: 5px;
-              margin-bottom: 5px; }
-      #mainContacto .formulario form .datosCuatro {
-        width: 100%; }
-      #mainContacto .formulario form .datosCinco {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.5fr 1fr;
-        grid-template-areas: "novedades novedades" "opciones btnEnviar"; }
-        #mainContacto .formulario form .datosCinco p {
-          grid-area: novedades; }
-        #mainContacto .formulario form .datosCinco .opciones {
-          grid-area: opciones; }
-        #mainContacto .formulario form .datosCinco .enviar {
-          grid-area: btnEnviar;
-          justify-self: right; }
-  footer {
-    height: 6vh; }
-    footer .textoFooter {
-      font-size: 14px; } }
-
-@media screen and (min-width: 1280px) {
-  header {
-    height: 17vh;
-    grid-template-columns: 0.3fr 2fr 0.5fr; }
-    header #logosRedes #logoInstagram {
-      height: 40px;
-      width: 40px; }
-    header #logosRedes #logoFacebook {
-      height: 40px;
-      width: 40px; }
-    header #logosRedes #logoTwitter {
-      height: 40px;
-      width: 40px; }
-    header .imgFunko a h1 {
-      font-size: 6em; }
-    header .fuenteBoton {
-      justify-self: right; }
-      header .fuenteBoton #botonLogin {
-        width: 140px;
-        height: 40px;
-        font-size: 16px; }
-      header .fuenteBoton #botonRegistro {
-        width: 140px;
-        height: 40px;
-        font-size: 16px; }
-  nav {
-    height: 9vh;
-    grid-template-columns: 2.5fr 1fr; }
-    nav li {
-      font-size: 26px;
-      justify-self: center; }
-    nav #buscador #busqueda {
-      height: 30px;
-      width: 160px; }
-    nav #buscador #botonBuscar {
-      font-size: 22px; }
-  #mainIndex #multimedia #videos {
-    height: 600px;
-    grid-template-rows: 1fr 1fr; }
-    #mainIndex #multimedia #videos .videoPrincipal .video__Titulo {
-      font-size: 30px;
-      line-height: 35px;
-      margin-bottom: 20px; }
-    #mainIndex #multimedia #videos .videoPrincipal .video__Texto {
-      font-size: 24px;
-      line-height: 30px; }
-    #mainIndex #multimedia #videos #iframeV {
-      align-self: start; }
-      #mainIndex #multimedia #videos #iframeV iframe {
-        width: 379px;
-        height: 250px; }
-  #mainIndex #multimedia #fotos {
-    height: 600px;
-    grid-template-rows: 1fr 1fr; }
-    #mainIndex #multimedia #fotos .fotoPrincipal .foto__Titulo {
-      font-size: 30px;
-      line-height: 35px;
-      margin-bottom: 20px; }
-    #mainIndex #multimedia #fotos .fotoPrincipal .foto__Texto {
-      font-size: 24px;
-      line-height: 30px; }
-    #mainIndex #multimedia #fotos .portadaFotos {
-      align-self: start; }
-      #mainIndex #multimedia #fotos .portadaFotos #portadaDeFotos {
-        width: 350px;
-        height: 250px; }
-  #mainIndex #picSpider .pic #spiderManPortada {
-    width: 575px;
-    height: 575px; }
-  #mainIndex #picSpider #slogan {
-    text-align: center;
-    font-size: 50px;
-    text-align: center;
-    justify-self: right;
-    translate: -40px; }
-    #mainIndex #picSpider #slogan:hover {
-      transform: scale(1.2); }
-  #mainHistoria #parrafoUno .parrafo {
-    font-size: 20px;
-    line-height: 25px; }
-    #mainHistoria #parrafoUno .parrafo .parrafo__Titulo {
-      margin-top: 20px; }
-    #mainHistoria #parrafoUno .parrafo .parrafo__Texto {
-      font-size: 18px;
-      margin-top: 20px;
-      line-height: 35px;
-      text-align: justify; }
-  #mainHistoria #parrafoDos .fotoParrafoDos {
-    align-self: center; }
-    #mainHistoria #parrafoDos .fotoParrafoDos #fotoTiendaFunko {
-      width: 600px;
-      height: 380px; }
-  #mainHistoria #parrafoDos .parrafo {
-    font-size: 18px;
-    margin-top: 20px;
-    line-height: 35px;
-    text-align: justify; }
-  #mainHistoria #parrafoTres .parrafo {
-    font-size: 18px;
-    margin-top: 20px;
-    line-height: 35px;
-    text-align: justify; }
-  #mainHistoria #parrafoTres .fotoParrafoTres {
-    align-self: center; }
-    #mainHistoria #parrafoTres .fotoParrafoTres #fotoTiendaFunkoDos {
-      width: 600px;
-      height: 380px; }
-  #mainComunidad {
-    height: 70vh;
-    grid-template-rows: 20% 80%;
-    grid-row-gap: 35px; }
-    #mainComunidad #tituloComunidad .parrafo .parrafo__Titulo {
-      font-size: 30px;
-      margin-top: 20px; }
-    #mainComunidad #tituloComunidad .parrafo .parrafo__Texto {
-      font-size: 21px;
-      line-height: 35px;
-      margin-top: 20px; }
-    #mainComunidad .foro {
-      grid-template-rows: 0.5fr 0.5fr 1fr; }
-      #mainComunidad .foro .foro__Titulo {
-        font-size: 30px; }
-      #mainComunidad .foro .comunidad__Texto {
-        font-size: 20px;
-        align-self: center; }
-      #mainComunidad .foro .comunidad {
-        align-self: center; }
-        #mainComunidad .foro .comunidad #logoForo {
-          width: 180px;
-          height: 180px; }
-    #mainComunidad .telegram {
-      grid-template-rows: 0.5fr 0.5fr 1fr; }
-      #mainComunidad .telegram .foro__Titulo {
-        font-size: 30px; }
-      #mainComunidad .telegram .comunidad__Texto {
-        font-size: 20px;
-        align-self: center; }
-      #mainComunidad .telegram .comunidad {
-        align-self: center; }
-        #mainComunidad .telegram .comunidad #logoTelegram {
-          width: 180px;
-          height: 180px; }
-    #mainComunidad .discord {
-      grid-template-rows: 0.5fr 0.5fr 1fr; }
-      #mainComunidad .discord .foro__Titulo {
-        font-size: 30px; }
-      #mainComunidad .discord .comunidad__Texto {
-        font-size: 20px;
-        align-self: center;
-        margin-left: 20px;
-        margin-right: 20px; }
-      #mainComunidad .discord .comunidad {
-        align-self: center; }
-        #mainComunidad .discord .comunidad #logoDiscord {
-          width: 180px;
-          height: 180px; }
-    #mainComunidad .comunidad-foro {
-      background-color: #fc6863;
-      width: 350px;
-      height: 550px; }
-    #mainComunidad .comunidad-telegram {
-      background-color: #1dcc92;
-      width: 350px;
-      height: 550px; }
-    #mainComunidad .comunidad-discord {
-      background-color: #dcdc72;
-      width: 350px;
-      height: 550px; }
-  #mainColecciones {
-    height: 100vh; }
-    #mainColecciones #parrafoUno .parrafo .parrafo__Titulo {
-      font-size: 30px;
-      margin-top: 20px; }
-    #mainColecciones #parrafoUno .parrafo .parrafo__Texto {
-      font-size: 21px;
-      line-height: 35px;
-      margin-top: 20px; }
-    #mainColecciones .marvel a, #mainColecciones .dc a, #mainColecciones .sw a {
-      font-size: 30px; }
-    #mainColecciones .marvel #wallCapi, #mainColecciones .marvel #wallFlash, #mainColecciones .marvel #wallSw, #mainColecciones .dc #wallCapi, #mainColecciones .dc #wallFlash, #mainColecciones .dc #wallSw, #mainColecciones .sw #wallCapi, #mainColecciones .sw #wallFlash, #mainColecciones .sw #wallSw {
-      width: 330px;
-      height: 180px; }
-    #mainColecciones .shop {
-      font-size: 35px; }
-    #mainColecciones .franquicia-marvel {
-      background-color: #f47fb4;
-      height: 250px; }
-    #mainColecciones .franquicia-dc {
-      background-color: #f0f47a;
-      height: 250px; }
-    #mainColecciones .franquicia-sw {
-      background-color: #76f386;
-      height: 250px; }
-  #mainContacto .parrafo {
-    margin-top: 0px; }
-    #mainContacto .parrafo .parrafo__Titulo {
-      font-size: 30px;
-      margin-top: 20px; }
-    #mainContacto .parrafo .parrafo__Texto {
-      font-size: 21px;
-      line-height: 35px;
-      margin-top: 20px; }
-  #mainContacto .formulario form .datos legend {
-    font-size: 22px; }
-  #mainContacto .formulario form .datos .nombre, #mainContacto .formulario form .datos .apellido, #mainContacto .formulario form .datos .genero, #mainContacto .formulario form .datos .edad {
-    font-size: 18px; }
-  #mainContacto .formulario form .datosDos legend {
-    font-size: 22px; }
-  #mainContacto .formulario form .datosDos .textoDatos {
-    font-size: 20px; }
-  #mainContacto .formulario form .datosDos .lineas label {
-    margin-right: 0px;
-    margin-left: 12px;
-    font-size: 18px; }
-  #mainContacto .formulario form .datosTres legend {
-    font-size: 22px; }
-  #mainContacto .formulario form .datosTres .textoDatos {
-    font-size: 20px; }
-  #mainContacto .formulario form .datosTres .licencias label {
-    margin-right: 0px;
-    margin-left: 4px;
-    font-size: 18px; }
-  #mainContacto .formulario form .datosCuatro legend {
-    font-size: 22px; }
-  #mainContacto .formulario form .datosCuatro .consulta textarea {
-    font-size: 18px; }
-  #mainContacto .formulario form .datosCinco p {
-    font-size: 22px; }
-  #mainContacto .formulario form .datosCinco .opciones label {
-    font-size: 18px; }
-  #mainContacto .formulario form .enviar #botonEnviar {
-    width: 150px;
-    height: 300px;
-    border-radius: 10px;
-    border: #1895cf solid 3px;
-    font-size: 50px; }
-  #mainContacto .formulario form .enviar a {
-    font-size: 20px; }
-  footer {
-    height: 8vh; }
-    footer .textoFooter {
-      font-size: 25px; } }
-
-@media screen and (min-width: 769px) and (max-width: 1279px) {
-  header {
-    height: 11vh;
-    grid-template-columns: 0.4fr 2fr 0.5fr; }
-    header #logosRedes {
-      grid-column-gap: 1.5px; }
-      header #logosRedes #logoInstagram {
-        height: 25px;
-        width: 25px; }
-      header #logosRedes #logoFacebook {
-        height: 25px;
-        width: 25px; }
-      header #logosRedes #logoTwitter {
-        height: 25px;
-        width: 25px; }
-    header .imgFunko a h1 {
-      font-size: 4em; }
-    header .fuenteBoton {
-      justify-self: right; }
-      header .fuenteBoton #botonLogin, header .fuenteBoton #botonRegistro {
-        width: 85px;
-        height: 25px;
-        font-size: 12px; }
-  nav {
-    height: 8vh;
-    grid-template-columns: 2fr 1fr; }
-    nav li {
-      font-size: 15px;
-      padding: 3px; }
-  #mainIndex {
-    grid-template-rows: 0.1fr 1fr 0.1fr; }
-    #mainIndex #multimedia {
-      grid-template-columns: 46% 46%;
-      grid-column-gap: 20px; }
-      #mainIndex #multimedia #videos {
-        height: 350px;
-        grid-template-rows: 0.7fr 1fr; }
-        #mainIndex #multimedia #videos .videoPrincipal .video__Titulo {
-          font-size: 20px;
-          line-height: 24px;
-          margin-bottom: 20px;
-          margin-left: 15px;
-          margin-right: 15px; }
-        #mainIndex #multimedia #videos .videoPrincipal .video__Texto {
-          font-size: 14px;
-          margin-left: 10px;
-          margin-right: 10px; }
-        #mainIndex #multimedia #videos #iframeV {
-          align-self: center; }
-          #mainIndex #multimedia #videos #iframeV iframe {
-            width: 240px;
-            height: 150px; }
-      #mainIndex #multimedia #fotos {
-        height: 350px;
-        grid-template-rows: 0.7fr 1fr; }
-        #mainIndex #multimedia #fotos .fotoPrincipal .foto__Titulo {
-          font-size: 20px;
-          line-height: 24px;
-          margin-bottom: 20px; }
-        #mainIndex #multimedia #fotos .fotoPrincipal .foto__Texto {
-          font-size: 14px;
-          margin-left: 5px;
-          margin-right: 5px; }
-        #mainIndex #multimedia #fotos .portadaFotos {
-          align-self: center; }
-          #mainIndex #multimedia #fotos .portadaFotos #portadaDeFotos {
-            width: 230px;
-            height: 150px; }
-    #mainIndex #picSpider .pic #spiderManPortada {
-      width: 275px;
-      height: 275px; }
-    #mainIndex #picSpider #slogan {
-      font-size: 30px;
-      text-align: center;
-      translate: -30px; }
-  #mainHistoria {
-    grid-row-gap: 10px; }
-    #mainHistoria #parrafoUno .parrafo .parrafo__Titulo {
-      font-size: 25px; }
-    #mainHistoria #parrafoUno .parrafo .parrafo__Texto {
-      font-size: 14px;
-      line-height: 20px; }
-    #mainHistoria #parrafoDos .fotoParrafoDos {
-      align-self: center; }
-      #mainHistoria #parrafoDos .fotoParrafoDos #fotoTiendaFunko {
-        width: 310px;
-        height: 190px; }
-    #mainHistoria #parrafoDos .parrafo {
-      font-size: 14px;
-      line-height: 20px; }
-    #mainHistoria #parrafoTres .parrafo {
-      font-size: 14px;
-      line-height: 20px; }
-    #mainHistoria #parrafoTres .fotoParrafoTres {
-      align-self: center; }
-      #mainHistoria #parrafoTres .fotoParrafoTres #fotoTiendaFunkoDos {
-        width: 310px;
-        height: 180px; }
-    #mainHistoria #parrafoCuatro .fotoParrafoCuatro {
-      margin-left: 20PX; }
-      #mainHistoria #parrafoCuatro .fotoParrafoCuatro #fotoHileraPops {
-        width: 94%; }
-  #mainComunidad {
-    height: 70vh;
-    grid-template-rows: 0.1fr 1fr; }
-    #mainComunidad #tituloComunidad .parrafo .parrafo__Titulo {
-      font-size: 25px;
-      margin-top: 5px; }
-    #mainComunidad #tituloComunidad .parrafo .parrafo__Texto {
-      font-size: 14px;
-      line-height: 20px;
-      margin-top: 5px; }
-    #mainComunidad .foro {
-      grid-template-rows: repeat(2, 0.5fr) 1fr;
-      width: 200px;
-      height: 350px;
-      margin-bottom: 10px;
-      align-self: center; }
-      #mainComunidad .foro .foro__Titulo {
-        font-size: 21px; }
-      #mainComunidad .foro .comunidad__Texto {
-        font-size: 12px;
-        margin-left: 7px;
-        margin-right: 7px; }
-      #mainComunidad .foro .comunidad #logoForo {
-        width: 120px;
-        height: 120px; }
-    #mainComunidad .telegram {
-      grid-template-rows: repeat(2, 0.5fr) 1fr;
-      width: 200px;
-      height: 350px;
-      margin-bottom: 10px;
-      align-self: center; }
-      #mainComunidad .telegram .foro__Titulo {
-        font-size: 21px; }
-      #mainComunidad .telegram .comunidad__Texto {
-        font-size: 12px;
-        margin-left: 7px;
-        margin-right: 7px; }
-      #mainComunidad .telegram .comunidad #logoTelegram {
-        width: 120px;
-        height: 120px; }
-    #mainComunidad .discord {
-      grid-template-rows: repeat(2, 0.5fr) 1fr;
-      width: 200px;
-      height: 350px;
-      margin-bottom: 10px;
-      align-self: center; }
-      #mainComunidad .discord .foro__Titulo {
-        font-size: 21px; }
-      #mainComunidad .discord .comunidad__Texto {
-        font-size: 12px;
-        margin-left: 7px;
-        margin-right: 7px; }
-      #mainComunidad .discord .comunidad #logoDiscord {
-        width: 120px;
-        height: 120px; }
-  #mainColecciones {
-    height: 100vh;
-    grid-template-rows: 0.1fr repeat(3, 0.2fr) 0.1fr; }
-    #mainColecciones #parrafoUno .parrafo {
-      font-size: 14px;
-      line-height: 25px;
-      margin-bottom: 0px; }
-      #mainColecciones #parrafoUno .parrafo .parrafo__Titulo {
-        font-size: 25px; }
-    #mainColecciones .marvel {
-      width: 80%;
-      height: 175px;
-      align-self: center; }
-      #mainColecciones .marvel a {
-        font-size: 22px; }
-      #mainColecciones .marvel #wallCapi {
-        width: 190px;
-        height: 110px; }
-    #mainColecciones .dc {
-      width: 80%;
-      height: 175px;
-      align-self: start; }
-      #mainColecciones .dc a {
-        font-size: 22px; }
-      #mainColecciones .dc #wallFlash {
-        width: 190px;
-        height: 110px; }
-    #mainColecciones .sw {
-      width: 80%;
-      height: 175px;
-      align-self: start; }
-      #mainColecciones .sw a {
-        font-size: 22px; }
-      #mainColecciones .sw #wallSw {
-        width: 190px;
-        height: 110px; }
-    #mainColecciones .shop {
-      font-size: 22px; }
-  #mainContacto {
-    height: 120vh;
-    grid-template-rows: 0.1fr 1fr; }
-    #mainContacto .parrafo {
-      margin-left: 0px;
-      margin-right: 0px;
-      margin-top: 0px;
-      align-self: start; }
-      #mainContacto .parrafo .parrafo__Titulo {
-        font-size: 25px;
-        margin-top: 5px; }
-      #mainContacto .parrafo .parrafo__Texto {
-        margin-top: 0px;
-        margin-left: 40px;
-        font-size: 14px; }
-    #mainContacto .formulario form .datos {
-      margin-top: 20px; }
-    #mainContacto .formulario form .datosDos {
-      width: 100%; }
-      #mainContacto .formulario form .datosDos .lineas label {
-        margin-right: 0px;
-        margin-left: 8px;
-        font-size: 12px; }
-        #mainContacto .formulario form .datosDos .lineas label input {
-          margin-right: 1px; }
-    #mainContacto .formulario form .datosTres {
-      width: 100%; }
-      #mainContacto .formulario form .datosTres .licencias label {
-        margin-right: 0px;
-        margin-left: 8px;
-        font-size: 11px; }
-        #mainContacto .formulario form .datosTres .licencias label input {
-          margin-right: 1px; }
-    #mainContacto .formulario form .datosCuatro {
-      width: 100%; }
-    #mainContacto .formulario form .datosCinco {
-      width: 100%; }
-  footer {
-    height: 7vh; }
-    footer .textoFooter {
-      font-size: 18px; } }
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  header {
-    height: 12vh;
-    grid-template-columns: 2fr 0.1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "imgFunko fuenteBoton" "imgFunko fuenteBoton"; }
-    header #logosRedes {
-      display: none; }
-    header .imgFunko a h1 {
-      font-size: 3em; }
-    header .fuenteBoton {
-      margin-right: 0px;
-      grid-row-gap: 3px; }
-      header .fuenteBoton #botonLogin, header .fuenteBoton #botonRegistro {
-        font-size: 7px;
-        width: 70px;
-        height: 20px;
-        border-radius: 8px;
-        border: #1895cf solid 2px;
-        margin-right: 0px; }
-  nav {
-    height: 24vh;
-    grid-template-columns: 1fr;
-    grid-template-areas: "listaMenu";
-    background-color: white;
-    justify-items: stretch; }
-    nav a:link, nav a:visited, nav a:active {
-      font-size: 10px;
-      text-align: center; }
-    nav li {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      padding: 8px;
-      background-color: #1895cf; }
-    nav #buscador {
-      display: none; }
-  #mainIndex {
-    height: 75vh; }
-    #mainIndex #multimedia {
-      grid-column-gap: 10px; }
-      #mainIndex #multimedia #videos {
-        height: 30vh;
-        grid-template-rows: 0.5fr 1fr; }
-        #mainIndex #multimedia #videos .videoPrincipal .video__Titulo {
-          font-size: 10px;
-          line-height: 12px; }
-        #mainIndex #multimedia #videos .videoPrincipal .video__Texto {
-          font-size: 8px;
-          font-weight: 500;
-          line-height: 12px;
-          margin-top: 10px; }
-        #mainIndex #multimedia #videos #iframeV {
-          align-self: center; }
-          #mainIndex #multimedia #videos #iframeV iframe {
-            width: 159px;
-            height: 109px; }
-      #mainIndex #multimedia #fotos {
-        height: 30vh;
-        grid-template-rows: 0.5fr 1fr; }
-        #mainIndex #multimedia #fotos .fotoPrincipal .foto__Titulo {
-          font-size: 10px;
-          line-height: 12px; }
-        #mainIndex #multimedia #fotos .fotoPrincipal .foto__Texto {
-          font-size: 8px;
-          font-weight: 500;
-          line-height: 12px;
-          margin-top: 10px; }
-        #mainIndex #multimedia #fotos .portadaFotos {
-          align-self: center; }
-          #mainIndex #multimedia #fotos .portadaFotos #portadaDeFotos {
-            width: 159px;
-            height: 109px; }
-    #mainIndex #picSpider .pic #spiderManPortada {
-      width: 190px;
-      height: 190px; }
-    #mainIndex #picSpider #slogan {
-      justify-self: left;
-      translate: -40px;
-      text-align: center;
-      font-size: 18px; }
-  #mainHistoria {
-    grid-row-gap: 15px; }
-    #mainHistoria #parrafoUno .parrafo .parrafo__Titulo {
-      font-size: 18px;
-      text-align: center; }
-    #mainHistoria #parrafoUno .parrafo .parrafo__Texto {
-      font-size: 12px;
-      line-height: 20px;
-      text-align: justify; }
-    #mainHistoria #parrafoDos {
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas: "fotoSectParrafoDos fotoParaMobil" "sectParrafoDos sectParrafoDos";
-      justify-items: center;
-      grid-row-gap: 5px;
-      grid-column-gap: 15px; }
-      #mainHistoria #parrafoDos .fotoParrafoDos {
-        grid-area: fotoSectParrafoDos; }
-        #mainHistoria #parrafoDos .fotoParrafoDos #fotoTiendaFunko {
-          width: 190px;
-          height: 120px;
-          margin-left: 10px; }
-      #mainHistoria #parrafoDos .fotoParaMobil {
-        grid-area: fotoParaMobil;
-        display: block;
-        justify-items: center; }
-        #mainHistoria #parrafoDos .fotoParaMobil img {
-          width: 190px;
-          height: 120px;
-          margin-right: 10px; }
-      #mainHistoria #parrafoDos .parrafo {
-        font-size: 12px;
-        line-height: 20px;
-        text-align: justify; }
-    #mainHistoria #parrafoTres {
-      display: block; }
-      #mainHistoria #parrafoTres .parrafo .parrafo__Texto {
-        font-size: 12px;
-        line-height: 20px;
-        margin-right: 0px;
-        margin-left: 0px;
-        justify-self: center;
-        text-align: justify; }
-      #mainHistoria #parrafoTres .fotoParrafoTres #fotoTiendaFunkoDos {
-        display: none; }
-    #mainHistoria #parrafoCuatro {
-      display: none; }
-  #mainComunidad {
-    height: 65vh;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 0.1fr);
-    grid-template-areas: "tituloComunidad" "foro"  "telegram" "discord";
-    grid-row-gap: 15px; }
-    #mainComunidad #tituloComunidad #parrafoUno .parrafo .parrafo__Titulo {
-      font-size: 18px;
-      text-align: center; }
-    #mainComunidad #tituloComunidad #parrafoUno .parrafo .parrafo__Texto {
-      font-size: 12px;
-      line-height: 18px; }
-    #mainComunidad .foro {
-      border: #f44741 solid 3px;
-      width: 400px;
-      height: 100px;
-      justify-self: center;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas: "comunidad foroTitulo";
-      align-items: center;
-      align-content: center; }
-      #mainComunidad .foro .foro__Titulo {
-        font-size: 18px;
-        justify-self: left; }
-      #mainComunidad .foro .comunidad__Texto {
-        display: none; }
-      #mainComunidad .foro .comunidad {
-        font-size: 18px;
-        align-content: center; }
-        #mainComunidad .foro .comunidad #logoForo {
-          width: 70px;
-          height: 70px;
-          margin-top: 20px; }
-    #mainComunidad .telegram {
-      border: #0aa06e solid 3px;
-      width: 400px;
-      height: 100px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas: "comunidad foroTitulo";
-      align-content: center; }
-      #mainComunidad .telegram .foro__Titulo {
-        font-size: 18px;
-        justify-self: left; }
-      #mainComunidad .telegram .comunidad__Texto {
-        display: none; }
-      #mainComunidad .telegram .comunidad {
-        font-size: 18px; }
-        #mainComunidad .telegram .comunidad #logoTelegram {
-          width: 70px;
-          height: 70px;
-          margin-top: 20px; }
-    #mainComunidad .discord {
-      border: #c9c949 solid 3px;
-      width: 400px;
-      height: 100px;
-      justify-self: center;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas: "comunidad foroTitulo";
-      align-content: center; }
-      #mainComunidad .discord .foro__Titulo {
-        font-size: 18px;
-        justify-self: left; }
-      #mainComunidad .discord .comunidad__Texto {
-        display: none; }
-      #mainComunidad .discord .comunidad {
-        font-size: 18px; }
-        #mainComunidad .discord .comunidad #logoDiscord {
-          width: 70px;
-          height: 70px;
-          margin-top: 20px; }
-  #mainColecciones {
-    height: 60vh;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr 0.5fr;
-    grid-template-areas: "parrafoUno parrafoUno" "marvel dc" "shop shop";
-    grid-row-gap: 2px; }
-    #mainColecciones #parrafoUno .parrafo .parrafo__Titulo {
-      font-size: 18px;
-      margin-top: 5px;
-      line-height: 50px;
-      text-align: center; }
-    #mainColecciones #parrafoUno .parrafo .parrafo__Texto {
-      display: none; }
-    #mainColecciones .marvel {
-      grid-template-columns: 1fr;
-      grid-template-rows: 0.5fr 1fr;
-      grid-template-areas: "categoriaMarvel" "capi"; }
-      #mainColecciones .marvel a {
-        font-size: 18px;
-        align-self: end; }
-      #mainColecciones .marvel #wallCapi {
-        width: 180px;
-        height: 100px; }
-    #mainColecciones .dc {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 0.5fr 1fr;
-      grid-template-areas: "categoriaDc" "flash"; }
-      #mainColecciones .dc a {
-        font-size: 18px;
-        align-self: end; }
-      #mainColecciones .dc #wallFlash {
-        width: 180px;
-        height: 100px; }
-    #mainColecciones .sw {
-      display: none; }
-    #mainColecciones .shop {
-      font-size: 16px;
-      align-self: center; }
-    #mainColecciones .franquicia-marvel {
-      border: #f04f97 solid 4px;
-      width: 200px;
-      height: 300px; }
-    #mainColecciones .franquicia-dc {
-      border: #eef356 solid 4px;
-      width: 200px;
-      height: 300px; }
-  #mainContacto {
-    height: 155vh;
-    grid-template-rows: 0.1fr 2fr; }
-    #mainContacto .parrafo {
-      margin-left: 0px;
-      margin-right: 0px;
-      margin-top: 0px;
-      align-self: start; }
-      #mainContacto .parrafo .parrafo__Titulo {
-        font-size: 20px;
-        margin-top: 5px; }
-      #mainContacto .parrafo .parrafo__Texto {
-        margin-top: 0px;
-        margin-left: 40px;
-        font-size: 13px; }
-    #mainContacto .formulario {
-      margin-left: 20px;
-      margin-right: 20px; }
-      #mainContacto .formulario form .datos {
-        width: 100%;
-        margin-top: 20px; }
-      #mainContacto .formulario form .datosDos {
-        width: 100%; }
-        #mainContacto .formulario form .datosDos .textoDatos {
-          font-size: 13px; }
-        #mainContacto .formulario form .datosDos .lineas {
-          display: flex;
-          flex-direction: column; }
-          #mainContacto .formulario form .datosDos .lineas label {
-            margin-right: 5px;
-            margin-left: 1px;
-            margin-bottom: 5px;
-            font-size: 12px; }
-            #mainContacto .formulario form .datosDos .lineas label input {
-              margin-left: 5px;
-              margin-bottom: 5px; }
-      #mainContacto .formulario form .datosTres {
-        width: 100%; }
-        #mainContacto .formulario form .datosTres .textoDatos {
-          font-size: 13px; }
-        #mainContacto .formulario form .datosTres .licencias {
-          display: flex;
-          flex-direction: column; }
-          #mainContacto .formulario form .datosTres .licencias label {
-            margin-right: 5px;
-            margin-left: 1px;
-            margin-bottom: 5px;
-            font-size: 12px; }
-            #mainContacto .formulario form .datosTres .licencias label input {
-              margin-left: 5px;
-              margin-bottom: 5px; }
-      #mainContacto .formulario form .datosCuatro {
-        width: 100%; }
-      #mainContacto .formulario form .datosCinco {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.5fr 1fr;
-        grid-template-areas: "novedades novedades" "opciones btnEnviar"; }
-        #mainContacto .formulario form .datosCinco p {
-          grid-area: novedades; }
-        #mainContacto .formulario form .datosCinco .opciones {
-          grid-area: opciones; }
-        #mainContacto .formulario form .datosCinco .enviar {
-          grid-area: btnEnviar;
-          justify-self: right; }
-  footer {
-    height: 6vh; }
-    footer .textoFooter {
-      font-size: 14px; } }
-
-@media screen and (max-width: 480px) {
-  header {
-    height: 12vh;
-    grid-template-columns: 2fr 0.1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "imgFunko fuenteBoton" "imgFunko fuenteBoton"; }
-    header #logosRedes {
-      display: none; }
-    header .imgFunko a h1 {
-      font-size: 3em; }
-    header .fuenteBoton {
-      margin-right: 0px;
-      grid-row-gap: 3px; }
-      header .fuenteBoton #botonLogin, header .fuenteBoton #botonRegistro {
-        font-size: 7px;
-        width: 70px;
-        height: 20px;
-        border-radius: 8px;
-        border: #1895cf solid 2px;
-        margin-right: 0px; }
-  nav {
-    height: 24vh;
-    grid-template-columns: 1fr;
-    grid-template-areas: "listaMenu";
-    background-color: white;
-    justify-items: stretch; }
-    nav a:link, nav a:visited, nav a:active {
-      font-size: 10px;
-      text-align: center; }
-    nav li {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      padding: 8px;
-      background-color: #1895cf; }
-    nav #buscador {
-      display: none; }
-  #mainIndex {
-    height: 75vh; }
-    #mainIndex #multimedia {
-      grid-column-gap: 10px; }
-      #mainIndex #multimedia #videos {
-        height: 30vh;
-        grid-template-rows: 0.5fr 1fr; }
-        #mainIndex #multimedia #videos .videoPrincipal .video__Titulo {
-          font-size: 10px;
-          line-height: 12px; }
-        #mainIndex #multimedia #videos .videoPrincipal .video__Texto {
-          font-size: 8px;
-          font-weight: 500;
-          line-height: 12px;
-          margin-top: 10px; }
-        #mainIndex #multimedia #videos #iframeV {
-          align-self: center; }
-          #mainIndex #multimedia #videos #iframeV iframe {
-            width: 159px;
-            height: 109px; }
-      #mainIndex #multimedia #fotos {
-        height: 30vh;
-        grid-template-rows: 0.5fr 1fr; }
-        #mainIndex #multimedia #fotos .fotoPrincipal .foto__Titulo {
-          font-size: 10px;
-          line-height: 12px; }
-        #mainIndex #multimedia #fotos .fotoPrincipal .foto__Texto {
-          font-size: 8px;
-          font-weight: 500;
-          line-height: 12px;
-          margin-top: 10px; }
-        #mainIndex #multimedia #fotos .portadaFotos {
-          align-self: center; }
-          #mainIndex #multimedia #fotos .portadaFotos #portadaDeFotos {
-            width: 159px;
-            height: 109px; }
-    #mainIndex #picSpider .pic #spiderManPortada {
-      width: 190px;
-      height: 190px; }
-    #mainIndex #picSpider #slogan {
-      justify-self: left;
-      translate: -40px;
-      text-align: center;
-      font-size: 18px; }
-  #mainHistoria {
-    grid-row-gap: 15px; }
-    #mainHistoria #parrafoUno .parrafo .parrafo__Titulo {
-      font-size: 18px;
-      text-align: center; }
-    #mainHistoria #parrafoUno .parrafo .parrafo__Texto {
-      font-size: 12px;
-      line-height: 20px;
-      text-align: justify; }
-    #mainHistoria #parrafoDos {
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas: "fotoSectParrafoDos fotoParaMobil" "sectParrafoDos sectParrafoDos";
-      justify-items: center;
-      grid-row-gap: 5px;
-      grid-column-gap: 15px; }
-      #mainHistoria #parrafoDos .fotoParrafoDos {
-        grid-area: fotoSectParrafoDos; }
-        #mainHistoria #parrafoDos .fotoParrafoDos #fotoTiendaFunko {
-          width: 190px;
-          height: 120px;
-          margin-left: 10px; }
-      #mainHistoria #parrafoDos .fotoParaMobil {
-        grid-area: fotoParaMobil;
-        display: block;
-        justify-items: center; }
-        #mainHistoria #parrafoDos .fotoParaMobil img {
-          width: 190px;
-          height: 120px;
-          margin-right: 10px; }
-      #mainHistoria #parrafoDos .parrafo {
-        font-size: 12px;
-        line-height: 20px;
-        text-align: justify; }
-    #mainHistoria #parrafoTres {
-      display: block; }
-      #mainHistoria #parrafoTres .parrafo .parrafo__Texto {
-        font-size: 12px;
-        line-height: 20px;
-        margin-right: 0px;
-        margin-left: 0px;
-        justify-self: center;
-        text-align: justify; }
-      #mainHistoria #parrafoTres .fotoParrafoTres #fotoTiendaFunkoDos {
-        display: none; }
-    #mainHistoria #parrafoCuatro {
-      display: none; }
-  #mainComunidad {
-    height: 65vh;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 0.1fr);
-    grid-template-areas: "tituloComunidad" "foro"  "telegram" "discord";
-    grid-row-gap: 15px; }
-    #mainComunidad #tituloComunidad #parrafoUno .parrafo .parrafo__Titulo {
-      font-size: 18px;
-      text-align: center; }
-    #mainComunidad #tituloComunidad #parrafoUno .parrafo .parrafo__Texto {
-      font-size: 12px;
-      line-height: 18px; }
-    #mainComunidad .foro {
-      border: #f44741 solid 3px;
-      width: 400px;
-      height: 100px;
-      justify-self: center;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas: "comunidad foroTitulo";
-      align-items: center;
-      align-content: center; }
-      #mainComunidad .foro .foro__Titulo {
-        font-size: 18px;
-        justify-self: left; }
-      #mainComunidad .foro .comunidad__Texto {
-        display: none; }
-      #mainComunidad .foro .comunidad {
-        font-size: 18px;
-        align-content: center; }
-        #mainComunidad .foro .comunidad #logoForo {
-          width: 70px;
-          height: 70px;
-          margin-top: 20px; }
-    #mainComunidad .telegram {
-      border: #0aa06e solid 3px;
-      width: 400px;
-      height: 100px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas: "comunidad foroTitulo";
-      align-content: center; }
-      #mainComunidad .telegram .foro__Titulo {
-        font-size: 18px;
-        justify-self: left; }
-      #mainComunidad .telegram .comunidad__Texto {
-        display: none; }
-      #mainComunidad .telegram .comunidad {
-        font-size: 18px; }
-        #mainComunidad .telegram .comunidad #logoTelegram {
-          width: 70px;
-          height: 70px;
-          margin-top: 20px; }
-    #mainComunidad .discord {
-      border: #c9c949 solid 3px;
-      width: 400px;
-      height: 100px;
-      justify-self: center;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas: "comunidad foroTitulo";
-      align-content: center; }
-      #mainComunidad .discord .foro__Titulo {
-        font-size: 18px;
-        justify-self: left; }
-      #mainComunidad .discord .comunidad__Texto {
-        display: none; }
-      #mainComunidad .discord .comunidad {
-        font-size: 18px; }
-        #mainComunidad .discord .comunidad #logoDiscord {
-          width: 70px;
-          height: 70px;
-          margin-top: 20px; }
-  #mainColecciones {
-    height: 60vh;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr 0.5fr;
-    grid-template-areas: "parrafoUno parrafoUno" "marvel dc" "shop shop";
-    grid-row-gap: 2px; }
-    #mainColecciones #parrafoUno .parrafo .parrafo__Titulo {
-      font-size: 18px;
-      margin-top: 5px;
-      line-height: 50px;
-      text-align: center; }
-    #mainColecciones #parrafoUno .parrafo .parrafo__Texto {
-      display: none; }
-    #mainColecciones .marvel {
-      grid-template-columns: 1fr;
-      grid-template-rows: 0.5fr 1fr;
-      grid-template-areas: "categoriaMarvel" "capi"; }
-      #mainColecciones .marvel a {
-        font-size: 18px;
-        align-self: end; }
-      #mainColecciones .marvel #wallCapi {
-        width: 180px;
-        height: 100px; }
-    #mainColecciones .dc {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 0.5fr 1fr;
-      grid-template-areas: "categoriaDc" "flash"; }
-      #mainColecciones .dc a {
-        font-size: 18px;
-        align-self: end; }
-      #mainColecciones .dc #wallFlash {
-        width: 180px;
-        height: 100px; }
-    #mainColecciones .sw {
-      display: none; }
-    #mainColecciones .shop {
-      font-size: 16px;
-      align-self: center; }
-    #mainColecciones .franquicia-marvel {
-      border: #f04f97 solid 4px;
-      width: 200px;
-      height: 300px; }
-    #mainColecciones .franquicia-dc {
-      border: #eef356 solid 4px;
-      width: 200px;
-      height: 300px; }
-  #mainContacto {
-    height: 155vh;
-    grid-template-rows: 0.1fr 2fr; }
-    #mainContacto .parrafo {
-      margin-left: 0px;
-      margin-right: 0px;
-      margin-top: 0px;
-      align-self: start; }
-      #mainContacto .parrafo .parrafo__Titulo {
-        font-size: 20px;
-        margin-top: 5px; }
-      #mainContacto .parrafo .parrafo__Texto {
-        margin-top: 0px;
-        margin-left: 40px;
-        font-size: 13px; }
-    #mainContacto .formulario {
-      margin-left: 20px;
-      margin-right: 20px; }
-      #mainContacto .formulario form .datos {
-        width: 100%;
-        margin-top: 20px; }
-      #mainContacto .formulario form .datosDos {
-        width: 100%; }
-        #mainContacto .formulario form .datosDos .textoDatos {
-          font-size: 13px; }
-        #mainContacto .formulario form .datosDos .lineas {
-          display: flex;
-          flex-direction: column; }
-          #mainContacto .formulario form .datosDos .lineas label {
-            margin-right: 5px;
-            margin-left: 1px;
-            margin-bottom: 5px;
-            font-size: 12px; }
-            #mainContacto .formulario form .datosDos .lineas label input {
-              margin-left: 5px;
-              margin-bottom: 5px; }
-      #mainContacto .formulario form .datosTres {
-        width: 100%; }
-        #mainContacto .formulario form .datosTres .textoDatos {
-          font-size: 13px; }
-        #mainContacto .formulario form .datosTres .licencias {
-          display: flex;
-          flex-direction: column; }
-          #mainContacto .formulario form .datosTres .licencias label {
-            margin-right: 5px;
-            margin-left: 1px;
-            margin-bottom: 5px;
-            font-size: 12px; }
-            #mainContacto .formulario form .datosTres .licencias label input {
-              margin-left: 5px;
-              margin-bottom: 5px; }
-      #mainContacto .formulario form .datosCuatro {
-        width: 100%; }
-      #mainContacto .formulario form .datosCinco {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.5fr 1fr;
-        grid-template-areas: "novedades novedades" "opciones btnEnviar"; }
-        #mainContacto .formulario form .datosCinco p {
-          grid-area: novedades; }
-        #mainContacto .formulario form .datosCinco .opciones {
-          grid-area: opciones; }
-        #mainContacto .formulario form .datosCinco .enviar {
-          grid-area: btnEnviar;
-          justify-self: right; }
   footer {
     height: 6vh; }
     footer .textoFooter {

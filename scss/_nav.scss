@@ -35,10 +35,10 @@ nav{
     justify-self: center; 
     
         #busqueda{
-                height: 25px;
-                width: 130px;
-                border-radius: 15px;
-                border: white;
+            height: 25px;
+            width: 130px;
+            border-radius: 15px;
+            border: white;
         }
 
         #botonBuscar{
@@ -54,7 +54,99 @@ nav{
     }
 }
 
+/* Media Queries */
 
-@import "./queries";
+@media screen and (min-width: 1280px){
+    nav{
+        height: 9vh;
+        grid-template-columns: 2.5fr 1fr;
+        
+        li{
+            font-size: 26px;
+            justify-self: center;
+        }
 
+        #buscador{
+            #busqueda{
+                height: 30px;
+                width: 160px;
+            }
 
+            #botonBuscar{
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1279px){
+    nav{
+        height: 8vh;
+        grid-template-columns: 2fr 1fr;
+
+        li{
+            font-size: 15px;
+            padding: 3px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    nav{
+        height: 24vh;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "listaMenu";     
+        background-color: white;
+        justify-items: stretch;
+
+        a{
+            &:link, &:visited, &:active{
+                font-size: 10px;
+                text-align: center;
+            }
+        }
+
+        li{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            padding: 8px; 
+            background-color: $color-background;
+        }
+
+        #buscador{
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+    nav{
+        height: 24vh;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "listaMenu";     
+        background-color: white;
+        justify-items: stretch;
+
+        a{
+            &:link, &:visited, &:active{
+                font-size: 10px;
+                text-align: center;
+            }
+        }
+
+        li{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            padding: 8px; 
+            background-color: $color-background;
+        }
+
+        #buscador{
+            display: none;
+        }
+    }
+}
