@@ -1630,52 +1630,54 @@ nav {
           justify-self: right; } }
 
 @media screen and (max-width: 480px) {
-  #mainIndex #multimedia {
-    grid-column-gap: 10px; }
-    #mainIndex #multimedia #videos {
-      height: 30vh;
-      grid-template-rows: 0.5fr 1fr; }
-      #mainIndex #multimedia #videos .videoPrincipal .video__Titulo {
-        font-size: 10px;
-        line-height: 12px;
-        align-self: center; }
-      #mainIndex #multimedia #videos .videoPrincipal .video__Texto {
-        font-size: 8px;
-        font-weight: 500;
-        line-height: 12px;
-        margin-top: 8px; }
-      #mainIndex #multimedia #videos #iframeV {
-        align-self: center; }
-        #mainIndex #multimedia #videos #iframeV iframe {
-          width: 119px;
-          height: 80px; }
-    #mainIndex #multimedia #fotos {
-      height: 30vh;
-      grid-template-rows: 0.5fr 1fr; }
-      #mainIndex #multimedia #fotos .fotoPrincipal .foto__Titulo {
-        font-size: 10px;
-        line-height: 12px;
-        align-self: center; }
-      #mainIndex #multimedia #fotos .fotoPrincipal .foto__Texto {
-        font-size: 8px;
-        font-weight: 500;
-        line-height: 12px;
-        margin-top: 8px; }
-      #mainIndex #multimedia #fotos .portadaFotos {
-        align-self: center; }
-        #mainIndex #multimedia #fotos .portadaFotos #portadaDeFotos {
-          width: 119px;
-          height: 80px; }
-  #mainIndex #picSpider {
-    align-self: center; }
-    #mainIndex #picSpider .pic #spiderManPortada {
-      width: 190px;
-      height: 190px; }
-    #mainIndex #picSpider #slogan {
-      justify-self: left;
-      translate: -40px;
-      text-align: center;
-      font-size: 18px; }
+  #mainIndex {
+    grid-template-rows: 0.1fr 1fr 0.5fr; }
+    #mainIndex #multimedia {
+      grid-column-gap: 10px; }
+      #mainIndex #multimedia #videos {
+        height: 30vh;
+        grid-template-rows: 0.5fr 1fr; }
+        #mainIndex #multimedia #videos .videoPrincipal .video__Titulo {
+          font-size: 10px;
+          line-height: 12px;
+          align-self: center; }
+        #mainIndex #multimedia #videos .videoPrincipal .video__Texto {
+          font-size: 8px;
+          font-weight: 500;
+          line-height: 12px;
+          margin-top: 8px; }
+        #mainIndex #multimedia #videos #iframeV {
+          align-self: center; }
+          #mainIndex #multimedia #videos #iframeV iframe {
+            width: 119px;
+            height: 80px; }
+      #mainIndex #multimedia #fotos {
+        height: 30vh;
+        grid-template-rows: 0.5fr 1fr; }
+        #mainIndex #multimedia #fotos .fotoPrincipal .foto__Titulo {
+          font-size: 10px;
+          line-height: 12px;
+          align-self: center; }
+        #mainIndex #multimedia #fotos .fotoPrincipal .foto__Texto {
+          font-size: 8px;
+          font-weight: 500;
+          line-height: 12px;
+          margin-top: 8px; }
+        #mainIndex #multimedia #fotos .portadaFotos {
+          align-self: center; }
+          #mainIndex #multimedia #fotos .portadaFotos #portadaDeFotos {
+            width: 119px;
+            height: 80px; }
+    #mainIndex #picSpider {
+      align-self: center; }
+      #mainIndex #picSpider .pic #spiderManPortada {
+        width: 190px;
+        height: 190px; }
+      #mainIndex #picSpider #slogan {
+        justify-self: left;
+        translate: -40px;
+        text-align: center;
+        font-size: 18px; }
   #mainHistoria #parrafoUno .parrafo .parrafo__Titulo {
     font-size: 18px;
     text-align: center; }
@@ -1691,19 +1693,20 @@ nav {
     grid-row-gap: 15px;
     grid-column-gap: 15px; }
     #mainHistoria #parrafoDos .fotoParrafoDos {
-      grid-area: fotoSectParrafoDos; }
+      grid-area: fotoSectParrafoDos;
+      justify-self: right; }
       #mainHistoria #parrafoDos .fotoParrafoDos #fotoTiendaFunko {
         width: 190px;
         height: 120px;
-        margin-left: 10px; }
+        margin-left: 0px; }
     #mainHistoria #parrafoDos .fotoParaMobil {
       grid-area: fotoParaMobil;
       display: block;
-      justify-items: center; }
+      justify-self: left; }
       #mainHistoria #parrafoDos .fotoParaMobil img {
         width: 190px;
         height: 120px;
-        margin-right: 10px; }
+        margin-right: 0px; }
     #mainHistoria #parrafoDos .parrafo {
       font-size: 12px;
       line-height: 20px;
