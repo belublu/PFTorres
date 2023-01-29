@@ -1854,7 +1854,7 @@ nav {
       width: 150px;
       height: 300px; }
   #mainContacto {
-    height: 190vh;
+    height: 210vh;
     grid-template-rows: 0.1fr 2fr; }
     #mainContacto .parrafo {
       margin-left: 0px;
