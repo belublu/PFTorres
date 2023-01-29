@@ -188,7 +188,7 @@ header {
 
 @media screen and (max-width: 480px) {
   header {
-    height: 8vh;
+    height: 15vh;
     grid-template-columns: 2fr 0.1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "imgFunko fuenteBoton" "imgFunko fuenteBoton"; }
@@ -292,7 +292,7 @@ nav {
 
 @media screen and (max-width: 480px) {
   nav {
-    height: 45vh;
+    height: 42vh;
     grid-template-columns: 1fr;
     grid-template-areas: "listaMenu";
     background-color: white;
