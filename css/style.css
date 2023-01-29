@@ -1633,11 +1633,11 @@ nav {
 
 @media screen and (max-width: 480px) {
   #mainIndex {
-    grid-template-rows: 0.5fr 1fr 0.5fr; }
+    grid-template-rows: 0.5fr 1fr 1fr; }
     #mainIndex #multimedia {
       grid-column-gap: 5px; }
       #mainIndex #multimedia #videos {
-        height: 170px;
+        height: 190px;
         width: 140px;
         grid-template-rows: 0.5fr 1fr; }
         #mainIndex #multimedia #videos .videoPrincipal .video__Titulo {
@@ -1656,7 +1656,7 @@ nav {
             width: 119px;
             height: 80px; }
       #mainIndex #multimedia #fotos {
-        height: 170px;
+        height: 190px;
         width: 140px;
         grid-template-rows: 0.5fr 1fr; }
         #mainIndex #multimedia #fotos .fotoPrincipal .foto__Titulo {

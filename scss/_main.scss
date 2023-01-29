@@ -2096,13 +2096,13 @@
 
 @media screen and (max-width: 480px){
     #mainIndex{
-        grid-template-rows: 0.5fr 1fr 0.5fr;
+        grid-template-rows: 0.5fr 1fr 1fr;
     
         #multimedia{
             grid-column-gap: 5px;
 
             #videos{
-                height: 170px;
+                height: 190px;
                 width: 140px;
                 grid-template-rows: 0.5fr 1fr;
 
@@ -2133,7 +2133,7 @@
             }
 
             #fotos{
-                height: 170px;
+                height: 190px;
                 width: 140px;
                 grid-template-rows: 0.5fr 1fr;
 
