@@ -1633,13 +1633,14 @@ nav {
 
 @media screen and (max-width: 480px) {
   #mainIndex {
-    grid-template-columns: 44% 44%;
-    grid-template-rows: 0.5fr 1fr 1fr; }
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr repeat(2, 1fr);
+    /* grid-template-rows: 0.5fr 1fr 1fr; */ }
     #mainIndex #multimedia {
-      grid-column-gap: 10px; }
+      grid-column-gap: 5px; }
       #mainIndex #multimedia #videos {
         height: 200px;
-        width: 140px;
+        width: 200px;
         grid-template-rows: 0.5fr 1fr; }
         #mainIndex #multimedia #videos .videoPrincipal .video__Titulo {
           font-size: 10px;
@@ -1658,7 +1659,7 @@ nav {
             height: 80px; }
       #mainIndex #multimedia #fotos {
         height: 200px;
-        width: 140px;
+        width: 200px;
         grid-template-rows: 0.5fr 1fr; }
         #mainIndex #multimedia #fotos .fotoPrincipal .foto__Titulo {
           font-size: 10px;
@@ -1870,7 +1871,7 @@ nav {
       #mainContacto .parrafo .parrafo__Texto {
         margin-top: 0px;
         margin-left: 40px;
-        margin-right: 40px;
+        margin-right: 30px;
         font-size: 13px; }
     #mainContacto .formulario {
       margin-left: 20px;
