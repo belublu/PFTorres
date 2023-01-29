@@ -2102,7 +2102,7 @@
             grid-column-gap: 5px;
 
             #videos{
-                height: 190px;
+                height: 200px;
                 width: 140px;
                 grid-template-rows: 0.5fr 1fr;
 
@@ -2133,7 +2133,7 @@
             }
 
             #fotos{
-                height: 190px;
+                height: 200px;
                 width: 140px;
                 grid-template-rows: 0.5fr 1fr;
 
@@ -2496,6 +2496,7 @@
             .parrafo__Texto{
                 margin-top: 0px;
                 margin-left: 40px;
+                margin-right: 40px;
                 font-size: 13px;
             }
         }

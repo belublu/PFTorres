@@ -1637,7 +1637,7 @@ nav {
     #mainIndex #multimedia {
       grid-column-gap: 5px; }
       #mainIndex #multimedia #videos {
-        height: 190px;
+        height: 200px;
         width: 140px;
         grid-template-rows: 0.5fr 1fr; }
         #mainIndex #multimedia #videos .videoPrincipal .video__Titulo {
@@ -1656,7 +1656,7 @@ nav {
             width: 119px;
             height: 80px; }
       #mainIndex #multimedia #fotos {
-        height: 190px;
+        height: 200px;
         width: 140px;
         grid-template-rows: 0.5fr 1fr; }
         #mainIndex #multimedia #fotos .fotoPrincipal .foto__Titulo {
@@ -1869,6 +1869,7 @@ nav {
       #mainContacto .parrafo .parrafo__Texto {
         margin-top: 0px;
         margin-left: 40px;
+        margin-right: 40px;
         font-size: 13px; }
     #mainContacto .formulario {
       margin-left: 20px;
