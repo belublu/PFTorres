@@ -200,7 +200,7 @@ header {
       margin-right: 0px;
       grid-row-gap: 3px; }
       header .fuenteBoton #botonLogin, header .fuenteBoton #botonRegistro {
-        font-size: 8px;
+        font-size: 9px;
         width: 70px;
         height: 20px;
         border-radius: 8px;
@@ -292,7 +292,7 @@ nav {
 
 @media screen and (max-width: 480px) {
   nav {
-    height: 40vh;
+    height: 45vh;
     grid-template-columns: 1fr;
     grid-template-areas: "listaMenu";
     background-color: white;
