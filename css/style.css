@@ -1854,6 +1854,7 @@ nav {
       width: 150px;
       height: 300px; }
   #mainContacto {
+    height: 190vh;
     grid-template-rows: 0.1fr 2fr; }
     #mainContacto .parrafo {
       margin-left: 0px;
@@ -1873,6 +1874,8 @@ nav {
       #mainContacto .formulario form .datos {
         width: 90%;
         margin-top: 20px; }
+        #mainContacto .formulario form .datos .nombre input, #mainContacto .formulario form .datos .apellido input, #mainContacto .formulario form .datos .genero input, #mainContacto .formulario form .datos .edad input {
+          width: 280px; }
       #mainContacto .formulario form .datosDos {
         width: 90%; }
         #mainContacto .formulario form .datosDos .textoDatos {
@@ -1908,7 +1911,7 @@ nav {
       #mainContacto .formulario form .datosCinco {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.5fr 1fr;
+        grid-template-rows: 0.2fr 1fr;
         grid-template-areas: "novedades novedades" "opciones btnEnviar"; }
         #mainContacto .formulario form .datosCinco p {
           grid-area: novedades; }

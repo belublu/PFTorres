@@ -2477,7 +2477,7 @@
     }
 
     #mainContacto{
-        
+       height: 190vh; 
         grid-template-rows: 0.1fr 2fr;
         
         .parrafo{
@@ -2506,6 +2506,12 @@
                 .datos{
                     width: 90%;
                     margin-top: 20px;
+
+                    .nombre, .apellido, .genero, .edad{
+                        input{
+                            width: 280px;
+                        }
+                    }
                 }
 
                 .datosDos{  
@@ -2565,7 +2571,7 @@
                 .datosCinco{
                     display: grid;
                     grid-template-columns: 1fr 1fr;
-                    grid-template-rows: 0.5fr 1fr;
+                    grid-template-rows: 0.2fr 1fr;
                     grid-template-areas: 
                     "novedades novedades"
                     "opciones btnEnviar";
