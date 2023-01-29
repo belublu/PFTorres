@@ -2096,8 +2096,6 @@
 
 @media screen and (max-width: 480px){
     #mainIndex{
-       
-
         #multimedia{
             grid-column-gap: 10px;
 
@@ -2109,13 +2107,14 @@
                     .video__Titulo{
                         font-size: 10px;
                         line-height: 12px;
+                        align-self: center;
                     }
 
                     .video__Texto{
                         font-size: 8px;
                         font-weight:500;
                         line-height: 12px;
-                        margin-top: 10px;
+                        margin-top: 8px;
                     }
                 }
 
@@ -2123,8 +2122,8 @@
                     align-self: center;
 
                     iframe{
-                        width: 159px;
-                        height: 109px;
+                        width: 119px;
+                        height: 80px;
                     }
                 }
             }
@@ -2137,13 +2136,14 @@
                     .foto__Titulo{
                         font-size: 10px;
                         line-height: 12px;
+                        align-self: center;
                     }
 
                     .foto__Texto{
                         font-size: 8px;
                         font-weight:500;
                         line-height: 12px;
-                        margin-top: 10px;
+                        margin-top: 8px;
                     }
                 }
 
@@ -2151,8 +2151,8 @@
                     align-self: center;
 
                     #portadaDeFotos{
-                        width: 159px;
-                        height: 109px;
+                        width: 119px;
+                        height: 80px;
                     }
                 }
             }
