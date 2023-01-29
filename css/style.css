@@ -22,7 +22,6 @@ body {
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas: "headeri" "nav" "main" "footer"; }
 
-/* Se aplica Grids+Flexbox */
 header {
   height: 30vh;
   grid-area: headeri;
