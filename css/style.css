@@ -292,7 +292,7 @@ nav {
 
 @media screen and (max-width: 480px) {
   nav {
-    height: 30vh;
+    height: 45vh;
     grid-template-columns: 1fr;
     grid-template-areas: "listaMenu";
     background-color: white;
