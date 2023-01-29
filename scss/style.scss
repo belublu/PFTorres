@@ -21,11 +21,11 @@
 
 body{
     width: 100vw;
-    height: 80vh;
+    height: 70vh;
     overflow-x: hidden;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: 
     "headeri"
     "nav"
@@ -38,4 +38,5 @@ body{
 @import "./nav";
 @import "./main";
 @import "./footer";
+@import "./queries";
 

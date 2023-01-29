@@ -2,17 +2,21 @@ footer{
     height: 10vh;
     background-color: $color-background;
     grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "textFooter";
+    align-items: center;
     
-    #textoFooter{
-        margin-top: 20px;
-      
-        .textoNegritaFooter{
-            font-weight: bold;
-            color: white;
-            font-family: $font-general;
-            text-align: center;
-            align-self: end;
-        }
+    .textoFooter{
+        font-weight: bold;
+        color: white;
+        font-family: $font-general;
+        font-size: 30px;
+        text-align: center;
+        grid-area: textFooter;
+        
     }
 }
 

@@ -1,73 +1,165 @@
-/* @media screen and (max-width: 2560px){
+@media screen and (min-width: 1280px){
     header{
+        height: 17vh;
+        grid-template-columns: 0.3fr 2fr 0.5fr;
+
         #logosRedes{
-            padding-top: 20px;
-            padding-left: 20px;
-            
             #logoInstagram{
-                height: 60px;
-                width: 60px;
+                height: 40px;
+                width: 40px;
             }
-    
-             #logoFacebook{
-                height: 60px;
-                width: 60px;
-            }    
-    
-            #logoTwitter{ 
-                height: 60px;
-                width: 60px;
+
+            #logoFacebook{
+                height: 40px;
+                width: 40px;
+            }
+
+            #logoTwitter{
+                height: 40px;
+                width: 40px;
             }
         }
         
         .imgFunko{
-            a{   
+            a{
                 h1{
-                    font-size: 10em;
+                    font-size: 6em;
                 }
             }
         }
-    
+
         .fuenteBoton{
-        margin-top: 20px;
-        grid-row-gap: 10px;
-    
-        #botonLogin{
-            width: 210px;
-            height:60px;
-            border-radius: 15px;
-            border: $color-background solid 4px;
-            font-size: 30px;
+            justify-self: right;
+
+            #botonLogin{
+                width: 140px;
+                height: 40px;
+                font-size: 16px;
             }
-    
+
             #botonRegistro{
-                width: 210px;
-                height:60px;
-                border-radius: 15px;
-                border: $color-background solid 4px;
-                font-size: 30px;
+                width: 140px;
+                height: 40px;
+                font-size: 16px;
             }
         }
     }
-}
- */
 
+    nav{
+        height: 9vh;
+        grid-template-columns: 2.5fr 1fr;
+        
+        li{
+            font-size: 26px;
+            justify-self: center;
+        }
 
+        #buscador{
+            #busqueda{
+                height: 30px;
+                width: 160px;
+            }
 
-@media (max-width: 1024px){
-    header{
-        grid-template-columns: 0.4fr 2fr 0.5fr;
+                #botonBuscar{
+                    font-size: 22px;
+                }
+            }
+    }
+
+    #mainIndex{
+        #multimedia{
+            #videos{
+                height: 600px;
+                grid-template-rows: 1fr 1fr;
+
+                .videoPrincipal{
+                    .video__Titulo{
+                        font-size: 30px;
+                        line-height: 35px;
+                        margin-bottom: 20px;
+                    
+                    }
+
+                    .video__Texto{
+                        font-size: 24px;
+                        line-height: 30px;
+                    }
+                }
+
+                #iframeV{
+                    align-self: start;
+                    iframe{
+                        width: 379px;
+                        height: 250px;
+                    }
+                }
+            }
+
+            #fotos{
+                height: 600px;
+                grid-template-rows: 1fr 1fr;
+
+                .fotoPrincipal{
+                    .foto__Titulo{
+                        font-size: 30px;
+                        line-height: 35px;
+                        margin-bottom: 20px;
+                    }
+
+                    .foto__Texto{
+                        font-size: 24px;
+                        line-height: 30px;
+                    }
+                }
+
+                .portadaFotos{
+                    align-self: start;
+
+                    #portadaDeFotos{
+                        width: 350px;
+                        height: 250px;
+                    }
+                }
+            }
+        }
+
+        #picSpider{
+            .pic{
+                #spiderManPortada{
+                    width: 575px;
+                    height: 575px;
+                }
+            }
+
+            #slogan{
+                text-align: center;
+                font-size: 50px;
+                text-align: center;
+                justify-self: right;
+                translate: -40px ;
+                &:hover{
+                    transform:scale(1.2);
+                }
+            }
+        }
     }
 
     #mainHistoria{
         #parrafoUno{
             .parrafo{
+                font-size: 20px;
+                line-height: 25px;
+
                 .parrafo__Titulo{
                     margin-top: 20px;
                 }
 
                 .parrafo__Texto{
+                    font-size: 18px;
                     margin-top: 20px;
+                    line-height: 35px;
+                    text-align: justify;
+                   
                 }
             }
         }
@@ -75,103 +167,311 @@
         #parrafoDos{
             .fotoParrafoDos{
                 align-self:center;
+                
+                #fotoTiendaFunko{
+                    width: 600px;
+                    height: 380px;
+                }
+            }
+
+            .parrafo{
+                font-size: 18px;
+                margin-top: 20px;
+                line-height: 35px;
+                text-align: justify;
             }
         }
 
         #parrafoTres{
+            .parrafo{
+                font-size: 18px;
+                margin-top: 20px;
+                line-height: 35px;
+                text-align: justify;
+            }
+
             .fotoParrafoTres{
                 align-self: center;
+
+                #fotoTiendaFunkoDos{
+                    width: 600px;
+                    height: 380px;
+            
+                }
             }
         }
     }
 
     #mainComunidad{
-        height: 115vh; 
+        height: 70vh; 
+        grid-template-rows: 20% 80%;
         grid-row-gap: 35px;
         
-        #parrafoUno{
+        #tituloComunidad{
             .parrafo{
                 .parrafo__Titulo{
+                    font-size: 30px;
                     margin-top: 20px;
                 }
 
                 .parrafo__Texto{
+                    font-size: 21px;
+                    line-height: 35px;
                     margin-top: 20px;
                 }
+            }
+        }
+
+        .foro{
+            grid-template-rows: 0.5fr 0.5fr 1fr;
+        
+            .foro__Titulo{
+                font-size: 30px;
+            }
+            
+            .comunidad__Texto{
+                font-size: 20px;
+                align-self: center;
+            }
+
+            .comunidad{
+                align-self: center;
+
+                #logoForo{
+                    width: 180px;
+                    height: 180px;
+                }
+            }
+        }
+
+        .telegram{
+            grid-template-rows: 0.5fr 0.5fr 1fr;
+
+            .foro__Titulo{
+                font-size: 30px;
+            }
+            
+            .comunidad__Texto{
+                font-size: 20px;
+                align-self: center;
+            }
+
+            .comunidad{
+                align-self: center;
+
+                #logoTelegram{
+                    width: 180px;
+                    height: 180px;
+                }
+            }
+        }
+
+        .discord{
+            grid-template-rows: 0.5fr 0.5fr 1fr;
+
+            .foro__Titulo{
+                font-size: 30px;
+            }
+            
+            .comunidad__Texto{
+                font-size: 20px;
+                align-self: center;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+
+            .comunidad{
+                align-self: center;
+
+                #logoDiscord{
+                    width: 180px;
+                    height: 180px;
+                }
+
+            }
+        }
+
+        $comunidades:(
+        foro: #fc6863,
+        telegram: rgb(29, 204, 146),
+        discord: #dcdc72
+        );
+        
+        @each $comunidad, $color in $comunidades{
+            .comunidad-#{$comunidad} {
+                background-color: $color;
+                width: 350px;
+                height: 550px;
             }
         }
     }
 
     #mainColecciones{
-        height: 150vh;
+        height: 100vh;
+
         #parrafoUno{
             .parrafo{
                 .parrafo__Titulo{
+                    font-size: 30px;
                     margin-top: 20px;
                 }
 
                 .parrafo__Texto{
+                    font-size: 21px;
+                    line-height: 35px;
                     margin-top: 20px;
                 }
+            }
+        }
+
+        .marvel, .dc, .sw{
+            a{
+                font-size: 30px;
+            }
+
+            #wallCapi, #wallFlash, #wallSw{
+                width: 330px;
+                height: 180px;
+            }
+        }
+
+        .shop{
+            font-size: 35px;
+        }
+
+        $franquicias:(
+            marvel: #f47fb4,
+            dc: #f0f47a,
+            sw: #76f386
+        );
+
+        @each $franquicia, $color in $franquicias{
+            .franquicia-#{$franquicia} {
+                background-color: $color;
+                height: 250px;
             }
         }
     }
 
     #mainContacto{
         .parrafo{
+            margin-top: 0px;
+
             .parrafo__Titulo{
+                font-size: 30px;
                 margin-top: 20px;
             }
 
             .parrafo__Texto{
+                font-size: 21px;
+                line-height: 35px;
                 margin-top: 20px;
             }
         }
 
         .formulario{
-
             form{
-              .datosDos{  
-                .lineas{
-                    
-                    label{
-                        margin-right: 0px;
-                        margin-left: 12px;
-                        font-size: 13px;
-                                           
-                        
-                        input{
-                            margin-right: 4px;
+                .datos{
+                    legend{
+                        font-size: 22px;
+                    }
+
+                    .nombre, .apellido, .genero, .edad{
+                        font-size: 18px;
+                    }
+                }
+
+                .datosDos{  
+                    legend{
+                        font-size: 22px;
+                    }
+
+                    .textoDatos{
+                        font-size: 20px;
+                    }
+
+                    .lineas{
+                        label{
+                            margin-right: 0px;
+                            margin-left: 12px;
+                            font-size: 18px;
                         }
+                    } 
+                }
+
+                .datosTres{    
+                    legend{
+                        font-size: 22px;
+                    }
+
+                    .textoDatos{
+                        font-size: 20px;
+                    }
+
+                    .licencias{
+                        label{
+                            margin-right: 0px;
+                            margin-left: 4px;
+                            font-size: 18px;                       
+                        }  
                     }
                 } 
-            }
+                
+                .datosCuatro{
+                    legend{
+                        font-size: 22px;
+                    }
 
-            .datosTres{    
-                .licencias{
-                    label{
-                        margin-right: 0px;
-                        margin-left: 4px;
-                        font-size: 12px;                       
-                    }  
+                    .consulta{
+                        textarea{
+                            font-size: 18px;
+                        }
+                    }
                 }
-            }  
+
+                .datosCinco{
+                    p{
+                        font-size: 22px;
+                    }
+
+                    .opciones{
+                        label{
+                            font-size: 18px;
+                        }
+                    }
+                }
+
+                .enviar{
+                    #botonEnviar{
+                        width: 150px;
+                        height: 300px;
+                        border-radius: 10px;
+                        border: $color-background solid 3px;
+                        font-size: 50px;
+                       
+                    }
+
+                    a{
+                        font-size: 20px;
+                    }
+                }
             }
-            
         }
     }
 
     footer{
-        #textoFooter{
-            .textoNegritaFooter{
-                font-size: 18px; 
-            }
+        height: 8vh;
+
+        .textoFooter{
+            font-size: 25px; 
+            
         }
     }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (min-width: 769px) and (max-width: 1279px){
     header{
+        height: 11vh;
         grid-template-columns: 0.4fr 2fr 0.5fr;
 
         #logosRedes{
@@ -196,38 +496,36 @@
         .imgFunko{
             a{
                 h1{
-                    font-size: 3em;
+                    font-size: 4em;
                 }
             }
         }
       
         .fuenteBoton{
-            #botonLogin{
-                width: 75px;
+            justify-self: right;
+            
+            #botonLogin, #botonRegistro{
+                width: 85px;
                 height: 25px;
-                font-size: 10px;
-            }
-
-            #botonRegistro{
-                width: 75px;
-                height:25px;
-                font-size: 10px;
+                font-size: 12px;
             }
         }
     }
 
     nav{
-        height: 11vh;
+        height: 8vh;
+        grid-template-columns: 2fr 1fr;
 
-        a{
-            &:link, &:visited, &:active{
-                font-size: 13px; 
-            }
+        
+
+        li{
+            font-size: 15px;
+            padding: 3px;
         }
     }
 
     #mainIndex{
-        grid-template-rows: 0.6fr 1fr 0.1fr;
+        grid-template-rows: 0.1fr 1fr 0.1fr;
 
         #multimedia{
             grid-template-columns: 46% 46%;
@@ -239,15 +537,17 @@
 
                 .videoPrincipal{
                     .video__Titulo{
-                       line-height: 24px;
-                       margin-bottom: 20px;
-                       margin-left: 15px;
-                       margin-right: 15px;
+                        font-size: 20px;
+                        line-height: 24px;
+                        margin-bottom: 20px;
+                        margin-left: 15px;
+                        margin-right: 15px;
                     }
 
                     .video__Texto{
-                        margin-left: 15px;
-                        margin-right: 15px;
+                        font-size: 14px;
+                        margin-left: 10px;
+                        margin-right: 10px;
                     }
                 }
 
@@ -267,8 +567,15 @@
 
                 .fotoPrincipal{
                     .foto__Titulo{
-                       line-height: 24px;
-                       margin-bottom: 20px;
+                        font-size: 20px;
+                        line-height: 24px;
+                        margin-bottom: 20px;
+                    }
+
+                    .foto__Texto{
+                        font-size: 14px;
+                        margin-left: 5px;
+                        margin-right: 5px;
                     }
                 }
 
@@ -292,29 +599,34 @@
             }
 
             #slogan{
-                font-size: 22px;
-                
-                justify-self: right;
-                translate: -40px ;
-                &:hover{
-                    transform:scale(1.2);
-                }
-
+                font-size: 30px;
+                text-align: center;
+                translate: -30px ;
               
             }
         }
     }
 
     #mainHistoria{
+        grid-row-gap: 10px;
+
         #parrafoUno{
             .parrafo{
-                font-size: 14px;
-                line-height: 25px;
+                .parrafo__Titulo{
+                    font-size: 25px;
+                }
+
+                .parrafo__Texto{
+                    font-size: 14px;
+                    line-height: 20px;
+                }
             }
         }
 
         #parrafoDos{
             .fotoParrafoDos{
+                align-self: center;
+
                 #fotoTiendaFunko{
                     width: 310px;
                     height: 190px;
@@ -323,20 +635,23 @@
 
             .parrafo{
                 font-size: 14px;
-                line-height: 25px;
+                line-height: 20px;
             }
         }
 
         #parrafoTres{
             .parrafo{
                 font-size: 14px;
-                line-height: 25px;
+                line-height: 20px;
             }
 
             .fotoParrafoTres{
+                align-self: center;
+
                 #fotoTiendaFunkoDos{
                     width: 310px;
                     height: 180px;
+                    
                 }
             }
         }
@@ -353,20 +668,20 @@
     }
 
     #mainComunidad{
-        height: 90vh;
+        height: 70vh;
+        grid-template-rows: 0.1fr 1fr;
 
         #tituloComunidad{
-            line-height: 20px;
+            .parrafo{
+                .parrafo__Titulo{
+                    font-size: 25px;
+                    margin-top: 5px;
+                }
 
-            #parrafoUno{
-                .parrafo{
-                    font-size: 13px;
-                    line-height: 25px;
-
-                    .parrafo__Texto{
-                        font-size: 13px;
-                        line-height: 25px;
-                    }
+                .parrafo__Texto{
+                    font-size: 14px;
+                    line-height: 20px;
+                    margin-top: 5px;
                 }
             }
         }
@@ -376,6 +691,8 @@
             width: 200px;
             height: 350px;
             margin-bottom: 10px;
+            align-self: center;
+        
 
             .foro__Titulo{
                 font-size: 21px;
@@ -400,6 +717,7 @@
             width: 200px;
             height: 350px;
             margin-bottom: 10px;
+            align-self: center;
 
             .foro__Titulo{
                 font-size: 21px;
@@ -424,6 +742,7 @@
             width: 200px;
             height: 350px;
             margin-bottom: 10px;
+            align-self: center;
 
             .foro__Titulo{
                 font-size: 21px;
@@ -445,17 +764,18 @@
     }
 
     #mainColecciones{
-        height: 140vh;
+        height: 100vh;
         grid-template-rows: 0.1fr repeat(3, 0.2fr) 0.1fr;
-    
-        
-       
 
         #parrafoUno{
             .parrafo{
-                font-size: 13px;
+                font-size: 14px;
                 line-height: 25px;
                 margin-bottom: 0px;
+
+                .parrafo__Titulo{
+                    font-size: 25px;
+                }
             }
         }
 
@@ -466,7 +786,7 @@
             
 
             a{
-                font-size: 25px;
+                font-size: 22px;
             }
 
             #wallCapi{
@@ -481,7 +801,7 @@
             align-self: start;
 
             a{
-                font-size: 25px;
+                font-size: 22px;
             }
 
             #wallFlash{
@@ -496,7 +816,7 @@
             align-self: start;
 
             a{
-                font-size: 25px;
+                font-size: 22px;
             }
 
             #wallSw{
@@ -506,172 +826,98 @@
         }
 
         .shop{
-            font-size: 20px;
+            font-size: 22px;
         }
 
     }
 
     #mainContacto{
+        height: 120vh;
+        grid-template-rows: 0.1fr 1fr;
         
-        margin-right: 20px;
         .parrafo{
-            font-size: 13px;
-            align-self: end;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 0px;
+            align-self: start;
+
+            .parrafo__Titulo{
+                font-size: 25px;
+                margin-top: 5px;
+            }
+
+            .parrafo__Texto{
+                margin-top: 0px;
+                margin-left: 40px;
+                font-size: 14px;
+            }
         }
 
         .formulario{
             form{
-              .datosDos{  
-                .lineas{
-                    label{
-                        margin-right: 0px;
-                        margin-left: 10px;
-                        font-size: 11px;
-                                           
+                
+                .datos{
+                    margin-top: 20px;
+                }
+
+                .datosDos{  
+                    width: 100%;
+
+                    .lineas{
                         
-                        input{
-                            margin-right: 4px;
-                        }
+                        label{
+                            margin-right: 0px;
+                            margin-left: 8px;
+                            font-size: 12px;
+    
+                            input{
+                                margin-right: 1px;
+                            }
+                        }                        
+                    } 
+                }
+
+                .datosTres{    
+                    width: 100%;
+
+                    .licencias{
+                        label{
+                            margin-right: 0px;
+                            margin-left: 8px;
+                            font-size: 11px;
+    
+                            input{
+                                margin-right: 1px;
+                            }
+                        }       
                     }
-                } 
-            }
+                }  
 
-            .datosTres{    
-                .licencias{
-                    label{
-                        font-size: 10px;                       
-                    }  
+                .datosCuatro{
+                    width: 100%;
                 }
-            }  
+
+                .datosCinco{
+                    width: 100%;
+                }
             }
             
         }
     }
 
-    footer{
-        #textoFooter{
-            .textoNegritaFooter{
-                font-size: 12px;
-                
-                
-            }
-        }
-    };
-}
-
-@media screen and (max-width: 600px){
-    header{
-        height: 20vh;
-
-        #logosRedes{
-            grid-column-gap: 5px;
-        }
-
-        .imgFunko{
-            a{
-                h1{
-                    font-size: 2.5em;
-                }
-            }
-        }
-
-        .fuenteBoton{
-            grid-row-gap: 7px;
-        }
-    }
-    
-    nav{
-        height: 10vh;
-
-        a{
-            &:link, &:visited, &:active{
-                font-size: 11px; 
-            }
-        }
-
-        li{
-            padding: 7px;
-            margin: 3px;
-        }
-    }
-
-    #mainIndex{
-        height: 125vh;
-    }
-
-    #mainHistoria{
-        grid-row-gap: 25px;
-        grid-template-rows: 0.5r 0.5fr 0.3fr 1fr;
-
-        #parrafoDos{
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 0.1fr 0.5fr;
-            grid-template-areas: 
-            "fotoSectParrafoDos fotoParaMobil"
-            "sectParrafoDos sectParrafoDos";
-            justify-items: center;
-            grid-row-gap: 25px;
-    
-            .fotoParrafoDos{
-                grid-area: fotoSectParrafoDos;
-                #fotoTiendaFunko{
-                    width: 230px;
-                    height: 160px;
-                    margin-left: 10px;
-                }
-            }
-    
-            .fotoParaMobil{
-                grid-area: fotoParaMobil;
-                display: block;
-                justify-items: center;
-                align-self: center;
+     footer{
+        height: 7vh;
+        .textoFooter{
+            font-size: 18px; 
             
-                img{
-                    width: 230px;
-                    height: 160px;
-                    margin-right: 10px;
-                }
-            }
-    
-            .parrafo{
-                font-size: 14px;
-                line-height: 25px;
-            }
-        }
-    
-        #parrafoTres{
-            grid-template-columns: 1fr;
-            grid-template-rows: 0.2fr;
-            grid-template-areas: 
-            "sectParrafoTres sectParrafoTres";
-
-            .parrafo{
-                @include paragraph;
-                grid-area: sectParrafoTres;
-                align-self: center;
-                font-size: 14px;
-                line-height: 25px;
-            }
-
-            .fotoParrafoTres{
-                display: none;
-
-            }
-        }
-    }
-
-    #mainComunidad{
-        .foro, .telegram, .discord{
-            width: 170px;
-            align-self: center;
         }
     }
 }
 
-@media screen and (max-width: 480px) {
+
+@media screen and (min-width: 481px) and (max-width: 768px){
     header{
-        height: 18vh;
+        height: 12vh;
         grid-template-columns: 2fr 0.1fr ;
         grid-template-rows: 1fr 1fr;
         grid-template-areas: 
@@ -683,24 +929,30 @@
         }
 
         .imgFunko{
-            margin-left: 15px;
+            a{
+                h1{
+                    font-size: 3em;  
+                }
+            }
         }
 
         .fuenteBoton{
             margin-right: 0px;
+            grid-row-gap: 3px;
 
             #botonLogin, #botonRegistro{
                 font-size: 7px;
                 width: 70px;
                 height:20px;
                 border-radius: 8px;
+                border: $color-background solid 2px;
                 margin-right: 0px;
             }
         }
     }
 
     nav{
-        height: 35vh;
+        height: 24vh;
         grid-template-columns: 1fr;
         grid-template-areas: 
         "listaMenu";     
@@ -730,28 +982,32 @@
     }
 
     #mainIndex{
-        height: 135vh;
+        height: 75vh;
 
         #multimedia{
             grid-column-gap: 10px;
 
             #videos{
-                height: 65vh;
+                height: 30vh;
+                grid-template-rows: 0.5fr 1fr;
 
                 .videoPrincipal{
                     .video__Titulo{
-                        font-size: 14px;
-                        line-height: 15px;
+                        font-size: 10px;
+                        line-height: 12px;
                     }
 
                     .video__Texto{
-                        font-size: 13px;
+                        font-size: 8px;
                         font-weight:500;
-                        line-height: 15px;
+                        line-height: 12px;
+                        margin-top: 10px;
                     }
                 }
 
                 #iframeV{
+                    align-self: center;
+
                     iframe{
                         width: 159px;
                         height: 109px;
@@ -760,22 +1016,26 @@
             }
 
             #fotos{
-                height: 65vh;
+                height: 30vh;
+                grid-template-rows: 0.5fr 1fr;
 
                 .fotoPrincipal{
                     .foto__Titulo{
-                        font-size: 14px;
-                        line-height: 15px;
+                        font-size: 10px;
+                        line-height: 12px;
                     }
 
                     .foto__Texto{
-                        font-size: 13px;
+                        font-size: 8px;
                         font-weight:500;
-                        line-height: 15px;
+                        line-height: 12px;
+                        margin-top: 10px;
                     }
                 }
 
                 .portadaFotos{
+                    align-self: center;
+
                     #portadaDeFotos{
                         width: 159px;
                         height: 109px;
@@ -884,7 +1144,7 @@
     }
 
     #mainComunidad{
-        height: 120vh;
+        height: 65vh;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, 0.1fr);
         grid-template-areas:
@@ -1016,14 +1276,14 @@
     }
 
     #mainColecciones{
-        height: 90vh;
+        height: 60vh;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.1fr 0.5fr 0.5fr;
+        grid-template-rows: 0.5fr 1fr 0.5fr;
         grid-template-areas: 
         "parrafoUno parrafoUno"
         "marvel dc"
         "shop shop";
-        grid-row-gap: 10px;
+        grid-row-gap: 2px;
 
         #parrafoUno{    
             .parrafo{
@@ -1083,7 +1343,7 @@
 
         .shop{
             font-size: 16px;
-            align-self: end;
+            align-self: center;
         }
 
         $borderFranquicias:(
@@ -1102,199 +1362,709 @@
 
     }
 
-    footer{
-        height: 10vh;
+    #mainContacto{
+        height: 155vh;
+        grid-template-rows: 0.1fr 2fr;
+        
+        .parrafo{
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 0px;
+            align-self: start;
 
-            .textoNegritaFooter{
-                font-size: 10px;
+            .parrafo__Titulo{
+                font-size: 20px;
+                margin-top: 5px;
             }
-    };
+
+            .parrafo__Texto{
+                margin-top: 0px;
+                margin-left: 40px;
+                font-size: 13px;
+            }
+        }
+
+        .formulario{
+            margin-left: 20px;
+            margin-right: 20px;
+
+            form{ 
+                .datos{
+                    width: 100%;
+                    margin-top: 20px;
+                }
+
+                .datosDos{  
+                    width: 100%;
+
+                    .textoDatos{
+                        font-size: 13px;
+                    }
+                    
+                    .lineas{
+                        display: flex;
+                        flex-direction:column;
+
+                        label{
+                            margin-right: 5px;
+                            margin-left: 1px;
+                            margin-bottom: 5px;
+                            font-size: 12px;
+
+                            input{
+                                margin-left: 5px;
+                                margin-bottom: 5px;
+                            }
+    
+                           
+                        }                        
+                    } 
+                }
+
+                .datosTres{    
+                    width: 100%;
+
+                    .textoDatos{
+                        font-size: 13px;
+                    }
+
+                    .licencias{
+                        display: flex;
+                        flex-direction:column;
+        
+                    
+                        label{    
+                            margin-right: 5px;
+                            margin-left: 1px;
+                            margin-bottom: 5px;
+                            font-size: 12px;
+
+                            input{
+                                margin-left: 5px;
+                                margin-bottom: 5px;
+                            }
+                            
+    
+                            
+                        }       
+                    }
+                }  
+
+                .datosCuatro{
+                    width: 100%;                    
+                }
+
+                .datosCinco{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 0.5fr 1fr;
+                    grid-template-areas: 
+                    "novedades novedades"
+                    "opciones btnEnviar";
+
+                    p{
+                        grid-area: novedades;
+                    }
+
+                    .opciones{
+                        grid-area: opciones;
+                    }
+
+                    .enviar{
+                        grid-area: btnEnviar;
+                        justify-self: right;
+                    }
+                   
+                  
+                    
+                }
+            }
+            
+        }
+    }
+
+    footer{
+        height: 6vh;
+
+        .textoFooter{
+            font-size: 14px;
+        }
+    }
 }
 
-
-/* @media (max-width: 320px){
-    
+@media screen and (max-width: 480px){
     header{
-        grid-template-columns: 2fr 1fr ;
-        background-color: green;
+        height: 12vh;
+        grid-template-columns: 2fr 0.1fr ;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "imgFunko fuenteBoton"
+        "imgFunko fuenteBoton";
+
+        #logosRedes{
+            display: none;
+        }
 
         .imgFunko{
-            margin-left: 0px;
-            justify-self: right;
-           
-           
-            #logoFunko2{
-                width: 88px;
-                height: 33px;
-                translate: none;       
-                margin-right: 30px;      
-            } 
+            a{
+                h1{
+                    font-size: 3em;  
+                }
+            }
         }
 
         .fuenteBoton{
-            justify-self: right;
+            margin-right: 0px;
+            grid-row-gap: 3px;
 
-            #botonLogin{
-                width: 60px;
-                height: 18px;
-                border-radius: 7px;
+            #botonLogin, #botonRegistro{
+                font-size: 7px;
+                width: 70px;
+                height:20px;
+                border-radius: 8px;
                 border: $color-background solid 2px;
-                font-size: 8px;
-            }
-
-            #botonRegistro{
-                width: 60px;
-                height: 18px;
-                border-radius: 7px;
-                border: $color-background solid 2px;
-                font-size: 8px;
-
+                margin-right: 0px;
             }
         }
     }
 
-    #mainIndex{
-        height: 155vh;
+    nav{
+        height: 24vh;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "listaMenu";     
+        background-color: white;
+        justify-items: stretch;
 
-        #fotoPortada{
-            margin-top: 7px;
-            margin-bottom: 7px;
+        a{
+            &:link, &:visited, &:active{
+                font-size: 10px;
+                text-align: center;
+            }
         }
 
+        li{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            padding: 8px; 
+            background-color: $color-background;
+           
+            
+        }
+
+        #buscador{
+            display: none;
+        }
+    }
+
+    #mainIndex{
+        height: 75vh;
+
         #multimedia{
+            grid-column-gap: 10px;
+
             #videos{
+                height: 30vh;
+                grid-template-rows: 0.5fr 1fr;
+
                 .videoPrincipal{
-                   .video__Titulo{
-                        font-size: 11px;
-                        margin-left: 5px;
-                        margin-right: 2px;
-                        line-height: 15px;
-                    } 
+                    .video__Titulo{
+                        font-size: 10px;
+                        line-height: 12px;
+                    }
+
+                    .video__Texto{
+                        font-size: 8px;
+                        font-weight:500;
+                        line-height: 12px;
+                        margin-top: 10px;
+                    }
                 }
 
                 #iframeV{
+                    align-self: center;
+
                     iframe{
-                        width: 130px;
-                        height: 100px;
+                        width: 159px;
+                        height: 109px;
                     }
                 }
             }
 
             #fotos{
+                height: 30vh;
+                grid-template-rows: 0.5fr 1fr;
+
                 .fotoPrincipal{
                     .foto__Titulo{
-                        font-size: 11px;
-                        margin-left: 5px;
-                        margin-right: 10px;
-                        line-height: 5px;
+                        font-size: 10px;
+                        line-height: 12px;
+                    }
+
+                    .foto__Texto{
+                        font-size: 8px;
+                        font-weight:500;
+                        line-height: 12px;
+                        margin-top: 10px;
                     }
                 }
 
-                #portadaFotos{
+                .portadaFotos{
+                    align-self: center;
+
                     #portadaDeFotos{
-                        width: 130px;
-                        height: 100px;
+                        width: 159px;
+                        height: 109px;
                     }
                 }
-
             }
         }
 
         #picSpider{
-            #spiderManIndex{
+            .pic{
                 #spiderManPortada{
-                    width: 180px;
-                    height: 180px;
-
-                    &:hover{
-                        transform: translate(-30px);
-                    }
+                    width: 190px;
+                    height: 190px;
                 }
             }
 
             #slogan{
                 justify-self: left;
-                translate: -20px;
-
-                .slogan__Texto{
-                    font-size: 10px;
-                    text-align: center;
-
-                    &:hover{
-                        transform:scale(1.1);
-                    }
-
-                }
+                translate: -40px;
+                text-align: center;
+                font-size: 18px;
             }
         }
-
     }
 
     #mainHistoria{
-        #parrafoDos{    
+        grid-row-gap: 15px;
+
+        #parrafoUno{
+            .parrafo{
+                .parrafo__Titulo{
+                    font-size: 18px;
+                    text-align: center;
+                    
+                }
+                .parrafo__Texto{
+                    font-size: 12px;
+                    line-height: 20px;
+                    text-align: justify;
+                }
+            }
+        }
+    
+        #parrafoDos{
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+            "fotoSectParrafoDos fotoParaMobil"
+            "sectParrafoDos sectParrafoDos";
+            justify-items: center;
+            grid-row-gap: 5px;
+            grid-column-gap: 15px;
+    
             .fotoParrafoDos{
+                grid-area: fotoSectParrafoDos;
                 #fotoTiendaFunko{
-                    width: 210px;
-                    height: 140px;
+                    width: 190px;
+                    height: 120px;
+                    margin-left: 10px;
                 }
             }
     
             .fotoParaMobil{
+                grid-area: fotoParaMobil;
+                display: block;
+                justify-items: center;
+            
                 img{
-                    width: 210px;
-                    height: 140px;
+                    width: 190px;
+                    height: 120px;
+                    margin-right: 10px;
+                }
+            }
+    
+            .parrafo{
+                font-size: 12px;
+                line-height: 20px;
+                text-align: justify;
+            }
+        }
+    
+        #parrafoTres{
+            display: block;
+            .parrafo{
+                
+                .parrafo__Texto{
+                    font-size: 12px;
+                    line-height: 20px;
+                    margin-right: 0px;
+                    margin-left: 0px;
+                    justify-self: center;
+                    text-align: justify;
+                }
+            }
+            
+            .fotoParrafoTres{              
+                #fotoTiendaFunkoDos{
+                    display: none;
                 }
             }
         }
+    
+        #parrafoCuatro{
+            display: none;
+    
+        }
+    }
+
+    #mainComunidad{
+        height: 65vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 0.1fr);
+        grid-template-areas:
+        "tituloComunidad"
+        "foro" 
+        "telegram"
+        "discord";
+        grid-row-gap: 15px;
+
+        #tituloComunidad{
+            #parrafoUno{
+                .parrafo{
+                    .parrafo__Titulo{
+                        font-size: 18px;
+                        text-align: center;
+                    }
+
+                    .parrafo__Texto{
+                        font-size: 12px;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+        
+        .foro{
+            border: #f44741 solid 3px;
+            width: 400px;
+            height: 100px;
+            justify-self: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: 
+                "comunidad foroTitulo"; 
+
+            align-items: center;
+            align-content: center;
+            
+            .foro__Titulo{
+                font-size: 18px;
+                justify-self: left;
+            } 
+    
+            .comunidad__Texto{
+                display: none;  
+            }
+    
+            .comunidad{
+                font-size: 18px;
+                align-content: center;
+    
+                #logoForo{
+                    width: 70px;
+                    height: 70px;   
+                    margin-top: 20px;
+                }
+            } 
+        }
+        
+        .telegram{
+            border: rgb(10, 160, 110) solid 3px;
+            width: 400px;
+            height: 100px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: 
+                "comunidad foroTitulo"; 
+            align-content: center;
+    
+            .foro__Titulo{
+                font-size: 18px;
+                justify-self: left;
+            } 
+    
+            .comunidad__Texto{
+                display: none;  
+            }
+    
+            .comunidad{
+                font-size: 18px;
+            
+                #logoTelegram{
+                    width: 70px;
+                    height: 70px;  
+                    margin-top: 20px;
+                }
+            } 
+        }
+    
+        .discord{
+            border: #c9c949 solid 3px;
+            width: 400px;
+            height: 100px;
+            justify-self: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: 
+                "comunidad foroTitulo"; 
+            align-content: center;
+    
+            .foro__Titulo{
+                font-size: 18px;
+                justify-self: left;
+            } 
+    
+            .comunidad__Texto{
+                display: none;  
+            }
+        
+            .comunidad{
+                font-size: 18px;
+    
+                #logoDiscord{
+                    width: 70px;
+                    height: 70px;  
+                    margin-top: 20px;
+                }
+            } 
+        }
+
+        
+       
+    
+        
+
     }
 
     #mainColecciones{
-        height: 100vh;       
-        
+        height: 60vh;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr 0.5fr;
+        grid-template-areas: 
+        "parrafoUno parrafoUno"
+        "marvel dc"
+        "shop shop";
+        grid-row-gap: 2px;
+
+        #parrafoUno{    
+            .parrafo{
+                .parrafo__Titulo{
+                    font-size: 18px;
+                    margin-top: 5px;
+                    line-height: 50px;
+                    text-align: center;
+                }
+
+                .parrafo__Texto{
+                    display: none;
+                }
+            }
+        }
+
         .marvel{
-            width: 140px;
-            height: 300px;
-            border: black solid 2px;
-            margin-left: 10px;
-            
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.5fr 1fr;
+            grid-template-areas: 
+            "categoriaMarvel"
+            "capi";
+    
+            a {
+                font-size: 18px;
+                align-self: end;
+            }
+    
             #wallCapi{
-                width: 100px;
-                height: 60px;
+                width: 180px;
+                height: 100px;
             }
         }
 
         .dc{
-            width: 140px;
-            height: 300px;
-            border: black solid 2px;
-            margin-right: 10px;
-            
-
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.5fr 1fr;
+            grid-template-areas: 
+            "categoriaDc"
+            "flash";
+           
+            a {
+                font-size: 18px;
+                align-self: end;
+            }
+    
             #wallFlash{
-                width: 100px;
-                height: 60px;
+                width: 180px;
+                height: 100px;      
             }
         }
-    }
-} */
+    
+        .sw{
+            display: none;
+        }
 
-/* @media screen and (orientation: landscape){
-    header{
-        height: 45vh;
+        .shop{
+            font-size: 16px;
+            align-self: center;
+        }
+
+        $borderFranquicias:(
+        marvel: #f04f97,
+        dc: #eef356,
         
+    );
+
+    @each $franquicia, $color in $borderFranquicias{
+        .franquicia-#{$franquicia} {
+            border: $color solid 4px;
+            width: 200px;
+            height: 300px;            
+        }
+    }
+
+    }
+
+    #mainContacto{
+        height: 155vh;
+        grid-template-rows: 0.1fr 2fr;
+        
+        .parrafo{
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 0px;
+            align-self: start;
+
+            .parrafo__Titulo{
+                font-size: 20px;
+                margin-top: 5px;
+            }
+
+            .parrafo__Texto{
+                margin-top: 0px;
+                margin-left: 40px;
+                font-size: 13px;
+            }
+        }
+
+        .formulario{
+            margin-left: 20px;
+            margin-right: 20px;
+
+            form{ 
+                .datos{
+                    width: 100%;
+                    margin-top: 20px;
+                }
+
+                .datosDos{  
+                    width: 100%;
+
+                    .textoDatos{
+                        font-size: 13px;
+                    }
+                    
+                    .lineas{
+                        display: flex;
+                        flex-direction:column;
+
+                        label{
+                            margin-right: 5px;
+                            margin-left: 1px;
+                            margin-bottom: 5px;
+                            font-size: 12px;
+
+                            input{
+                                margin-left: 5px;
+                                margin-bottom: 5px;
+                            }
+    
+                           
+                        }                        
+                    } 
+                }
+
+                .datosTres{    
+                    width: 100%;
+
+                    .textoDatos{
+                        font-size: 13px;
+                    }
+
+                    .licencias{
+                        display: flex;
+                        flex-direction:column;
+        
+                    
+                        label{    
+                            margin-right: 5px;
+                            margin-left: 1px;
+                            margin-bottom: 5px;
+                            font-size: 12px;
+
+                            input{
+                                margin-left: 5px;
+                                margin-bottom: 5px;
+                            }
+                            
+    
+                            
+                        }       
+                    }
+                }  
+
+                .datosCuatro{
+                    width: 100%;                    
+                }
+
+                .datosCinco{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 0.5fr 1fr;
+                    grid-template-areas: 
+                    "novedades novedades"
+                    "opciones btnEnviar";
+
+                    p{
+                        grid-area: novedades;
+                    }
+
+                    .opciones{
+                        grid-area: opciones;
+                    }
+
+                    .enviar{
+                        grid-area: btnEnviar;
+                        justify-self: right;
+                    }
+                   
+                  
+                    
+                }
+            }
+            
+        }
+    }
+
+    footer{
+        height: 6vh;
+
+        .textoFooter{
+            font-size: 14px;
+        }
     }
 }
- */
-/* @media screen and (orientation: landscape) and (max-width: 480px){
-    header{
-        height: 35vh;
-        background-color: orange;
-    }
-} */
-
-/* @media screen and (orientation: landscape) and (max-width: 320px){
-    header{
-        height: 100vh;
-        background-color: purple;
-    }
-} */

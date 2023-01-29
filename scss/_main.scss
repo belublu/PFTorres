@@ -66,7 +66,7 @@
                     font-size: 16px;
                     font-weight:500;
                     line-height: 20px;
-                    font-family: "engle";
+                    font-family: "armata";
                     text-align: center;
                 }
             }
@@ -124,7 +124,7 @@
                     font-size: 16px;
                     font-weight:500;
                     line-height: 20px;
-                    font-family: "engle";
+                    font-family: "armata";
                     text-align: center;
                    
                 }
@@ -337,11 +337,11 @@
         }
         
         .comunidad{
-            font-family: $font-general;
+            /* font-family: $font-general;
             font-size: 30px;
             font-weight: bold;
             line-height: 55px; 
-            color: $color-font-general;  
+            color: $color-font-general;  */ 
             grid-area: comunidad;
     
             #logoForo{
@@ -486,7 +486,7 @@
     height: 150vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.3fr repeat(5, 0.1fr);
+    grid-template-rows: 0.3fr repeat(4, 0.1fr);
     grid-template-areas: 
     "parrafoUno"
     "marvel"
@@ -644,15 +644,17 @@
         @include paragraph;
         line-height: 26px;
         grid-area: titulo;
+        margin-top: 30px;
         
         .parrafo__Titulo{
-            margin-top: 5px;
+            
             line-height: 50px;
             text-align: center;
         }
         
         .parrafo__Texto{
             font-size: 15px;
+            margin-top: 20px;
         }
     }        
 
@@ -664,6 +666,7 @@
         form{
             .datos{
                 margin-top: 30px;
+                
     
                 legend{
                     font-family: $font-general;
@@ -683,11 +686,16 @@
                     margin-top: 20px;
                     margin-bottom: 8px;
                     margin-left: 10px;
+
+                    input{
+                        width: 300px;
+                    }
                 }
             }
     
             .datosDos{
                 margin-top: 20px;
+                display: block;
     
                 legend{
                     font-family: $font-general;
@@ -712,23 +720,24 @@
     
                 .lineas{
                     margin-bottom: 10px;
-                
+                    display: flex;
                     label{
                         margin-right: 20px;
                         margin-left: 20px;
                         font-family: $font-general;
                         font-size: 14px;
                         font-weight: bolder;
-    
+        
                         input{
                             margin-right: 5px;
                         }
                     }
-                } 
+                }
             }
     
             .datosTres{
                 margin-top: 20px;
+              
     
                 legend{
                     font-family: $font-general;
@@ -748,23 +757,27 @@
     
                 .licencias{
                     margin-bottom: 10px;
-    
+                    display: flex;
+                    
                     label{
                         margin-right: 15x;
                         margin-left: 15px;
                         font-family: $font-general;
                         font-size: 14px;
                         font-weight: bolder;
-    
+        
                         input{
                             margin-right: 5px;
                         }
                     }  
+    
+                    
                 }
             }
     
             .datosCuatro{
                 margin-top: 20px;
+               
     
                 legend{
                     font-family: $font-general;
@@ -787,6 +800,7 @@
     
             .datosCinco{
                 margin-top: 20px;
+                
     
                 p{
                     font-family: $font-general;
