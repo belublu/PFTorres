@@ -251,7 +251,7 @@ header{
 
 @media screen and (max-width: 480px){
     header{
-        height: 11vh;
+        height: 8vh;
         grid-template-columns: 2fr 0.1fr ;
         grid-template-rows: 1fr 1fr;
         grid-template-areas: 
@@ -265,7 +265,7 @@ header{
         .imgFunko{
             a{
                 h1{
-                    font-size: 2em;  
+                    font-size: 2.2em;  
                 }
             }
         }

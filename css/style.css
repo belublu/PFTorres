@@ -188,14 +188,14 @@ header {
 
 @media screen and (max-width: 480px) {
   header {
-    height: 11vh;
+    height: 8vh;
     grid-template-columns: 2fr 0.1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "imgFunko fuenteBoton" "imgFunko fuenteBoton"; }
     header #logosRedes {
       display: none; }
     header .imgFunko a h1 {
-      font-size: 2em; }
+      font-size: 2.2em; }
     header .fuenteBoton {
       margin-right: 0px;
       grid-row-gap: 3px; }
@@ -292,7 +292,6 @@ nav {
 
 @media screen and (max-width: 480px) {
   nav {
-    height: 45vh;
     grid-template-columns: 1fr;
     grid-template-areas: "listaMenu";
     background-color: white;
