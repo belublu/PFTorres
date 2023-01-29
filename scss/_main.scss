@@ -2096,7 +2096,7 @@
 
 @media screen and (max-width: 480px){
     #mainIndex{
-        grid-template-rows: 0.1fr 1fr 0.5fr;
+        grid-template-rows: 0.3fr 1fr 0.5fr;
 
         #multimedia{
             grid-column-gap: 10px;
@@ -2477,7 +2477,7 @@
     }
 
     #mainContacto{
-        height: 140vh;
+        height: 190vh;
         grid-template-rows: 0.1fr 2fr;
         
         .parrafo{
@@ -2509,7 +2509,7 @@
                 }
 
                 .datosDos{  
-                    width: 70%;
+                    width: 80%;
 
                     .textoDatos{
                         font-size: 13px;
@@ -2534,7 +2534,7 @@
                 }
 
                 .datosTres{    
-                    width: 70%;
+                    width: 80%;
 
                     .textoDatos{
                         font-size: 13px;
@@ -2559,7 +2559,7 @@
                 }  
 
                 .datosCuatro{
-                    width: 70%;                    
+                    width: 80%;                    
                 }
 
                 .datosCinco{
