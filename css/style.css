@@ -1742,7 +1742,7 @@ nav {
       line-height: 18px; }
     #mainComunidad .foro {
       border: #f44741 solid 3px;
-      width: 400px;
+      width: 90%;
       height: 100px;
       justify-self: center;
       display: grid;
@@ -1765,7 +1765,7 @@ nav {
           margin-top: 20px; }
     #mainComunidad .telegram {
       border: #0aa06e solid 3px;
-      width: 400px;
+      width: 90%;
       height: 100px;
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -1785,7 +1785,7 @@ nav {
           margin-top: 20px; }
     #mainComunidad .discord {
       border: #c9c949 solid 3px;
-      width: 400px;
+      width: 90%;
       height: 100px;
       justify-self: center;
       display: grid;
@@ -1809,7 +1809,7 @@ nav {
     grid-template-columns: 0.5fr 0.5fr;
     grid-template-rows: 0.5fr 2fr 0.5fr;
     grid-template-areas: "parrafoUno parrafoUno" "marvel dc" "shop shop";
-    grid-column-gap: 20px; }
+    grid-column-gap: 10px; }
     #mainColecciones #parrafoUno .parrafo .parrafo__Titulo {
       font-size: 18px;
       margin-top: 5px;
@@ -1854,7 +1854,6 @@ nav {
       width: 150px;
       height: 300px; }
   #mainContacto {
-    height: 155vh;
     grid-template-rows: 0.1fr 2fr; }
     #mainContacto .parrafo {
       margin-left: 0px;

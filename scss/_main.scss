@@ -2293,7 +2293,7 @@
         
         .foro{
             border: #f44741 solid 3px;
-            width: 400px;
+            width: 90%;
             height: 100px;
             justify-self: center;
             display: grid;
@@ -2327,7 +2327,7 @@
         
         .telegram{
             border: rgb(10, 160, 110) solid 3px;
-            width: 400px;
+            width: 90%;
             height: 100px;
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -2358,7 +2358,7 @@
     
         .discord{
             border: #c9c949 solid 3px;
-            width: 400px;
+            width: 90%;
             height: 100px;
             justify-self: center;
             display: grid;
@@ -2397,7 +2397,7 @@
         "parrafoUno parrafoUno"
         "marvel dc"
         "shop shop";
-        grid-column-gap: 20px;
+        grid-column-gap: 10px;
 
         #parrafoUno{    
             .parrafo{
@@ -2477,7 +2477,7 @@
     }
 
     #mainContacto{
-        height: 155vh;
+        
         grid-template-rows: 0.1fr 2fr;
         
         .parrafo{
