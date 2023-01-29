@@ -2097,13 +2097,13 @@
 @media screen and (max-width: 480px){
     #mainIndex{
         grid-template-rows: 0.5fr 1fr 0.5fr;
-        
-
+    
         #multimedia{
             grid-column-gap: 5px;
 
             #videos{
-                height: 150px;
+                height: 170px;
+                width: 140px;
                 grid-template-rows: 0.5fr 1fr;
 
                 .videoPrincipal{
@@ -2133,7 +2133,8 @@
             }
 
             #fotos{
-                height: 150px;
+                height: 170px;
+                width: 140px;
                 grid-template-rows: 0.5fr 1fr;
 
                 .fotoPrincipal{
@@ -2471,7 +2472,7 @@
         @each $franquicia, $color in $borderFranquicias{
             .franquicia-#{$franquicia} {
                 border: $color solid 4px;
-                width: 150px;
+                width: 140px;
                 height: 300px;            
             }
         }

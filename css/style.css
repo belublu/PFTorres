@@ -294,7 +294,7 @@ nav {
 
 @media screen and (max-width: 480px) {
   nav {
-    height: 27vh;
+    height: 28vh;
     grid-template-columns: 1fr;
     grid-template-areas: "listaMenu";
     background-color: white;
@@ -1637,7 +1637,8 @@ nav {
     #mainIndex #multimedia {
       grid-column-gap: 5px; }
       #mainIndex #multimedia #videos {
-        height: 150px;
+        height: 170px;
+        width: 140px;
         grid-template-rows: 0.5fr 1fr; }
         #mainIndex #multimedia #videos .videoPrincipal .video__Titulo {
           font-size: 10px;
@@ -1655,7 +1656,8 @@ nav {
             width: 119px;
             height: 80px; }
       #mainIndex #multimedia #fotos {
-        height: 150px;
+        height: 170px;
+        width: 140px;
         grid-template-rows: 0.5fr 1fr; }
         #mainIndex #multimedia #fotos .fotoPrincipal .foto__Titulo {
           font-size: 10px;
@@ -1847,11 +1849,11 @@ nav {
       align-self: center; }
     #mainColecciones .franquicia-marvel {
       border: #f04f97 solid 4px;
-      width: 150px;
+      width: 140px;
       height: 300px; }
     #mainColecciones .franquicia-dc {
       border: #eef356 solid 4px;
-      width: 150px;
+      width: 140px;
       height: 300px; }
   #mainContacto {
     height: 210vh;
