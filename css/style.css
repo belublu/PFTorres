@@ -1633,14 +1633,11 @@ nav {
 
 @media screen and (max-width: 480px) {
   #mainIndex {
-    grid-template-columns: 42% 42%;
     grid-template-rows: 0.5fr 1fr 0.5fr; }
-    #mainIndex #fotoPortada #fotoMuchosPops {
-      width: 95%; }
     #mainIndex #multimedia {
       grid-column-gap: 5px; }
       #mainIndex #multimedia #videos {
-        height: 30vh;
+        height: 150px;
         grid-template-rows: 0.5fr 1fr; }
         #mainIndex #multimedia #videos .videoPrincipal .video__Titulo {
           font-size: 10px;
@@ -1658,7 +1655,7 @@ nav {
             width: 119px;
             height: 80px; }
       #mainIndex #multimedia #fotos {
-        height: 30vh;
+        height: 150px;
         grid-template-rows: 0.5fr 1fr; }
         #mainIndex #multimedia #fotos .fotoPrincipal .foto__Titulo {
           font-size: 10px;
@@ -1850,11 +1847,11 @@ nav {
       align-self: center; }
     #mainColecciones .franquicia-marvel {
       border: #f04f97 solid 4px;
-      width: 140px;
+      width: 150px;
       height: 300px; }
     #mainColecciones .franquicia-dc {
       border: #eef356 solid 4px;
-      width: 140px;
+      width: 150px;
       height: 300px; }
   #mainContacto {
     height: 210vh;
