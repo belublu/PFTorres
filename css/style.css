@@ -1633,7 +1633,10 @@ nav {
 
 @media screen and (max-width: 480px) {
   #mainIndex {
+    grid-template-columns: 42% 42%;
     grid-template-rows: 0.5fr 1fr 0.5fr; }
+    #mainIndex #fotoPortada #fotoMuchosPops {
+      width: 95%; }
     #mainIndex #multimedia {
       grid-column-gap: 5px; }
       #mainIndex #multimedia #videos {
@@ -1847,11 +1850,11 @@ nav {
       align-self: center; }
     #mainColecciones .franquicia-marvel {
       border: #f04f97 solid 4px;
-      width: 150px;
+      width: 140px;
       height: 300px; }
     #mainColecciones .franquicia-dc {
       border: #eef356 solid 4px;
-      width: 150px;
+      width: 140px;
       height: 300px; }
   #mainContacto {
     height: 210vh;

@@ -2096,7 +2096,14 @@
 
 @media screen and (max-width: 480px){
     #mainIndex{
+        grid-template-columns: 42% 42%;
         grid-template-rows: 0.5fr 1fr 0.5fr;
+
+        #fotoPortada{        
+                #fotoMuchosPops{
+                    width: 95%;  
+                }
+            }
 
         #multimedia{
             grid-column-gap: 5px;
@@ -2470,7 +2477,7 @@
         @each $franquicia, $color in $borderFranquicias{
             .franquicia-#{$franquicia} {
                 border: $color solid 4px;
-                width: 150px;
+                width: 140px;
                 height: 300px;            
             }
         }
