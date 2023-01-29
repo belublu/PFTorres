@@ -1634,14 +1634,14 @@ nav {
 @media screen and (max-width: 480px) {
   #mainIndex {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 1fr 0.5fr;
-    /* grid-template-rows: 0.5fr 1fr 1fr; */ }
+    grid-template-rows: 0.5fr 1fr 0.5fr; }
     #mainIndex #multimedia {
-      grid-column-gap: 5px; }
+      grid-column-gap: 20px; }
       #mainIndex #multimedia #videos {
         height: 200px;
         width: 150px;
-        grid-template-rows: 0.5fr 1fr; }
+        grid-template-rows: 0.5fr 1fr;
+        justify-self: right; }
         #mainIndex #multimedia #videos .videoPrincipal .video__Titulo {
           font-size: 10px;
           line-height: 12px;
@@ -1659,8 +1659,9 @@ nav {
             height: 80px; }
       #mainIndex #multimedia #fotos {
         height: 200px;
-        width: 200px;
-        grid-template-rows: 0.5fr 1fr; }
+        width: 150px;
+        grid-template-rows: 0.5fr 1fr;
+        justify-self: left; }
         #mainIndex #multimedia #fotos .fotoPrincipal .foto__Titulo {
           font-size: 10px;
           line-height: 12px;
